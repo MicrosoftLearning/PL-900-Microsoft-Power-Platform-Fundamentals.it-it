@@ -1,19 +1,24 @@
 ---
 lab:
-    title: 'Lab 8: Come creare un chatbot di base'
-    module: 'Modulo 6: Introduzione a Power Virtual Agents'
+  title: 'Lab 8: Come creare un chatbot di base'
+  module: 'Module 6: Intro to Power Virtual Agents'
+ms.openlocfilehash: ed1611f4b1450093a6e95cbb9df7ad7fdc040e86
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898941"
 ---
+# <a name="module-6-intro-to-power-virtual-agents"></a>Modulo 6. Introduzione a Power Virtual Agents
+## <a name="lab-how-to-build-a-basic-chatbot"></a>Laboratorio: Come creare un chatbot di base
 
-# Modulo 6: Introduzione a Power Virtual Agents
-## Lab: Come creare un chatbot di base
-
-# Scenario
+# <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
 Come la maggior parte delle organizzazioni, il Bellows College si trova a dover rispondere velocemente alle preoccupazioni derivanti dalla disinformazione in merito al COVID-19, le misure consigliate, i programmi e altro. In questo lab verrà creato un chatbot di Power Virtual Agents connesso alla pagina del Centro per la prevenzione e il controllo delle malattie (CDC) statunitense in cui sono disponibili domande e risposte sullo stato attuale della pandemia. Il college vuole configurare questo chatbot in modo che possa essere incorporato nel sito del portale, oltre a poter essere reso disponibile all'occorrenza man mano che i dipartimenti gestiscono la riapertura pianificata.
 
-## Procedura generale
+## <a name="high-level-steps"></a>Passaggi di livello elevato
 
 Verrà usata la sequenza seguente per creare il chatbot di Portal Virtual Agents:
 
@@ -29,7 +34,7 @@ Verrà usata la sequenza seguente per creare il chatbot di Portal Virtual Agents
 
   - **Sfida bonus:** incorporare il bot nel portale
 
-## Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 Per completare il progetto sono stati identificati i requisiti seguenti:
 
@@ -39,11 +44,11 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
   - Solo esercizio bonus: completamento del **lab 4 del modulo 6 - Introduzione ai portali Power Apps** 
 
-## Aspetti da considerare prima di iniziare
+## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 I bot possono essere utili in molti scenari diversi. Sulla base delle informazioni già note sul Bellows College, valutare altri possibili usi di un bot nell'organizzazione.
 
-# Esercizio 1. Iscriversi per PVA e creare un nuovo bot
+# <a name="exercise-1-sign-up-for-pva-and-create-a-new-bot"></a>Esercizio 1: Iscriversi a PVA e creare un nuovo bot
 
 In questo esercizio ci si iscriverà alla versione di valutazione di Power Virtual Agents.
 
@@ -67,7 +72,7 @@ In questo esercizio ci si iscriverà alla versione di valutazione di Power Virtu
 
 > Nel prossimo esercizio verranno generati alcuni argomenti personalizzati dal sito delle domande frequenti del CDC. Non chiudere questa finestra del browser.
 
-# Esercizio 2. Creare argomenti
+# <a name="exercise-2-create-topics"></a>Esercizio 2: Creare gli argomenti
 
 In questo esercizio verranno generati alcuni argomenti dal sito delle domande frequenti del CDC.
 
@@ -81,27 +86,27 @@ In questo esercizio verranno generati alcuni argomenti dal sito delle domande fr
 
 5.  Fare clic su **Attività iniziali**.
 
-6.  Incollare l'URL copiato nella casella di testo **Collegamento a contenuto online** e fare clic su **Aggiungi**. Se è stato copiato l'URL completo, https:// verrà elencato due volte. Assicurarsi che l'URL elenchi il protocollo solo una volta.
+6. Incollare l'URL copiato nella casella di testo **Collegamento a contenuto online** e fare clic su **Aggiungi**. Si noti che se è stato copiato l'URL completo, https:// verrà elencato due volte. Assicurarsi che il protocollo sia elencato una sola volta nell'URL.
 
 7.  Fare clic su **Inizia** e attendere. L'operazione potrebbe richiedere alcuni minuti.
 
 8.  Verranno creati alcuni argomenti suggeriti. Fare clic per aprire uno degli argomenti suggeriti.
 
-9.  Verranno visualizzate la frase trigger e la risposta del bot. **Fare clic su Aggiungi ad argomenti.**
+9. Verranno visualizzate la frase trigger e la risposta del bot. **Fare clic su Aggiungi ad argomenti.**
     
-10.  L'argomento suggerito verrà aggiunto agli argomenti esistenti Selezionare tutti gli argomenti suggeriti e fare clic su **Aggiungi ad argomenti**. 
+10. L'argomento suggerito verrà aggiunto agli argomenti esistenti Selezionare tutti gli argomenti suggeriti e fare clic su **Aggiungi ad argomenti**. 
 
     > È possibile selezionare tutti gli argomenti con l'icona a sinistra della colonna Nome. Se viene visualizzato un messaggio di errore, riprovare.
 
-11.  Dopo aver aggiunto gli argomenti suggeriti selezionare la scheda **Esistenti**. I nuovi argomenti verranno visualizzati con lo stato Disattivato.
+11. Dopo aver aggiunto gli argomenti suggeriti selezionare la scheda **Esistenti**. I nuovi argomenti verranno visualizzati con lo stato Disattivato.
 
-12.  Usare il pulsante interruttore nella colonna **Stato** per impostare alcuni argomenti su **Attivato**. 
+12. Usare il pulsante interruttore nella colonna **Stato** per impostare alcuni argomenti su **Attivato**. 
 
-13.  Prendere nota della frase trigger di uno dei gli argomenti attivati per poterla usare per i test in seguito.
+13. Prendere nota della frase trigger di uno dei gli argomenti attivati per poterla usare per i test in seguito.
 
 > Non chiudere questa finestra del browser.
 
-# Esercizio 3. Testare gli argomenti
+# <a name="exercise-3-test-topics"></a>Esercizio 3: Testare gli argomenti
 
 In questa attività verranno testati gli argomenti aggiunti.
 
@@ -121,9 +126,9 @@ In questa attività verranno testati gli argomenti aggiunti.
 
 8.  Digitare **ciao** e fare clic su **Invia**.
 
-9.  Il bot visualizzerà un saluto e fornirà indicazioni su cosa può fare. Il bot può ora aiutare gli utenti con le domande frequenti sul COVID-19, quindi è necessario modificare il messaggio di saluto nell'attività successiva. Non chiudere questa finestra del browser.
+9.  Il bot saluterà e fornirà indicazioni su cosa può fare. Il bot può ora aiutare gli utenti con le domande frequenti sul COVID-19, quindi è necessario modificare il messaggio di saluto nell'attività successiva. Non chiudere questa finestra del browser.
 
-# Esercizio 4. Modificare il messaggio di saluto
+# <a name="exercise-4-change-the-greeting"></a>Esercizio 4: Modificare il messaggio di saluto
 
 In questa attività, il messaggio di saluto verrà sostituito con un messaggio specifico per il COVID-19.
 
@@ -135,9 +140,9 @@ In questa attività, il messaggio di saluto verrà sostituito con un messaggio s
 
 4.  L'argomento dei saluti include 52 frasi trigger. Fare clic su **Vai a canvas di creazione**.
 
-5.  Sostituire il primo messaggio con `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
+5.  Passare al primo messaggio e sostituirlo con `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
 
-6.  Fare clic su **Salva**.
+6.  Fare clic su **Save** (Salva).
 
 7.  Fare clic su **Test del bot** se il bot non è ancora aperto. Fare clic su **Reimposta** per reimpostare la chat.
 
@@ -145,7 +150,7 @@ In questa attività, il messaggio di saluto verrà sostituito con un messaggio s
 
 9.  Il bot risponderà con il nuovo messaggio.
 
-# Esercizio 5. Pubblicare il bot
+# <a name="exercise-5-publish-the-bot"></a>Esercizio 5: Pubblicare il bot
 
 In questo esercizio si pubblicherà il bot.
 
@@ -159,7 +164,7 @@ In questo esercizio si pubblicherà il bot.
 
 5.  Verrà visualizzato un elenco dei canali disponibili per la pubblicazione del bot. Selezionare **Sito Web demo**.
 
-6.  Cambiare il messaggio di benvenuto in `Try my COVID-19 FAQ bot.`
+6.  Modificare il messaggio di benvenuto in `Try my COVID-19 FAQ bot.`
 
 7.  Immettere il testo seguente in **Elementi per avviare la conversazione**:
     ```
@@ -168,7 +173,7 @@ In questo esercizio si pubblicherà il bot.
      “What is the CDC doing about COVID-19”
     ```
     
-8.  Fare clic su **Salva**.
+8.  Fare clic su **Save** (Salva).
 
 9.  Copiare l'**URL**.
 
@@ -182,5 +187,5 @@ Alla fine, il bot pubblicato dovrebbe essere simile all'immagine seguente:
 
 ![Sito Web demo del bot - screenshot](./media/8-image1.png)
 
-# Sfide 
-* Incorporare il chatbot nel portale dei visitatori del Bellows College. Altre informazioni su come eseguire questa operazione sono disponibili in **Aggiungere il bot al portale Power Apps** [qui](https://docs.microsoft.com/it-it/power-virtual-agents/publication-connect-bot-to-web-channels).
+# <a name="challenges"></a>Problematiche 
+* Incorporare il chatbot nel portale dei visitatori del Bellows College. Altre informazioni su come eseguire questa operazione sono disponibili in **Aggiungere il bot al portale Power Apps** [qui](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).

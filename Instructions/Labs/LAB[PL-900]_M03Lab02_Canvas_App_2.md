@@ -1,13 +1,18 @@
 ---
 lab:
-    title: 'Lab 3. Come creare un’app canvas, parte 2'
-    module: 'Modulo 3. Introduzione a Power Apps'
+  title: "Lab 3: Come creare un'app canvas, parte 2"
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: c26f032744e228dc6632d254ad127f39cdbdef02
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898959"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Modulo 3: Introduzione a Power Apps
+## <a name="lab-2-how-to-build-a-canvas-app-part-2"></a>Lab 2: Come creare un'app canvas, parte 2
 
-# Modulo 3. Introduzione a Power Apps
-## Lab 2. Come creare un'app canvas, parte 2
-
-# Scenario
+# <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
 
@@ -17,7 +22,7 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 Nella parte 2 di questo lab si vedrà come creare, progettare e compilare un'app canvas di Power Apps, che verrà usata dal personale addetto alla sicurezza agli ingressi degli edifici per controllare e registrare velocemente i visitatori.
 
-# Procedura generale per il lab
+# <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Verrà usata la sequenza seguente per progettare l'app canvas:
 
@@ -28,22 +33,22 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
 -   Usare una visualizzazione di Dataverse per popolare la raccolta
 -   Gestire il processo di check-in e check-out per un visitatore
 
-## Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 * Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 * Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
 
-## Aspetti da considerare prima di iniziare
+## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   A quali informazioni deve poter accedere rapidamente il personale addetto alla sicurezza?
 -   Cosa succede se il codice del visitatore non è valido?
 -   Cosa succede se il visitatore arriva al di fuori delle ore pianificate?
 
-# Esercizio 1. Creare un'app canvas per la sicurezza
+# <a name="exercise-1-create-security-canvas-app"></a>Esercizio 1: Creare un'app canvas di sicurezza
 
 **Obiettivo:** in questo esercizio si creerà un'app canvas.
 
-## Attività 1. Creare un'app canvas
+## <a name="task-1-create-canvas-app"></a>Attività 1: Creare un'app canvas
 
 1.  Aprire la soluzione Campus Management.
 
@@ -59,7 +64,7 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
 
     -   Fare clic su **Nuovo** e selezionare **App \| App canvas**.
 
-    -   Dalla finestra vuota nell'app canvas, immettere **[Il proprio cognome] Campus Security** nel campo Nome app.
+    -   Nella finestra App canvas da modello vuoto immettere **[cognome] Campus Security** nel campo Nome app.
 
     -   Selezionare **Telefono** nel campo Formato.
 
@@ -72,13 +77,13 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
     
     -   Verificare che sia selezionata l'opzione **Cloud** e fare clic su **Salva**.
 
-    -   Verificare il nome di **[Il proprio cognome] Campus Security** e fare clic su **Salva**.
+    - Verificare che il nome immesso sia **[cognome] Campus Security** e fare clic su **Salva**.
         
     -   Fare clic sulla freccia **Indietro** in alto a sinistra, sotto a Power Apps, per tornare all'app.
 
 3.  Connettersi all'origine dati (Visit)
 
-    -   Fare clic su **Visualizza \| Origini dati.**
+    -   Fare clic su **Visualizza \| Origini dati**
     
     -   Fare clic su **+ Aggiungi dati**.
 
@@ -88,7 +93,7 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
     
 4.  Per conservare il lavoro in corso, fare clic su **File** e quindi su **Salva**. Usare la freccia indietro per tornare all'app.
 
-## Attività 2. Visualizzare le informazioni sui visitatori
+## <a name="task-2-display-visitor-information"></a>Attività 2: Visualizzare le informazioni sui visitatori
 
 1.  Aggiungere una casella di ricerca
 
@@ -104,9 +109,9 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
 
     -   Con l'oggetto Input di testo ancora selezionato, selezionare il testo nella proprietà **Impostazione predefinita** e cancellare il valore.
     
-    -   Selezionare la proprietà **Testo suggerimento** e immettere `"Enter visitor code"` come valore, incluse le virgolette doppie.
+    -   Selezionare la proprietà **Testo suggerimento** e immettere `"Enter visitor code"` come valore, incluse le virgolette doppie
     
-    -   Fare clic su **[...]** accanto al nome del controllo nella visualizzazione struttura ad albero (TextInput1), selezionare **Rinomina** e cambiare il nome in `textCode`.
+    -   Fare clic su **...** accanto al nome del controllo nella visualizzazione struttura ad albero (TextInput1), selezionare **Rinomina** e cambiare il nome in `textCode`
     
 3.  Aggiungere una visualizzazione modulo
 
@@ -162,7 +167,7 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
    
 10.  Premere **ESC** per chiudere l'app in esecuzione.
 
-## Attività 3. Aggiungere i pulsanti per il check-in e il check-out
+## <a name="task-3-add-check-in-and-check-out-buttons"></a>Attività 3: Aggiungere i pulsanti per il check-in e il check-out
 
 In questa attività verranno creati i pulsanti per consentire agli utenti di eseguire il check-in e il check-out per la visita. 
 
@@ -172,31 +177,31 @@ In questa attività verranno creati i pulsanti per consentire agli utenti di ese
    
     * Nel riquadro delle proprietà selezionare la scheda **Avanzate** e quindi selezionare la proprietà **OnChange**
    
-    * Immettere l'espressione seguente `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    * Immettere l'espressione `Set(Visit, LookUp(Visits, Code = textCode.Text))`
     
     > La visita verrà così salvata in una variabile globale quando l'utente esegue una ricerca nella casella di ricerca textCode. In questo modo sarà possibile usare la variabile *Visit* in tutta l'app senza dover immettere di nuovo l'intera espressione di ricerca.
 
 2. Aggiungere il pulsante per il check-in
 
-   * Selezionare la scheda **Inserisci**
+   * Selezionare la scheda **Inserisci**.
    
    * Fare clic su **Pulsante**
    
-   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "`Check In`" (è possibile digitare all'interno delle virgolette esistenti)
+   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su `Check In` (è possibile digitare all'interno delle virgolette esistenti)
    
-   * Fare clic su **[...]** accanto al nome del pulsante nella visualizzazione struttura ad albero (Button1), selezionare **Rinomina** e cambiare il nome in `CheckInButton`
+   * Fare clic su **...** accanto al nome del pulsante nella visualizzazione struttura ad albero (Button1), selezionare **Rinomina** e cambiare il nome in `CheckInButton`
 
 3. Aggiungere il pulsante per il check-out   
 
    * Fare clic su **Pulsante** nella scheda Inserisci per inserire un altro pulsante
    
-   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "`Check Out`" (è possibile digitare all'interno delle virgolette esistenti)
+   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su `Check Out` (è possibile digitare all'interno delle virgolette esistenti)
    
-   * Rinominare il pulsante `CheckOutButton`
+   * Rinominare il pulsante in `CheckOutButton`
    
    * Posizionare i pulsanti sotto la casella di ricerca, con **Check In** sopra **Check Out** 
    
-## Attività 4. Abilitare o disabilitare i pulsanti a seconda dei dati sulla visita
+## <a name="task-4-enable-and-disable-buttons-depending-on-visit-data"></a>Attività 4: Abilitare o disabilitare i pulsanti a seconda dei dati sulla visita
 
 Quando gli utenti trovano la visita tramite la casella di ricerca, vogliamo che usino il pulsante Check In per eseguire il check-in. Vogliamo abilitare il pulsante **Check In** quando viene trovato il record della visita (non vuoto), lo stato del record è attivo e la visita non è ancora iniziata, ovvero il valore di inizio effettivo è vuoto.
 
@@ -217,7 +222,7 @@ Quando gli utenti trovano la visita tramite la casella di ricerca, vogliamo che 
 
    * **!IsBlank(Visit)** - Il record della visita è stato trovato
    * **&&** - Operatore AND logico
-   * **Visit.Status = 'Status (Visits)'.Active** - Lo stato del record è *Active*
+   * **Visit.Status = 'Status (Visit)'.Active** - Lo stato del record è *Active*
    * **IsBlank(Visit.'Actual Start')** - Il campo Active Start non contiene dati
    * **DisplayMode.Edit, DisplayMode.Disabled** - Se le condizioni precedenti risultano soddisfatte, il pulsante diventa modificabile. In caso contrario, il pulsante rimarrà disabilitato.
 
@@ -246,7 +251,7 @@ Vogliamo abilitare il pulsante **Check Out** quando viene trovato il record dell
 
 9. Premere **ESC** per chiudere l'app in esecuzione.
 
-## Attività 5. Completare il processo di check-in e check-out
+## <a name="task-5-complete-check-in-and-check-out-process"></a>Attività 5: Completare il processo di check-in e check-out
 
 Per eseguire il processo di check-in e check-out, è necessario aggiornare i dati sulle visite di Dataverse come segue:
 
@@ -270,9 +275,9 @@ Per eseguire il processo di check-in e check-out, è necessario aggiornare i dat
 
    L'espressione è composta dalle parti seguenti:
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. Il metodo *Patch* aggiorna la tabella **Visit**, la riga identificata dalla variabile **Visit**, ovvero la visita corrente. L'espressione imposta il valore della colonna *Actual Start* sulla data e l'ora correnti (metodo *Now()*).
-   * **Refresh([@Visits]);**. Questa espressione aggiorna le righe delle visite, dato che i valori sottostanti sono cambiati
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Questa espressione aggiorna la variabile *Visit* con i dati aggiornati da Dataverse.
+   * **Patch(Visits, Visit, {'Actual Start': Now()});** . Il metodo *Patch* aggiorna la tabella **Visit**, la riga identificata dalla variabile **Visit**, ovvero la visita corrente. L'espressione imposta il valore della colonna *Actual Start* sulla data e l'ora correnti (metodo *Now()* ).
+   * **Refresh([@Visits]);** . Questa espressione aggiorna le righe delle visite, dato che i valori sottostanti sono cambiati
+   * **Set(Visit; LookUp(Visit; Code = textCode.Text));** Questa espressione aggiorna la variabile *Visit* con i dati aggiornati da Dataverse.
    
    > Quando un utente fa clic su questo pulsante, il valore Actual Start della visita verrà impostato sulla data e l'ora correnti e i dati verranno aggiornati.
 
@@ -317,7 +322,7 @@ Per eseguire il processo di check-in e check-out, è necessario aggiornare i dat
 
 10. Premere **ESC** per chiudere l'app in esecuzione.
 
-## Attività 6. Aggiungere indicatori visivi
+## <a name="task-6-add-visual-indicators"></a>Attività 6: Aggiungere indicatori visivi
 
 L'usabilità di un'app per dispositivi mobili migliora in modo significativo fornendo indicatori visivi. In questa attività verrà aggiunta un'icona che indica se per un visitatore è possibile fare il check-in o il check-out.
 
@@ -352,15 +357,15 @@ L'app in esecuzione dovrebbe essere simile alla seguente:
 
 8. Premere **ESC** per chiudere l'app in esecuzione.
 
-## Attività 7. Pubblicare l'app
+## <a name="task-7-publish-the-app"></a>Attività 7: Pubblicare l'app
 
 1. L'app Campus Security dovrebbe essere ancora aperta nel browser. In caso contrario, selezionare l'app **Campus Security** e fare clic su **Modifica**.
 
-2. Selezionare **File \| Pubblica.** 
+2. Selezionare **File \| Pubblica** 
 
 3. Selezionare **Pubblica questa versione**.
 
-# Sfide
+# <a name="challenges"></a>Problematiche
 
 * Evitare l'immissione manuale del codice della visita
 * Aggiungere la convalida dell'edificio per la visita

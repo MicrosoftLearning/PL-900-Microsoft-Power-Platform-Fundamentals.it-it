@@ -1,14 +1,19 @@
 ---
 lab:
-    title: 'Lab 2. Come creare un’app canvas, parte 1'
-    module: 'Modulo 3. Introduzione a Power Apps'
+  title: "Lab 2: Come creare un'app canvas, parte 1"
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: ac6cec75309098dae7715c0bdf42db75c9b80429
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898894"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Modulo 3: Introduzione a Power Apps
 
-# Modulo 3. Introduzione a Power Apps
+## <a name="lab-how-to-build-a-canvas-app-part-1"></a>Laboratorio: Come creare un'app canvas, parte 1
 
-## Lab: Come creare un'app canvas, parte 1
-
-# Scenario
+# <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
 
@@ -18,7 +23,7 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 Nella parte 1 di questo lab si progetterà un'app canvas di Power Apps che potrà essere usata dal personale del college per gestire le visite degli ospiti.
 
-# Procedura generale per il lab
+# <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Verrà usata la sequenza seguente per progettare l'app canvas:
 
@@ -28,35 +33,34 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
 -   Configurare un controllo raccolta per visualizzare le visite
 -   Aggiungere una funzione di filtro all'origine dati della raccolta per visualizzare solo le visite future
 
-## Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 * Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 * Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
 
-## Aspetti da considerare prima di iniziare
+## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   Qual è il fattore di forma prevalente per i destinatari?
 -   Stimare il numero di record nel sistema 
 -   Come limitare i record selezionati per migliorare le prestazioni dell'app e promuoverne l'adozione da parte degli utenti
 
-# Esercizio 1. Creare l'app canvas per il personale
+# <a name="exercise-1-create-staff-canvas-app"></a>Esercizio 1: Creare un'app canvas per il personale
 
 **Obiettivo:** in questo esercizio si creerà un'app canvas da un modello e poi la si modificherà per includere i dati richiesti.
 
-## Attività 1. Creare un'app canvas
+## <a name="task-1-create-canvas-app"></a>Attività 1: Creare un'app canvas
 
 In questa attività verrà creata un'app canvas con il modello di layout per il telefono basato su Microsoft Dataverse. Usando la tabella Visit da Dataverse, il modello genererà un'app di raccolta, visualizzazione e modifica per gestire le visite del campus.
 
-1.  Come iniziare a creare un'app dai dati
+1.  Iniziare a creare un'app dai dati
 
-    -   Accedere a <https://make.powerapps.com>.
+    -   Accedere a <https://make.powerapps.com>
 
-    -   Selezionare l'**ambiente** in alto a destra se non è già impostato
-        sull'ambiente Practice.
+    -   Selezionare l'**ambiente** in alto a destra, se non è già impostato sull'ambiente Practice.
 
     -   Selezionare l'icona **Dataverse** in **Inizia dai dati** nella schermata iniziale.
 
-2.  Connessione alla tabella Visite
+2.  Connettersi alla tabella Visite
     
     -   Selezionare **+ Nuova connessione**.
 
@@ -74,9 +78,9 @@ In questa attività verrà creata un'app canvas con il modello di layout per il 
 
     -   Immettere [cognome] Campus Staff come **Nome app**.
 
-    -   Fare clic su **Salva**.
+    -   Premere **Salva**.
 
-## Attività 2. Configurare il modulo dei dettagli delle visite
+## <a name="task-2-configure-visits-detail-form"></a>Attività 2: Configurare il modulo dei dettagli delle visite
 
 In questa attività si configurerà il modulo dei dettagli per visualizzare informazioni sui singoli record delle visite.
 
@@ -92,19 +96,19 @@ In questa attività si configurerà il modulo dei dettagli per visualizzare info
 
 6.  Selezionare i campi seguenti:
 
-    * Actual End
+    * Fine effettiva
     
-    * Actual Start
+    * Inizio effettivo
     
-    * Building 
+    * Compilazione 
     
-    * Code
+    * Codice
     
     * Scheduled End
     
-    * Scheduled Start
+    * Start pianificato
     
-    * Visitor
+    * Visitatore
     
 7.  Fare clic su **Aggiungi**
 
@@ -112,13 +116,13 @@ In questa attività si configurerà il modulo dei dettagli per visualizzare info
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
     >**Suggerimento:** è possibile comprimere ogni campo facendo clic sulla freccia verso il basso accanto al nome del campo.
 
-9.  Rimuovere il campo **Data creazione** facendo clic sui puntini di sospensione (**...**) accanto al nome del campo e selezionando **Rimuovi**. 
+9.  Rimuovere il campo **Data creazione** facendo clic sui puntini di sospensione ( **...** ) accanto al nome del campo e selezionando **Rimuovi**. 
 
 10.  Chiudere il riquadro **Campi**.
  
 11.  Per conservare il lavoro in corso, fare clic su **File** e quindi su **Salva**. Usare la freccia indietro per tornare all'app.
 
-## Attività 3. Configurare il modulo di modifica delle visite
+## <a name="task-3-configure-visits-edit-form"></a>Attività 3: Configurare il modulo di modifica delle visite
 
 In questa attività si configurerà un modulo per modificare le informazioni per le singole righe delle visite.
 
@@ -134,13 +138,13 @@ In questa attività si configurerà un modulo per modificare le informazioni per
 
 6.  Selezionare i campi seguenti:
 
-    * Building 
+    * Compilazione 
     
     * Scheduled End
     
-    * Scheduled Start
+    * Start pianificato
     
-    * Visitor
+    * Visitatore
     
 7.  Fare clic su **Aggiungi**
 
@@ -157,7 +161,7 @@ La schermata dovrebbe essere simile alla seguente:
 
 ![Modulo di modifica canvas](media/2-canvas-edit-form.png)
 
-## Attività 4. Configurare la raccolta delle visite
+## <a name="task-4-configure-visits-gallery"></a>Attività 4: Configurare la raccolta delle visite
 
 In questa attività si configurerà la raccolta pregenerata per visualizzare il titolo, la data di inizio e la data di fine della visita. 
 
@@ -167,11 +171,11 @@ In questa attività si configurerà la raccolta pregenerata per visualizzare il 
 
 3.  Selezionare la proprietà **TemplateSize** nel pannello delle proprietà Avanzate a destra
 
-4.  Sostituire l'espressione con la seguente `Min(150, BrowseGallery1.Height - 60)`. Sarà così garantito spazio sufficiente per ulteriori informazioni.
+4.  Sostituire l'espressione con `Min(150, BrowseGallery1.Height - 60)`. Sarà così garantito spazio sufficiente per ulteriori informazioni.
 
 5.  Nell'anteprima dell'app selezionare il prima campo di data/ora nella raccolta.
 
-6.  Nella barra della formula in alto, sostituire **ThisItem.'Created On'** con `ThisItem.'Scheduled Start'`
+6.  Nella barra della formula in alto sostituire **ThisItem.'Created On'** con `ThisItem.'Scheduled Start'`
 
 7.  Selezionare di nuovo il campo
 
@@ -179,11 +183,11 @@ In questa attività si configurerà la raccolta pregenerata per visualizzare il 
 
 9.  Usare il mouse o la tastiera per spostare il controllo copiato verso il basso e allinearlo agli altri controlli nella raccolta, sotto l'altro campo di data/ora.
 
-10.  Nella barra della formula in alto, sostituire **ThisItem.'Scheduled Start'** con `ThisItem.'Scheduled End'`
+10.  Nella barra della formula in alto sostituire **ThisItem.'Scheduled Start'** con `ThisItem.'Scheduled End'`
 
 11.  Per conservare il lavoro in corso, fare clic su **File** e quindi su **Salva**. Usare la freccia indietro per tornare all'app.
 
-## Attività 5. Aggiungere un filtro di data
+## <a name="task-5-add-date-filter"></a>Attività 5: Aggiungere un filtro di data
 
 Considerato il numero di visite in continua crescita, gli utenti hanno bisogno di una funzionalità per filtrare la raccolta delle visite. Ad esempio, potrebbe essere necessario visualizzare solo le visite future. In questa attività verrà aggiunta la possibilità di visualizzare le visite solo dopo la selezione di una data da parte dell'utente.
 
@@ -203,17 +207,17 @@ Considerato il numero di visite in continua crescita, gli utenti hanno bisogno d
 
 8. Trovare la proprietà **Items** e fare clic nella casella di testo.
 
-9. Trovare **[@Visits]** nell'espressione e sostituire con `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. L'espressione completa sarà simile alla seguente:
+9. Nell'espressione individuare **[@Visits]** e sostituirlo con `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. L'espressione completa sarà simile alla seguente:
 
    ```
    SortByColumns(
-   	Search(
+    Search(
         Filter(
-        	Visits,
+            Visits,
             'Scheduled End' >= DatePicker1.SelectedDate
            ),
            TextSearchBox1.Text,
-       	"bc_code","bc_name"
+        "bc_code","bc_name"
        ),
      "bc_scheduledstart",
      If(SortDescending1, Descending, Ascending)
@@ -226,11 +230,11 @@ La schermata dovrebbe essere simile alla seguente:
 
 ![Raccolta con filtro nell'app canvas](media/2-canvas-browse.png)
 
-# Esercizio 2. Completare l'app
+# <a name="exercise-2-complete-the-app"></a>Esercizio 2. Completare l'app
 
 In questo esercizio l'applicazione verrà testata e verrà poi aggiunta alla soluzione.
 
-## Attività 1. Testare l'app
+## <a name="task-1-test-app"></a>Attività 1: Testare l'app
 
 1.  Avviare l'applicazione
 
@@ -264,7 +268,7 @@ In questo esercizio l'applicazione verrà testata e verrà poi aggiunta alla sol
 
     -   Fare clic su **Esci** se viene visualizzata una richiesta quando si tenta di chiudere la finestra del browser.
 
-## Attività 2. Aggiungere l'app alla soluzione e pubblicare 
+## <a name="task-2-add-app-to-solution-and-publish"></a>Attività 2. Aggiungere l'app alla soluzione e pubblicare 
 
 1. Aprire la soluzione Campus Management.
 
@@ -278,13 +282,13 @@ In questo esercizio l'applicazione verrà testata e verrà poi aggiunta alla sol
    
 2. Selezionare **Aggiungi esistente**, quindi fare clic su **App** e infine su **App canvas**.
 
-3. Selezionare la scheda **Outside Dataverse**.
+3. Selezionare la scheda **Outside Dataverse** (Dataverse esterno).
 
 4. Selezionare l'app **Campus Staff** e fare clic su **Aggiungi**.
 
 5. Selezionare **Pubblica tutte le personalizzazioni**.
 
-# Sfide
+# <a name="challenges"></a>Problematiche
 
 * Visualizzazione calendario di tutte le visite e filtro per intervallo di date
 * Possibilità di creare e gestire contatti come parte dell'app

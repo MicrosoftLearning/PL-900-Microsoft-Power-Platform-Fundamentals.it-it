@@ -1,13 +1,18 @@
 ---
 lab:
-    title: 'Lab 7: Come creare un semplice dashboard'
-    module: 'Modulo 5: Introduzione a Power BI'
+  title: 'Lab 7: Come creare un semplice dashboard'
+  module: 'Module 5: Get Started with Power BI'
+ms.openlocfilehash: 5381acb81a59a46f6eb6aca9f2bde18de9846473
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898951"
 ---
+# <a name="module-5-get-started-with-power-bi"></a>Modulo 5: Introduzione a Power BI
+## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratorio: Come creare un semplice dashboard
 
-# Modulo 5: Introduzione a Power BI
-## Lab: Come creare un semplice dashboard
-
-# Scenario
+# <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
 
@@ -17,7 +22,7 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 In questo lab verrà creato un dashboard di Power BI per la visualizzazione dei dati sulle visite al campus.
 
-# Procedura generale per il lab
+# <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Verranno eseguite le procedure seguenti per progettare e creare il dashboard di Power BI:
 
@@ -28,23 +33,23 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
 -   Creare una visualizzazione per dispositivi mobili del dashboard di Power BI
 
 
-## Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 * Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 * Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
 
-## Aspetti da considerare prima di iniziare
+## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   Chi sono i destinatari del report?
 -   In che modo i destinatari useranno il report? Dispositivo tipico? Posizione?
 -   Sono disponibili dati sufficienti per la visualizzazione?
 -   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
 
-# Esercizio 1. Creare il report di Power BI 
+# <a name="exercise-1-create-power-bi-report"></a>Esercizio 1: Creare un report di Power BI 
 
 **Obiettivo:** in questo esercizio si creerà un report di Power BI in base ai dati dal database Dataverse.
 
-## Attività 1. Installare Power BI Desktop / Preparare il servizio Power BI
+## <a name="task-1-install-power-bi-desktop--prepare-power-bi-service"></a>Attività 1: Installare Power BI Desktop / Preparare il servizio Power BI
 
 1. Seguire le istruzioni seguenti per installare Power BI: 
 
@@ -56,7 +61,7 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
 
 2. Passare a [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) per scaricare e installare Power BI Desktop.
 
-    > [!IMPORTANTE]
+    > [!IMPORTANT]
     > Se si riscontrano problemi durante l'installazione di Power BI Desktop da Microsoft Store, provare il programma di installazione autonomo che può essere scaricato da [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
 3. Se Power BI Desktop è stato installato correttamente, è possibile passare all'[Attività 2](#task-2-prepare-data). In caso contrario, procedere con il passaggio successivo.
@@ -73,20 +78,20 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
 
 8. Espandere **+Nuovo** e selezionare **Carica un file**.
 
-    > [!IMPORTANTE]
+    > [!IMPORTANT]
     > Se l'opzione **+Nuovo** non è disponibile potrebbe essere necessario attivare il nuovo aspetto di Power BI. Assicurarsi di impostare l'interruttore **Nuovo aspetto** su **Attiva** nella parte superiore della schermata.
 
 9. Selezionare **File locale**.
 
 10. Trovare e selezionare il file **visits.pbix** scaricato in precedenza.
 
-11. Al termine del caricamento dei dati selezionare il report **visits** e notare che il tipo è impostato su **Report**.
+11. Al termine del caricamento dei dati selezionare il report **visits**. Si noti che il tipo è impostato su **Report**.
 
-12. Fare clic su **Modifica**. Se il menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
+12. Fare clic su **Modifica**. Se la voce di menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
 
 13. Il servizio Power BI è stato così configurato per l'uso nei lab. Continuare con l'[Attività 3](#task-3-create-chart-and-time-visualizations), ma usare il servizio Power BI online all'indirizzo [https://app.powerbi.com](https://app.powerbi.com) invece di Power BI Desktop per tutto il lab.
 
-## Attività 2. Preparare i dati
+## <a name="task-2-prepare-data"></a>Attività 2: Preparare i dati
 
 1.  Trovare l'URL dell'organizzazione
 
@@ -98,9 +103,9 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
     
 2. Aprire Power BI Desktop e accedere con le proprie credenziali se richiesto.
 
-3. Selezionare **Recupera dati** e quindi selezionare **Altro...**.
+3. Selezionare **Recupera dati** e quindi selezionare **altro...**
 
-4. Selezionare **Power Platform** a sinistra, quindi selezionare **Common Data Service (Legacy)** e fare clic su **Connetti**. Se richiesto, accedere con le proprie credenziali e fare clic su **Connetti**.
+4. Selezionare **Power Platform** a sinistra, quindi selezionare **Common Data Service (legacy)** e fare clic su **Connetti**. Se richiesto, accedere con le credenziali ricevute e fare clic su **Connetti**.
 
 5. Incollare l'URL dell'ambiente copiato in precedenza nel campo **URL server** e quindi fare clic su **OK**.
 
@@ -130,9 +135,9 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
 
 15. Fare clic su **...** accanto al campo **bc_scheduledstart** e selezionare **Rinomina**. Immettere **Start** come nome di campo.
 
-16. Salvare il lavoro in corso facendo clic su **File \| Salva** e immettendo un nome di file a scelta.
+16. Salvare il lavoro in corso facendo clic su **File \| Salva** e immettendo il nome file che si preferisce.
 
-## Attività 3. Creare le visualizzazioni grafiche per le visite e le informazioni temporali
+## <a name="task-3-create-chart-and-time-visualizations"></a>Attività 3: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
 
 1. Selezionare l'icona del grafico a torta nel pannello **Visualizzazioni** per inserire un grafico.
 
@@ -156,23 +161,23 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
 
     * Selezionare le varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
     
-    * Fare clic sull'istogramma. Fare clic sulla freccia rivolta verso il basso per attivare la modalità **Drill-down** e quindi fare clic sulla colonna per eseguire il drill-down al livello successivo, ovvero i mesi. Per eseguire questa operazione, è anche possibile fare clic su **Dati/Drill \| Espandi il livello successivo** sulla barra multifunzione.
+    * Fare clic sull'istogramma. Fare clic sulla freccia rivolta verso il basso per attivare la modalità **Drill-down** e quindi fare clic sulla colonna per eseguire il drill-down al livello successivo, ovvero i mesi. Per eseguire questa operazione, è anche possibile fare clic su **Dati/Drill \| Espandi livello successivo** sulla barra multifunzione.
     
     * Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
     
 11. Salvare il lavoro in corso facendo clic su **File \| Salva**.
 
-# Esercizio 2. Creare il dashboard di Power BI
+# <a name="exercise-2-create-power-bi-dashboard"></a>Esercizio 2. Creare un dashboard di Power BI
 
-## Attività 1. Pubblicare il report di Power BI
+## <a name="task-1-publish-power-bi-report"></a>Attività 1: Pubblicare il report di Power BI
 
 1. Fare clic sul pulsante **Pubblica** nella scheda Home della barra multifunzione.
 
 2. Selezionare **Area di lavoro personale** come destinazione e quindi fare clic su **Seleziona**.
 
-3. Attendere il completamento della pubblicazione e fare clic su **Apri \<nome del report\>.pbix in Power BI**.
+3. Attendere il completamento della pubblicazione e fare clic su **Apri \<name of your report\>.pbix in Power BI**.
 
-## Attività 2. Creare il dashboard di Power BI
+## <a name="task-2-create-power-bi-dashboard"></a>Attività 2. Creare un dashboard di Power BI
 
 1. Il report dovrebbe essere ancora aperto dall'attività precedente.
 
@@ -186,7 +191,7 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
 
 6. Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
 
-## Attività 3. Aggiungere visualizzazioni in linguaggio naturale
+## <a name="task-3-add-visualizations-using-natural-language"></a>Attività 3: Aggiungere visualizzazioni in linguaggio naturale
 
 1. Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
 
@@ -202,15 +207,15 @@ Dovrebbe essere visualizzato il dashboard **[cognome] Campus Management**. Potre
 
 Il dashboard dovrebbe essere simile al seguente:
 
-![Dashboard di Power BI](media/5-powerbi-result.png)
+![dashboard di Power BI](media/5-powerbi-result.png)
 
-## Attività 4 Creare una visualizzazione per dispositivi mobili e condividere un report con un codice a matrice
+## <a name="task-4-build-mobile-phone-view-and-share-a-report-with-a-qr-code"></a>Attività 4 Creare una visualizzazione per dispositivi mobili e condividere un report con un codice a matrice
 
 1. Nel dashboard selezionare **Modifica \| Layout per dispositivi mobili**.
 
 2. Disporre i riquadri nel modo preferito.
 
-3. Fare clic su **Layout per dispositivi mobili** in alto a destra e cambiare visualizzazione selezionando **Layout Web**.
+3. Fare clic su **Layout per dispositivi mobili** in alto a destra e impostare la visualizzazione su **Layout Web**.
 
 4. Selezionare **Area di lavoro personale** in alto e selezionare il **report**.
 
@@ -218,7 +223,7 @@ Il dashboard dovrebbe essere simile al seguente:
 
 6. *Facoltativo:* se è disponibile un dispositivo mobile, eseguire la scansione del codice con un'app apposita disponibile per entrambe le piattaforme iOS e Android oppure con l'app della fotocamera se supportato dal telefono in uso. Accedere al proprio account se richiesto. Esplorare il report in un dispositivo mobile.
 
-# Sfide
+# <a name="challenges"></a>Problematiche
 
 * Dashboard e report che includono i piani del campus e degli edifici
 * Creare report e analizzare i modelli e le tendenze delle visite

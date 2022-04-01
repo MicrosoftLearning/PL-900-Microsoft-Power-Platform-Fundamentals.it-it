@@ -1,12 +1,17 @@
 ---
 lab:
-    title: 'Lab 1. Modellazione dei dati'
-    module: 'Modulo 2. Introduzione a Microsoft Dataverse'
+  title: 'Lab 1: Modellazione dei dati'
+  module: 'Module 2: Introduction to Microsoft Dataverse'
+ms.openlocfilehash: 05d0f0656ae0d93f5666f7c14602c3976a9a9ac9
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898889"
 ---
+# <a name="module-2-introduction-to-microsoft-dataverse"></a>Modulo 2: Introduzione a Microsoft Dataverse
 
-# Modulo 2. Introduzione a Microsoft Dataverse
-
-# Scenario
+# <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
 
@@ -22,24 +27,24 @@ In questo lab si accederà all'ambiente predisposto in precedenza e verranno cre
 
 Verranno infine importati dati di esempio in Microsoft Dataverse.
 
-# Procedura generale per il lab
+# <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Per preparare gli ambienti di apprendimento:
 
-* Verranno creati una soluzione e un autore
+* Verranno creati una soluzione e un editore
 * Verranno aggiunti i componenti nuovi ed esistenti necessari per soddisfare i requisiti dell'applicazione. Fare riferimento al [documento del modello di dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) per una descrizione dei metadati, ovvero tabelle e relazioni. È possibile tenere premuto CTRL e fare clic o clic con il pulsante destro del mouse sul collegamento per aprire il documento del modello di dati in una nuova finestra.
 
 La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
 -   Contatto
--   Building
--   Visit
+-   Compilazione
+-   Visitare
 
-## Prerequisiti:
+## <a name="prerequisites"></a>Prerequisiti:
 
 * Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 
-## Aspetti da considerare prima di iniziare:
+## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare:
 
 * Convenzione di denominazione
 
@@ -47,23 +52,23 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
 * Formattazione dei valori di data/ora a supporto della facilità di localizzazione
 
-# Esercizio 1. Creare la soluzione
+# <a name="exercise-1-create-solution"></a>Esercizio 1: Creare la soluzione
 
-## Attività 1. Creare la soluzione e l'editore
+## <a name="task-1-create-solution-and-publisher"></a>Attività 1: Creare la soluzione e l'editore
 
-1.  Creare la soluzione
+1.  Creare soluzione
 
-    -   Visitare <https://make.powerapps.com>. Potrebbe essere necessario ripetere l'autenticazione. Fare clic su **Accedi** e seguire le istruzioni se richiesto.
+    -   Accedere a <https://make.powerapps.com>. Potrebbe essere necessario ripetere l'autenticazione. Fare clic su **Accedi** e seguire le istruzioni se richiesto.
 
-    -   Selezionare l'ambiente facendo clic su **Ambiente** nell'angolo in alto a destra sullo schermo e scegliendo l'ambiente dal menu a discesa.
+    -   Selezionare l'ambiente facendo clic su **Ambiente** nell'angolo in alto a destra della schermata e scegliendo l'ambiente dal menu a discesa.
 
     -   Selezionare **Soluzioni** dal menu a sinistra e fare clic su **Nuova soluzione**.
 
     -   Immettere **[cognome] Campus Management** in **Nome visualizzato**.
 
-2.  Creare l'editore
+2.  Crea editore
 
-    -   Nella sezione **Publisher** selezionare **+ Publisher**.
+    -   Nella sezione **Editore** selezionare **+ Editore**
 
     -   Nella finestra visualizzata immettere **Bellows College** in **Nome visualizzato**. 
 
@@ -71,24 +76,23 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
     
     -   Immettere **bc** in **Prefisso**
 
-    -   Fare clic su **Salva**
+    -   Fare clic su **Save** (Salva).
     
     -   Fare clic su **Fine** nella finestra popup.
 
 3.  Completare la creazione della soluzione.
 
-    -   Fare ora clic nell'elenco a discesa **Editore** e selezionare l'editore **Bellows College**
-        appena creato.
+    -   Fare ora clic nell'elenco a discesa **Editore** e selezionare l'editore **Bellows College** creato.
 
     -   Verificare che l'opzione **Versione** sia impostata su **1.0.0.0** 
     
     -   Fare clic su **Crea**.
 
-# Esercizio 2. Aggiungere una tabella esistente e creare nuove tabelle
+# <a name="exercise-2-add-existing-and-create-new-tables"></a>Esercizio 2: Aggiungere tabelle esistenti e crearne di nuove
 
 **Obiettivo:** in questo esercizio si aggiungerà la tabella Contatto standard e verranno create nuove tabelle personalizzate per gli edifici (Building) e le visite (Visit) nella soluzione. 
 
-## Attività 1. Aggiungere una tabella esistente
+## <a name="task-1-add-existing-table"></a>Attività 1: Aggiungere una tabella esistente
 
 1.  Fare clic per aprire la soluzione **Campus Management** appena creata.
 
@@ -100,8 +104,7 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
 5.  Fare clic su **Selezionare i componenti** in Contatto.
 
-6.  Selezionare la scheda **Visualizzazioni** e selezionare la visualizzazione **Contatti attivi**. Fare clic su
-    **Aggiungi**.
+6.  Selezionare la scheda **Visualizzazioni** e selezionare la visualizzazione **Contatti attivi**. Fare clic su **Aggiungi**.
     
 7.  Fare di nuovo clic su **Selezionare i componenti**.
 
@@ -115,14 +118,13 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
 > La soluzione dovrebbe contenere ora una sola tabella: Contatto.
     
-## Attività 2. Creare la tabella Building
+## <a name="task-2-create-building-table"></a>Attività 2. Creare la tabella Building
 
 1.  Il browser dovrebbe essere ancora aperto nella soluzione Campus Management. In caso contrario, seguire questa procedura per aprire la soluzione Campus Management:
 
-    * Accedere a <https://make.powerapps.com> (se l'accesso non è già stato eseguito)
+    * Accedere a <https://make.powerapps.com> (se l'accesso non è già stato effettuato)
     
-    * Selezionare **Soluzioni** e fare clic per aprire la soluzione **[cognome] Campus Management**
-          appena creata.
+    * Selezionare **Soluzioni** e fare clic per aprire la soluzione **[cognome] Campus Management** creata.
           
 2.  Creare la tabella Building
 
@@ -130,9 +132,9 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
     
     -   Immettere **Building** in **Nome visualizzato**. 
     
-    -   Fare clic su **Salva**. Verrà avviato il provisioning della tabella in background e sarà possibile aggiungere altre tabelle e colonne nel frattempo.
+    -   Fare clic su **Save** (Salva). Verrà avviato il provisioning della tabella in background e sarà possibile aggiungere altre tabelle e colonne nel frattempo.
 
-## Attività 3. Creare la tabella Visit e le colonne
+## <a name="task-3-create-visit-table-and-columns"></a>Attività 3: Creare la tabella Visit e le colonne
 
 La tabella **Visit** conterrà informazioni sulle visite al campus, inclusi edificio, visitatore, ora pianificata e ora effettiva di ogni visita. 
 
@@ -142,10 +144,9 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Il browser dovrebbe essere ancora aperto nella soluzione Campus Management. In caso contrario, seguire questa procedura per aprire la soluzione Campus Management:
 
-    * Accedere a <https://make.powerapps.com> (se l'accesso non è già stato eseguito).
+    * Accedere a <https://make.powerapps.com> (se l'accesso non è già stato effettuato)
     
-    * Selezionare **Soluzioni** e fare clic per aprire la soluzione **[cognome] Campus Management**
-          appena creata.
+    * Selezionare **Soluzioni** e fare clic per aprire la soluzione **[cognome] Campus Management** creata.
 
 2. Creare la tabella Visit
 
@@ -153,7 +154,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
    
    * Immettere **Visit** in **Nome visualizzato**. 
    
-   * Fare clic su **Salva**. Verrà avviato il provisioning della tabella in background e sarà possibile iniziare ad aggiungere altre colonne.
+   * Fare clic su **Save** (Salva). Verrà avviato il provisioning della tabella in background e sarà possibile iniziare ad aggiungere altre colonne.
 
 3. Creare la colonna Scheduled Start
 
@@ -235,11 +236,11 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
     
 8.  Fare clic su **Salva tabella**
 
-# Esercizio 3. Creare relazioni
+# <a name="exercise-3-create-relationships"></a>Esercizio 3: Creare relazioni
 
 **Obiettivo:** in questo esercizio verranno aggiunte le relazioni tra le tabelle.
 
-## Attività 1. Creare relazioni
+## <a name="task-1-create-relationships"></a>Attività 1: Creare relazioni
 
 1.  Verificare che sia ancora visualizzata la tabella **Visit** della soluzione **Campus Management**. In caso contrario, passare a tale tabella.
 
@@ -269,11 +270,11 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 6.  Selezionare **Pubblica tutte le personalizzazioni**.
 
-# Esercizio 4. Importare dati
+# <a name="exercise-4-import-data"></a>Esercizio 4: Importare dati
 
 **Obiettivo:** in questo esercizio si importeranno dati di esempio nel database Dataverse.
 
-## Attività 1. Importare la soluzione
+## <a name="task-1-import-solution"></a>Attività 1: Importare la soluzione
 
 In questa attività si importerà una soluzione che contiene il flusso di Power Automate necessario per completare l'importazione dei dati.
 
@@ -291,9 +292,7 @@ In questa attività si importerà una soluzione che contiene il flusso di Power 
 >
 >   Dipendenze mancanti. Installare le soluzioni seguenti prima di installare questa...
 >
->   Questo messaggio indica che il modello di dati non completo, che il
->   prefisso dell'editore non è **bc** o che i nomi delle tabelle **Building** e **Visits**
->   sono diversi dai nomi indicati nelle procedure precedenti.
+>   Questo messaggio indica che il modello di dati non è completo, il prefisso dell'editore non è **bc** o i nomi delle tabelle **Building** e **Visit** sono diversi dai nomi indicati nelle procedure precedenti.
 
 6. Fare clic su **Avanti**. Verrà richiesto di ristabilire le connessioni. 
 
@@ -305,17 +304,17 @@ In questa attività si importerà una soluzione che contiene il flusso di Power 
 
 10. Verificare che sia selezionata la connessione appena creata. Se la connessione non viene visualizzata, fare clic su **Aggiorna** per aggiornare l'elenco di connessioni. 
 
-11. Fare clic su **Importa**.
+11. Fare clic su **Import** (Importa).
 
 12. Attendere il completamento dell'importazione.
 
-## Attività 2. Importare dati  
+## <a name="task-2-import-data"></a>Attività 2. Importare dati  
 
 1. Aprire la soluzione **Data Import**.
 
 2. Controllare lo **Stato** del flusso **Import Data**.
 
-3. Se lo **Stato** è **Disattivato** selezionare **[...]** accanto a **Import Data** e quindi selezionare **Attiva**.
+3. Se lo **Stato** è **Disattivato**, selezionare **...** accanto a **Importa dati** e quindi selezionare **Attiva**.
 
    > **Importante:** se viene visualizzato un messaggio di errore, verificare che le tabelle e le colonne create corrispondano alle istruzioni sopra indicate.
 
@@ -331,7 +330,7 @@ In questa attività si importerà una soluzione che contiene il flusso di Power 
 
     > Lo scopo di questo flusso era generare dati di esempio per i prossimi lab. Nella prossima attività si verificherà che l'importazione dei dati sia riuscita. 
 
-## Attività 3. Verificare l'importazione dei dati
+## <a name="task-3-verify-data-import"></a>Attività 3: Verificare l'importazione dei dati
 
 1. Tornare alla scheda di Power Apps precedente. Fare clic su **Fine** nel popup. 
 
@@ -349,11 +348,11 @@ In questa attività si importerà una soluzione che contiene il flusso di Power 
 
 5. Chiudere la finestra aperta di recente.
 
-6. Fare clic un valore qualsiasi nella colonna **Visitor** (potrebbe essere necessario scorrere verso destra) e verificare che il modulo Contatto venga visualizzato in una finestra separata.
+6. Fare clic un valore qualsiasi nella colonna **Visitor** (potrebbe essere necessario scorrere verso destra) e verificare che il modulo Contatto venga aperto in una finestra separata.
 
 7. Chiudere la finestra aperta di recente.
 
-# Sfide
+# <a name="challenges"></a>Problematiche
 
 * Si potrebbe prendere in considerazione l'uso di un impegno di tipo *appuntamento* come parte della soluzione? Cosa cambierebbe?
 * Come si potrebbe imporre che la data di fine pianificata sia successiva all'inizio pianificato? 

@@ -1,13 +1,18 @@
 ---
 lab:
-    title: 'Lab. Convalidare l’ambiente lab'
-    module: 'Modulo 0. Introduzione al corso'
+  title: "Laboratorio: Convalidare l'ambiente lab"
+  module: 'Module 0: Course introduction'
+ms.openlocfilehash: f98bf8aee0be31934acee15f3b5668d3e6e6108a
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898902"
 ---
-
-Modulo 0. Introduzione al corso
+<a name="module-0-course-introduction"></a>Modulo 0: Introduzione al corso
 =================================
 
-Scenario
+<a name="scenario"></a>Scenario
 --------
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
@@ -18,13 +23,13 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e si accederà all'interfaccia di amministrazione di Power Platform. Nell'interfaccia di amministrazione verrà creato l'ambiente **Practice** in cui verrà eseguita la maggior parte delle operazioni dei lab.
 
-## Esercizio 1. Configurazione
+## <a name="exercise-1--setup"></a>Esercizio 1. Configurazione
 
-### Attività 1. Acquisire il tenant di prova di Microsoft Power Platform
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Attività 1 - Acquisire il tenant di prova di Microsoft Power Platform
 
 1. Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato.
 
-2. Passare a <https://powerapps.microsoft.com> e fare clic su **Prova gratis**.
+2. Passare a <https://powerapps.microsoft.com> e fare clic su **Inizia con la versione di valutazione gratuita**.
 
 3. In **Iniziamo** immettere l'indirizzo e-mail delle credenziali di Microsoft 365 nella casella di testo **Per iniziare, immetti l'account aziendale o dell'istituto di istruzione**.
 
@@ -34,15 +39,15 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 6. Selezionare **Sì** per mantenere l'accesso.
 
-7. Completare le informazioni dell'account e selezionare **Attività iniziali** per registrarsi per la propria versione di valutazione di Microsoft Power Platform.  
+7. Immettere le informazioni sull'account e selezionare **Get started** (Inizia) per iscriversi alla versione di valutazione di Microsoft Power Platform.  
 
-### Attività 2. Creare l'ambiente
+### <a name="task-2--create-environment"></a>Attività 2 - Creare l'ambiente
 
-1. Passare a <https://admin.powerplatform.microsoft.com> e accedere con le credenziali di Microsoft 365 se richiesto di nuovo.
+1. Passare a <https://admin.powerplatform.microsoft.com> ed eseguire l'accesso con le proprie credenziali di Microsoft 365, se richiesto nuovamente.
 
 2. Selezionare **Ambienti** e fare clic su **+Nuovo**.
 
-    - In **Nome** immettere **Practice [iniziali]**. Ad esempio: Practice BL.
+    - In **Nome** immettere **Practice [iniziali]** . Ad esempio: Practice BL.
     
     - In **Tipo** selezionare **Versione di valutazione**. Non selezionare l'opzione Versione di valutazione (basata su abbonamento).
     
@@ -54,13 +59,13 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 3. L'ambiente **Practice** dovrebbe ora comparire nell'elenco Ambienti. 
 
-    > Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Aggiornare la pagina se necessario.
+    > Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Se necessario, aggiornare la pagina.
 
-# Esercizio 2. Effettuare il provisioning di un portale Power Apps
+# <a name="exercise-2-provision-a-power-apps-portal"></a>Esercizio 2: Effettuare il provisioning del portale Power Apps
 
 **Obiettivo:** effettuare il provisioning di un portale Power Apps può richiedere tempo. In questo esercizio si creerà un portale Power Apps nell'ambiente in modo da poter avviare il processo di provisioning. Questo portale verrà usato in un lab successivo.
 
-## Attività 1. Creare un portale di Power Apps
+## <a name="task-1-create-power-apps-portal"></a>Attività 1: Creare un portale di Power Apps
 
 1.  Accedere a <https://make.powerapps.com>
 
@@ -72,12 +77,12 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 4.  Specificare i dettagli del nuovo portale
 
-    -   Immettere **```Bellows College Visitors```** come **Nome** del portale.
+    -   Immettere **```Bellows College Visitors```** in **Nome** per il portale
 
     -   Specificare un URL univoco (**nome_univoco**.powerappsportals.com). Se il nome risulta già usato, sceglierne uno diverso.
 
     -   Selezionare la **Lingua** di base del portale.
 
-    -   Fare clic su **Crea**.
+    -   Fare clic su **Crea**
 
     > Il processo di provisioning del portale verrà eseguito per 30-45 minuti. Non occorre aspettare, perché il processo continuerà anche mentre si procede con il prossimo modulo.

@@ -1,18 +1,18 @@
 ---
 lab:
-    title: 'Lab 4. Come creare un’app basata su modello'
-    module: 'Modulo 3. Introduzione a Power Apps'
+  title: "Lab 4: Come creare un'app basata su modello"
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: e0fcc3a12bb54b7fca08e41599d999b3e38eee23
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898983"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Modulo 3: Introduzione a Power Apps
+## <a name="lab-3-how-to-build-a-model-driven-app"></a>Lab 3: Come creare un'app basata su modello
 
-# Modulo 3. Introduzione a Power Apps
-## Lab 3. Come creare un'app basata su modello
-
-### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
-
-Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
-# Scenario
+# <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
 
@@ -22,7 +22,7 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 In questo lab verrà creata un'app basata su modello di Power Apps per consentire al personale di back office del campus di gestire i record delle visite per l'intero campus.
 
-# Procedura generale per il lab
+# <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Nell'ambito della creazione dell'app basata su modello verranno eseguite le operazioni seguenti:
 
@@ -40,12 +40,12 @@ Verranno usati i componenti seguenti:
 
 Entrambi questi componenti verranno integrati nell'app basata su modello per una migliore esperienza utente.
 
-## Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 * Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 * Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
 
-## Aspetti da considerare prima di iniziare
+## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   Quali modifiche dobbiamo apportare per migliorare l'esperienza utente?
 
@@ -54,13 +54,13 @@ Entrambi questi componenti verranno integrati nell'app basata su modello per una
 -   Quali personalizzazioni possono essere effettuate nella mappa del sito di un'app basata su modello?
 
 
-# Esercizio 1. Personalizzare visualizzazioni e moduli
+# <a name="exercise-1-customize-views-and-forms"></a>Esercizio 1: Personalizzare viste e moduli
 
 **Obiettivo:** in questo esercizio verranno personalizzati i moduli e le visualizzazioni delle tabelle personalizzate create che verranno usati nell'app basata su modello.
 
-## Attività 1. Modificare il modulo delle visite
+## <a name="task-1-edit-visit-form"></a>Attività 1: Modificare il modulo delle visite
 
-1.  Accedere a <https://make.powerapps.com> se l'accesso non è già stato eseguito.
+1.  Accedere a <https://make.powerapps.com> se l'accesso non è già stato effettuato.
 
 2.  Selezionare l'**ambiente**.
 
@@ -70,15 +70,15 @@ Entrambi questi componenti verranno integrati nell'app basata su modello per una
 
 5.  Fare clic per aprire l'entità **Visit**.
 
-6.  Selezionare la scheda **Moduli** e fare clic per aprire il tipo di modulo **Main**. 
+6.  Selezionare la scheda **Moduli**, selezionare il tipo di modulo **Principale** e fare clic su **Modifica modulo**.
 
     > Per impostazione predefinita, il modulo include due campi: Name (campo primario) e Proprietario.
     
 7.  Selezionare **+ Campo modulo** e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
 
-    * **Building**
-    * **Visitor**
-    * **Scheduled Start**
+    * **Edificio**
+    * **Visitatore**
+    * **Start pianificato**
     * **Scheduled End**
     * **Actual Start**
     * **Actual End** 
@@ -95,10 +95,9 @@ Entrambi questi componenti verranno integrati nell'app basata su modello per una
 
 12.  Fare clic su **Pubblica** in alto a destra e attendere il completamento della pubblicazione.
 
-13.  Fare clic su **Indietro** in alto a sinistra nella schermata. Si tornerà alla scheda Moduli
-     dell'entità Visit.
+13.  Se la visualizzazione di modifica è stata aperta in una nuova scheda, chiudere la scheda. In caso contrario, fare clic su **Indietro** in alto a sinistra nella schermata. Si tornerà alla scheda Moduli dell'entità Visit.
 
-## Attività 2. Modificare le visualizzazioni per le visite
+## <a name="task-2-edit-visit-views"></a>Attività 2: Modificare le visualizzazioni per le visite
 
 In questa attività verrà modificata la visualizzazione predefinita Visit attivi/e e si creerà una nuova visualizzazione per le visite del giorno.
 
@@ -106,10 +105,10 @@ In questa attività verrà modificata la visualizzazione predefinita Visit attiv
 
 2.  Aggiungere i campi seguenti alla visualizzazione facendo clic sui campi o trascinandoli:
 
-    *  **Code**
-    *  **Visitor**
-    *  **Building**
-    *  **Scheduled Start** 
+    *  **Codice**
+    *  **Visitatore**
+    *  **Edificio**
+    *  **Start pianificato** 
     *  **Scheduled End**
     
 3.  Fare clic sulla colonna **Data creazione** e selezionare **Rimuovi**. Il campo **Data creazione** verrà ora rimosso dalla visualizzazione.
@@ -132,13 +131,13 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 11.  Selezionare il campo **Scheduled Start** e quindi selezionare **Oggi** come condizione nell'elenco a discesa. 
 
-12.  Fare clic su **[...]** nella riga **Stato** e fare clic su **Elimina**. 
+12.  Fare clic su **...** nella riga **Stato** e fare clic su **Elimina**. 
 
 13.  Fare clic su **OK** per salvare la condizione. La visualizzazione viene ora filtrata in modo da mostrare solo i record in cui la data Scheduled Start corrisponde alla data odierna.
 
 14.  Aggiungere i campi **Actual Start** e **Actual End** alla visualizzazione. 
 
-> **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
+    > **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
 
 15.  Fare clic sulla **freccia in giù** accanto al pulsante Salva facendo attenzione a non fare clic sul pulsante e selezionare **Salva con nome**.
 
@@ -146,13 +145,13 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 17.  Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
 
-# Esercizio 2. Creare un'applicazione basata su modello
+# <a name="exercise-2-create-model-driven-application"></a>Esercizio 2: Creare un'applicazione basata su modello
 
 **Obiettivo:** in questo esercizio si creerà l'app basata su modello, si personalizzerà la mappa del sito e quindi si testerà l'app.
 
 > Verranno citati vari campi non presentati durante la creazione dell'applicazione, in particolare nelle procedure per la mappa del sito. Abbiamo scelto di prendere alcune scorciatoie a beneficio dell'esecuzione dei lab. In un'implementazione reale a questi elementi verrebbero assegnati nomi logici.
 
-## Attività 1. Creare l'applicazione
+## <a name="task-1-create-application"></a>Attività 1: Creare l'applicazione
 
 1.  Aprire la soluzione Campus Management se non è già aperta.
 
@@ -162,17 +161,19 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
     
 2.  Creare l'applicazione basata su modello
 
-    -   Fare clic su **Nuovo**, selezionare **App** e quindi selezionare **App basata su modello**. Verrà aperta una nuova scheda.
+    -   Fare clic su **Nuovo**, selezionare **App** e quindi selezionare **App basata su modello**.
+    
+    -   Nella schermata dell'app basata su modello da modelli vuoti fare clic su **Crea**.
     
     -   Immettere **[cognome] Campus Management** in Nome.
 
     -   Selezionare la casella di controllo **Usa soluzione esistente per creare l'app**.
 
-    -   Selezionare **Avanti**.
+    -   Selezionare **Avanti**
 
     -   Selezionare la soluzione **Campus Management**.
     
-    -   Fare clic su **Fine**.
+    -   Fare clic su **Fine**
     
 3.  Fare clic sull'icona a forma di matita accanto a **Mappa del sito**.
 
@@ -190,8 +191,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
     -   Selezionare **Nuova area secondaria**.
 
-    -   Nel riquadro **Proprietà** selezionare **Entità** nell'elenco a discesa
-        **Tipo**.
+    -   Nel riquadro **Proprietà** selezionare **Entità** nell'elenco a discesa **Tipo**.
 
     -   Cercare la tabella **Contatto** nell'elenco a discesa **Entità**.
     
@@ -203,8 +203,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
     -   Passare al riquadro **Proprietà**.
 
-    -   Selezionare **Entità** nell'elenco a discesa **Tipo** e cercare
-        la tabella **Visit** nell'elenco a discesa **Entità**.
+    -   Selezionare **Entità** nell'elenco a discesa **Tipo** e cercare la tabella **Visit** nell'elenco a discesa **Entità**.
     
 7.  Aggiungere la tabella Building alla mappa del sito
 
@@ -214,7 +213,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
     
     -   Immettere **Settings** per **Titolo** nel riquadro **Proprietà**.
     
-    -   Con il gruppo **Impostazioni** ancora selezionato, fare clic su **Aggiungi**.
+    -   Con il gruppo **Settings** ancora selezionato fare clic su **Aggiungi**.
     
     -   Selezionare **Area secondaria**.
     
@@ -222,7 +221,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
     
     -   Selezionare **Entità** nell'elenco a discesa **Tipo** e cercare la tabella **Building** nell'elenco a discesa **Entità**.
 
-8.  Fare clic su **Salva**. Durante il salvataggio delle modifiche verrà visualizzata la schermata di caricamento.
+8.  Fare clic su **Save** (Salva). Durante il salvataggio delle modifiche verrà visualizzata la schermata di caricamento.
 
 9.  Fare clic su **Pubblica** per pubblicare la mappa del sito e attendere il completamento della pubblicazione.
 
@@ -234,7 +233,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 12.  Fare clic su **Convalida** per convalidare le modifiche apportate nell'applicazione. 
 
->  Verranno visualizzati alcuni avvisi che possono essere ignorati perché non abbiamo aggiunto un riferimento a una visualizzazione e a un modulo specifici per le entità e gli utenti avranno accesso a tutti i moduli e le visualizzazioni per le entità **Visit** e **Building**.
+    >  Verranno visualizzati alcuni avvisi che possono essere ignorati perché non abbiamo aggiunto un riferimento a una visualizzazione e a un modulo specifici per le entità e gli utenti avranno accesso a tutti i moduli e le visualizzazioni per le entità **Visit** e **Building**.
      
 13. Fare clic su **Pubblica**.
 
@@ -246,7 +245,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 17.  Selezionare **App**. L'applicazione dovrebbe ora essere inclusa nell'elenco.
 
-## Attività 2. Testare l'applicazione
+## <a name="task-2-test-application"></a>Attività 2: Testare l'applicazione
 
 1.  Avviare l'applicazione
 
@@ -274,10 +273,9 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
     -   Fare clic su **Nuovo**.
 
-    -   Immettere `Microsoft Building` come **Name**.
+    -   In **Nome** immettere `Microsoft Building`
         
-    -   Fare clic su **Salva e chiudi**. Il nuovo record creato verrà così visualizzato
-        nella visualizzazione Building attivi/e.
+    -   Fare clic su **Salva e chiudi**. Il record appena creato verrà mostrato nella visualizzazione Building attivi/e.
     
 4.  Creare una nuova visita
 
@@ -287,14 +285,13 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
     
     -   Compilare i campi come segue 
     
-        -   **Name**: `New test visit`
-        -   **Building**: selezionare Microsoft Building
+        -   **Nome**: `New test visit`
+        -   **Building**: Alpine Ski House
         -   **Visitor**: selezionare John Doe
         -   **Scheduled Start**: selezionare la data di domani e le 14.00 come ora di inizio
         -   **Scheduled End**: selezionare la data di domani e le 15.30 come ora di fine
         
-    -   Fare clic su **Salva e chiudi**. Verrà così creata la visita che dovrebbe essere
-        visibile nella visualizzazione Visit attivi/e.
+    -   Fare clic su **Salva e chiudi**. Verrà così creata la visita che dovrebbe essere visibile nella visualizzazione Visit attivi/e.
         
     -   Passare alla visualizzazione **Today's Visits**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
     
@@ -304,7 +301,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 ![App basata su modello di esempio](media/3-model-app.png)
 
-# Sfide
+# <a name="challenges"></a>Problematiche
 
 * Selezionare visualizzazioni e moduli specifici per Visit e Building.
 * Il personale addetto alla sicurezza lavora in genere in un singolo edificio. Come si può fornire un modo semplice per visualizzare solo le visite per un edificio selezionato?
