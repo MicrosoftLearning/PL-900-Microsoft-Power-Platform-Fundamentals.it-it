@@ -2,18 +2,16 @@
 lab:
   title: "Laboratorio: Convalidare l'ambiente lab"
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: f98bf8aee0be31934acee15f3b5668d3e6e6108a
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.openlocfilehash: e69074549dddd4494db53a9ccb9ebfb3ae198d48
+ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137898902"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144424703"
 ---
-<a name="module-0-course-introduction"></a>Modulo 0: Introduzione al corso
-=================================
+# <a name="module-0-course-introduction"></a>Modulo 0: Introduzione al corso
 
-<a name="scenario"></a>Scenario
---------
+## <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
@@ -27,62 +25,36 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 ### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Attività 1 - Acquisire il tenant di prova di Microsoft Power Platform
 
-1. Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato.
+1.  Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato.
 
-2. Passare a <https://powerapps.microsoft.com> e fare clic su **Inizia con la versione di valutazione gratuita**.
+2.  Passare a <https://powerapps.microsoft.com> e fare clic su **Inizia con la versione di valutazione gratuita**.
 
-3. In **Iniziamo** immettere l'indirizzo e-mail delle credenziali di Microsoft 365 nella casella di testo **Per iniziare, immetti l'account aziendale o dell'istituto di istruzione**.
+3.  In **Iniziamo** immettere l'indirizzo e-mail delle credenziali di Microsoft 365 nella casella di testo **Per iniziare, immetti l'account aziendale o dell'istituto di istruzione**.
 
-4. Viene visualizzato un messaggio per confermare che si dispone di un account Microsoft esistente. Selezionare **Accedi**.
+4.  Viene visualizzato un messaggio per confermare che si dispone di un account Microsoft esistente. Selezionare **Accedi**.
 
-5. Immettere la password fornita dal provider di servizi di hosting per i lab autorizzato. 
+5.  Immettere la password fornita dal provider di servizi di hosting per i lab autorizzato ed eseguire l'accesso.
 
-6. Selezionare **Sì** per mantenere l'accesso.
+6.  Selezionare **Sì** per mantenere l'accesso.
 
-7. Immettere le informazioni sull'account e selezionare **Get started** (Inizia) per iscriversi alla versione di valutazione di Microsoft Power Platform.  
+7.  Immettere le informazioni sull'account e selezionare **Get started** (Inizia) per iscriversi alla versione di valutazione di Microsoft Power Platform.
 
 ### <a name="task-2--create-environment"></a>Attività 2 - Creare l'ambiente
 
-1. Passare a <https://admin.powerplatform.microsoft.com> ed eseguire l'accesso con le proprie credenziali di Microsoft 365, se richiesto nuovamente.
+1.  Passare a <https://admin.powerplatform.microsoft.com> ed eseguire l'accesso con le proprie credenziali di Microsoft 365, se richiesto.
 
-2. Selezionare **Ambienti** e fare clic su **+Nuovo**.
+2.  Selezionare **Ambienti** e fare clic su **+Nuovo**.
 
-    - In **Nome** immettere **Practice [iniziali]** . Ad esempio: Practice BL.
-    
-    - In **Tipo** selezionare **Versione di valutazione**. Non selezionare l'opzione Versione di valutazione (basata su abbonamento).
-    
-    - Impostare l'interruttore per **Creare un database per questo ambiente?** su **Sì**.
-    
-    - Lasciare le impostazioni predefinite per tutte le altre opzioni e fare clic su **Avanti**.
-    
-    - Nella scheda successiva lasciare le impostazioni predefinite per tutte le opzioni e fare clic su **Salva**.
+    1.  In **Nome** immettere **Practice [iniziali]** . Ad esempio: Practice BL.
 
-3. L'ambiente **Practice** dovrebbe ora comparire nell'elenco Ambienti. 
+    2.  In **Tipo** selezionare **Versione di valutazione**. Non selezionare l'opzione Versione di valutazione (basata su abbonamento).
 
-    > Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Se necessario, aggiornare la pagina.
+    3.  Impostare l'interruttore per **Creare un database per questo ambiente?** su **Sì**.
 
-# <a name="exercise-2-provision-a-power-apps-portal"></a>Esercizio 2: Effettuare il provisioning del portale Power Apps
+    4.  Lasciare le impostazioni predefinite per tutte le altre opzioni e fare clic su **Avanti**.
 
-**Obiettivo:** effettuare il provisioning di un portale Power Apps può richiedere tempo. In questo esercizio si creerà un portale Power Apps nell'ambiente in modo da poter avviare il processo di provisioning. Questo portale verrà usato in un lab successivo.
+    5.  Nella scheda successiva lasciare le impostazioni predefinite per tutte le opzioni e fare clic su **Salva**.
 
-## <a name="task-1-create-power-apps-portal"></a>Attività 1: Creare un portale di Power Apps
+3.  L'ambiente **Practice** dovrebbe ora comparire nell'elenco Ambienti.
 
-1.  Accedere a <https://make.powerapps.com>
-
-2.  Se l'**ambiente** visualizzato in alto a destra non è l'ambiente Practice, fare clic per selezionare l'ambiente corretto.
-
-3.  Nella home page fare clic sul pannello **Portale da modello vuoto** in **Crea app personalizzata**
-
-    > Se questa opzione non è visibile provare a ridurre la visualizzazione.
-
-4.  Specificare i dettagli del nuovo portale
-
-    -   Immettere **```Bellows College Visitors```** in **Nome** per il portale
-
-    -   Specificare un URL univoco (**nome_univoco**.powerappsportals.com). Se il nome risulta già usato, sceglierne uno diverso.
-
-    -   Selezionare la **Lingua** di base del portale.
-
-    -   Fare clic su **Crea**
-
-    > Il processo di provisioning del portale verrà eseguito per 30-45 minuti. Non occorre aspettare, perché il processo continuerà anche mentre si procede con il prossimo modulo.
+>   Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Se necessario, aggiornare la pagina.
