@@ -2,230 +2,142 @@
 lab:
   title: 'Lab 7: Come creare un semplice dashboard'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 5381acb81a59a46f6eb6aca9f2bde18de9846473
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.openlocfilehash: b707cbf6b60af3b6d6a166565ccdeaeec844cb4a
+ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137898951"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144424655"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Modulo 5: Introduzione a Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratorio: Come creare un semplice dashboard
 
 # <a name="scenario"></a>Scenario
 
-Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
+Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
 L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
 
-Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus. 
+Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
 In questo lab verrà creato un dashboard di Power BI per la visualizzazione dei dati sulle visite al campus.
 
 # <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
-Verranno eseguite le procedure seguenti per progettare e creare il dashboard di Power BI:
+Verranno eseguite le procedure seguenti per progettare e creare un dashboard di Power BI:
 
 -   Connettersi a Dataverse
--   Trasformare i dati per includere descrizioni accessibili per le righe correlate (ricerche)
--   Creare e pubblicare un report con varie visualizzazioni delle informazioni sulle visite al campus
--   Usare una query in linguaggio naturale per creare ulteriori visualizzazioni
--   Creare una visualizzazione per dispositivi mobili del dashboard di Power BI
 
+-   Trasformare i dati per includere descrizioni accessibili per le righe correlate (ricerche)
+
+-   Creare e pubblicare un report con varie visualizzazioni delle informazioni sulle visite al campus
+
+-   Usare una query in linguaggio naturale per creare ulteriori visualizzazioni
+
+-   Creare una visualizzazione per dispositivi mobili del dashboard di Power BI
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
-* Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
+-   Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+
+-   Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
 
 ## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   Chi sono i destinatari del report?
+
 -   In che modo i destinatari useranno il report? Dispositivo tipico? Posizione?
+
 -   Sono disponibili dati sufficienti per la visualizzazione?
+
 -   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
 
-# <a name="exercise-1-create-power-bi-report"></a>Esercizio 1: Creare un report di Power BI 
+# <a name="exercise-1-create-power-bi-report"></a>Esercizio \#1: Creare un report di Power BI
 
-**Obiettivo:** in questo esercizio si creerà un report di Power BI in base ai dati dal database Dataverse.
+**Obiettivo:** In questo esercizio verrà creato un report di Power BI in base ai dati del foglio di calcolo di Excel usato in un esercizio precedente.
 
-## <a name="task-1-install-power-bi-desktop--prepare-power-bi-service"></a>Attività 1: Installare Power BI Desktop / Preparare il servizio Power BI
+## <a name="task-1-prepare-power-bi-service"></a>Attività \#1: Preparare il servizio Power BI
 
-1. Seguire le istruzioni seguenti per installare Power BI: 
+1.  Scaricare [visits.pbix](../../Allfiles/visits.pbix) e salvarlo nel computer.
 
-    - Se Power BI Desktop è **già** installato passare all'[Attività 2](#task-2-prepare-data).
-    
-    - Se Power BI Desktop non è installato, eseguire il **Passaggio 2**.
-    
-    - Se non sono disponibili le autorizzazioni necessarie o si riscontrano problemi durante l'esecuzione di Power BI Desktop, procedere al **Passaggio 4**.
+2.  Passare a <https://app.powerbi.com/> e accedere, se necessario.
 
-2. Passare a [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) per scaricare e installare Power BI Desktop.
+3.  Nell'angolo inferiore sinistro della schermata selezionare **Recupera dati**
 
-    > [!IMPORTANT]
-    > Se si riscontrano problemi durante l'installazione di Power BI Desktop da Microsoft Store, provare il programma di installazione autonomo che può essere scaricato da [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+4.  Selezionare il pulsante **Recupera** in **File** nella sezione **Crea nuovo contenuto**.
 
-3. Se Power BI Desktop è stato installato correttamente, è possibile passare all'[Attività 2](#task-2-prepare-data). In caso contrario, procedere con il passaggio successivo.
+5.  Selezionare **File locale**.
 
-    > Se non sono disponibili le autorizzazioni necessarie per l'installazione di applicazioni desktop o si riscontrano problemi con l'esecuzione o la configurazione di Power BI Desktop, eseguire i passaggi seguenti.
+6.  Trovare e selezionare il file **visits.pbix** scaricato in precedenza.
 
-4. Scaricare [visits.pbix](../../Allfiles/visits.pbix) e salvarlo nel computer.
+7.  Al termine del caricamento dei dati selezionare il report **visits**. Si noti che il tipo è impostato su **Report**.
 
-5. Passare a [https://app.powerbi.com/](https://app.powerbi.com/) e fare clic su **Accedi**. 
+8.  Fare clic su **Modifica**. Se la voce di menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
 
-6. Fare clic su **Area di lavoro personale**. 
+Il servizio Power BI è stato così configurato per l'uso nei lab. 
 
-7. Se viene presentata la pagina **Recupera dati** fare clic su **Ignora**. 
+## <a name="task-2-create-chart-and-time-visualizations"></a>Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
 
-8. Espandere **+Nuovo** e selezionare **Carica un file**.
+1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
-    > [!IMPORTANT]
-    > Se l'opzione **+Nuovo** non è disponibile potrebbe essere necessario attivare il nuovo aspetto di Power BI. Assicurarsi di impostare l'interruttore **Nuovo aspetto** su **Attiva** nella parte superiore della schermata.
+2.  Fare clic sulla freccia a discesa accanto a **bc_Building** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
 
-9. Selezionare **File locale**.
+3.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella **Valori**.
 
-10. Trovare e selezionare il file **visits.pbix** scaricato in precedenza.
+4.  Ridimensionare il grafico a torta usando i punti di controllo in angolo in modo che siano visibili tutti i componenti del grafico.
 
-11. Al termine del caricamento dei dati selezionare il report **visits**. Si noti che il tipo è impostato su **Report**.
+5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'istogramma a colonne in pila nel riquadro **Visualizzazioni**.
 
-12. Fare clic su **Modifica**. Se la voce di menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
+6.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella **Valori**.
 
-13. Il servizio Power BI è stato così configurato per l'uso nei lab. Continuare con l'[Attività 3](#task-3-create-chart-and-time-visualizations), ma usare il servizio Power BI online all'indirizzo [https://app.powerbi.com](https://app.powerbi.com) invece di Power BI Desktop per tutto il lab.
+7.  Trascinare il campo **Start** nella casella **Asse**.
 
-## <a name="task-2-prepare-data"></a>Attività 2: Preparare i dati
+8.  Nel riquadro Visualizzazioni fare clic sulla **x** accanto a **Year** e **Quarter** per lasciare solo i totali di **Month** e **Day** per l'asse.
 
-1.  Trovare l'URL dell'organizzazione
-
-    * In una nuova scheda passare all'interfaccia di amministrazione di Power Platform all'indirizzo <https://admin.powerplatform.com>
-    
-    * Nel riquadro di spostamento a sinistra selezionare Ambienti e quindi aprire l'ambiente Practice.
-    
-    * Fare clic con il pulsante destro del mouse su **URL ambiente** nel pannello **Dettagli** e quindi scegliere **Copia indirizzo link**.
-    
-2. Aprire Power BI Desktop e accedere con le proprie credenziali se richiesto.
-
-3. Selezionare **Recupera dati** e quindi selezionare **altro...**
-
-4. Selezionare **Power Platform** a sinistra, quindi selezionare **Common Data Service (legacy)** e fare clic su **Connetti**. Se richiesto, accedere con le credenziali ricevute e fare clic su **Connetti**.
-
-5. Incollare l'URL dell'ambiente copiato in precedenza nel campo **URL server** e quindi fare clic su **OK**.
-
-6. Espandere il nodo **Entità** selezionare le entità **bc_Building** e **bc_Visit**, quindi fare clic su **Carica**.
-
-7. Fare clic sull'icona **Modello** sulla barra degli strumenti verticale a sinistra.
-
-8. Trascinare la colonna **bc_buildingid** dalla tabella **bc_Building** e rilasciarla sulla colonna **bc_building** nella tabella **bc_Visit**. Verrà così creata una relazione tra le due tabelle che potrà essere usata da Power BI per visualizzare i dati correlati.
-
-9. Selezionare l'icona **Report** sulla barra degli strumenti verticale a sinistra.
-
-10. Espandere il nodo **bc_Visit** nel pannello **Campi**.
-
-11. Fare clic su **...** accanto a **bc_Visit** e selezionare **Nuova colonna**.
-
-12. Completare la formula come segue:
-
-    ```
-    Column = RELATED(bc_Building[bc_name])
-    ```
-
-    e premere INVIO. Verrà così aggiunto un nuovo campo con il nome dell'edificio nei dati sulle visite.
-
-13. Fare clic su **...** accanto al campo **Colonna** appena creato e selezionare **Rinomina**. Immettere **Building** come nome di campo.
-
-14. Fare clic su **...** accanto al campo **bc_visitid** e selezionare **Rinomina**. Immettere **Visit** come nome di campo.
-
-15. Fare clic su **...** accanto al campo **bc_scheduledstart** e selezionare **Rinomina**. Immettere **Start** come nome di campo.
-
-16. Salvare il lavoro in corso facendo clic su **File \| Salva** e immettendo il nome file che si preferisce.
-
-## <a name="task-3-create-chart-and-time-visualizations"></a>Attività 3: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
-
-1. Selezionare l'icona del grafico a torta nel pannello **Visualizzazioni** per inserire un grafico.
-
-2. Trascinare il campo **Building** nella casella **Legenda**.
-
-3. Trascinare il campo **Visit** nella casella **Valori**.
-
-4. Ridimensionare il grafico a torta usando i punti di controllo in angolo in modo che siano visibili tutti i componenti del grafico.
-
-5. Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'istogramma a colonne in pila nel riquadro **Visualizzazioni**. 
-
-6. Trascinare il campo **Visit** nella casella **Valori**.
-
-7. Trascinare il campo **Start** nella casella **Asse**.
-
-8. Nel riquadro Visualizzazioni fare clic sulla **x** accanto a **Day** e **Quarter** per lasciare solo i totali di **Year** e **Month** per l'asse.
-
-9. Ridimensionare il grafico nel modo preferito con i punti di controllo in angolo.
+9.  Ridimensionare il grafico nel modo preferito con i punti di controllo in angolo.
 
 10. Testare il report in modo interattivo:
 
-    * Selezionare le varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
+    1.  Selezionare le varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
+
+    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** e quindi fare clic su una colonna per eseguire il drill-down al livello successivo, ovvero i giorni. 
     
-    * Fare clic sull'istogramma. Fare clic sulla freccia rivolta verso il basso per attivare la modalità **Drill-down** e quindi fare clic sulla colonna per eseguire il drill-down al livello successivo, ovvero i mesi. Per eseguire questa operazione, è anche possibile fare clic su **Dati/Drill \| Espandi livello successivo** sulla barra multifunzione.
-    
-    * Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
-    
-11. Salvare il lavoro in corso facendo clic su **File \| Salva**.
+    3.  Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>Esercizio 2. Creare un dashboard di Power BI
+11. Salvare il lavoro in corso facendo clic su **Salva**.
 
-## <a name="task-1-publish-power-bi-report"></a>Attività 1: Pubblicare il report di Power BI
+# <a name="exercise-2-create-power-bi-dashboard"></a>Esercizio \#2: Creare un dashboard di Power BI
 
-1. Fare clic sul pulsante **Pubblica** nella scheda Home della barra multifunzione.
+## <a name="task-1-create-power-bi-dashboard"></a>Attività \#1: Creare un dashboard di Power BI
 
-2. Selezionare **Area di lavoro personale** come destinazione e quindi fare clic su **Seleziona**.
+1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
-3. Attendere il completamento della pubblicazione e fare clic su **Apri \<name of your report\>.pbix in Power BI**.
+2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario fare clic su **...** per visualizzare altre voci di menu.
 
-## <a name="task-2-create-power-bi-dashboard"></a>Attività 2. Creare un dashboard di Power BI
+3.  Selezionare **Nuovo dashboard** nel prompt **Aggiungi a dashboard**.
 
-1. Il report dovrebbe essere ancora aperto dall'attività precedente.
+4.  Immettere **Campus Management** come **Nome dashboard** e fare clic su **Aggiungi oggetto dinamico**.
 
-2. Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario fare clic su **...** per visualizzare altre voci di menu.
+5.  Selezionare **Area di lavoro personale** in alto e selezionare il dashboard **[cognome] Campus Management**.
 
-3. Selezionare **Nuovo dashboard** nel prompt **Aggiungi a dashboard**.
+6.  Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
-4. Immettere **[cognome] Campus Management** come **Nome dashboard** e fare clic su **Aggiungi oggetto dinamico**.
+7.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
 
-5. Selezionare **Area di lavoro personale** in alto e selezionare il dashboard **[cognome] Campus Management**.
+## <a name="task-2-add-visualizations-using-natural-language"></a>Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
 
-6. Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
+1.  Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
 
-## <a name="task-3-add-visualizations-using-natural-language"></a>Attività 3: Aggiungere visualizzazioni in linguaggio naturale
+2.  Immettere **buildings by number of visits** nell'area Domande e risposte. Verrà visualizzato un grafico a barre.
 
-1. Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
+3.  Selezionare **Aggiungi oggetti visivo**.
 
-2. Immettere **buildings by number of visits** nell'area Domande e risposte. Verrà visualizzato il grafico a barre.
+4.  Selezionare **Dashboard esistente**, selezionare il dashboard **Campus Management** e fare clic su **Aggiungi**.
 
-3. Selezionare **Aggiungi oggetti visivo**.
+5.  Fare clic su **Chiudi Domande e risposte**.
 
-4. Selezionare **Dashboard esistente**, selezionare il dashboard **[cognome] Campus Management** e fare clic su **Aggiungi**.
-
-5. Fare clic su **Chiudi Domande e risposte**.
-
-Dovrebbe essere visualizzato il dashboard **[cognome] Campus Management**. Potrebbe essere necessario scorrere verso il basso per vedere il nuovo oggetto visivo Domande e risposte. 
+Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi inclusi. Potrebbe essere necessario scorrere verso il basso per vedere il nuovo oggetto visivo Domande e risposte.
 
 Il dashboard dovrebbe essere simile al seguente:
 
-![dashboard di Power BI](media/5-powerbi-result.png)
-
-## <a name="task-4-build-mobile-phone-view-and-share-a-report-with-a-qr-code"></a>Attività 4 Creare una visualizzazione per dispositivi mobili e condividere un report con un codice a matrice
-
-1. Nel dashboard selezionare **Modifica \| Layout per dispositivi mobili**.
-
-2. Disporre i riquadri nel modo preferito.
-
-3. Fare clic su **Layout per dispositivi mobili** in alto a destra e impostare la visualizzazione su **Layout Web**.
-
-4. Selezionare **Area di lavoro personale** in alto e selezionare il **report**.
-
-5. Selezionare **Modifica** e quindi selezionare **... \| Genera un codice a matrice**.
-
-6. *Facoltativo:* se è disponibile un dispositivo mobile, eseguire la scansione del codice con un'app apposita disponibile per entrambe le piattaforme iOS e Android oppure con l'app della fotocamera se supportato dal telefono in uso. Accedere al proprio account se richiesto. Esplorare il report in un dispositivo mobile.
-
-# <a name="challenges"></a>Problematiche
-
-* Dashboard e report che includono i piani del campus e degli edifici
-* Creare report e analizzare i modelli e le tendenze delle visite
-* Visualizzazione per le visite prolungate
-* Power BI in streaming per l'elaborazione quasi in tempo reale per un campus di grandi dimensioni 
+![](media/5-powerbi-result.png)

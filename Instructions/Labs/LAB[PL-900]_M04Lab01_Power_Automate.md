@@ -2,289 +2,167 @@
 lab:
   title: 'Lab 6: Come creare una soluzione automatizzata'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: 9b26af0345e67d338409a3712fd77e581721ab29
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.openlocfilehash: c37bbf2975aa1964493e93716d0b3aeb32030c99
+ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137898999"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144424638"
 ---
 # <a name="module-4-get-started-with-power-automate"></a>Modulo 4: Introduzione a Power Automate
 ## <a name="lab-how-to-build-an-automated-solution"></a>Laboratorio: Come creare una soluzione automatizzata
 
 ## <a name="scenario"></a>Scenario
 
-Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
+Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
 L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
 
-Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus. 
+Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
-In questo lab verranno creati flussi di Power Automate per automatizzare le varie parti della gestione del campus. 
+In questo lab verranno creati flussi di Power Automate per automatizzare le varie parti della gestione del campus.
 
 # <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Per completare il progetto sono stati identificati i requisiti seguenti:
 
-* Il codice univoco assegnato a ogni visitatore deve essere reso disponibile al visitatore prima della visita.
-* Il personale addetto alla sicurezza deve ricevere notifica nel caso i visitatori prolunghino la visita oltre il periodo pianificato.
+-   Il personale addetto alla sicurezza deve ricevere notifica nel caso i visitatori prolunghino la visita oltre il periodo pianificato.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
-* Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
-* App Campus Staff creata nel **lab 2 del modulo 3 - Come creare un'app canvas, parte 2** (per i test)
-* Il contatto John Doe creato con l'indirizzo e-mail personale nel **lab 4 del modulo 3 - Come creare un'app basata su modello** (per i test)
+-   Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+
+-   Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
+
+-   Contatto John Doe creato con un indirizzo di posta elettronica personale in
 
 ## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
--   Qual è il meccanismo di distribuzione più appropriato per i codici dei visitatori?
 -   Come si possono misurare i prolungamenti delle visite e applicare criteri rigidi?
 
-# <a name="exercise-1-create-visit-notification-flow"></a>Esercizio 1: Creare un flusso di notifica visita
+# <a name="exercise-1-create-visit-notification-flow"></a>Esercizio \#1: Creare un flusso di notifica visita
 
 **Obiettivo:** in questo esercizio verrà creato un flusso di Power Automate che implementa il requisito. Il visitatore deve ricevere un'e-mail con il codice univoco assegnato alla visita.
 
-## <a name="task-1-create-flow"></a>Attività 1: Creare il flusso
+## <a name="task-1-create-a-flow"></a>Attività \#1: Creare un flusso
 
-1.  Aprire la soluzione Campus Management.
+1.  Accedere a <https://make.powerapps.com>. Potrebbe essere necessario ripetere l'autenticazione. Fare clic su **Accedi** e seguire le istruzioni se richiesto.
 
-    -   Accedere a <https://make.powerapps.com>
+2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-    -   Selezionare l'**ambiente**.
+2.  Nel riquadro di spostamento a sinistra selezionare **Flussi**.
 
-    -   Selezionare **Soluzioni**.
+4.  Se richiesto, selezionare **Attività iniziali**.
 
-    -   Fare clic per aprire la soluzione **Campus Management**.
+5.  Fare clic su **Nuovo flusso** e selezionare **Flusso cloud automatizzato**.
 
-2.  Fare clic su **Nuovo** e selezionare **Automazione**, **Flusso cloud** e quindi **Automatizzato**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
+6.  In **Scegliere il trigger del flusso** cercare **Dataverse**.
 
-3. In **Scegliere il trigger del flusso** cercare **Microsoft Dataverse**.
+7.  Selezionare il trigger **When a row is added, modified or deleted** (Quando una riga viene aggiunta, modificata o eliminata) e quindi fare clic su **Crea**.
 
-4. Selezionare il trigger **When a row is added, modified or deleted** (Quando una riga viene aggiunta, modificata o eliminata) e quindi fare clic su **Crea**.
+8.  Popolare le condizioni di trigger per il flusso:
 
-   * Selezionare **Aggiunte** per **Tipo di modifica**
-   
-   * Selezionare **Visit** per **Nome tabella**.
-   
-   * Selezionare **Organizzazione** per **Ambito**.
-   
-   * Nel passaggio del trigger fare clic sui puntini di sospensione ( **...** ) e fare clic su **Rinomina**. Rinominare il trigger **"When a visit is added"** (Quando viene aggiunta una visita). Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
+    1.  Selezionare **Aggiunte** per **Tipo di modifica**
 
-5. Selezionare **Nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
+    2.  Selezionare **Visit** per **Nome tabella**.
 
-6. Cercare **Microsoft Dataverse**.
+    3.  Selezionare **Organizzazione** per **Ambito**.
 
-7. Selezionare l'azione **Recupera una riga tramite ID**. 
+    4.  Nel passaggio del trigger fare clic sui puntini di sospensione ( **...** ) e fare clic su **Rinomina**.
+        Rinominare il trigger **"When a visit is added"** (Quando viene aggiunta una visita). Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
-   * Selezionare **Contatti** per **Nome tabella**.
-   
-   * Nel campo **ID riga** selezionare **Visitor (Valore)** nell'elenco del contenuto dinamico.
-   
-   * In questa azione fare clic sui puntini di sospensione ( **...** ) e scegliere **Rinomina**. Rinominare l'azione **"Get the Visitor"** . Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
+## <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Attività \#2: Creare un passaggio per ottenere la riga del visitatore
 
-8. Fare clic su **Nuovo passaggio**. Questo è il passaggio che creerà e invierà l'e-mail al visitatore.
+1.  Selezionare **Nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
 
-9. Cercare *mail*, selezionare il connettore **Office 365 Outlook** e l'azione **Invia un messaggio di posta elettronica (v2)** .
+2.  Cercare **Dataverse**.
 
-   * Se viene richiesto di accettare i termini e le condizioni per usare questa azione, fare clic su **Accetta**.
-   
-   * Selezionare il campo **A** e selezionare **E-mail** nell'elenco del contenuto dinamico. Si noti che è sotto l'intestazione **Get the Visitor**. Questo significa che si sta selezionando l'indirizzo e-mail correlato al visitatore cercato nel passaggio precedente. 
+3.  Selezionare l'azione **Recupera una riga tramite ID**.
 
-   * Immettere **Your scheduled visit to Bellows College** nel campo **Oggetto**.
+4.  Selezionare **Contatti** per **Nome tabella**.
 
-   * Immettere il testo seguente in **Corpo**:  
-        
-        > Il contenuto dinamico deve essere inserito nei campi con nome tra parentesi graffe. È consigliabile copiare e incollare prima tutto il testo e poi aggiungere il contenuto dinamico nelle posizioni corrette.
-   
-        ```
-        Dear {First Name},
+5.  Nel campo **ID riga** selezionare **Visitor (Valore)** nell'elenco del contenuto dinamico.
 
-        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+6.  In questa azione fare clic sui puntini di sospensione ( **...** ) e scegliere **Rinomina**.
+        Rinominare l'azione **"Get the Visitor"** . Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
-        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
+## <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Attività \#3: Creare un passaggio per inviare un messaggio di posta elettronica al visitatore
 
-        Best regards,
+1.  Fare clic su **Nuovo passaggio**. Questo è il passaggio che creerà e invierà l'e-mail al visitatore.
 
-        Campus Administration
-        Bellows College
-        ```
-   
-10.  Selezionare il nome di flusso **Senza titolo** in alto e rinominarlo `Visit notification`
+2.  Cercare *mail*, selezionare il connettore **Office 365 Outlook** e l'azione **Invia un messaggio di posta elettronica (v2)** .
 
-11. Fare clic su **Salva**
+3.  Se viene richiesto di accettare i termini e le condizioni per usare questa azione, fare clic su **Accetta**.
 
-    Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso dovrebbe essere simile al seguente:
+4.  Selezionare **Aggiungi contenuto dinamico** nel campo **A**. 
+    
+5.  Selezionare **Posta elettronica** nell'elenco del contenuto dinamico.
+        > Notice that it is beneath the **Get the visitor** header. This means you
+        are selecting the Email that is related to the Visitor that you looked
+        up in the previous step.
 
-![image](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png)
+5.  Immettere **Your scheduled visit to Bellows College** nel campo **Oggetto**.
 
-## <a name="task-2-validate-and-test-the-flow"></a>Attività 2: Convalidare e testare il flusso
+6.  Immettere il testo seguente in **Corpo**:
 
-1.  Aprire una nuova scheda nel browser e passare a <https://make.powerapps.com>
+>   Il contenuto dinamico deve essere inserito nei campi con nome tra parentesi graffe. È consigliabile copiare e incollare prima tutto il testo e poi aggiungere il contenuto dinamico nelle posizioni corrette.
 
-2.  Fare clic su **App** e selezionare l'app **Campus Staff** creata.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Dear {First Name},
 
-3.  Lasciare aperta questa scheda e tornare alla scheda precedente con il flusso. 
+   You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+
+   Best regards,
+
+   Campus Administration
+   Bellows College
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+7.  Evidenziare il testo **{First Name}** . Sostituirlo con il campo **First Name** del passaggio **Get the Visitor** .
+
+8.  Evidenziare il testo **{Scheduled Start}** . Sostituirlo con il campo **Scheduled Start** del passaggio **Get the Visitor** .
+
+9.  Evidenziare il testo **{Scheduled End}** . Sostituirlo con il campo **Scheduled End** del passaggio **Get the Visitor** .
+
+10.  Selezionare il nome di flusso in alto e rinominarlo `Visit
+        Notification`.
+
+11.  Fare clic su **Save** (Salva).
+
+Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso dovrebbe essere simile al seguente:
+
+![Esempio di passaggi del flusso.](media/4-Flow.png)
+
+## <a name="task-2-validate-and-test-the-flow"></a>Attività \#2: Convalidare e testare il flusso
+
+1.  Aprire una nuova scheda nel browser e passare a <https://make.powerapps.com>.
+
+2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+
+3.  Fare clic su **App** e selezionare l'app **Campus Management Model-driven** creata in precedenza.
+
+3.  Lasciare aperta questa scheda e tornare alla scheda precedente con il flusso.
 
 4.  Sulla barra dei comandi fare clic su **Test**. Selezionare **Manualmente** e quindi **Salva e verifica**.
 
-5.  Lasciando la scheda del flusso aperta, tornare alla scheda precedente con l'app **Campus Staff**.
+5.  Usando la struttura di spostamento a sinistra, selezionare **Visit**.
 
-6.  Premere **+** per aggiungere un nuovo record di visita
+6. Fare clic sul pulsante **+ Nuovo** per aggiungere un nuovo record **Visit**.
 
-7.  Immettere **John Doe** come **Name** e scegliere un qualsiasi **Building**
+7. Completare il record Visit come segue:
 
-8.  Scegliere **John Doe** come **Visitor**
+    -   **Nome:** Test Visit
 
-9.  Scegliere le date preferite nel futuro per **Scheduled Start** e **Scheduled End**.
+    -   **Visitor:** John Doe
 
-10.  Fare clic sull'icona a forma di **segno di spunta** per salvare la nuova visita
+    -   **Scheduled Start:** Domani alle 8:00
 
-11.  Tornare alla scheda precedente con il flusso in corso di verifica. Osservare l'esecuzione del flusso. Se si verificano errori, tornare indietro e confrontare il flusso creato con quello dell'esempio precedente. Se l'e-mail è stata inviata correttamente, comparirà nella posta in arrivo. 
+    -   **Scheduled End:** Domani alle 9:00
 
-12.  Fare clic sulla freccia indietro sulla barra dei comandi
+8. Selezionare il pulsante **Salva e chiudi**.
 
-13.  Nella sezione **Dettagli** si noti che **Stato** è impostato su **Sì**. Questo significa che il flusso verrà eseguito ogni volta che viene creata una nuova visita, fino a quando non viene disattivato. Ogni esecuzione del flusso verrà aggiunta all'elenco **Cronologia di esecuzione di 28 giorni**.
-
-14.  Disattivare il flusso facendo clic su **Disattiva** sulla barra dei comandi. Potrebbe essere necessario fare clic sui puntini di sospensione ( **...** ) per visualizzare questa opzione.
-
-15.  Chiudere questa finestra.
-
-# <a name="exercise-2-create-security-sweep-flow"></a>Esercizio 2. Creare il flusso del controllo di sicurezza
-
-**Obiettivo:** in questo esercizio verrà creato un flusso di Power Automate che implementa il requisito. È necessario eseguire un controllo di sicurezza ogni 15 minuti e il personale addetto alla sicurezza deve ricevere notifica se i visitatori prolungano la visita oltre il periodo pianificato.
-
-## <a name="task-1-create-flow-to-retrieve-records"></a>Attività 1: Creare il flusso per recuperare i record
-
-1. Aprire la soluzione Campus Management.
-
-   -   Accedere a <https://make.powerapps.com>
-
-   -   Selezionare l'**ambiente**.
-
-   -   Selezionare **Soluzioni**.
-
-   -   Fare clic per aprire la soluzione **Campus Management**.
-
-2. Fare clic su **Nuovo** e selezionare **Automazione**, **Flusso cloud** e quindi **Pianificato**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
-
-3. Impostare il flusso in modo che venga ripetuto ogni **15** minuti.
-
-4. Fare clic su **Crea**.
-
-5. Fare clic su **Nuovo passaggio**. Cercare *corrente* e selezionare il connettore **Microsoft Dataverse**. Selezionare l'azione **Elenca righe**.
-
-   * Immettere **Visit** per **Nome tabella**.
-   
-   * Fare clic su **Mostra le opzioni avanzate**
-
-   * Immettere l'espressione seguente in **Filtra righe**
-
-   ```
-     statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
-   ```
-   
-   * Ecco il significato delle singole parti dell'espressione:
-       * **statecode eq 0** filtra le visite attive (con Status uguale ad Active)
-       * **bc_actualstart ne null** limita le ricerche alle visite in cui esiste un valore per Actual Start, ovvero è stato eseguito il check-in
-       * **bc_actualend eq null** limita le ricerche alle visite per cui non è stato eseguito il check-out (nessun valore per Actual End) 
-       * **Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)** limita le visite a quelle per cui la fine era prevista 15 minuti prima.
-
-   * In questa azione fare clic sui puntini di sospensione ( **...** ) e scegliere **Rinomina**. Rinominare l'azione **"List active visits that ended more than 15 minutes ago"** . Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
-
-6.  Fare clic su **Nuovo passaggio**. Cercare *applica* e selezionare l'azione **Applica a ogni** 
-
-7.  Selezionare **value** dal contenuto dinamico del campo **Selezionare un output dai passaggi precedenti**. Si noti che si trova sotto l'intestazione grigia **List active visits that ended more than 15 minutes ago**. Questo significa che si sta selezionando l'elenco di visite cercato nel passaggio precedente. 
-
-8.  Recuperare i dati sull'edificio per il record correlato
-
-    * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni.
-    
-    * Selezionare **Microsoft Dataverse**. 
-    
-    * Selezionare l'azione **Recupera una riga tramite ID**.
-    
-    * Selezionare **Building** come **Nome tabella**
-    
-    * Selezionare **Building (Valore)** come **ID riga** dal contenuto dinamico
-    
-    * Fare clic su **...** accanto a **Recupera un record** e selezionare **Rinomina**. Immettere **Get building** come nome del passaggio
-    
-9.  Recuperare i dati sul visitatore per il record correlato
-
-    * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni.
-    
-    * Selezionare **Microsoft Dataverse**.
-    
-    * Selezionare l'azione **Recupera una riga tramite ID**.
-    
-    * Selezionare **Contatti** per **Nome tabella**.
-    
-    * Selezionare **Visitor (valore)** come **ID riga** dal contenuto dinamico
-    
-    * Fare clic su **...** accanto a **Recupera un record** e selezionare **Rinomina**. Immettere **Get Visitor** come nome del passaggio
-    
-10.  Inviare notifiche di posta elettronica
-
-     * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni. Aggiungere l'azione **Invia un messaggio di posta elettronica (v2)** dalla connessione **Office 365 Outlook**.
-
-11.  Immettere l'indirizzo e-mail personale in **A**
-
-12.  Immettere il testo seguente nel campo **Oggetto**. **Full Name** indica il contenuto dinamico recuperato dal passaggio **Get visitor**.
-
-   ```
-   {Full Name} overstayed their welcome
-   ```
-   
-13.  Immettere il testo seguente nel campo **Corpo**. **Name** indica il contenuto dinamico recuperato dal passaggio **Get building**. Potrebbe essere necessario scorrere fino alla fine dell'elenco.
-
-   ```
-   There is an overstay in building {Name}.
-         
-   Best,
-         
-   Campus Security
-   ```
-
-14.  Selezionare il nome di flusso **Senza titolo** nell'angolo in alto a sinistra e rinominarlo **Security Sweep**
-
-15.  Fare clic su **Salva**
-
-    Il flusso dovrebbe essere simile al seguente:
-
-![Flusso pianificato del controllo di sicurezza, parte 1](media/4-power-automate-security-sweep-flow.png)
-
-## <a name="task-2-validate-and-test-the-flow"></a>Attività 2. Convalidare e testare il flusso
-
-In presenza di visite che soddisfano i requisiti definiti nel flusso, il flusso inizierà a inviare e-mail all'indirizzo specificato durante la creazione del contatto John Doe in precedenza.
-
-1. Verificare che esistano record delle visite con:
-
-   1. Stato attivo
-   
-   2. Un valore nel passato per Scheduled End (più di 15 minuti)
-   
-   3. Un valore per Actual Start
-   
-   > **Nota**: per visualizzare questi dati passare a make.powerapps.com in una nuova scheda. Fare clic su Soluzioni nel riquadro sinistro per trovare la soluzione. Selezionare l'entità Visit e quindi selezionare la scheda Dati. Fare clic su Visit attivi/e nell'angolo in alto a destra per visualizzare il selettore della visualizzazione e quindi selezionare Tutte le colonne.
-   
-2. Passare al flusso **Security Sweep** se non è già attivo.
-
-3. All'apertura del flusso fare clic su **Test**.
-
-4. Selezionare **Manualmente**.
-
-5. Fare clic su **Salva e verifica** e quindi su **Esegui flusso**.
-
-6. Al termine dell'esecuzione del flusso fare clic su **Operazione completata**. 
-
-7. Espandere **Applica a ogni** e quindi espandere il passaggio **Invia una notifica di posta elettronica**. Controllare i valori di **Oggetto** e **Corpo del messaggio**.
-
-8. Selezionare la freccia indietro per tornare ai dettagli del flusso Security Sweep. Selezionare **Disattiva** sulla barra dei comandi. In questo modo si impedisce che il flusso venga eseguito in base a una pianificazione nel sistema di test.
+Dopo un breve ritardo, dovrebbe essere visualizzato un messaggio di posta elettronica nella posta in arrivo, dato che è stato specificato l'indirizzo di posta elettronica personale come indirizzo di posta elettronica di John Doe. 
 
 # <a name="challenges"></a>Problematiche
 
-* Aggiungere i valori Actual Start e Scheduled End al corpo dell'e-mail.
-* Come ci si può assicurare che venga usata una formattazione delle date appropriata nel corpo dell'e-mail?
-* È possibile generare una tabella con informazioni sulle visite prolungate e inviare una sola e-mail?
-* È possibile generare un codice a barre per il codice della visita? Potrebbe essere utile?
+-   Sperimentare con la formattazione nel messaggio di posta elettronica. Come si potrebbe ottenere un aspetto più professionale? 
