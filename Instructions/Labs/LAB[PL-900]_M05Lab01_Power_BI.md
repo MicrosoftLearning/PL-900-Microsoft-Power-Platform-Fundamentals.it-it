@@ -1,13 +1,13 @@
 ---
 lab:
-  title: 'Lab 7: Come creare un semplice dashboard'
+  title: 'Lab 5: Come creare un semplice dashboard'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: b707cbf6b60af3b6d6a166565ccdeaeec844cb4a
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
+ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424655"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "144812935"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Modulo 5: Introduzione a Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratorio: Come creare un semplice dashboard
@@ -52,13 +52,13 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 -   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
 
-# <a name="exercise-1-create-power-bi-report"></a>Esercizio \#1: Creare un report di Power BI
+# <a name="exercise-1-create-power-bi-report"></a>Esercizio 1: Creare un report di Power BI
 
 **Obiettivo:** In questo esercizio verrà creato un report di Power BI in base ai dati del foglio di calcolo di Excel usato in un esercizio precedente.
 
 ## <a name="task-1-prepare-power-bi-service"></a>Attività \#1: Preparare il servizio Power BI
 
-1.  Scaricare [visits.pbix](../../Allfiles/visits.pbix) e salvarlo nel computer.
+1.  Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer.
 
 2.  Passare a <https://app.powerbi.com/> e accedere, se necessario.
 
@@ -80,7 +80,7 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
-2.  Fare clic sulla freccia a discesa accanto a **bc_Building** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
+2.  Fare clic sulla freccia a discesa accanto a **bc_name** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
 
 3.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella **Valori**.
 
@@ -98,9 +98,9 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 10. Testare il report in modo interattivo:
 
-    1.  Selezionare le varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
+    1.  Fare clic sulle varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
 
-    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** e quindi fare clic su una colonna per eseguire il drill-down al livello successivo, ovvero i giorni. 
+    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** (o fare clic con il pulsante destro del mouse sul grafico e scegliere **Drill-down**), quindi fare clic su una colonna per eseguire il drill-down al livello successivo (giorni). 
     
     3.  Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
 

@@ -1,16 +1,16 @@
 ---
 lab:
-  title: "Lab 3: Come creare un'app canvas"
+  title: "Lab 2: Come creare un'app canvas"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 0ac0874e80deb74b8a4cf0c8075adf6c9b14e375
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 24d99d14079d40f74a43ed0de64dd6ae5d7046c7
+ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424771"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810921"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Modulo 3: Introduzione a Power Apps
-## <a name="lab-1-how-to-build-a-canvas-app"></a>Lab 1: Come creare un'app canvas
+## <a name="lab-how-to-build-a-canvas-app"></a>Laboratorio: Come creare un'app canvas
 
 # <a name="scenario"></a>Scenario
 
@@ -46,18 +46,18 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
 
 2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-3.  Se necessario, fare clic sull'icona **Home** sul lato destro della schermata. Nella sezione **Inizia da** selezionare **Dataverse**.
+3.  Se necessario, fare clic sull'icona **Home** sul lato sinistro della schermata. Nella sezione **Inizia da** selezionare **Dataverse**.
 
 4.  Selezionare la connessione a Dataverse. 
 
->   **NOTA:** *se non esiste una connessione a Dataverse:*
->   -   Selezionare **Nuova connessione**
->   -   Individuare **Microsoft Dataverse**
->   -   Fare clic su **Crea**
+    >   **NOTA:** *se non esiste una connessione a Dataverse:*
+    >   -   Selezionare **Nuova connessione**
+    >   -   Individuare **Microsoft Dataverse**
+    >   -   Fare clic su **Crea**
 
 5.  Individuare e selezionare la tabella **Visit** creata nel lab precedente.
 
-6.  Scegliere il pulsante **Connetti**.
+6.  Selezionare il pulsante **Connetti** nell'angolo in basso a destra.
 
 7.  Dopo aver creato l'app, nella schermata Benvenuto in Power Apps Studio selezionare la casella **Non visualizzare più questo messaggio** e quindi selezionare **Ignora**.
 
@@ -65,56 +65,68 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
 
 ![App canvas creata dai dati Visit.](media/2-canvas-app-from-data.png)
 
+9. Nella finestra di progettazione dell'app selezionare il pulsante **anteprima dell'app** (icona Play) sulla barra dei comandi. *È anche possibile visualizzare l'anteprima dell'app premendo F5.* Esplorare l'app per scoprirne l'aspetto predefinito.
+
+10. Chiudere l'anteprima dell'app selezionando la **X** in alto a destra nella schermata.
+
 Congratulazioni, è stata creata correttamente un'app Power Apps da una tabella Dataverse. Il passaggio successivo del processo consiste nel personalizzare l'app per il college. La serie successiva di passaggi illustra come implementare alcune personalizzazioni aggiuntive per l'app.
 
 ## <a name="task-2-modify-and-theme-the-newly-created-app"></a>Attività \#2: Modificare il tema della nuova app creata
 
-1.  Selezionare il nome dell'app **Visits**.
+In questa attività si personalizzerà il testo dell'intestazione in ognuna delle tre schermate dell'app (Sfoglia, Dettagli e Modifica) e si modificherà il tema dell'app.
+
+1.  È attiva la schermata Sfoglia. Selezionare l'etichetta **Visits** sullo schermo.
 
 3.  Sul lato destro della schermata, nella scheda Proprietà, aggiornare la proprietà del controllo **Testo** impostandola su **"Bellows College Visits"** .
 
 4. Nelle proprietà modificare le **dimensioni del carattere** su **24**.
 
-4.  Usando la struttura di spostamento a sinistra, selezionare **DetailsScreen1**.
+4.  Fare clic sullo sfondo vuoto per visualizzare il testo aggiornato nella schermata Sfoglia.
 
-5.  Selezionare il titolo **Visits**.
+5.  Usando la struttura di spostamento a sinistra, selezionare **DetailScreen1**.
+
+5.  Selezionare l'etichetta **Visits** sullo schermo.
 
 6.  Sul lato destro della schermata, nella scheda Proprietà, aggiornare la proprietà del controllo **Testo** impostandola su **"Visit Details"** .
 
-7.  Usando la struttura di spostamento a sinistra, selezionare **EditScreen1**.
+7.  Fare clic sullo sfondo vuoto per visualizzare il testo aggiornato nella schermata Dettagli.
 
-8.  Selezionare il titolo **Visits**.
+8.  Usando il riquadro di spostamento a sinistra, selezionare **EditScreen1** (potrebbe essere necessario scorrere verso il basso per visualizzare questo elemento nella visualizzazione struttura ad albero).
 
-9.  Sul lato destro della schermata, nella scheda Proprietà, sostituire il testo Tabella1 nella proprietà del controllo **Testo** con **"Edit Details".**
+9.  Selezionare l'etichetta **Visits** sullo schermo.
 
-10. Usando la struttura di spostamento a sinistra, selezionare **BrowseScreen1**.
+10.  Sul lato destro della schermata, nella scheda Proprietà, sostituire il testo Tabella1 nella proprietà del controllo **Testo** con **"Edit Details".**
 
-11. Nella barra degli strumenti dei comandi selezionare il pulsante **Tema** e nell'elenco visualizzato selezionare il colore del tema **Rosso**.
+11.  Fare clic sullo sfondo vuoto per visualizzare il testo aggiornato nella schermata Modifica.
+
+12. Usando la struttura di spostamento a sinistra, selezionare **BrowseScreen1**.
+
+13. Nella barra degli strumenti dei comandi selezionare il pulsante **Tema** e nell'elenco visualizzato selezionare il colore del tema **Rosso**.
 
 ## <a name="task-3-test-your-visits-app"></a>Attività \#3: Testare l'app Visits
 
-In questa attività si configurerà un modulo per modificare le informazioni sulle singole visite.
+In questa attività verrà testata la nuova app.
 
 1.  Con l'applicazione aperta in Progettazione app selezionare **File**, aggiornare il nome dell'app in **Visits App** e selezionare **Salva**.
 
-2.  Dopo aver salvato l'app, usare la freccia **indietro** per tornare all'app.
+2.  Selezionare la freccia **Indietro** per tornare all'app.
 
-3.  Nella finestra di progettazione dell'app selezionare il pulsante **anteprima dell'app** (icona Play) sulla barra dei comandi. *È anche possibile visualizzare l'anteprima dell'app premendo F5.*
+3.  Usando la struttura di spostamento a sinistra, selezionare **BrowseScreen1**.
+
+4.  Nella finestra di progettazione dell'app selezionare il pulsante **anteprima dell'app** (icona Play) sulla barra dei comandi. *È anche possibile visualizzare l'anteprima dell'app premendo F5.*
 
 4.  Dopo aver aperto l'app, nel campo **Cerca elementi** immettere il testo **Maria**
      *(Si noti come gli elementi nella raccolta vengono filtrati in base a ciò che viene digitato nel campo di ricerca).*
 
-5.  Quando viene visualizzato il record **Contoso Suites** per **Maria Campbell**, fare clic sulla **freccia destra** del record per passare alla schermata **Visit Details**. (**Nota**: *se vengono visualizzati più record di Contoso Suites Maria Campbell, selezionarne uno*)
+5.  Dopo aver visualizzato il record **Contoso Suites** per **Maria Campbell**, fare clic sulla riga per passare ad aprire i dettagli per tale visita. (**Nota**: *se vengono visualizzati più record di Contoso Suites Maria Campbell, selezionarne uno*)
 
 6.  Per modificare il record, selezionare l'**icona a forma di matita** nell'angolo superiore destro dell'app.
 
-7.  Nella parte superiore della schermata fare clic sull'icona **X** per tornare alla schermata **Dettagli proprietà**
+7.  È possibile modificare il nome della visita qui e fare clic sull'icona Segno di spunta in alto a destra per salvare la modifica.
 
-8.  Fare clic sulla **freccia sinistra** per tornare alla schermata Sfoglia.
+8.  In alto a destra della schermata fare clic sull'icona **X** per tornare all'editor dell'app canvas.
 
-9. Selezionare **File** e quindi **Salva**.
-
-10. Selezionare **Pubblica**.
+Congratulazioni! È stata creata e configurata la prima app canvas.
 
 # <a name="challenges"></a>Problematiche
 

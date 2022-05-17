@@ -1,16 +1,16 @@
 ---
 lab:
-  title: "Lab 2: Come creare un'app basata su modello"
+  title: "Lab 3: Come creare un'app basata su modello"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 94c418ce7aaf35f5b31ff2c7bc42d57e8d13c5b4
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 56a807c49479c245f95e3af9566450651bcc3ebb
+ms.sourcegitcommit: 99acd470de1164d438d7c4794faa28d6489c39db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424674"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144812449"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Modulo 3: Introduzione a Power Apps
-## <a name="lab-2-how-to-build-a-model-driven-app"></a>Lab 2: Come creare un'app basata su modello
+## <a name="lab-how-to-build-a-model-driven-app"></a>Laboratorio: Come creare un'app basata su modello
 
 # <a name="scenario"></a>Scenario
 
@@ -44,7 +44,9 @@ Entrambi questi componenti verranno integrati nell'app basata su modello per una
 
 -   Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 
--   Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
+-   Completamento del **lab del modulo 2 - Modellazione dei dati**
+
+-   Completamento del **lab del modulo 3 - Come creare un'app canvas**
 
 ## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
@@ -54,25 +56,24 @@ Entrambi questi componenti verranno integrati nell'app basata su modello per una
 
 -   Quali personalizzazioni possono essere effettuate nella mappa del sito di un'app basata su modello?
 
-# <a name="exercise-1-customize-views-and-forms"></a>Esercizio \#1: Personalizzare viste e moduli
+# <a name="exercise-1-customize-views-and-forms"></a>Esercizio 1: Personalizzare viste e moduli
 
 **Obiettivo:** in questo esercizio verranno personalizzati i moduli e le visualizzazioni delle tabelle personalizzate create che verranno usati nell'app basata su modello.
 
-## <a name="task-1-edit-visit-form"></a>Attività \#1: Modificare il modulo delle visite
+## <a name="task-1-edit-visit-form"></a>Attività 1: Modificare il modulo delle visite
 
 1.  Accedere a <https://make.powerapps.com> se l'accesso non è già stato effettuato.
 
 2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
 3.  Usando il riquadro di spostamento a sinistra, espandere **Dataverse**, selezionare **Tabelle** e fare clic per aprire la tabella **Visit**.
+>   Se la tabella Visit non viene visualizzata, assicurarsi di essere nell'ambiente corretto (passaggio 2).
 
 4.  Selezionare la scheda **Moduli** e fare clic per aprire il modulo Informazioni con tipo di modulo **Principale**.
+>   **IMPORTANTE:** *Dato che tutti i moduli hanno il nome Informazioni per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo* **Principale** *e non un altro.*
+Per impostazione predefinita, il modulo include due campi: Name (campo primario) e Proprietario.
 
->   **IMPORTANTE:** *dato che tutti i moduli hanno il nome Informazioni per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo*  **Principale** *e non un altro.*
-
->   Per impostazione predefinita, il modulo include due campi: Name (campo primario) e Proprietario.
-
-5.  Sul lato destro della schermata nelle proprietà selezionare il campo **Nome visualizzato** e impostarlo su **Main Information**.
+5.  Sul lato destro della schermata nel pannello Proprietà selezionare il campo **Nome visualizzato** e impostarlo su **Main Information**.
 
 6.  Usando il menu nella parte superiore dello schermo, selezionare **+ Campo modulo** e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
 
@@ -88,17 +89,17 @@ Entrambi questi componenti verranno integrati nell'app basata su modello per una
 
 7.  Trascinare la colonna **Code** nell'intestazione del modulo.
 
->   L'area dell'intestazione è quella in alto a destra nel modulo. Potrebbe essere necessario ridurre al minimo il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
+    >   L'area dell'intestazione è quella in alto a destra nel modulo. Potrebbe essere necessario comprimere il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
 
 8.  Con il campo **Code** ancora selezionato, selezionare la casella di controllo **Sola lettura** nel pannello Proprietà sul lato destro della schermata.
 
-9.  Selezionare il campo **Proprietario**. Nel pannello Proprietà impostare la proprietà **Etichetta** del campo su **Host**
+9.  Selezionare il campo **Proprietario**. Nel pannello Proprietà impostare la proprietà **Etichetta** su **Host**.
 
 10.  Fare clic su **Salva** in alto a destra e attendere il completamento del salvataggio.
 
 11.  Fare clic su **Pubblica** in alto a destra e attendere il completamento della pubblicazione.
 
-12.  Se la visualizzazione di modifica è stata aperta in una nuova scheda, chiudere la scheda. In caso contrario, fare clic su **Indietro** in alto a sinistra nella schermata. Si tornerà alla scheda Moduli dell'entità Visit.
+12.  Se la visualizzazione di modifica è aperta in una nuova scheda o finestra del browser, chiuderla. In caso contrario, fare clic su **Indietro** in alto a sinistra nella schermata. Si tornerà alla scheda Moduli della tabella Visit.
 
 ## <a name="task-2-edit-active-visits-view"></a>Attività \#2: Modificare la visualizzazione Visit attivi/e
 
@@ -128,7 +129,11 @@ In questa attività verrà modificata la visualizzazione predefinita Visit attiv
 
 Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione per le visite del giorno.
 
-1.  Fare clic sul collegamento **Modifica filtri** nel pannello Proprietà.
+1.  Fare clic sulla **freccia in giù** accanto al pulsante Salva facendo attenzione a non fare clic sul pulsante e selezionare **Salva con nome**.
+
+2.  Modificare il nome in **Today's Visits** e fare clic su **Salva**.
+
+3.  Fare clic sul collegamento **Modifica filtri** nel pannello Proprietà.
 
 2.  Fare clic su **Aggiungi** e selezionare **Aggiungi riga**.
 
@@ -142,19 +147,17 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 > **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
 
-7.  Fare clic sulla **freccia in giù** accanto al pulsante Salva facendo attenzione a non fare clic sul pulsante e selezionare **Salva con nome**.
+7.  Fare clic su **Salva**.
 
-8.  Modificare il nome in **Today's Visits** e fare clic su **Salva**.
+8.  Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
 
-9.  Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
-
-# <a name="exercise-2-create-model-driven-application"></a>Esercizio \#2: Creare un'applicazione basata su modello
+# <a name="exercise-2-create-model-driven-application"></a>Esercizio 2: Creare un'applicazione basata su modello
 
 **Obiettivo:** in questo esercizio si creerà l'app basata su modello, si personalizzerà la mappa del sito e quindi si testerà l'app.
 
 >   Per semplicità e per ragioni di tempo, non verranno usate alcune delle colonne Visit in questo lab. 
 
-## <a name="task-1-create-application"></a>Attività \#1: Creare l'applicazione
+## <a name="task-1-create-application"></a>Attività 1: Creare l'applicazione
 
 1.  Accedere a <https://make.powerapps.com> se l'accesso non è già stato effettuato.
 
@@ -186,11 +189,11 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 8.  Usando le icone di spostamento su lato sinistro della schermata, selezionare **Spostamento**.
 
-9.  Nel riquadro di spostamento selezionare il testo **Gruppo 1** sotto a Barra di spostamento.
+9.  Nel riquadro di spostamento selezionare **Gruppo 1** sotto a Barra di spostamento.
 
-10.  Sul lato destro della schermata, nella sezione **Opzioni di visualizzazione** impostare **Titolo** su **Sicurezza**.
+10.  Sul lato destro della schermata, nella sezione **Opzioni di visualizzazione** impostare la proprietà **Titolo** su **Sicurezza**.
 
-## <a name="task-1-edit-your-app"></a>Attività \#1: Modificare l'app
+## <a name="task-2-edit-your-app"></a>Attività \#2: Modificare l'app
 Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione basata su modello, è ora di organizzare gli elementi.
 
 1.  Nel riquadro di spostamento, nel gruppo di sicurezza, selezionare **SubArea1**.
@@ -199,7 +202,7 @@ Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione bas
 
 3.  Usando la barra di spostamento sul lato sinistro della schermata, selezionare **Pagine**.
 
-4.  Individuare ed espandere la tabella **Visit** nel riquadro Pagine.
+4.  Individuare ed espandere **Visit** nel riquadro Pagine.
 
 5.  Selezionare **Modulo Visit**.
 
@@ -207,17 +210,17 @@ Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione bas
 
 7.  Selezionare il modulo **Main Information** e quindi fare clic su **Salva**.
 
-8.  Nella tabella **Visit** a sinistra selezionare **Visualizzazione Visit**.
+8.  In **Visit** nel riquadro Pagine selezionare **Visualizzazione Visit**.
 
 9.  Sul lato destro della schermata selezionare **Gestisci visualizzazioni**.
 
 10. Selezionare i moduli **Today's Visits** e **Visit attivi/e** e quindi selezionare **Salva**.
 
-11. Nella parte superiore dell'app sul lato sinistro della schermata selezionare **Salva**.
+11. Selezionare **Salva**.
 
 12. Al termine del **salvataggio** selezionare il pulsante **Pubblica** per pubblicare le modifiche.
 
-## <a name="task-2-test-application"></a>Attività \#2: Testare l'applicazione
+## <a name="task-3-test-application"></a>Attività \#3: Testare l'applicazione
 
 1.  Avviare l'applicazione
 
@@ -225,13 +228,13 @@ Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione bas
 
 2.  Creare un nuovo contatto
 
-    1.  L'app verrà aperta nella visualizzazione **Contatti attivi**.
+    1.  L'app verrà aperta nella visualizzazione **Contatti attivi**. In caso contrario, selezionare Visit a sinistra. 
 
     2.  Fare clic su **Nuovo** nel menu principale.
 
     3.  Specificare `John` per **Nome** e `Doe` per **Cognome**.
 
-    4.  Specificare l'indirizzo e-mail personale per **E-mail**. Questi dati verranno usati in un lab futuro.
+    4.  Specificare l'indirizzo e-mail personale per **E-mail**. Verrà usato in un lab futuro in cui si riceverà un messaggio di posta elettronica. 
 
     5.  Fare clic su **Salva e chiudi**.
 
@@ -262,6 +265,8 @@ Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione bas
     L'app in esecuzione dovrebbe essere simile alla seguente:
 
 ![](media/3-model-driven-app.png)
+
+Congratulazioni! È stata creata e configurata la prima app basata su modello.
 
 # <a name="challenges"></a>Problematiche
 
