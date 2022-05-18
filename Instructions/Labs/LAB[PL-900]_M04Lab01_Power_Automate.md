@@ -1,13 +1,13 @@
 ---
 lab:
-  title: 'Lab 6: Come creare una soluzione automatizzata'
+  title: 'Lab 4: Come creare una soluzione automatizzata'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: c37bbf2975aa1964493e93716d0b3aeb32030c99
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 9b07c81fad82867bb54c2889687075fa7a463b81
+ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424638"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "144812947"
 ---
 # <a name="module-4-get-started-with-power-automate"></a>Modulo 4: Introduzione a Power Automate
 ## <a name="lab-how-to-build-an-automated-solution"></a>Laboratorio: Come creare una soluzione automatizzata
@@ -20,13 +20,13 @@ L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registr
 
 Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
-In questo lab verranno creati flussi di Power Automate per automatizzare le varie parti della gestione del campus.
+In questo lab si creerà un flusso di Power Automate per inviare un messaggio di posta elettronica a un visitatore quando viene pianificata una visita.
 
 # <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Per completare il progetto sono stati identificati i requisiti seguenti:
 
--   Il personale addetto alla sicurezza deve ricevere notifica nel caso i visitatori prolunghino la visita oltre il periodo pianificato.
+-   I contatti devono ricevere una notifica tramite posta elettronica quando viene pianificata una visita.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -34,15 +34,11 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 -   Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
 
--   Contatto John Doe creato con un indirizzo di posta elettronica personale in
+-   Contatto John Doe creato con un indirizzo di posta elettronica personale
 
-## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
+# <a name="exercise-1-create-visit-notification-flow"></a>Esercizio 1: Creare un flusso di notifica visita
 
--   Come si possono misurare i prolungamenti delle visite e applicare criteri rigidi?
-
-# <a name="exercise-1-create-visit-notification-flow"></a>Esercizio \#1: Creare un flusso di notifica visita
-
-**Obiettivo:** in questo esercizio verrà creato un flusso di Power Automate che implementa il requisito. Il visitatore deve ricevere un'e-mail con il codice univoco assegnato alla visita.
+**Obiettivo:** in questo esercizio verrà creato un flusso di Power Automate che implementa il requisito. Il visitatore deve ricevere un messaggio di posta elettronica con il codice univoco assegnato alla visita al momento della creazione.
 
 ## <a name="task-1-create-a-flow"></a>Attività \#1: Creare un flusso
 
@@ -56,11 +52,13 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 5.  Fare clic su **Nuovo flusso** e selezionare **Flusso cloud automatizzato**.
 
-6.  In **Scegliere il trigger del flusso** cercare **Dataverse**.
+6.  Immettere "Visit Notification" per **Nome flusso**.
 
-7.  Selezionare il trigger **When a row is added, modified or deleted** (Quando una riga viene aggiunta, modificata o eliminata) e quindi fare clic su **Crea**.
+7.  In **Scegliere il trigger del flusso** cercare **Dataverse**.
 
-8.  Popolare le condizioni di trigger per il flusso:
+8.  Selezionare il trigger **When a row is added, modified or deleted** (Quando una riga viene aggiunta, modificata o eliminata) e quindi fare clic su **Crea**.
+
+9.  Popolare le condizioni di trigger per il flusso:
 
     1.  Selezionare **Aggiunte** per **Tipo di modifica**
 
@@ -81,14 +79,16 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 4.  Selezionare **Contatti** per **Nome tabella**.
 
-5.  Nel campo **ID riga** selezionare **Visitor (Valore)** nell'elenco del contenuto dinamico.
+5.  Selezionare il campo **ID riga**. Si noti che viene visualizzata una finestra per selezionare Contenuto dinamico o Espressioni. 
 
-6.  In questa azione fare clic sui puntini di sospensione ( **...** ) e scegliere **Rinomina**.
+6.  Nel campo **ID riga** selezionare **Visitor (Valore)** nell'elenco del contenuto dinamico. In questo passaggio si sta cercando il contatto (Contact) per la riga Visit creata per attivare questo flusso. Poiché l'indirizzo di posta elettronica fa parte della tabella Contact, queste informazioni saranno necessarie per inviare il messaggio di posta elettronica al visitatore. 
+
+7.  In questa azione fare clic sui puntini di sospensione ( **...** ) e scegliere **Rinomina**.
         Rinominare l'azione **"Get the Visitor"** . Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
 ## <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Attività \#3: Creare un passaggio per inviare un messaggio di posta elettronica al visitatore
 
-1.  Fare clic su **Nuovo passaggio**. Questo è il passaggio che creerà e invierà l'e-mail al visitatore.
+1.  Fare clic su **Nuovo passaggio**. Questo è il passaggio che invierà il messaggio di posta elettronica al visitatore.
 
 2.  Cercare *mail*, selezionare il connettore **Office 365 Outlook** e l'azione **Invia un messaggio di posta elettronica (v2)** .
 
@@ -101,9 +101,9 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
         are selecting the Email that is related to the Visitor that you looked
         up in the previous step.
 
-5.  Immettere **Your scheduled visit to Bellows College** nel campo **Oggetto**.
+6.  Immettere **Your scheduled visit to Bellows College** nel campo **Oggetto**.
 
-6.  Immettere il testo seguente in **Corpo**:
+7.  Immettere il testo seguente in **Corpo**:
 
 >   Il contenuto dinamico deve essere inserito nei campi con nome tra parentesi graffe. È consigliabile copiare e incollare prima tutto il testo e poi aggiungere il contenuto dinamico nelle posizioni corrette.
 
@@ -118,22 +118,19 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-7.  Evidenziare il testo **{First Name}** . Sostituirlo con il campo **First Name** del passaggio **Get the Visitor** .
+8.  Evidenziare il testo **{First Name}** . Sostituirlo con il campo **First Name** del passaggio **Get the Visitor** .
 
-8.  Evidenziare il testo **{Scheduled Start}** . Sostituirlo con il campo **Scheduled Start** del passaggio **Get the Visitor** .
+9.  Evidenziare il testo **{Scheduled Start}** . Sostituirlo con il campo **Scheduled Start** dal passaggio **When a visit is added**.
 
-9.  Evidenziare il testo **{Scheduled End}** . Sostituirlo con il campo **Scheduled End** del passaggio **Get the Visitor** .
+10.  Evidenziare il testo **{Scheduled End}** . Sostituirlo con il campo **Scheduled End** dal passaggio **When a visit is added**.
 
-10.  Selezionare il nome di flusso in alto e rinominarlo `Visit
-        Notification`.
-
-11.  Fare clic su **Save** (Salva).
+11.  Fare clic su **Salva**.
 
 Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso dovrebbe essere simile al seguente:
 
 ![Esempio di passaggi del flusso.](media/4-Flow.png)
 
-## <a name="task-2-validate-and-test-the-flow"></a>Attività \#2: Convalidare e testare il flusso
+## <a name="task-4-validate-and-test-the-flow"></a>Attività \#4: Convalidare e testare il flusso
 
 1.  Aprire una nuova scheda nel browser e passare a <https://make.powerapps.com>.
 
@@ -141,11 +138,13 @@ Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso do
 
 3.  Fare clic su **App** e selezionare l'app **Campus Management Model-driven** creata in precedenza.
 
-3.  Lasciare aperta questa scheda e tornare alla scheda precedente con il flusso.
+3.  Lasciare aperta questa scheda del browser e tornare alla scheda precedente con il flusso.
 
-4.  Sulla barra dei comandi fare clic su **Test**. Selezionare **Manualmente** e quindi **Salva e verifica**.
+4.  Sulla barra dei comandi fare clic su **Test**. Selezionare **Manualmente** e quindi fare clic su **Test**.
 
-5.  Usando la struttura di spostamento a sinistra, selezionare **Visit**.
+5.  Passare alla scheda del browser con l'app basata su modello aperta. 
+
+6.  Usando la struttura di spostamento a sinistra, selezionare **Visit**.
 
 6. Fare clic sul pulsante **+ Nuovo** per aggiungere un nuovo record **Visit**.
 
@@ -161,7 +160,9 @@ Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso do
 
 8. Selezionare il pulsante **Salva e chiudi**.
 
-Dopo un breve ritardo, dovrebbe essere visualizzato un messaggio di posta elettronica nella posta in arrivo, dato che è stato specificato l'indirizzo di posta elettronica personale come indirizzo di posta elettronica di John Doe. 
+9. Passare alla scheda del browser con il test del flusso in esecuzione. Dopo un breve ritardo, dovrebbe essere visualizzato il flusso in esecuzione. Durante questa fase è possibile rilevare eventuali problemi nel flusso o verificare che venga eseguito correttamente. 
+
+Dopo un breve ritardo, dovrebbe essere visualizzato un messaggio di posta elettronica nella posta in arrivo, dato che è stato specificato l'indirizzo di posta elettronica personale come indirizzo di posta elettronica di John Doe. Si noti che potrebbe essere inserito nella cartella Posta indesiderata.
 
 # <a name="challenges"></a>Problematiche
 
