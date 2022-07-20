@@ -2,12 +2,12 @@
 lab:
   title: 'Lab 5: Come creare un semplice dashboard'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812935"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125738"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Modulo 5: Introduzione a Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratorio: Come creare un semplice dashboard
@@ -88,9 +88,9 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'istogramma a colonne in pila nel riquadro **Visualizzazioni**.
 
-6.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella **Valori**.
+6.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella di destinazione **Asse Y**.
 
-7.  Trascinare il campo **Start** nella casella **Asse**.
+7.  Trascinare il campo **Start** nella casella di destinazione **Asse X**.
 
 8.  Nel riquadro Visualizzazioni fare clic sulla **x** accanto a **Year** e **Quarter** per lasciare solo i totali di **Month** e **Day** per l'asse.
 
