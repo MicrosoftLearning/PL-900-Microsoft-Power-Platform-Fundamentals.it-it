@@ -2,17 +2,16 @@
 lab:
   title: 'Lab 5: Come creare un semplice dashboard'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
-ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
+ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "147125738"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154444"
 ---
-# <a name="module-5-get-started-with-power-bi"></a>Modulo 5: Introduzione a Power BI
-## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratorio: Come creare un semplice dashboard
+## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Lab 5: Come creare un semplice dashboard
 
-# <a name="scenario"></a>Scenario
+## <a name="scenario"></a>Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
@@ -20,43 +19,33 @@ L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registr
 
 Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
-In questo lab verrà creato un dashboard di Power BI per la visualizzazione dei dati sulle visite al campus.
+In questo lab verranno creati un report e un dashboard di Power BI che visualizza i dati sulle visite al campus.
 
-# <a name="high-level-lab-steps"></a>Procedura generale per il lab
+## <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Verranno eseguite le procedure seguenti per progettare e creare un dashboard di Power BI:
 
--   Connettersi a Dataverse
-
--   Trasformare i dati per includere descrizioni accessibili per le righe correlate (ricerche)
-
--   Creare e pubblicare un report con varie visualizzazioni delle informazioni sulle visite al campus
+-   Creare un report con varie visualizzazioni delle informazioni sulle visite al campus
 
 -   Usare una query in linguaggio naturale per creare ulteriori visualizzazioni
 
--   Creare una visualizzazione per dispositivi mobili del dashboard di Power BI
-
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
-
--   Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
+- Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
 
 ## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   Chi sono i destinatari del report?
-
 -   In che modo i destinatari useranno il report? Dispositivo tipico? Posizione?
-
 -   Sono disponibili dati sufficienti per la visualizzazione?
-
 -   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
 
-# <a name="exercise-1-create-power-bi-report"></a>Esercizio 1: Creare un report di Power BI
+## <a name="exercise-1-create-power-bi-report"></a>Esercizio 1: Creare un report di Power BI
 
 **Obiettivo:** In questo esercizio verrà creato un report di Power BI in base ai dati del foglio di calcolo di Excel usato in un esercizio precedente.
 
-## <a name="task-1-prepare-power-bi-service"></a>Attività \#1: Preparare il servizio Power BI
+### <a name="task-1-prepare-power-bi-service"></a>Attività \#1: Preparare il servizio Power BI
 
 1.  Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer.
 
@@ -70,17 +59,17 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 6.  Trovare e selezionare il file **visits.pbix** scaricato in precedenza.
 
-7.  Al termine del caricamento dei dati selezionare il report **visits**. Si noti che il tipo è impostato su **Report**.
+7.  Al termine del caricamento dei dati, espandere **Area di lavoro personale** e selezionare il report delle **visite** (notare che Tipo è impostato su **Report**).
 
 8.  Fare clic su **Modifica**. Se la voce di menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
 
-Il servizio Power BI è stato così configurato per l'uso nei lab. 
+Il servizio Power BI è stato così configurato per l'uso nei lab.
 
-## <a name="task-2-create-chart-and-time-visualizations"></a>Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
+### <a name="task-2-create-chart-and-time-visualizations"></a>Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
 
 1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
-2.  Fare clic sulla freccia a discesa accanto a **bc_name** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
+2.  Fare clic sulla freccia a discesa accanto a **bc_building** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
 
 3.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella **Valori**.
 
@@ -100,15 +89,15 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
     1.  Fare clic sulle varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
 
-    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** (o fare clic con il pulsante destro del mouse sul grafico e scegliere **Drill-down**), quindi fare clic su una colonna per eseguire il drill-down al livello successivo (giorni). 
-    
+    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** (o fare clic con il pulsante destro del mouse sul grafico e scegliere **Drill-down**), quindi fare clic su una colonna per eseguire il drill-down al livello successivo (giorni).
+
     3.  Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
 
 11. Salvare il lavoro in corso facendo clic su **Salva**.
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>Esercizio \#2: Creare un dashboard di Power BI
+## <a name="exercise-2-create-power-bi-dashboard"></a>Esercizio 2: Creare un dashboard di Power BI
 
-## <a name="task-1-create-power-bi-dashboard"></a>Attività \#1: Creare un dashboard di Power BI
+### <a name="task-1-create-power-bi-dashboard"></a>Attività \#1: Creare un dashboard di Power BI
 
 1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
@@ -118,13 +107,11 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 4.  Immettere **Campus Management** come **Nome dashboard** e fare clic su **Aggiungi oggetto dinamico**.
 
-5.  Selezionare **Area di lavoro personale** in alto e selezionare il dashboard **[cognome] Campus Management**.
+5.  Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
-6.  Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
+6.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
 
-7.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
-
-## <a name="task-2-add-visualizations-using-natural-language"></a>Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
+### <a name="task-2-add-visualizations-using-natural-language"></a>Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
 
 1.  Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
 
