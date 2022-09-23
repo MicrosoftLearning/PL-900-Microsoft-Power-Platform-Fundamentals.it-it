@@ -2,15 +2,14 @@
 lab:
   title: 'Lab 4: Come creare una soluzione automatizzata'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: 9b07c81fad82867bb54c2889687075fa7a463b81
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 35d4b6940f31e1a2aef5e8b43d8ca7007e1b72f2
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812947"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154324"
 ---
-# <a name="module-4-get-started-with-power-automate"></a>Modulo 4: Introduzione a Power Automate
-## <a name="lab-how-to-build-an-automated-solution"></a>Laboratorio: Come creare una soluzione automatizzata
+# <a name="lab-4-how-to-build-an-automated-solution"></a>Lab 4: Come creare una soluzione automatizzata
 
 ## <a name="scenario"></a>Scenario
 
@@ -22,31 +21,30 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 In questo lab si creerà un flusso di Power Automate per inviare un messaggio di posta elettronica a un visitatore quando viene pianificata una visita.
 
-# <a name="high-level-lab-steps"></a>Procedura generale per il lab
+## <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
 Per completare il progetto sono stati identificati i requisiti seguenti:
 
--   I contatti devono ricevere una notifica tramite posta elettronica quando viene pianificata una visita.
+- I contatti devono ricevere una notifica tramite posta elettronica quando viene pianificata una visita.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
+- Completamento del **lab 3 del modulo 2 - Come creare un'app basata su modello**
+- Contatto John Doe creato con un indirizzo di posta elettronica personale
 
--   Completamento del **lab 1 del modulo 2 - Introduzione a Microsoft Dataverse**
-
--   Contatto John Doe creato con un indirizzo di posta elettronica personale
-
-# <a name="exercise-1-create-visit-notification-flow"></a>Esercizio 1: Creare un flusso di notifica visita
+## <a name="exercise-1-create-visit-notification-flow"></a>Esercizio 1: Creare un flusso di notifica visita
 
 **Obiettivo:** in questo esercizio verrà creato un flusso di Power Automate che implementa il requisito. Il visitatore deve ricevere un messaggio di posta elettronica con il codice univoco assegnato alla visita al momento della creazione.
 
-## <a name="task-1-create-a-flow"></a>Attività \#1: Creare un flusso
+### <a name="task-1-create-a-flow"></a>Attività \#1: Creare un flusso
 
 1.  Accedere a <https://make.powerapps.com>. Potrebbe essere necessario ripetere l'autenticazione. Fare clic su **Accedi** e seguire le istruzioni se richiesto.
 
 2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-2.  Nel riquadro di spostamento a sinistra selezionare **Flussi**.
+3.  Nel riquadro di spostamento a sinistra selezionare **Flussi**.
 
 4.  Se richiesto, selezionare **Attività iniziali**.
 
@@ -66,12 +64,11 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
     3.  Selezionare **Organizzazione** per **Ambito**.
 
-    4.  Nel passaggio del trigger fare clic sui puntini di sospensione ( **...** ) e fare clic su **Rinomina**.
-        Rinominare il trigger **"When a visit is added"** (Quando viene aggiunta una visita). Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
+    4.  Nel passaggio del trigger fare clic sui puntini di sospensione ( **...** ) e fare clic su **Rinomina**. Rinominare il trigger **"When a visit is added"** (Quando viene aggiunta una visita). Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
-## <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Attività \#2: Creare un passaggio per ottenere la riga del visitatore
+### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Attività \#2: Creare un passaggio per ottenere la riga del visitatore
 
-1.  Selezionare **Nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
+1.  Selezionare **+ nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
 
 2.  Cercare **Dataverse**.
 
@@ -79,16 +76,16 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 4.  Selezionare **Contatti** per **Nome tabella**.
 
-5.  Selezionare il campo **ID riga**. Si noti che viene visualizzata una finestra per selezionare Contenuto dinamico o Espressioni. 
+5.  Selezionare il campo **ID riga**. Si noti che viene visualizzata una finestra per selezionare Contenuto dinamico o Espressioni.
 
-6.  Nel campo **ID riga** selezionare **Visitor (Valore)** nell'elenco del contenuto dinamico. In questo passaggio si sta cercando il contatto (Contact) per la riga Visit creata per attivare questo flusso. Poiché l'indirizzo di posta elettronica fa parte della tabella Contact, queste informazioni saranno necessarie per inviare il messaggio di posta elettronica al visitatore. 
+6.  Nel campo **ID riga** selezionare **Visitor (Valore)** nell'elenco del contenuto dinamico. In questo passaggio si sta cercando il contatto (Contact) per la riga Visit creata per attivare questo flusso. Poiché l'indirizzo di posta elettronica fa parte della tabella Contact, queste informazioni saranno necessarie per inviare il messaggio di posta elettronica al visitatore.
 
 7.  In questa azione fare clic sui puntini di sospensione ( **...** ) e scegliere **Rinomina**.
         Rinominare l'azione **"Get the Visitor"** . Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
-## <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Attività \#3: Creare un passaggio per inviare un messaggio di posta elettronica al visitatore
+### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Attività \#3: Creare un passaggio per inviare un messaggio di posta elettronica al visitatore
 
-1.  Fare clic su **Nuovo passaggio**. Questo è il passaggio che invierà il messaggio di posta elettronica al visitatore.
+1.  Fare clic su **+ Nuovo passaggio**. Questo è il passaggio che invierà il messaggio di posta elettronica al visitatore.
 
 2.  Cercare *mail*, selezionare il connettore **Office 365 Outlook** e l'azione **Invia un messaggio di posta elettronica (v2)** .
 
@@ -130,13 +127,13 @@ Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso do
 
 ![Esempio di passaggi del flusso.](media/4-Flow.png)
 
-## <a name="task-4-validate-and-test-the-flow"></a>Attività \#4: Convalidare e testare il flusso
+### <a name="task-4-validate-and-test-the-flow"></a>Attività \#4: Convalidare e testare il flusso
 
 1.  Aprire una nuova scheda nel browser e passare a <https://make.powerapps.com>.
 
 2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-3.  Fare clic su **App** e selezionare l'app **Campus Management Model-driven** creata in precedenza.
+3.  Fare clic su **App** e selezionare l'app **Bellows Campus Management** basata su modello creata in precedenza.
 
 3.  Lasciare aperta questa scheda del browser e tornare alla scheda precedente con il flusso.
 
@@ -160,10 +157,10 @@ Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso do
 
 8. Selezionare il pulsante **Salva e chiudi**.
 
-9. Passare alla scheda del browser con il test del flusso in esecuzione. Dopo un breve ritardo, dovrebbe essere visualizzato il flusso in esecuzione. Durante questa fase è possibile rilevare eventuali problemi nel flusso o verificare che venga eseguito correttamente. 
+9. Passare alla scheda del browser con il test del flusso in esecuzione. Dopo un breve ritardo, dovrebbe essere visualizzato il flusso in esecuzione. Durante questa fase è possibile rilevare eventuali problemi nel flusso o verificare che venga eseguito correttamente.
 
 Dopo un breve ritardo, dovrebbe essere visualizzato un messaggio di posta elettronica nella posta in arrivo, dato che è stato specificato l'indirizzo di posta elettronica personale come indirizzo di posta elettronica di John Doe. Si noti che potrebbe essere inserito nella cartella Posta indesiderata.
 
-# <a name="challenges"></a>Problematiche
+## <a name="challenges"></a>Problematiche
 
--   Sperimentare con la formattazione nel messaggio di posta elettronica. Come si potrebbe ottenere un aspetto più professionale? 
+- Sperimentare con la formattazione nel messaggio di posta elettronica. Come si potrebbe ottenere un aspetto più professionale?
