@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
 L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
 
@@ -32,7 +32,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 ## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
 
 -   Chi sono i destinatari del report?
--   How will the audience consume the report? Typical device? Location?
+-   In che modo i destinatari useranno il report? Dispositivo tipico? Posizione?
 -   Sono disponibili dati sufficienti per la visualizzazione?
 -   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
 
@@ -56,7 +56,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 7.  Al termine del caricamento dei dati, espandere **Area di lavoro personale** e selezionare il report delle **visite** (notare che Tipo è impostato su **Report**).
 
-8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
+8.  Fare clic su **Modifica**. Se la voce di menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
 
 Il servizio Power BI è stato così configurato per l'uso nei lab.
 
@@ -64,15 +64,15 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
-2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
+2.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
 
-3.  Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus.
+3.  Trascinare il campo **Visit** nella casella **Valori**.
 
 4.  Ridimensionare il grafico a torta usando i punti di controllo in angolo in modo che siano visibili tutti i componenti del grafico.
 
 5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'istogramma a colonne in pila nel riquadro **Visualizzazioni**.
 
-6.  I visitatori del campus sono attualmente registrati su documenti cartacei.
+6.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella di destinazione **Asse Y**.
 
 7.  Trascinare il campo **Start** nella casella di destinazione **Asse X**.
 
@@ -84,7 +84,7 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
     1.  Fare clic sulle varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
 
-    2.  Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
+    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** (o fare clic con il pulsante destro del mouse sul grafico e scegliere **Drill-down**), quindi fare clic su una colonna per eseguire il drill-down al livello successivo (giorni).
 
     3.  Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
 
@@ -96,13 +96,13 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
-2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
+2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario fare clic su **...** per visualizzare altre voci di menu.
 
 3.  Selezionare **Nuovo dashboard** nel prompt **Aggiungi a dashboard**.
 
 4.  Immettere **Campus Management** come **Nome dashboard** e fare clic su **Aggiungi oggetto dinamico**.
 
-5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
+5.  Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
 6.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
 
@@ -110,7 +110,7 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 1.  Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
 
-2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
+2.  Immettere **buildings by number of visits** nell'area Domande e risposte. Verrà visualizzato un grafico a barre.
 
 3.  Selezionare **Aggiungi oggetti visivo**.
 
@@ -118,7 +118,7 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 5.  Fare clic su **Chiudi Domande e risposte**.
 
-Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
+Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi inclusi. Potrebbe essere necessario scorrere verso il basso per vedere il nuovo oggetto visivo Domande e risposte.
 
 Il dashboard dovrebbe essere simile al seguente:
 
