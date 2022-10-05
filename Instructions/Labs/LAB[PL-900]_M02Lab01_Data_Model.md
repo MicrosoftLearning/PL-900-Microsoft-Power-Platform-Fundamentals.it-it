@@ -2,24 +2,19 @@
 lab:
   title: 'Lab 1: Modellazione dei dati'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 93bccc216d07bc3f609755887c2c57fcfdaa8e4d
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154408"
 ---
+
 # <a name="lab-1-data-modeling"></a>Lab 1: Modellazione dei dati
 
 ## <a name="scenario"></a>Scenario
 
-Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
 
 Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
-In questo lab si accederà all'ambiente predisposto in precedenza e verranno creati un database Microsoft Dataverse e una soluzione per tenere traccia delle modifiche. Verrà anche creato un modello di dati a supporto dei requisiti seguenti:
+In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 - R1. Tenere traccia delle informazioni per le visite al campus pianificate
 
@@ -33,7 +28,7 @@ Verranno infine importati dati di esempio in Microsoft Dataverse.
 
 Per preparare gli ambienti di apprendimento:
 
-- Fare riferimento al [documento del modello di dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) per una descrizione dei metadati, ovvero tabelle e relazioni. È possibile tenere premuto CTRL e fare clic o clic con il pulsante destro del mouse sul collegamento per aprire il documento del modello di dati in una nuova finestra.
+- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 - Creare la tabella Visit
 - Importare i dati per la tabella Visit usando un foglio di calcolo di Excel
 
@@ -171,7 +166,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 In questa attività verranno importati i dati sulle visite da un file di Excel.
 
-1. Si dovrebbe avere il file **Visits.xls** archiviato nel computer desktop. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
+1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
 
 2. Se non è già stato eseguito l'accesso, accedere a [https://make.powerapps.com](https://make.powerapps.com/).
 
@@ -185,7 +180,7 @@ In questa attività verranno importati i dati sulle visite da un file di Excel.
 
 7. Nel menu visualizzato selezionare il pulsante **Carica**.
 
-8. Individuare e selezionare il file **Visits.xls** scaricato in precedenza. Si noti che possono essere necessari un paio di minuti per il caricamento del file. Non preoccuparsi se viene visualizzato un messaggio che segnala la presenza di errori di mapping. Questi errori verranno corretti tra poco.
+8. Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus.
 
 9. Fare clic su **Mappa colonne**. Notare che potrebbe essere necessario scorrere verso destra per visualizzare l'opzione Mappa colonne.
 
@@ -208,7 +203,7 @@ In questa attività verranno importati i dati sulle visite da un file di Excel.
 
 14. Fare clic su **Importa** nell'angolo superiore destro per completare l'importazione dei dati.
 
-**Nota:** per l'importazione dei dati nella tabella potrebbero essere necessari alcuni minuti. Non preoccuparsi se vengono segnalati errori. È normale e non influiranno sul resto del corso.
+Le visite al campus sono attualmente registrate su documenti cartacei.
 
 15. Fare clic su **X** per chiudere il pannello di importazione dati.
 
