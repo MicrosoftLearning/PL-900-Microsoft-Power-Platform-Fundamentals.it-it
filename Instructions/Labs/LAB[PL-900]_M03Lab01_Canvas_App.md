@@ -1,14 +1,9 @@
 ---
 lab:
-  title: "Lab 2: Come creare un'app canvas"
+  title: 'Lab 2: Come creare un''app canvas'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154432"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>Lab 2: Come creare un'app canvas
 
 ## <a name="scenario"></a>Scenario
@@ -107,7 +102,7 @@ In questa attività si personalizzerà il testo dell'intestazione in ognuna dell
 
 In questa attività verrà testata la nuova app.
 
-1.  Con l'applicazione aperta in Progettazione app selezionare **File**, aggiornare il nome dell'app in **Visits App** e selezionare **Salva**.
+1.  Con l'applicazione aperta in Progettazione app, selezionare **Impostazioni**, nella sezione **Generale** aggiornare il nome dell'app all'app **Visite**, fare clic sulla **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
 
 2.  Selezionare la freccia **Indietro** per tornare all'app.
 

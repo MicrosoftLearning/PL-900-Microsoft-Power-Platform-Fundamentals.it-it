@@ -1,14 +1,9 @@
 ---
 lab:
-  title: "Lab 3: Come creare un'app basata su modello"
+  title: 'Lab 3: Come creare un''app basata su modello'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154420"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Lab 3: Come creare un'app basata su modello
 
 ## <a name="scenario"></a>Scenario
@@ -64,7 +59,7 @@ Aspetti da considerare prima di iniziare
 
 Se la tabella Visit non viene visualizzata, assicurarsi di essere nell'ambiente corretto (passaggio 2).
 
-4. Nella sezione **Esperienze con i dati** selezionare **Moduli** e fare clic per aprire il modulo Information con il tipo di modulo **Main**.
+4. Nella sezione **Esperienze con i dati**selezionare **Moduli** e fare clic per aprire il modulo Information con il tipo di modulo **Main**.
 
 **IMPORTANTE:** dato che tutti i moduli hanno il nome Information per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo **Main** e non un altro. Per impostazione predefinita, il modulo include due campi: Nome e Proprietario.
 
@@ -146,9 +141,9 @@ IMPORTANTE: assicurarsi di non chiudere la visualizzazione Visit attivi/e, perch
 
 **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
 
-1. Fare clic su **Salva**.
+9. Fare clic su **Salva**.
 
-2. Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
+10. Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
 
 ## <a name="exercise-2-create-model-driven-app"></a>Esercizio 2: Creare un'app basata su modello
 
@@ -186,7 +181,7 @@ Per semplicità e per ragioni di tempo, non verranno usate alcune delle colonne 
 
 8. Usando le icone di spostamento su lato sinistro della schermata, selezionare **Spostamento**.
 
-9. Nel riquadro di spostamento selezionare **Gruppo 1** sotto a Barra di spostamento.
+9. Nel riquadro di spostamento selezionare **Gruppo 1** sotto a Barra di spostamento. Potrebbe essere necessario espandere il menu a sinistra.
 
 10. Sul lato destro della schermata, nella sezione **Opzioni di visualizzazione** impostare la proprietà **Titolo** su **Sicurezza**.
 
@@ -260,7 +255,7 @@ Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione bas
 
 - Fare clic su **Salva e chiudi**. Verrà così creata la visita che dovrebbe essere visibile nella visualizzazione Visit attivi/e.
 
-- Passare alla visualizzazione **Today's Visits**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
+- Passare alla visualizzazione **Visite di oggi usando l'elenco** a discesa accanto a **Visite attive**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
 
 4. È possibile aggiungere altri record di prova.
 

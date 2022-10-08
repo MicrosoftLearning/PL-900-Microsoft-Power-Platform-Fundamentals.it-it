@@ -2,13 +2,8 @@
 lab:
   title: 'Lab 5: Come creare un semplice dashboard'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154444"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Lab 5: Come creare un semplice dashboard
 
 ## <a name="scenario"></a>Scenario
@@ -69,9 +64,9 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
-2.  Fare clic sulla freccia a discesa accanto a **bc_building** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
+2.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
 
-3.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella **Valori**.
+3.  Trascinare il campo **Visit** nella casella **Valori**.
 
 4.  Ridimensionare il grafico a torta usando i punti di controllo in angolo in modo che siano visibili tutti i componenti del grafico.
 

@@ -2,13 +2,8 @@
 lab:
   title: Lab 0. Convalidare l'ambiente lab
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154396"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Lab 0. Convalidare l'ambiente lab
 
 ## <a name="scenario"></a>Scenario
@@ -39,7 +34,7 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 1. Non cambiare il paese.
 
-1. Per **Numero di telefono** immettere 01234567890.
+1. Per **Numero di telefono** immettere 0123456789.
 
 1. Immettere le informazioni sull'account e selezionare **Get started** (Inizia) per iscriversi alla versione di valutazione di Microsoft Power Platform.
 
