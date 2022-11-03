@@ -20,7 +20,7 @@ Procedura generale per il lab
 
 Nell'ambito della creazione dell'app basata su modello verranno eseguite le operazioni seguenti:
 
-- Creare una nuova app basata su modello denominata Campus Management
+- Creare una nuova app basata su modello denominata Bellows Campus Management
 
 - Modificare la struttura di spostamento dell'app per fare riferimento alle tabelle richieste
 
@@ -65,7 +65,7 @@ Se la tabella Visit non viene visualizzata, assicurarsi di essere nell'ambiente 
 
 5. Sul lato destro della schermata nel pannello Proprietà selezionare il campo **Nome visualizzato** e impostarlo su **Main Information**.
 
-6. Usando il menu nella parte superiore dello schermo, selezionare **+ Campo modulo** e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
+6. Selezionare **Colonne tabella** nel riquadro di spostamento a sinistra e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
 
     1. **Visitatore**
 
@@ -255,7 +255,7 @@ Adesso che tutti i componenti necessari sono stati aggiunti all'applicazione bas
 
 - Fare clic su **Salva e chiudi**. Verrà così creata la visita che dovrebbe essere visibile nella visualizzazione Visit attivi/e.
 
-- Passare alla visualizzazione **Visite di oggi usando l'elenco** a discesa accanto a **Visite attive**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
+- Passare alla visualizzazione **Today's Visits** usando l'elenco a discesa accanto a **Visit attivi/e**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
 
 4. È possibile aggiungere altri record di prova.
 
