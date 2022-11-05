@@ -162,9 +162,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 **Obiettivo:** in questo esercizio si importeranno dati di esempio nel database Dataverse.
 
-### <a name="task-1-import-the-visitsxlsx-file"></a>Attività \#1: Importare il file Visits.xls
-
-In questa attività verranno importati i dati sulle visite da un file di Excel.
+### <a name="task-11-load-excel-file-to-onedrive"></a>Attività \#1.1: Caricare il file di Excel in OneDrive
 
 1. Si dovrebbe avere il file **Visits.xls** archiviato nel computer desktop. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -172,42 +170,64 @@ In questa attività verranno importati i dati sulle visite da un file di Excel.
 
 3. Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-4. Usando il riquadro di spostamento a sinistra, espandere **Dataverse** e selezionare **Tabelle**.
+4. Fare clic sul pulsante Waffle nell'angolo superiore sinistro per cambiare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Fare clic su OneDrive è pronto quando viene visualizzato sullo schermo.
 
-5. Individuare e aprire la tabella **Visit** creata nell'esercizio precedente.
+5. Fare clic su **Carica** dal menu in alto e selezionare **File**.
 
-6. Usando il menu in alto selezionare la freccia verso il basso accanto a **Importa** e selezionare **Importare i dati da Excel**.
+6. Individuare e selezionare il file **Visits.xlsx** e fare clic su **Apri**.
 
-7. Nel menu visualizzato selezionare il pulsante **Carica**.
+ **Nota:** questo file si trova nella cartella **Tutti i file** nel computer.
+ 
+### <a name="task-12-create-a-dataflow"></a>Attività \#1.2: Creare un flusso di dati
 
-8. Individuare e selezionare il file **Visits.xls** scaricato in precedenza. Si noti che possono essere necessari un paio di minuti per il caricamento del file. Non preoccuparsi se viene visualizzato un messaggio che segnala la presenza di errori di mapping. Questi errori verranno corretti tra poco.
+1. Se non è già stato eseguito l'accesso, accedere a [https://make.powerapps.com](https://make.powerapps.com/).
 
-9. Fare clic su **Mappa colonne**. Notare che potrebbe essere necessario scorrere verso destra per visualizzare l'opzione Mappa colonne.
+2. Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-10. Eseguire il mapping delle colonne come indicato di seguito:
+3. Usando il riquadro di spostamento a sinistra, espandere **Dataverse** e selezionare **Tabelle**.
 
-| Colonne Visit| Valori di origine |
+4. Individuare e aprire la tabella **Visit** creata nell'esercizio precedente.
+
+5. Usando il menu in alto selezionare la freccia verso il basso accanto a **Importa** e selezionare **Importa dati**.
+
+6. Nella finestra di dialogo **Scegli origine dati** selezionare **Cartella di lavoro di Excel**.
+
+7. Selezionare l'opzione **Collegamento al file**. Fare clic su **Esplora OneDrive**. Se richiesto, eseguire l'accesso con le proprie credenziali di Microsoft 365.
+
+8. Selezionare il file **Visits.xlsx** caricato in OneDrive e fare clic su **Seleziona**.
+
+9. Fare clic su **Avanti**.
+
+10. In **Scegli dati** selezionare la casella accanto alla cartella di lavoro **Visits** di Excel.
+
+11. Fare clic su **Avanti**. Non uscire da questa pagina.
+
+12. Fare clic su **Avanti**.
+
+13. Nella sezione **Mapping tabelle** selezionare **Carica in una tabella esistente** in **Impostazioni caricamento**.
+
+14. Nel menu a discesa **Tabella di destinazione** selezionare il nome della tabella che inizia con **crXXX_visit** (dove XXX è un set casuale di lettere e numeri)
+
+15. In **Mapping colonne** eseguire il mapping delle colonne alle colonne di destinazione corrispondenti.
+
+| Colonne di destinazione| Valori di origine |
 | - | - |
-| Fine effettiva| fine effettiva |
-| Inizio effettivo| inizio effettivo |
-| Codice| codice |
-| Nome| name |
-| Scheduled End| fine pianificata |
-| Start pianificato| inizio pianificato |
+| crxxx_ActualEnd| fine effettiva |
+| crxxx_ActualStart| inizio effettivo |
+| crxxx_Code| codice |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| fine pianificata |
+| crxxx_ScheduledStart| inizio pianificato |
 
-11. Lasciare tutti gli altri campi su **Non impostato**.
+16. Fare clic su **Avanti**.
 
-12. Nell'angolo superiore destro della schermata fare clic su **Salva modifiche**.
+17. Selezionare **Aggiorna manualmente**.
 
-13. Nella schermata **Importa dati** verificare che lo stato del mapping sia "Mapping completato".
-
-14. Fare clic su **Importa** nell'angolo superiore destro per completare l'importazione dei dati.
+18. Fare clic su **Pubblica**.
 
 **Nota:** per l'importazione dei dati nella tabella potrebbero essere necessari alcuni minuti. Non preoccuparsi se vengono segnalati errori. È normale e non influiranno sul resto del corso.
 
-15. Fare clic su **X** per chiudere il pannello di importazione dati.
-
-### <a name="task-2-verify-data-import"></a>Attività \#2: Verificare l'importazione dei dati
+### <a name="task-3-verify-data-import"></a>Attività \#3: Verificare l'importazione dei dati
 
 1. Dopo aver importato i dati, usare il riquadro di spostamento a sinistra della schermata per selezionare di nuovo la tabella **Visit**.
 
