@@ -164,7 +164,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 ### <a name="task-11-load-excel-file-to-onedrive"></a>Attività \#1.1: Caricare il file di Excel in OneDrive
 
-1. Si dovrebbe avere il file **Visits.xls** archiviato nel computer desktop. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
+1. Nella macchina virtuale dovrebbe essere memorizzato il file **Visits.xlsx** in **C:/LabFiles**. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
 2. Se non è già stato eseguito l'accesso, accedere a [https://make.powerapps.com](https://make.powerapps.com/).
 
