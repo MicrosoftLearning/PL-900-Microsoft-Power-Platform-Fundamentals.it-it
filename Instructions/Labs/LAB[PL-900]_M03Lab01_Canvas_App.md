@@ -102,7 +102,7 @@ In questa attività si personalizzerà il testo dell'intestazione in ognuna dell
 
 In questa attività verrà testata la nuova app.
 
-1.  Con l'applicazione aperta in Progettazione app, selezionare **Impostazioni**, nella sezione **Generale** aggiornare il nome dell'app all'app **Visite**, fare clic sulla **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
+1.  Con l'applicazione aperta in Progettazione app selezionare **Impostazioni**, nella sezione **Generale** aggiornare il nome dell'app in **Visits App**, fare clic sulla **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
 
 2.  Selezionare la freccia **Indietro** per tornare all'app.
 
