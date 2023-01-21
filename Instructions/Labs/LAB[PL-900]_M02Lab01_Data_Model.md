@@ -14,7 +14,7 @@ L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registr
 
 Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
-In questo lab si accederà all'ambiente predisposto in precedenza e verranno creati un database Microsoft Dataverse e una soluzione per tenere traccia delle modifiche. Verrà anche creato un modello di dati a supporto dei requisiti seguenti:
+In questo lab si accederà all'ambiente predisposto in precedenza e verrà creato un database Microsoft Dataverse. Verrà anche creato un modello di dati a supporto dei requisiti seguenti:
 
 - R1. Tenere traccia delle informazioni per le visite al campus pianificate
 
@@ -23,6 +23,7 @@ In questo lab si accederà all'ambiente predisposto in precedenza e verranno cre
 - R3. Pianificare, registrare e gestire le visite
 
 Verranno infine importati dati di esempio in Microsoft Dataverse.
+
 
 ## <a name="high-level-lab-steps"></a>Procedura generale per il lab
 
@@ -40,9 +41,11 @@ Per preparare gli ambienti di apprendimento:
 
 - Convenzioni di denominazione - digitare i nomi con attenzione.
 
+
 ## <a name="exercise-1-create-new-table"></a>Esercizio 1: Creare una nuova tabella
 
 **Obiettivo:** In questo esercizio verrà creata la nuova tabella personalizzata per le visite.
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>Attività \#1: Creare la tabella Visit e le colonne
 
@@ -170,7 +173,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 3. Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-4. Fare clic sul pulsante Waffle nell'angolo superiore sinistro per cambiare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Fare clic su OneDrive è pronto quando viene visualizzato sullo schermo.
+4. Fare clic sul pulsante Waffle nell'angolo superiore sinistro per cambiare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Fare clic su **OneDrive è pronto** quando viene visualizzato sullo schermo.
 
 5. Fare clic su **Carica** dal menu in alto e selezionare **File**.
 
@@ -210,14 +213,14 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 15. In **Mapping colonne** eseguire il mapping delle colonne alle colonne di destinazione corrispondenti.
 
-| Colonne di destinazione| Valori di origine |
-| - | - |
-| crxxx_ActualEnd| fine effettiva |
-| crxxx_ActualStart| inizio effettivo |
-| crxxx_Code| codice |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| fine pianificata |
-| crxxx_ScheduledStart| inizio pianificato |
+| Colonne di destinazione  | Valori di origine   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | fine effettiva      |
+| crxxx_ActualStart    | inizio effettivo    |
+| crxxx_Code           | codice            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | fine pianificata   |
+| crxxx_ScheduledStart | inizio pianificato |
 
 16. Fare clic su **Avanti**.
 
