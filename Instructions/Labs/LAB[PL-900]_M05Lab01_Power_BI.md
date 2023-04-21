@@ -4,9 +4,9 @@ lab:
   module: 'Module 5: Get Started with Power BI'
 ---
 
-## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Lab 5: Come creare un semplice dashboard
+## Lab 5: Come creare un semplice dashboard
 
-## <a name="scenario"></a>Scenario
+## Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
@@ -16,7 +16,7 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 In questo lab verranno creati un report e un dashboard di Power BI che visualizza i dati sulle visite al campus.
 
-## <a name="high-level-lab-steps"></a>Procedura generale per il lab
+## Procedura generale per il lab
 
 Verranno eseguite le procedure seguenti per progettare e creare un dashboard di Power BI:
 
@@ -24,43 +24,46 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 -   Usare una query in linguaggio naturale per creare ulteriori visualizzazioni
 
-## <a name="prerequisites"></a>Prerequisiti
+## Prerequisiti
 
 - Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 - Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
 
-## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
+## Aspetti da considerare prima di iniziare
 
 -   Chi sono i destinatari del report?
 -   In che modo i destinatari useranno il report? Dispositivo tipico? Posizione?
 -   Sono disponibili dati sufficienti per la visualizzazione?
 -   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
 
-## <a name="exercise-1-create-power-bi-report"></a>Esercizio 1: Creare un report di Power BI
+## Esercizio 1: Creare un report di Power BI
 
 **Obiettivo:** In questo esercizio verrà creato un report di Power BI in base ai dati del foglio di calcolo di Excel usato in un esercizio precedente.
 
-### <a name="task-1-prepare-power-bi-service"></a>Attività \#1: Preparare il servizio Power BI
+### Attività \#1: Preparare il servizio Power BI
 
-1.  Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer.
+1.  È necessario disporre di un file visit.pbix archiviato nella macchina virtuale in C:/LabFiles. Scaricare [visit.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvare nel computer, se non è già presente.
 
-2.  Passare a <https://app.powerbi.com/> e accedere, se necessario.
+2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/> e accedere se necessario.
 
-3.  Nell'angolo inferiore sinistro della schermata selezionare **Recupera dati**
+3.  Selezionare **Area di lavoro personale** nella navigazione laterale sinistra.
 
-4.  Selezionare il pulsante **Recupera** in **File** nella sezione **Crea nuovo contenuto**.
+5.  Selezionare **Carica** e **quindi Sfoglia**.
 
-5.  Selezionare **File locale**.
+6.  Individuare e selezionare il file **visit.pbix** scaricato in precedenza. 
 
-6.  Trovare e selezionare il file **visits.pbix** scaricato in precedenza.
+7.  Al termine del caricamento dei dati, selezionare il report **visite** .
 
-7.  Al termine del caricamento dei dati, espandere **Area di lavoro personale** e selezionare il report delle **visite** (notare che Tipo è impostato su **Report**).
+    Si noti che il tipo è impostato su **Report**, non selezionare il set di dati.
 
-8.  Fare clic su **Modifica**. Se la voce di menu **Modifica** non è visibile fare clic su **...** e quindi selezionare **Modifica**.
+8.  Selezionare **Modifica**. 
+
+    Se la voce di menu **Modifica** non è visibile, selezionare i puntini di sospensione **...** e quindi selezionare **Modifica**.
 
 Il servizio Power BI è stato così configurato per l'uso nei lab.
 
-### <a name="task-2-create-chart-and-time-visualizations"></a>Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
+
+### Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
 
 1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
@@ -90,9 +93,9 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 11. Salvare il lavoro in corso facendo clic su **Salva**.
 
-## <a name="exercise-2-create-power-bi-dashboard"></a>Esercizio 2: Creare un dashboard di Power BI
+## Esercizio 2: Creare un dashboard di Power BI
 
-### <a name="task-1-create-power-bi-dashboard"></a>Attività \#1: Creare un dashboard di Power BI
+### Attività \#1: Creare un dashboard di Power BI
 
 1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
@@ -106,7 +109,7 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 6.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
 
-### <a name="task-2-add-visualizations-using-natural-language"></a>Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
+### Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
 
 1.  Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
 
