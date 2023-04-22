@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>Lab 1: Modellazione dei dati
+# Lab 1: Modellazione dei dati
 
-## <a name="scenario"></a>Scenario
+## Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
@@ -25,29 +25,29 @@ In questo lab si accederà all'ambiente predisposto in precedenza e verrà creat
 Verranno infine importati dati di esempio in Microsoft Dataverse.
 
 
-## <a name="high-level-lab-steps"></a>Procedura generale per il lab
+## Procedura generale per il lab
 
 Per preparare gli ambienti di apprendimento:
 
 - Fare riferimento al [documento del modello di dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) per una descrizione dei metadati, ovvero tabelle e relazioni. È possibile tenere premuto CTRL e fare clic o clic con il pulsante destro del mouse sul collegamento per aprire il documento del modello di dati in una nuova finestra.
 - Creare la tabella Visit
-- Importare i dati per la tabella Visit usando un foglio di calcolo di Excel
+- Importare i dati di Visit usando un foglio di calcolo di Excel
 
-## <a name="prerequisites"></a>Prerequisiti
+## Prerequisiti
 
 - Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 
-## <a name="things-to-consider-before-you-begin"></a>Aspetti da considerare prima di iniziare
+## Aspetti da considerare prima di iniziare
 
 - Convenzioni di denominazione - digitare i nomi con attenzione.
 
 
-## <a name="exercise-1-create-new-table"></a>Esercizio 1: Creare una nuova tabella
+## Esercizio 1: Creare una nuova tabella
 
 **Obiettivo:** In questo esercizio verrà creata la nuova tabella personalizzata per le visite.
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>Attività \#1: Creare la tabella Visit e le colonne
+### Attività \#1: Creare la tabella Visit e le colonne
 
 La tabella **Visit** conterrà informazioni sulle visite al campus, inclusi visitatore, ora pianificata e ora effettiva di ogni visita.
 
@@ -161,11 +161,11 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
     - Fare clic su **Salva**.
 
-## <a name="exercise-2-import-data"></a>Esercizio 2: Importare dati
+## Esercizio 2: Importare dati
 
 **Obiettivo:** in questo esercizio si importeranno dati di esempio nel database Dataverse.
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>Attività \#1.1: Caricare il file di Excel in OneDrive
+### Attività \#1.1: Caricare il file di Excel in OneDrive
 
 1. Nella macchina virtuale dovrebbe essere memorizzato il file **Visits.xlsx** in **C:/LabFiles**. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -181,7 +181,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
  **Nota:** questo file si trova nella cartella **Tutti i file** nel computer.
  
-### <a name="task-12-create-a-dataflow"></a>Attività \#1.2: Creare un flusso di dati
+### Attività \#1.2: Creare un flusso di dati
 
 1. Se non è già stato eseguito l'accesso, accedere a [https://make.powerapps.com](https://make.powerapps.com/).
 
@@ -230,7 +230,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 **Nota:** per l'importazione dei dati nella tabella potrebbero essere necessari alcuni minuti. Non preoccuparsi se vengono segnalati errori. È normale e non influiranno sul resto del corso.
 
-### <a name="task-3-verify-data-import"></a>Attività \#3: Verificare l'importazione dei dati
+### Attività \#3: Verificare l'importazione dei dati
 
 1. Dopo aver importato i dati, usare il riquadro di spostamento a sinistra della schermata per selezionare di nuovo la tabella **Visit**.
 
