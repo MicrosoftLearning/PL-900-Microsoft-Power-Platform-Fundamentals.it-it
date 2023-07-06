@@ -6,6 +6,8 @@ lab:
 
 ## Lab 5: Come creare un semplice dashboard
 
+**Tenant WWL - Condizioni per l'utilizzo** Se viene fornito un tenant come parte di un recapito di formazione con docente, si noti che il tenant viene reso disponibile allo scopo di supportare i lab pratici nella formazione con docente. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e ci si riserva il diritto di ottenere l'accesso e la ripossess in qualsiasi momento. 
+
 ## Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
@@ -42,15 +44,15 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 ### Attività \#1: Preparare il servizio Power BI
 
-1.  È necessario disporre di un file visit.pbix archiviato nella macchina virtuale in C:/LabFiles. Scaricare [visit.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvare nel computer, se non è già presente.
+1.  Nella macchina virtuale deve essere archiviato un file visits.pbix in C:/LabFiles. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
 
-2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/> e accedere se necessario.
+2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/> e accedere, se necessario.
 
-3.  Selezionare **Area di lavoro personale** nella navigazione laterale sinistra.
+3.  Selezionare **Area di lavoro personale** nel riquadro di spostamento a sinistra.
 
-5.  Selezionare **Carica** e **quindi Sfoglia**.
+5.  Selezionare **Carica** e quindi **Sfoglia**.
 
-6.  Individuare e selezionare il file **visit.pbix** scaricato in precedenza. 
+6.  Individuare e selezionare il file **visits.pbix** scaricato in precedenza. 
 
 7.  Al termine del caricamento dei dati, selezionare il report **visite** .
 
