@@ -4,62 +4,70 @@ lab:
   module: 'Module 0: Course introduction'
 ---
 
-# <a name="lab-0-validate-lab-environment"></a>Lab 0. Convalidare l'ambiente lab
+# Lab 0. Convalidare l'ambiente lab
 
-## <a name="scenario"></a>Scenario
+**Tenant WWL - Condizioni per l'uso** Se viene fornito un tenant come parte di un recapito di training guidato dall'insegnante, si noti che il tenant viene reso disponibile per supportare i lab pratici nel training guidato dall'insegnante. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e si riserva il diritto di ottenere l'accesso e la repossess in qualsiasi momento. 
+
+## Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
 
-L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
+L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti. 
 
 Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
 In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e si accederà all'interfaccia di amministrazione di Power Platform. Nell'interfaccia di amministrazione si creerà l'ambiente **Practice** in cui verrà eseguita la maggior parte delle operazioni dei lab.
 
-## <a name="exercise-1--setup"></a>Esercizio 1. Configurazione
 
-### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Attività \#1 - Acquisire il tenant di prova di Microsoft Power Platform
+## Esercizio 1. Configurazione
 
-1. Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato.
+Attività 1 - Acquisire il tenant di valutazione di Microsoft Power Platform
 
-1. Passare a <https://powerapps.microsoft.com> e fare clic su **Inizia con la versione di valutazione gratuita**.
+1.  Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato. 
 
-1. In **Iniziamo** immettere l'indirizzo e-mail delle credenziali di Microsoft 365 nella casella di testo **Immettere l'indirizzo di posta elettronica aziendale** e fare clic su **Avanti**.
+1.  Passare a <https://powerapps.microsoft.com> e fare clic su **Inizia con la versione di valutazione gratuita**.
 
-1. Verrà visualizzato un messaggio per confermare che si dispone di un account Microsoft esistente. Fare clic su **Accedi**.
+1.  In **Iniziamo**, immettere l'indirizzo di posta elettronica fornito dall'host del lab autorizzato e selezionare **Avvia la versione di valutazione gratuita**. 
 
-1. Immettere la password fornita dal provider di servizi di hosting per i lab autorizzato ed eseguire l'accesso.
+1.  Verrà visualizzato un messaggio per confermare che si dispone di un account Microsoft esistente. Fare clic su **Accedi**. 
 
-1. Selezionare **Sì** per mantenere l'accesso.
+1.  Immettere la password fornita dall'host del lab autorizzato e selezionare **Accedi**.
 
-1. Non cambiare il paese.
+1.  Selezionare **Sì** per mantenere l'accesso. 
 
-1. Per **Numero di telefono** immettere 0123456789.
+1.  Non cambiare il paese. 
 
-1. Immettere le informazioni sull'account e selezionare **Get started** (Inizia) per iscriversi alla versione di valutazione di Microsoft Power Platform.
+1.  Per **Numero di telefono** immettere `0123456789` e selezionare **Invia**. 
 
-1. Nella schermata di conferma fare clic su **Inizia**.
+1.  Nella schermata di conferma selezionare **Introduzione**. 
 
-1. Se viene visualizzata la richiesta di immettere i dettagli del contatto, fare clic su **X** per chiudere la finestra popup.
+1.  Se viene visualizzato un prompt per immettere i dettagli del contatto, fare clic su **X** per chiudere la finestra popup. 
 
-### <a name="task-2--create-environment"></a>Attività 2 - Creare l'ambiente
 
-1. Passare a <https://admin.powerplatform.microsoft.com> ed eseguire l'accesso con le proprie credenziali di Microsoft 365, se richiesto.
+Attività #2 - Creare un ambiente
 
-1. Se viene visualizzato un popup di benvenuto, fare clic su **Inizia**.
+1.  Passare a <https://admin.powerplatform.microsoft.com> ed eseguire l'accesso con le proprie credenziali di Microsoft 365, se richiesto. 
 
-1. Selezionare **Ambienti** e fare clic su **+Nuovo**.
+1.  Se viene visualizzato un popup di benvenuto, selezionare **Introduzione**. 
+
+1.  Selezionare **Ambienti** e selezionare **+ Nuovo**.
 
     1. In **Nome** immettere **[Iniziali] Practice**, ad esempio: AJ Practice.
 
-    1. In **Tipo** selezionare **Versione di valutazione**. Non selezionare l'opzione Versione di valutazione (basata su abbonamento).
+    1. Per **Tipo** scegliere **Versione di valutazione** (Non selezionare l'opzione *Versione di valutazione (basata su sottoscrizione).*
 
-    1. Impostare l'interruttore per **Creare un database per questo ambiente?** su **Sì**.
+    1. Modificare l'interruttore per **Aggiungere un archivio dati dataverse?** a **Sì**. 
 
-    1. Lasciare le impostazioni predefinite per tutte le altre opzioni e fare clic su **Avanti**.
+    1. Lasciare tutte le altre selezioni come predefinite e selezionare **Avanti**. 
 
-    1. Nella scheda successiva lasciare le impostazioni predefinite per tutte le opzioni e fare clic su **Salva**.
+    1. Fare clic sul pulsante **+ Seleziona** sotto l'intestazione **Gruppo di sicurezza** .
 
-1. L'ambiente **Practice** dovrebbe ora comparire nell'elenco Ambienti.
+    1. Selezionare la casella di controllo Per l'elemento **None** nell'intestazione **Apri accesso** e quindi selezionare **Fine**.
 
-> Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Se necessario, aggiornare la pagina.
+    1. Lasciare le opzioni rimanenti nelle impostazioni predefinite e selezionare **Salva**.
+
+1.  L'ambiente **Practice** dovrebbe ora essere visualizzato nell'elenco degli ambienti. 
+
+    > Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Se necessario, aggiornare la pagina.
+
+
