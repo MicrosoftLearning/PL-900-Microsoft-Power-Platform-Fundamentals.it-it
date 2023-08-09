@@ -6,7 +6,7 @@ lab:
 
 # Lab 3: Come creare un'app basata su modello
 
-**Tenant WWL - Condizioni per l'uso** Se viene fornito un tenant come parte di un recapito di training guidato dall'insegnante, si noti che il tenant viene reso disponibile per supportare i lab pratici nel training guidato dall'insegnante. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e si riserva il diritto di ottenere l'accesso e la repossess in qualsiasi momento. 
+**Tenant WWL - Condizioni per l'utilizzo** Se viene fornito un tenant come parte di un recapito di formazione con docente, si noti che il tenant viene reso disponibile allo scopo di supportare i lab pratici nella formazione con docente. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e ci si riserva il diritto di ottenere l'accesso e la ripossess in qualsiasi momento. 
 
 ## Scenario
 
@@ -56,21 +56,21 @@ Esercizio 1: Personalizzare visualizzazioni e moduli
 
 Attività 1: Modificare il modulo delle visite
 
-1. Accedere a [https://make.powerapps.com](https://make.powerapps.com/) se l'accesso non è già stato effettuato.
+1.  Accedere a <https://make.powerapps.com> se l'accesso non è già stato effettuato.
 
-2. Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-3. Usando lo spostamento a sinistra, selezionare **Tabelle** e fare clic per aprire la tabella **Visit** .
+3.  Usando il riquadro di spostamento a sinistra, selezionare **Tabelle** e aprire la tabella **Visit** .
 
-Se la tabella Visit non viene visualizzata, assicurarsi di essere nell'ambiente corretto (passaggio 2).
+    Se la tabella Visit non viene visualizzata, assicurarsi di essere nell'ambiente corretto (passaggio 2).
 
-4. Nella sezione **Esperienze con i dati**selezionare **Moduli** e fare clic per aprire il modulo Information con il tipo di modulo **Main**. **Importante:** assicurarsi di selezionare quella con il tipo di modulo **Main**. 
+4.  Nella sezione **Esperienze dati** selezionare **Moduli** e aprire il modulo **Informazioni** con tipo di modulo **principale** . **Importante:** assicurarsi di selezionare il modulo con il tipo di modulo **Main**. 
 
-**IMPORTANTE:** dato che tutti i moduli hanno il nome Information per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo **Main** e non un altro. Per impostazione predefinita, il modulo include due campi: Nome e Proprietario.
+    **IMPORTANTE:** dato che tutti i moduli hanno il nome Information per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo **Main** e non un altro. Per impostazione predefinita, il modulo include due campi: Nome e Proprietario.
 
-1. Sul lato destro della schermata nel pannello Proprietà selezionare il campo **Nome visualizzato** e impostarlo su **Main Information**.
+5.  Sul lato destro della schermata nel pannello **Proprietà** selezionare il campo **Nome visualizzato** e modificarlo in `Main Information`
 
-2. Selezionare **Colonne tabella** nel riquadro di spostamento a sinistra e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
+6.  Selezionare **Colonne tabella** nel riquadro di spostamento a sinistra e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
 
     1. **Visitatore**
 
@@ -82,27 +82,28 @@ Se la tabella Visit non viene visualizzata, assicurarsi di essere nell'ambiente 
 
     5. **Actual End**
 
-3. Trascinare la colonna **Code** nell'intestazione del modulo.
+7.  Trascinare la colonna **Code** nell'intestazione del modulo.
 
-L'area dell'intestazione è quella in alto a destra nel modulo. Potrebbe essere necessario comprimere il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
+    L'area dell'intestazione è quella in alto a destra nel modulo. Potrebbe essere necessario comprimere il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
 
-1. Con il campo **Code** ancora selezionato, selezionare la casella di controllo **Sola lettura** nel pannello Proprietà sul lato destro della schermata.
+8.  Con il campo **Code** ancora selezionato, selezionare la casella di controllo **Sola lettura** nel pannello Proprietà sul lato destro della schermata.
 
-2. Selezionare il campo **Proprietario**. Nel pannello Proprietà impostare la proprietà **Etichetta** su **Host**.
+9.  Selezionare il campo **Proprietario**. Nel pannello Proprietà modificare **l'etichetta** in `Host`
 
-3. Fare clic sul pulsante **Salva e Pubblica** in alto a destra e attendere il completamento del salvataggio e della pubblicazione.
+10. Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento del salvataggio e della pubblicazione.
 
-4. Se la visualizzazione di modifica è aperta in una nuova scheda o finestra del browser, chiuderla. In caso contrario, fare clic su **Indietro** in alto a sinistra nella schermata. Si tornerà ai moduli delle tabelle Visit.
+11. Se la visualizzazione Modifica è aperta in una nuova scheda o finestra del browser, chiuderla. In caso contrario, selezionare **🡠 Indietro** nella parte superiore sinistra della schermata. A questo momento si tornerà ai moduli della tabella **Visit** .
 
-5. Usando il percorso di navigazione in alto a sinistra (Tabella>Visit>Moduli), selezionare **Visit** per tornare alla schermata principale della tabella **Visit**.
+12. Utilizzo delle barre di navigazione in alto a sinistra (**tabelle** > **visita** > **moduli**). Selezionare **Visita** per tornare alla schermata **Visita** proprietà tabella. 
+
 
 Attività 2. Modificare la visualizzazione Visit attivi/e
 
 In questa attività verrà modificata la visualizzazione predefinita Visit attivi/e e si creerà una nuova visualizzazione per le visite del giorno.
 
-1. Nella sezione **Esperienze con i dati** selezionare **Visualizzazioni** e fare clic per aprire la visualizzazione **Visits attivi/e**.
+1.  Nella sezione **Esperienze dati** selezionare **Visualizzazioni** e aprire la visualizzazione **Visite attive** .
 
-2. Aggiungere i campi seguenti alla visualizzazione facendo clic sui campi o trascinandoli:
+2.  Aggiungere i campi seguenti alla visualizzazione facendo clic sui campi o trascinandoli:
 
     1. **Codice**
 
@@ -112,17 +113,16 @@ In questa attività verrà modificata la visualizzazione predefinita Visit attiv
 
     4. **Scheduled End**
 
-3. Fare clic sulla colonna **Data creazione** e selezionare **Rimuovi**. Il campo **Data creazione** verrà ora rimosso dalla visualizzazione.
+3.  Selezionare il menu a discesa nella colonna **Creato** in e selezionare **Rimuovi**. Il campo **Creato su** verrà ora rimosso dalla visualizzazione.
 
-4. Ridimensionare la larghezza delle singole colonne in base ai dati.
+4.  Ridimensionare la larghezza delle singole colonne in base alle esigenze per adattare i dati.
 
-5. In **Ordina per ...** selezionare X per rimuovere **Nome** e selezionare **Invece Start pianificato**.
+5.  In **Ordina per ...** selezionare la X per rimuovere **Il nome** e selezionare **Invece Inizio pianificato**.
 
-6. Selezionare **Inizio pianificato** per modificare l'ordinamento in **Dal più recente al meno recente**.
+6.  Selezionare **Inizio pianificato** per modificare l'ordinamento in **Più recente.**
 
-7. Fare clic su **Salva** e attendere che le modifiche vengano salvate.
+7.  Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento della pubblicazione.
 
-8. Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
 
 Attività 3: Creare una nuova visualizzazione per le visite del giorno
 
@@ -130,27 +130,26 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 IMPORTANTE: assicurarsi di non chiudere la visualizzazione Visit attivi/e, perché verrà sfruttata per creare la visualizzazione delle visite di oggi.
 
-1. Fare clic sulla **freccia in giù** accanto al pulsante Salva facendo attenzione a non fare clic sul pulsante e selezionare **Salva con nome**.
+1.  Selezionare **Salva con nome**.
 
-2. Modificare il nome in **Today's Visits** e fare clic su **Salva**.
+2.  Modificare il **nome** `Today’s Visits` in e selezionare **Salva**.
 
-3. Fare clic sul collegamento **Modifica filtri** nel pannello Proprietà.
+3.  Selezionare **Modifica filtri** nel pannello Proprietà.
 
-4. Fare clic su **Aggiungi** e selezionare **Aggiungi riga**.
+4.  Selezionare **+ Aggiungi**, selezionare **Aggiungi riga**.
 
-5. Selezionare il campo **Scheduled Start** e quindi selezionare **Oggi** come condizione nell'elenco a discesa.
+5.  Selezionare **Inizio pianificato** come campo, quindi impostare **Uguale** a **Oggi** come condizione nell'elenco a discesa.
 
-6. Fare clic su **…** nella riga **Stato** e fare clic su **Elimina** per eliminare tale condizione di filtro.
+6.  Selezionare il **...** **Altri comandi** nella riga **Stato** e selezionare **Elimina** per eliminare tale condizione di filtro.
 
-7. Fare clic su **OK** per salvare la condizione. La visualizzazione viene ora filtrata in modo da mostrare solo i record in cui la data Scheduled Start corrisponde alla data odierna.
+7.  Selezionare **Ok** per salvare la condizione. La visualizzazione è ora filtrata per visualizzare solo i record in cui la data di **inizio pianificata** è oggi.
 
-8. Aggiungere i campi **Actual Start** e **Actual End** alla visualizzazione.
+8.  Aggiungere i campi **Actual Start** e **Actual End** alla visualizzazione.
 
-**Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
+    **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
 
-1. Fare clic su **Salva** e attendere che le modifiche vengano salvate.
+9.  Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento della pubblicazione.
 
-2. Fare clic su **Pubblica** e attendere il completamento della pubblicazione.
 
 Esercizio 2: Creare un'app basata su modello
 
@@ -158,91 +157,88 @@ Esercizio 2: Creare un'app basata su modello
 
 Per semplicità e per ragioni di tempo, non verranno usate alcune delle colonne Visit in questo lab.
 
-Attività #1: Creare un'app
+Attività n. 1: Creare un'app
 
-1. Accedere a [https://make.powerapps.com](https://make.powerapps.com/) se l'accesso non è già stato effettuato.
+1.  Accedere a <https://make.powerapps.com>, se non si è già connessi.
 
-2. Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-3. Se necessario, fare clic sull'icona **Home** sul lato sinistro della schermata.
+3.  Selezionare **+ Crea** nel riquadro di spostamento a sinistra.
 
-4. Creare l'applicazione basata su modello:
+4.  Creare l'applicazione basata su modello:
 
-    1. Selezionare **App vuota** nella sezione **Inizia da** della schermata Home.
+    1. Selezionare **App vuota** nella sezione **Inizia dalla** schermata **Crea l'app** .
 
     2. In **App vuota basata su Dataverse** selezionare **Crea**.
 
-    3. Immettere **Bellows Campus Management** per Nome e selezionare **Crea**.
+    3. Immettere `Bellows Campus Management` per **Nome** e selezionare **Crea**.
 
-5. Dopo il caricamento della nuova applicazione basata su modello, selezionare il pulsante **+ Aggiungi pagina**.
+5.  Dopo il caricamento della nuova applicazione basata su modello, selezionare il pulsante **+ Aggiungi pagina**.
 
-6. Nella schermata **Aggiungi pagina** scegliere **Tabella Dataverse** e quindi selezionare il pulsante **Avanti** .
+6.  Nella schermata **Aggiungi pagina** scegliere **Tabella Dataverse** e quindi selezionare il pulsante **Avanti** .
 
-7. Aggiungere le tabelle seguenti:
+7.  Selezionare le tabelle seguenti:
 
     1. Visitare
 
     2. Contatto
 
-8. Dopo aver selezionato le 2 tabelle, selezionare **Aggiungi**.
+8.  Dopo aver creato entrambe le tabelle, selezionare **Aggiungi**.
 
-9. Usando le icone di spostamento su lato sinistro della schermata, selezionare **Spostamento**.
+9.  Usando le icone di spostamento su lato sinistro della schermata, selezionare **Spostamento**.
 
-10. Nel riquadro di spostamento selezionare **Gruppo 1** sotto a Barra di spostamento. Potrebbe essere necessario espandere il menu a sinistra.
+10. Nel riquadro di spostamento selezionare **Nuovo gruppo** sotto dove è indicato Spostamento. Potrebbe essere necessario espandere il menu a sinistra.
 
-11. Sul lato destro della schermata, nella sezione **Opzioni di visualizzazione** impostare la proprietà **Titolo** su **Sicurezza**.
+11. Sul lato destro della schermata, nella sezione **Opzioni di visualizzazione** modificare la proprietà **Title** in `Security`
 
-12. Nel riquadro di spostamento, nel gruppo di sicurezza, selezionare **SubArea1**.
+12. Selezionare**Salva** e attendere che le modifiche vengano salvate.
 
-13. Selezionare i **puntini di sospensione** e nel menu che viene visualizzato selezionare **Rimuovi dal riquadro di spostamento**.
+13. Al termine del **salvataggio** selezionare il pulsante **Pubblica** per pubblicare le modifiche.
 
-14. Selezionare**Salva** e attendere che le modifiche vengano salvate.
-
-15. Al termine del **salvataggio** selezionare il pulsante **Pubblica** per pubblicare le modifiche.
 
 Attività n. 2: Testare l'app
 
-1. Avviare l'applicazione
+Avviare l'applicazione
 
-    1. Selezionare il pulsante **Riproduci**, la nuova app verrà caricata in una nuova scheda.
+1. Selezionare il pulsante **Riproduci** , l'app basata su modello verrà caricata in una nuova scheda.
 
-2. Creare un nuovo contatto
+Creare un nuovo contatto
 
-    1. L'app verrà aperta nella visualizzazione **Contatti attivi**. In caso contrario, selezionare Contatti nel riquadro di spostamento a sinistra.
+2.  L'app verrà aperta nella visualizzazione **Contatti attivi**. In caso contrario, selezionare **Contatti** nel riquadro di spostamento a sinistra.
 
-    2. Fare clic su **+ Nuovo** nel menu principale.
+3.  Selezionare **+ Nuovo** dalla barra dei comandi.
 
-    3. Specificare John per **Nome** e Doe per **Cognome**.
+4.  Immettere **First Name (Nome**) e **Last Name (Cognome**) come `John``Doe`
 
-    4. Specificare l'indirizzo e-mail personale per **E-mail**. Verrà usato in un lab futuro in cui si riceverà un messaggio di posta elettronica.
+5.  Specificare l'indirizzo e-mail personale per **E-mail**. Verrà usato in un lab futuro, in cui si riceverà un messaggio di posta elettronica.
 
-    5. Fare clic su **Salva &amp; chiusura**.
+6.  Selezionare **Salva e chiudi**.
 
-    6. Il nuovo contatto creato dovrebbe essere ora visibile nella visualizzazione **Contatti attivi personali**.
+7.  Il nuovo contatto creato dovrebbe essere ora visibile nella visualizzazione **Contatti attivi personali**.
 
-3. Creare una nuova visita
+Creare una nuova visita
 
-    1. Selezionare **Visits** nel riquadro di spostamento a sinistra della mappa del sito.
+8.  Selezionare **Visite** nel riquadro di spostamento a sinistra (noto anche come mappa del sito).
 
-    2. Fare clic su **+ Nuovo**.
+9.  Selezionare **+ Nuovo**.
 
-    3. Compilare i campi come segue
+10. Compilare i campi come indicato di seguito:
 
-        1. **Nome**: New test visit
+    1. **Nome**: `New test visit`
 
-        2. **Visitor**: selezionare John Doe
+    2. **Visitatore**: **selezionare John Doe**
 
-        3. **Scheduled Start**: selezionare la data di domani e le 14:00 come ora di inizio
+    3. **Inizio pianificato**: selezionare la data di domani e le 2:00 pm come ora di inizio
 
-        4. **Scheduled End**: selezionare la data di domani e le 15:30 come ora di fine
+    4. **Fine pianificata**: selezionare la data di domani e le 13:30 come ora di fine
 
-- Fare clic su **Salva &amp; chiusura**. Verrà così creata la visita che dovrebbe essere visibile nella visualizzazione Visit attivi/e.
+11. Selezionare **Salva e chiudi**. Verrà creata la Visita e si dovrebbe essere in grado di vederla nella visualizzazione **Visite attive** .
 
-- Passare alla visualizzazione **Today's Visits** usando l'elenco a discesa accanto a **Visit attivi/e**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
+12. Passare alla visualizzazione **Visite di oggi usando l'elenco** a discesa accanto a **Visite attive**. La nuova visita non dovrebbe essere più visibile in questa visualizzazione, perché è pianificata per il giorno successivo.
 
-1. È possibile aggiungere altri record di prova.
+13. È possibile aggiungere altri record di test.
 
-L'app in esecuzione dovrebbe essere simile alla seguente:
+L'app basata su modello in esecuzione dovrebbe essere simile alla seguente:
 
 ![](media/3-model-driven-app.png)
 
@@ -251,3 +247,4 @@ Congratulazioni! È stata creata e configurata la prima app basata su modello.
 ## Problematiche
 
 - Selezionare visualizzazioni e moduli specifici per Contatti.
+

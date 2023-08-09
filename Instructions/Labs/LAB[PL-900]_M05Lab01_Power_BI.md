@@ -44,7 +44,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 ### Attività \#1: Preparare il servizio Power BI
 
-1.  Nella macchina virtuale deve essere archiviato un file visits.pbix in C:/LabFiles. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
+1.  Dovrebbe essere presente un file visits.pbix archiviato nella macchina virtuale nella cartella AllFiles sul desktop. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
 
 2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/> e accedere, se necessario.
 
@@ -56,7 +56,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 7.  Al termine del caricamento dei dati, selezionare il report **visite** .
 
-    Si noti che il tipo è impostato su **Report**, non selezionare il set di dati.
+    > **Nota:** Il tipo è impostato su **Report**, non selezionare il set di dati.
 
 8.  Selezionare **Modifica**. 
 
@@ -67,33 +67,34 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 ### Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
 
-1.  Fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
+1.  Selezionare l'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
 
-2.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Building** nella casella **Legenda**.
+2.  Espandere **bc_Visit** nel riquadro **Campi** . Trascinare il campo **Edificio** e rilasciarlo nella casella **Legenda** .
 
-3.  Trascinare il campo **Visit** nella casella **Valori**.
+3.  Trascinare il campo **Visita** e rilasciarlo nella casella **Valori** .
 
 4.  Ridimensionare il grafico a torta usando i punti di controllo in angolo in modo che siano visibili tutti i componenti del grafico.
 
-5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'istogramma a colonne in pila nel riquadro **Visualizzazioni**.
+5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'icona **Istogramma in pila** nel riquadro **Visualizzazioni** .
 
-6.  Fare clic sulla freccia a discesa accanto a **bc_Visit** nel riquadro Campi. Trascinare il campo **Visit** nella casella di destinazione **Asse Y**.
+6.  Espandere **bc_Visit** nel riquadro **Campi** se non è già espanso. Trascinare il campo **Visita** e rilasciarlo nella casella **asse Y** .
 
-7.  Trascinare il campo **Start** nella casella di destinazione **Asse X**.
+7.  Trascinare **il campo Start** e rilasciarlo nella casella **asse X** .
 
-8.  Nel riquadro Visualizzazioni fare clic sulla **x** accanto a **Year** e **Quarter** per lasciare solo i totali di **Month** e **Day** per l'asse.
+8.  Nel riquadro **Visualizzazioni** selezionare la **x** accanto a **Year** e **Quarter** per lasciare solo i totali **mese** e **giorno** per l'asse X.
 
 9.  Ridimensionare il grafico nel modo preferito con i punti di controllo in angolo.
 
 10. Testare il report in modo interattivo:
 
-    1.  Fare clic sulle varie fette degli edifici nel grafico a torta e osservare le modifiche nel report temporale.
+    1.  Selezionare sezioni di compilazione diverse nel grafico a torta e osservare le modifiche nell'istogramma a colonne in pila.
 
-    2.  Fare clic sull'istogramma. Fare clic sulla freccia a discesa per attivare la modalità **Drill-down** (o fare clic con il pulsante destro del mouse sul grafico e scegliere **Drill-down**), quindi fare clic su una colonna per eseguire il drill-down al livello successivo (giorni).
+    2.  Selezionare l'istogramma a colonne in pila. Selezionare la freccia su per **eseguire il drill-up**. Selezionare la freccia giù per attivare la modalità **drill-down** , quindi selezionare una colonna per eseguire il drill-down al livello successivo (giorni).
 
-    3.  Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma temporale per osservare le modifiche nel grafico a torta.
+    3.  Eseguire il drill-up e selezionare varie barre nell'istogramma a colonne in pila per osservare le modifiche nel report a torta.
 
-11. Salvare il lavoro in corso facendo clic su **Salva**.
+11. Salvare il lavoro in corso selezionando **Salva il report**.
+
 
 ## Esercizio 2: Creare un dashboard di Power BI
 
@@ -101,27 +102,28 @@ Il servizio Power BI è stato così configurato per l'uso nei lab.
 
 1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
-2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario fare clic su **...** per visualizzare altre voci di menu.
+2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario selezionare **...** per visualizzare altre opzioni.
 
 3.  Selezionare **Nuovo dashboard** nel prompt **Aggiungi a dashboard**.
 
-4.  Immettere **Campus Management** come **Nome dashboard** e fare clic su **Aggiungi oggetto dinamico**.
+4.  Immettere `Campus Management` come **Nome dashboard** e selezionare **Aggiungi live**.
 
 5.  Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
 6.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
 
+
 ### Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
 
 1.  Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
 
-2.  Immettere **buildings by number of visits** nell'area Domande e risposte. Verrà visualizzato un grafico a barre.
+2.  Immettere `buildings by number of visits` nell'area Q&A. Verrà visualizzato un grafico a barre.
 
 3.  Selezionare **Aggiungi oggetti visivo**.
 
-4.  Selezionare **Dashboard esistente**, selezionare il dashboard **Campus Management** e fare clic su **Aggiungi**.
+4.  Selezionare **Dashboard esistente**, selezionare il dashboard **Campus Management** e quindi **Aggiungi**.
 
-5.  Fare clic su **Chiudi Domande e risposte**.
+5.  Selezionare **Chiudi Domande e risposte**.
 
 Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi inclusi. Potrebbe essere necessario scorrere verso il basso per vedere il nuovo oggetto visivo Domande e risposte.
 

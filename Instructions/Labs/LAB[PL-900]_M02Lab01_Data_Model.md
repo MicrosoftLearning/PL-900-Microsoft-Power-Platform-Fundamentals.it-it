@@ -174,7 +174,7 @@ Esercizio 2: Importare dati
 
 3.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-4.  Selezionare il pulsante Waffle nell'angolo superiore sinistro per modificare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Fare clic su **OneDrive è pronto** quando viene visualizzato sullo schermo.
+4.  Selezionare il pulsante Waffle nell'angolo superiore sinistro per modificare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Selezionare **OneDrive pronto** quando viene visualizzato sullo schermo.
 
 5.  Selezionare **Carica** dal menu in alto e selezionare **File**.
 
@@ -193,7 +193,7 @@ Esercizio 2: Importare dati
 
 4.  Aprire la tabella **Visit** creata nell'esercizio precedente. 
 
-5.  Usando il menu in alto selezionare **Importa > Importa** dati**.
+5.  Usando il menu in alto selezionare **Importa** > **dati**.
 
 6.  Nella finestra di dialogo **Scegli origine dati** selezionare **Cartella di lavoro di Excel**.
 
@@ -203,7 +203,7 @@ Esercizio 2: Importare dati
 
 9.  Selezionare **Avanti**. 
 
-10. In **Scegli dati** selezionare la casella accanto alla cartella di lavoro **Visits** di Excel. 
+10. Nella schermata Power **query** > **Scegliere dati** selezionare la cartella di lavoro **Visite** di Excel. 
 
 11. Selezionare **Avanti**. Non uscire da questa pagina.
 
@@ -213,7 +213,7 @@ Esercizio 2: Importare dati
 
 14. Nel menu a discesa **Tabella destinazione** selezionare la tabella **crXXX_Visit** (Dove XXX è un set casuale di lettere e numeri)
 
-15. In **Mapping colonne** eseguire il mapping delle colonne alle colonne di destinazione corrispondenti.
+15. Nella sezione **Mapping colonne** eseguire il mapping delle colonne alle colonne di destinazione corrispondenti:
 
     | Colonne di destinazione  | Valori di origine   |
     |:---------------------|:----------------|
@@ -240,3 +240,4 @@ Attività 3: Verificare l'importazione dei dati
 2.  Verificare che i dati importati siano visualizzati nella sezione **Visita colonne e dati**.
 
 Congratulazioni, è stata creata correttamente una nuova tabella ed è stata eseguita l'importazione di dati.
+
