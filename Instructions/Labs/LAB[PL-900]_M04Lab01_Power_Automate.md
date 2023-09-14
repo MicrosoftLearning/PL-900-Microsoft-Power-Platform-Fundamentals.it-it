@@ -6,7 +6,7 @@ lab:
 
 # Lab 4: Come creare una soluzione automatizzata
 
-**Tenant WWL - Condizioni per l'utilizzo** Se viene fornito un tenant come parte di un recapito di formazione con docente, si noti che il tenant viene reso disponibile allo scopo di supportare i lab pratici nella formazione con docente. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e ci si riserva il diritto di ottenere l'accesso e la ripossess in qualsiasi momento. 
+**Tenant WWL - Condizioni per l'uso** Se viene fornito un tenant come parte di un recapito di training guidato dall'insegnante, si noti che il tenant viene reso disponibile per supportare i lab pratici nel training guidato dall'insegnante. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e si riserva il diritto di ottenere l'accesso e la repossess in qualsiasi momento. 
 
 ## Scenario
 
@@ -29,7 +29,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 - Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
 - Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
 - Completamento del **lab 3 del modulo 2 - Come creare un'app basata su modello**
-- Il contatto John Doe creato con un indirizzo di posta elettronica personale popolato.
+- Contatto di John Doe creato con un indirizzo di posta elettronica personale popolato.
 
 ## Esercizio 1: Creare un flusso di notifica visita
 
@@ -37,7 +37,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 ### Attività \#1: Creare un flusso
 
-1.  Accedere a <https://make.powerapps.com>. Potrebbe essere necessario ripetere l'autenticazione, selezionare **Accedi** e seguire le istruzioni, se necessario.
+1.  Accedere a <https://make.powerapps.com>. Se necessario, potrebbe essere necessario eseguire nuovamente l'autenticazione, selezionare **Accedi** e seguire le istruzioni.
 
 2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
@@ -51,7 +51,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 7.  In **Scegliere il trigger del flusso** cercare `Dataverse`
 
-8.  Scegliere il trigger **Quando viene aggiunta, modificata o eliminata una riga** e quindi selezionare **Crea**.
+8.  Scegliere il trigger **Quando viene aggiunta una riga, modificata o eliminata** e quindi selezionare **Crea**.
 
 9.  Popolare le condizioni di trigger per il flusso:
 
@@ -68,7 +68,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 ### Attività \#2: Creare un passaggio per ottenere la riga del visitatore
 
-1.  Selezionare **+ nuovo passaggio**. Questo passaggio recupererà le informazioni sui visitatori, incluso l'indirizzo di posta elettronica.
+1.  Selezionare **+ nuovo passaggio**. Questo passaggio recupera le informazioni del visitatore, incluso l'indirizzo di posta elettronica.
 
 2.  Cercare `Dataverse`
 
@@ -76,11 +76,11 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 4.  Selezionare **Contatti** per **Nome tabella**.
 
-5.  Selezionare il campo **ID riga**. Si noti che viene visualizzata una finestra per selezionare **Contenuto dinamico** o **Espressioni**.
+5.  Selezionare il campo **ID riga**. Si noti che una finestra viene visualizzata per selezionare **Contenuto dinamico** o **Espressioni**.
 
-6.  Nel campo **ID riga** selezionare **Visitor (Value)** nell'elenco **Contenuto dinamico** . In questo passaggio si sta cercando il contatto (Contact) per la riga Visit creata per attivare questo flusso. Poiché l'indirizzo di posta elettronica fa parte della tabella Contact, queste informazioni saranno necessarie per inviare il messaggio di posta elettronica al visitatore.
+6.  Nel campo **ID riga** selezionare **Visitatore (Valore)** dall'elenco **Contenuto dinamico** . In questo passaggio si sta cercando il contatto (Contact) per la riga Visit creata per attivare questo flusso. Poiché l'indirizzo di posta elettronica fa parte della tabella Contact, queste informazioni saranno necessarie per inviare il messaggio di posta elettronica al visitatore.
 
-7.  Nell'azione **Ottieni una riga per ID** selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**. Rinominare questa azione `Get the Visitor`
+7.  Nell'azione **Recupera una riga per ID** selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**. Rinominare questa azione `Get the Visitor`
  
     Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
@@ -91,7 +91,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 2.  `mail`Cercare , selezionare l'azione **Invia un messaggio di posta elettronica (V2)** dal **connettore Office 365 Outlook**.
 
-3.  Se viene richiesto di accettare termini e condizioni per l'utilizzo di questa azione, selezionare **Accetta**.
+3.  Se viene richiesto di accettare termini e condizioni per l'uso di questa azione, selezionare **Accetta**.
 
 4.  Selezionare **Aggiungi contenuto dinamico** nel campo **A**. 
     
@@ -135,15 +135,15 @@ Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso do
 
 2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
-3.  Selezionare **App** e aprire l'app basata sul modello **di Gestione di Bellows Campus** creata in precedenza.
+3.  Selezionare **App** e aprire l'app basata sul modello di **Gestione di Bellows Campus** creata in precedenza.
 
 3.  Lasciare aperta questa scheda del browser e tornare alla scheda precedente con il flusso.
 
-4.  Sulla barra dei comandi selezionare **Test**. Selezionare **Manualmente** e quindi **Test**.
+4.  Nella barra dei comandi selezionare **Test**. Selezionare **Manualmente** e quindi **Test**.
 
 5.  Passare alla scheda del browser con l'app basata su modello aperta. 
 
-6.  Usando lo spostamento della mappa della mappa a sinistra, selezionare **Visite**.
+6.  Usando lo spostamento della sitemap a sinistra, selezionare **Visite**.
 
 6.  Selezionare il pulsante **+ Nuovo** per aggiungere un nuovo record **Visit** .
 
@@ -166,6 +166,6 @@ Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso do
 
 ## Sfida
 
-- Sperimentare la formattazione nel messaggio di posta elettronica. Come si può rendere più professionale?
+- Sperimentare la formattazione nel messaggio di posta elettronica. Come puoi renderlo più professionale?
 
 
