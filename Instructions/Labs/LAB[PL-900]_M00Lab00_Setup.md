@@ -6,7 +6,7 @@ lab:
 
 # Lab 0. Convalidare l'ambiente lab
 
-**Tenant WWL - Condizioni per l'utilizzo** Se viene fornito un tenant come parte di un recapito di formazione con docente, si noti che il tenant viene reso disponibile allo scopo di supportare i lab pratici nella formazione con docente. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e ci si riserva il diritto di ottenere l'accesso e la ripossess in qualsiasi momento. 
+**Tenant WWL - Condizioni per l'uso** Se viene fornito un tenant come parte di un recapito di training guidato dall'insegnante, si noti che il tenant viene reso disponibile per supportare i lab pratici nel training guidato dall'insegnante. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e si riserva il diritto di ottenere l'accesso e la repossess in qualsiasi momento. 
 
 ## Scenario
 
@@ -21,44 +21,44 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 ## Esercizio 1. Configurazione
 
-Attività n. 1 - Acquisire il tenant di valutazione di Microsoft Power Platform
+Attività 1 - Acquisire il tenant di valutazione di Microsoft Power Platform
 
 1.  Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato. 
 
-1.  Passare a <https://powerapps.microsoft.com> e selezionare **Avvia gratuitamente**.
+1.  Passare a <https://powerapps.microsoft.com> e selezionare **Avvia gratuito**.
 
-1.  In **Iniziamo immettere l'indirizzo** di posta elettronica fornito da Authorized Lab Hoster e selezionare **Avvia la versione di valutazione gratuita**. 
+1.  In **Iniziamo**, immettere l'indirizzo di posta elettronica fornito dall'host del lab autorizzato e selezionare **Avvia la versione di valutazione gratuita**. 
 
 1.  Verrà visualizzato un messaggio per confermare che si dispone di un account Microsoft esistente. Fare clic su **Accedi**. 
 
-1.  Immettere la password fornita da Authorized Lab Hoster e selezionare **Accedi**. 
+1.  Immettere la password fornita dall'host del lab autorizzato e selezionare **Accedi**. 
 
 1.  Selezionare **Sì** per mantenere l'accesso. 
 
 
-Attività n. 2 : creare un ambiente
+Attività #2 - Creare un ambiente
 
 1.  Passare a <https://admin.powerplatform.microsoft.com> e accedere con le credenziali di Microsoft 365, se richiesto. 
 
-1.  Se viene visualizzata una finestra popup di benvenuto, selezionare **Inizia**. 
+1.  Se viene visualizzato un popup di benvenuto, selezionare **Introduzione**. 
 
-1.  Selezionare **Ambienti** e quindi **+ Nuovo**.
+1.  Selezionare **Ambienti** e selezionare **+ Nuovo**.
 
     1. In **Nome** immettere **[Iniziali] Practice**, ad esempio: AJ Practice.
 
-    1. Per **Tipo** scegliere **Versione di** valutazione (Non selezionare l'opzione *Versione di valutazione (basata su sottoscrizione).*
+    1. Per **Tipo** scegliere **Versione di valutazione** (Non selezionare l'opzione *Versione di valutazione (basata su sottoscrizione).*
 
-    1. Impostare l'interruttore per **Aggiungi un archivio dati dataverse?** su **Sì**. 
+    1. Modificare l'interruttore per **Aggiungere un archivio dati dataverse?** a **Sì**. 
 
-    1. Lasciare predefinite tutte le altre selezioni e selezionare **Avanti**. 
+    1. Lasciare tutte le altre selezioni come predefinite e selezionare **Avanti**. 
 
-    1. Sotto l'intestazione **Gruppo di sicurezza** usare il pulsante **+ Seleziona** .
+    1. Nell'intestazione **Gruppo di sicurezza** usare il pulsante **+ Seleziona** .
 
-    1. Selezionare la casella di controllo per l'elemento **Nessuno** , sotto l'intestazione **Apri accesso** e quindi selezionare **Fine**.
+    1. Selezionare la casella di controllo per l'elemento **None** , nell'intestazione **Apri accesso** e quindi selezionare **Fine**.
 
-    1. Lasciare le opzioni rimanenti predefinite e selezionare **Salva**. 
+    1. Lasciare le opzioni rimanenti nelle impostazioni predefinite e selezionare **Salva**. 
 
-1.  L'ambiente **Di pratica** dovrebbe ora essere visualizzato nell'elenco degli ambienti. 
+1.  L'ambiente **Practice** dovrebbe ora essere visualizzato nell'elenco degli ambienti. 
 
     > Per il provisioning dell'ambiente potrebbero essere necessari alcuni minuti. Se necessario, aggiornare la pagina.
 
