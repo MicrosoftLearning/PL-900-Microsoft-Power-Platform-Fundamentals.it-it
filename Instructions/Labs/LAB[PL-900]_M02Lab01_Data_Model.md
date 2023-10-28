@@ -43,11 +43,12 @@ Aspetti da considerare prima di iniziare
 
 - Convenzioni di denominazione - digitare i nomi con attenzione.
 
-Esercizio 1: Creare una nuova tabella
+
+# Esercizio 1: Creare una nuova tabella
 
 **Obiettivo:** In questo esercizio verrà creata la nuova tabella personalizzata per le visite.
 
-Attività n. 1: Creare tabelle e colonne visit
+## Attività n. 1: Creare tabelle e colonne visit
 
 La tabella **Visit** conterrà informazioni sulle visite al campus, inclusi visitatore, ora pianificata e ora effettiva di ogni visita.
 
@@ -59,7 +60,7 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Usando lo spostamento a sinistra, selezionare **Tabelle**.
 
-1.  Selezionare **+ Nuova tabella** e scegliere **+ Nuova tabella**. 
+1.  Selezionare **+ Nuova tabella** e scegliere **Imposta proprietà avanzate**. 
 
 1.  Per **Nome visualizzato** immettere `Visit`
 
@@ -67,7 +68,8 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Nella sezione **Schema** selezionare **Colonne**. 
 
-# Creare la colonna Scheduled Start
+
+## Creare la colonna Scheduled Start
 
 1.  Selezionare **+ Nuova colonna**. 
 
@@ -85,7 +87,8 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Selezionare **Salva**. 
 
-# Creare la colonna Scheduled End
+
+## Creare la colonna Scheduled End
 
 1.  Selezionare **+ Nuova colonna**. 
 
@@ -101,7 +104,8 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Selezionare **Salva**. 
 
-# Creare la colonna Actual Start
+
+## Creare la colonna Actual Start
 
 1.  Selezionare **+ Nuova colonna**. 
 
@@ -117,11 +121,12 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Selezionare **Salva**. 
 
-# Creare la colonna Actual End
+
+## Creare la colonna Actual End
 
 1.  Selezionare **+ Nuova colonna**.
 
-1.  Immettere **Actual End** in **Nome visualizzato**.
+1.  Immettere `Actual End` per **Nome visualizzato**.
 
 1.  Selezionare **Data e ora** per **Tipo di dati**.
 
@@ -133,7 +138,8 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Selezionare **Salva**.
 
-# Creare la colonna Code
+
+## Creare la colonna Code
 
 1.  Selezionare **+ Nuova colonna**.
 
@@ -145,15 +151,16 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 1.  Selezionare **Salva**. 
 
-# Creare la colonna di ricerca Visitor
+
+## Creare la colonna di ricerca Visitor
 
 1.  Selezionare **+ Nuova colonna**.
 
 1.  Immettere `Visitor` per **Nome visualizzato**.
 
-1.  Selezionare **Ricerca** in **Tipo di dati**. 
+1.  Selezionare **Ricerca** >  per **Tipo di dati**.**** 
 
-1.  Selezionare **Contatto** in **Tabella correlata**. 
+1.  Selezionare **Contatto** per la **tabella Correlata**. 
 
 1.  Espandere **Opzioni avanzate**. 
 
@@ -162,11 +169,11 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 1.  Selezionare **Salva**.
 
 
-Esercizio 2: Importare dati
+# Esercizio 2: Importare dati
 
 **Obiettivo:** in questo esercizio si importeranno dati di esempio nel database Dataverse.
 
-### Attività \#1: Caricare il file di Excel in OneDrive
+## Attività \#1: Caricare il file di Excel in OneDrive
 
 1.  Nella macchina virtuale dovrebbe essere memorizzato il file **Visits.xlsx** in **C:/LabFiles**. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -176,18 +183,18 @@ Esercizio 2: Importare dati
 
 4.  Selezionare il pulsante Waffle nell'angolo superiore sinistro per modificare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Selezionare **OneDrive pronto** quando viene visualizzato sullo schermo.
 
-5.  Selezionare **Carica** dal menu in alto e selezionare **File**.
+5.  Selezionare **+Aggiungi nuovo** dal menu e selezionare **Caricamento file**.
 
 6.  Individuare e selezionare il file **Visits.xlsx** e selezionare **Apri**.
 
-    > **Nota:** questo file si trova nella cartella **Tutti i file** nel computer.
+    > **Nota:** Il file deve trovarsi nella cartella **Tutti** > **i file** desktop nella macchina virtuale.
 
 
-### Attività \#2: Creare un flusso di dati
+## Attività \#2: Creare un flusso di dati
 
-1.  Se non si è già connessi, accedere <https://make.powerapps.com> 
+1.  Se non è già stato eseguito l'accesso, accedere <https://make.powerapps.com> 
 
-2.  Dal menu **Ambiente** in alto a destra verificare che l'ambiente **Practice** sia selezionato. 
+2.  Nel menu **Ambiente** in alto a destra verificare che l'ambiente **di pratica** sia selezionato. 
 
 3.  Usando lo spostamento a sinistra, selezionare **Tabelle**. 
 
@@ -197,21 +204,21 @@ Esercizio 2: Importare dati
 
 6.  Nella finestra di dialogo **Scegli origine dati** selezionare **Cartella di lavoro di Excel**.
 
-7.  Selezionare l'opzione **Collegamento al file**. Selezionare **Sfoglia OneDrive**. Se richiesto, eseguire l'accesso con le proprie credenziali di Microsoft 365. Configurare il browser per consentire sempre popup. 
+7.  Selezionare l'opzione **Collegamento al file**. Selezionare **Sfoglia OneDrive**. Se richiesto, eseguire l'accesso con le proprie credenziali di Microsoft 365. Configurare il browser per consentire sempre i popup. 
 
 8.  Selezionare il file **Visits.xlsx** caricato in OneDrive nell'attività precedente. 
 
 9.  Selezionare **Avanti**. 
 
-10. Nella schermata Power **query** > **Scegliere dati** selezionare la cartella di lavoro **Visite** di Excel. 
+10. Nella schermata**Scegli dati** di **Power Query** >  selezionare la cartella di lavoro **Visite** di Excel. 
 
 11. Selezionare **Avanti**. Non uscire da questa pagina.
 
 12. Selezionare **Avanti**. 
 
-13. Nella sezione **Tabelle mappa** in **Impostazioni di caricamento** selezionare **Carica nella tabella esistente**. 
+13. Nella sezione **Tabelle mappa** , in **Impostazioni di caricamento** selezionare **Carica nella tabella esistente**. 
 
-14. Nel menu a discesa **Tabella destinazione** selezionare la tabella **crXXX_Visit** (Dove XXX è un set casuale di lettere e numeri)
+14. Nel menu a discesa **Tabella di destinazione** selezionare la tabella **crXXX_Visit** (dove XXX è un set casuale di lettere e numeri)
 
 15. Nella sezione **Mapping colonne** eseguire il mapping delle colonne alle colonne di destinazione corrispondenti:
 
@@ -233,9 +240,9 @@ Esercizio 2: Importare dati
     > **Nota:** per l'importazione dei dati nella tabella potrebbero essere necessari alcuni minuti. Non preoccuparsi se vengono segnalati errori. È normale e non influiranno sul resto del corso.
 
 
-Attività 3: Verificare l'importazione dei dati
+## Attività \#3: Verificare l'importazione dei dati
 
-1.  Dopo l'importazione dei dati, usare lo spostamento a sinistra della schermata per selezionare **Tabelle** e aprire la tabella **Visita** .
+1.  Dopo aver importato i dati, usare lo spostamento a sinistra della schermata per selezionare **Tabelle** e aprire la tabella **Visita** .
 
 2.  Verificare che i dati importati siano visualizzati nella sezione **Visita colonne e dati**.
 
