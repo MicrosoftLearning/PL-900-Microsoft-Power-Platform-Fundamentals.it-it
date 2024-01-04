@@ -1,20 +1,20 @@
 ---
 lab:
-  title: 'Lab 5: Come creare un semplice dashboard'
+  title: 'Lab 5: Come creare un dashboard semplice'
   module: 'Module 5: Get Started with Power BI'
 ---
 
-## Lab 5: Come creare un semplice dashboard
+## Lab 5: Come creare un dashboard semplice
 
-**Tenant WWL - Condizioni per l'utilizzo** Se viene fornito un tenant come parte di un recapito di formazione con docente, si noti che il tenant viene reso disponibile allo scopo di supportare i lab pratici nella formazione con docente. I tenant non devono essere condivisi o usati per scopi esterni ai lab pratici. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non sono idonei per l'estensione. I tenant non devono essere convertiti in una sottoscrizione a pagamento. I tenant ottenuti come parte di questo corso rimangono la proprietà di Microsoft Corporation e ci si riserva il diritto di ottenere l'accesso e la ripossess in qualsiasi momento. 
+**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant utilizzato in questo corso è un tenant di valutazione e non può essere utilizzato o reso accessibile dopo il termine della lezione e non è idoneo per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
 
 ## Scenario
 
-Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
+Bellows College è un'organizzazione educativa con più edifici nel campus. I visitatori del campus sono attualmente registrati in giornali di registrazione cartacei. Le informazioni non vengono acquisite in modo coerente e non ci sono mezzi per raccogliere e analizzare i dati sulle visite nell'intero campus.
 
 L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
 
-Durante questo corso verranno sviluppate applicazioni e si useranno le funzionalità di automazione per consentire al personale amministrativo e addetto alla sicurezza del Bellows College di gestire e controllare l'accesso agli edifici del campus.
+In questo corso verranno create applicazioni ed eseguita l'automazione per consentire al personale amministrativo e di sicurezza di Bellows College di gestire e controllare l'accesso agli edifici del campus.
 
 In questo lab verranno creati un report e un dashboard di Power BI che visualizza i dati sulle visite al campus.
 
@@ -24,7 +24,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 -   Creare un report con varie visualizzazioni delle informazioni sulle visite al campus
 
--   Usare una query in linguaggio naturale per creare ulteriori visualizzazioni
+-   Utilizzare una query in linguaggio naturale dell'utente per creare visualizzazioni aggiuntive
 
 ## Prerequisiti
 
@@ -34,99 +34,99 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 ## Aspetti da considerare prima di iniziare
 
 -   Chi sono i destinatari del report?
--   In che modo i destinatari useranno il report? Dispositivo tipico? Posizione?
--   Sono disponibili dati sufficienti per la visualizzazione?
--   Quali sono le possibili caratteristiche che è possibile usare per analizzare i dati sulle visite?
+-   In che modo i destinatari utilizzeranno il report? Qual è il dispositivo tipico? Luogo?
+-   Sono disponibili dati sufficienti da visualizzare?
+-   Quali sono le eventuali caratteristiche che è possibile utilizzare per analizzare i dati relativi alle visite?
 
 ## Esercizio 1: Creare un report di Power BI
 
-**Obiettivo:** In questo esercizio verrà creato un report di Power BI in base ai dati del foglio di calcolo di Excel usato in un esercizio precedente.
+**Obiettivo:** in questo esercizio verrà creato un report di Power BI in base ai dati del foglio di calcolo di Excel usato in un esercizio precedente.
 
 ### Attività \#1: Preparare il servizio Power BI
 
-1.  Dovrebbe essere presente un file visits.pbix archiviato nella macchina virtuale nella cartella AllFiles sul desktop. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
+1.  Nella macchina virtuale deve essere archiviato un file visits.pbix nella cartella AllFiles sul desktop. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
 
-2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/> e accedere, se necessario.
+2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/>; se necessario, effettuare l'accesso.
 
-3.  Selezionare **Area di lavoro personale** nel riquadro di spostamento a sinistra.
+3.  Nel riquadro di spostamento a sinistra, selezionare **Area di lavoro personale**.
 
 5.  Selezionare **Carica** e quindi **Sfoglia**.
 
-6.  Individuare e selezionare il file **visits.pbix** scaricato in precedenza. 
+6.  Trovare e selezionare il file **visits.pbix** scaricato in precedenza. 
 
-7.  Al termine del caricamento dei dati, selezionare il report **visite** .
+7.  Al termine del caricamento dei dati, selezionare il report **Visite**.
 
-    > **Nota:** Il tipo è impostato su **Report**, non selezionare il set di dati.
+    > **Nota:** il tipo è impostato su **Report**, non selezionare il set di dati.
 
 8.  Selezionare **Modifica**. 
 
-    Se la voce di menu **Modifica** non è visibile, selezionare i puntini di sospensione **...** e quindi selezionare **Modifica**.
+    Se la voce di menu **Modifica** non è visibile fare clic sui puntini di sospensione **...** e quindi selezionare **Modifica**.
 
-Il servizio Power BI è stato così configurato per l'uso nei lab.
+Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 
-### Attività \#2: Creare le visualizzazioni grafiche per le visite e le informazioni temporali
+### Attività \#2: Creare le visualizzazioni grafiche e le informazioni temporali
 
-1.  Selezionare l'icona **Grafico a torta** nel pannello **Visualizzazioni** per inserire un grafico.
+1.  Per inserire un grafico, fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni**.
 
-2.  Espandere **bc_Visit** nel riquadro **Campi** . Trascinare il campo **Edificio** e rilasciarlo nella casella **Legenda** .
+2.  Espandere **bc_Visit** nel riquadro **Campi**. Trascinare il campo **Creazione** nella casella **Legenda**.
 
-3.  Trascinare il campo **Visita** e rilasciarlo nella casella **Valori** .
+3.  Trascinare il campo **Visita** nella casella **Valori**.
 
-4.  Ridimensionare il grafico a torta usando i punti di controllo in angolo in modo che siano visibili tutti i componenti del grafico.
+4.  Ridimensionare il grafico a torta utilizzando le maniglie angolari in modo che tutti i componenti del grafico siano visibili.
 
-5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'icona **Istogramma in pila** nel riquadro **Visualizzazioni** .
+5.  Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'icona **Istogramma in pila** nel riquadro **Visualizzazioni**.
 
-6.  Espandere **bc_Visit** nel riquadro **Campi** se non è già espanso. Trascinare il campo **Visita** e rilasciarlo nella casella **asse Y** .
+6.  Se non è già stato fatto, espandere **bc_Visit** nel riquadro **Campi**. Trascinare il campo **Visit** nella casella di destinazione **Asse Y**.
 
-7.  Trascinare **il campo Start** e rilasciarlo nella casella **asse X** .
+7.  Trascinare il campo **Start** nella casella di destinazione **Asse X**.
 
-8.  Nel riquadro **Visualizzazioni** selezionare la **x** accanto a **Year** e **Quarter** per lasciare solo i totali **mese** e **giorno** per l'asse X.
+8.  Ne riquadro **Visualizzazioni**, selezionare la **x** accanto a **Year** e **Quarter** per lasciare solo i totali di **Month** e **Day** per l'asse X.
 
-9.  Ridimensionare il grafico nel modo preferito con i punti di controllo in angolo.
+9.  Ridimensionare il grafico in base alle esigenze utilizzando le maniglie angolari.
 
-10. Testare il report in modo interattivo:
+10. Testare l'interattività del report:
 
-    1.  Selezionare sezioni di compilazione diverse nel grafico a torta e osservare le modifiche nell'istogramma a colonne in pila.
+    1.  Selezionare sezioni di compilazione diverse nel grafico a torta e osservare le modifiche nell'istogramma in pila.
 
-    2.  Selezionare l'istogramma a colonne in pila. Selezionare la freccia su per **eseguire il drill-up**. Selezionare la freccia giù per attivare la modalità **drill-down** , quindi selezionare una colonna per eseguire il drill-down al livello successivo (giorni).
+    2.  Selezionare l'istogramma in pila. Selezionare la freccia su per eseguire il **Drill-up**. Selezionare la freccia a discesa per attivare la modalità **Drill-down** e quindi selezionare una colonna per eseguire il drill-down al livello successivo, ovvero i giorni.
 
-    3.  Eseguire il drill-up e selezionare varie barre nell'istogramma a colonne in pila per osservare le modifiche nel report a torta.
+    3.  Eseguire il drill-up e il drill-down e selezionare varie barre nell'istogramma in pila per osservare le modifiche nel report a torta.
 
-11. Salvare il lavoro in corso selezionando **Salva il report**.
+11. Salvare il lavoro in corso selezionando **Salva questo report**.
 
 
 ## Esercizio 2: Creare un dashboard di Power BI
 
-### Attività \#1: Creare un dashboard di Power BI
+### Attività\#1: Creare un dashboard di Power BI
 
 1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
 2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario selezionare **...** per visualizzare altre opzioni.
 
-3.  Selezionare **Nuovo dashboard** nel prompt **Aggiungi a dashboard**.
+3.  Selezionare **Nuovo dashboard** nel prompt **Aggiungi al dashboard**.
 
-4.  Immettere `Campus Management` come **Nome dashboard** e selezionare **Aggiungi live**.
+4.  Immettere `Campus Management` come **Nome dashboard** e selezionare **Aggiungi oggetto dinamico**.
 
 5.  Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
-6.  Testare l'interattività del grafico a torta e dell'istogramma visualizzati.
+6.  Testare l'interattività dei grafici a torta e a barre visualizzati.
 
 
-### Attività \#2: Aggiungere visualizzazioni in linguaggio naturale
+### Attività\#2: Aggiungere visualizzazioni utilizzando il linguaggio naturale
 
-1.  Nel dashboard **Campus Management** selezionare la barra **Porre una domanda sui dati** in alto.
+1.  Nella dashboard **Campus Management**, selezionare la barra **Fai una domanda relativa ai dati** nella parte superiore.
 
-2.  Immettere `buildings by number of visits` nell'area Q&A. Verrà visualizzato un grafico a barre.
+2.  Immettere `buildings by number of visits` nell'area domande e risposte. Verrà visualizzato un grafico a barre.
 
-3.  Selezionare **Aggiungi oggetti visivo**.
+3.  Selezionare **Aggiungi oggetto visivo**.
 
-4.  Selezionare **Dashboard esistente**, selezionare il dashboard **Campus Management** e quindi **Aggiungi**.
+4.  Selezionare **Dashboard esistente**, selezionare il dashboard **Campus Management**, selezionare **Aggiungi**.
 
-5.  Selezionare **Chiudi Domande e risposte**.
+5.  Selezionare **Esci da domande e risposte**.
 
-Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi inclusi. Potrebbe essere necessario scorrere verso il basso per vedere il nuovo oggetto visivo Domande e risposte.
+Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi inclusi. Potrebbe essere necessario scorrere verso il basso per visualizzare i nuovi oggetti visivi delle domande e risposte.
 
-Il dashboard dovrebbe essere simile al seguente:
+Il dashboard dovrebbe avere un aspetto simile al seguente:
 
 ![](media/5-powerbi-result.png)
