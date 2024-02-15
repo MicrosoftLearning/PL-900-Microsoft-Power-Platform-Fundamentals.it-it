@@ -41,7 +41,8 @@ Per preparare gli ambienti di apprendimento, è possibile:
 
 Aspetti da considerare prima di iniziare
 
-- Convenzioni di denominazione - digitare i nomi con attenzione.
+- Convenzioni di denominazione: immettere i nomi con attenzione.
+
 
 # Esercizio 1: Creare una nuova tabella
 
@@ -53,9 +54,9 @@ La tabella **Visit** conterrà informazioni sulle visite al campus, inclusi visi
 
 Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente immesso e interpretato da un visitatore quando richiesto durante il processo di registrazione della visita.
 
-1.  Se non è già stato effettuato l'accesso, accedere a <https://make.powerapps.com> 
+1.  Se non è già stato effettuato l'accesso, accedere a `https://make.powerapps.com`
 
-1.  Dal menu **Ambiente** in alto a destra, verificare che sia selezionato l'ambiente **Pratica**. 
+1.  **Nel menu Ambiente** in alto a destra verificare che sia selezionato l'ambiente **Dev One**. 
 
 1.  Dalla barra di spostamento a sinistra selezionare **Tabelle**.
 
@@ -72,7 +73,7 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 1.  Selezionare **+ Nuova colonna**. 
 
-1.  Immettere `Scheduled Start` per il **Nome visualizzato** 
+1.  Immettere `Scheduled Start` per **Nome visualizzato**. 
 
 1.  Selezionare **Data e ora** per **Tipo di dati**. 
 
@@ -91,7 +92,7 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 1.  Selezionare **+ Nuova colonna**. 
 
-1.  Immettere `Scheduled End` per **Nome visualizzato.**.
+1.  Immettere `Scheduled End` per **Nome visualizzato**.
 
 1.  Selezionare **Data e ora** per **Tipo di dati**.
 
@@ -108,7 +109,7 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 1.  Selezionare **+ Nuova colonna**. 
 
-1.  Immettere `Actual Start` per **Nome visualizzato.**.
+1.  Immettere `Actual Start` per **Nome visualizzato**.
 
 1.  Selezionare **Data e ora** per **Tipo di dati**.
 
@@ -176,11 +177,11 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 1.  Nella macchina virtuale dovrebbe essere memorizzato il file **Visits.xlsx** in **C:/LabFiles**. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
-2.  Se non è già stato eseguito l'accesso, accedere a [https://make.powerapps.com](https://make.powerapps.com/). 
+2.  Se non è già stato eseguito l'accesso, accedere a `https://make.powerapps.com`
 
-3.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+3.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-4.  Selezionare il pulsante Waffle nell'angolo superiore a sinistra per cambiare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Selezionare **OneDrive è pronto** quando viene visualizzato sullo schermo.)
+4.  Selezionare l'icona di avvio delle app (pulsante Waffle) nell'angolo in alto a sinistra per modificare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Selezionare **OneDrive è pronto** quando viene visualizzato sullo schermo.)
 
 5.  Selezionare **+Aggiungi nuovo** dal menu, quindi selezionare **Carica file**.
 
@@ -191,9 +192,9 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 ## Attività \#2: creare un flusso di dati
 
-1.  Se non è già stato effettuato l'accesso, accedere a <https://make.powerapps.com> 
+1.  Se non è già stato effettuato l'accesso, accedere a `https://make.powerapps.com`
 
-2.  Dal menu **Ambiente** in alto a destra, verificare che sia selezionato l'ambiente **Pratica**. 
+2.  **Nel menu Ambiente** in alto a destra verificare che sia selezionato l'ambiente **Dev One**. 
 
 3.  Dalla barra di spostamento a sinistra selezionare **Tabelle**. 
 
@@ -207,13 +208,13 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 8.  Selezionare il file **Visits.xlsx** caricato in OneDrive nell'attività precedente. 
 
-9.  Selezionare **Avanti**. 
+9.  Seleziona **Avanti**. 
 
 10. Nella schermata **Power Query** > **Scegli dati**, controllare la cartella di lavoro Excel **Visits**. 
 
-11. Selezionare **Avanti**. Non uscire da questa pagina.
+11. Seleziona **Avanti**. Non uscire da questa pagina.
 
-12. Selezionare **Avanti**. 
+12. Seleziona **Avanti**. 
 
 13. Nella sezione **Mapping tabelle**, sotto **Carica impostazioni**, selezionare **Carica in tabella esistente**. 
 
@@ -230,11 +231,11 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
     | crxxx_ScheduledEnd   | fine pianificata   |
     | crxxx_ScheduledStart | inizio pianificato |
 
-16. Selezionare **Avanti**. 
+16. Seleziona **Avanti**. 
 
 17. Selezionare **Aggiorna manualmente**. 
 
-18. Selezionare **Pubblica**. 
+18. Seleziona **Pubblica**. 
 
     > **Notare:** per l'importazione dei dati nella tabella potrebbero essere necessari alcuni minuti. Non preoccuparsi se vengono segnalati errori. È normale e non influiranno sul resto del corso.
 
@@ -246,4 +247,5 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 2.  Verificare che i dati importati siano visualizzati nella sezione **Visita colonne e dati**.
 
 Congratulazioni, è stata creata correttamente una nuova tabella ed è stata eseguita l'importazione di dati.
+
 

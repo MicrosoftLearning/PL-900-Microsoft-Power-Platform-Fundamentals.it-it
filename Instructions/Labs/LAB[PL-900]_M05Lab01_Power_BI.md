@@ -46,7 +46,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 1.  Nella macchina virtuale deve essere archiviato un file visits.pbix nella cartella AllFiles sul desktop. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
 
-2.  Aprire una nuova scheda e passare a <https://app.powerbi.com/>; se necessario, effettuare l'accesso.
+2.  Aprire una nuova scheda e passare a `https://app.powerbi.com`; se necessario, effettuare l'accesso.
 
 3.  Nel riquadro di spostamento a sinistra, selezionare **Area di lavoro personale**.
 
@@ -58,7 +58,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
     > **Nota:** il tipo è impostato su **Report**, non selezionare il set di dati.
 
-8.  Selezionare **Modifica**. 
+8.  Seleziona **Modifica**. 
 
     Se la voce di menu **Modifica** non è visibile fare clic sui puntini di sospensione **...** e quindi selezionare **Modifica**.
 
@@ -102,7 +102,7 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1.  Il report dovrebbe essere ancora aperto dall'attività precedente.
 
-2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario selezionare **...** per visualizzare altre opzioni.
+2.  Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario selezionare il menu **con i puntini di sospensione ...** per visualizzare altre opzioni.
 
 3.  Selezionare **Nuovo dashboard** nel prompt **Aggiungi al dashboard**.
 
@@ -130,3 +130,4 @@ Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi in
 Il dashboard dovrebbe avere un aspetto simile al seguente:
 
 ![](media/5-powerbi-result.png)
+

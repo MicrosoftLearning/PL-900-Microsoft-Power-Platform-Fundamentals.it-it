@@ -21,46 +21,21 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 ## Esercizio 1: configurazione
 
-Attività 1: Acquisire il tenant di prova di Microsoft Power Platform
+Attività n. 1 - Verificare il tenant della versione di valutazione di Microsoft Power Platform
 
-1.  Copiare le **credenziali di Microsoft 365** da Authorized Lab Hoster. 
+1.  Verificare di avere **le credenziali** di Microsoft 365 disponibili nell'host lab autorizzato. 
 
-1.  Accedere a <https://powerapps.microsoft.com> e selezionare **Inizia gratuitamente**.
+2.  In una nuova scheda del browser passare a `https://make.powerapps.com`
 
-1.  In **Inizia**, inserire l'indirizzo e-mail fornito dal  provider di servizi di hosting per i lab autorizzato e selezionare **Inizia la versione di prova gratuita**. 
+3.  Immettere l'oggetto `email address` fornito dall'host del lab autorizzato. 
 
-1.  Se viene visualizzata una pagina aggiuntiva con i pulsanti **Inizia a creare app** e **Inizia a usare app**, fare clic su **Inizia a usare app**, non su Inizia a creare app.
+4.  Selezionare **Accedi**. 
 
-1.  Verrà visualizzato un messaggio per confermare che si dispone di un account Microsoft esistente. Selezionare **Accedi**. 
+5.  Immettere l'oggetto `password` fornito dall'host del lab autorizzato. 
 
-1.  Immettere la password fornita dal provider di servizi di hosting per i lab autorizzato e selezionare **Accedi**. 
+6.  Facoltativamente, selezionare **Sì** per rimanere connessi.
 
-1.  Selezionare **Sì** per mantenere l'accesso. 
+7.  Se richiesto, immettere `0123456789` per Telefono numero** e selezionare **Invia****.
 
-
-Attività n. 2: Creare l'ambiente
-
-1.  Passare a <https://admin.powerplatform.microsoft.com> ed eseguire l'accesso con le proprie credenziali di Microsoft 365, se richiesto. 
-
-1.  Se viene visualizzato un popup di benvenuto, selezionare **Attività iniziali**. 
-
-1.  Selezionare **Ambienti** e selezionare **+ Nuovo**.
-
-    1. In **Nome** immettere **[Iniziali] Practice**, ad esempio: AJ Practice.
-
-    1. Per **Tipo**, scegliere **Prova** (non selezionare l'opzione *Prova (basata su abbonamento)*).
-
-    1. Modificare l'interruttore per **Aggiungere un archivio dati Dataverse?** su **Sì**. 
-
-    1. Lasciare tutte le altre selezioni come impostazione predefinita e selezionare **Avanti**. 
-
-    1. In **Gruppo di sicurezza**, utilizzare il pulsante **+ Seleziona**.
-
-    1. Selezionare la casella di controllo per l'elemento **Nessuno**, sotto la voce **Accesso libero** e quindi selezionare **Fine**.
-
-    1. Lasciare le opzioni rimanenti ai valori predefiniti e selezionare **Salva**. 
-
-1.  L'ambiente **Practice** dovrebbe ora apparire nell'elenco degli ambienti. 
-
-    > L'ambiente potrebbe richiedere alcuni minuti per effettuare il provisioning. Se necessario, aggiornare la pagina.
+8.  **Aggiornare** la scheda e verificare che l'ambiente **Dev One** sia selezionato in **Ambiente** in alto a destra. 
 
