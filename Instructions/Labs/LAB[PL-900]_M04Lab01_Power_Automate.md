@@ -37,23 +37,25 @@ Di seguito sono elencati i requisiti da implementare per completare il progetto:
 
 ### Attività \#1: creare un flusso
 
-1.  Accedere a <https://make.powerapps.com>. Potrebbe essere necessario effettuare una nuova autenticazione, selezionare **Accedi** e seguire le istruzioni, se necessario.
+1.  Passare a `https://make.powerapps.com`
 
-2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+2.  Potrebbe essere necessario ripetere l'autenticazione, selezionare **Accedi** e seguire le istruzioni, se necessario.
 
-3.  Nel riquadro di spostamento a sinistra selezionare **Flussi**.
+3.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-4.  Se richiesto, selezionare **Attività iniziali**.
+4.  Nel riquadro di spostamento a sinistra selezionare **Flussi**.
 
-5.  Selezionare **+ Nuovo flusso** e selezionare **Flusso cloud automatizzato**.
+5.  Se richiesto, selezionare **Attività iniziali**.
 
-6.  Immettere `Visit Notification` per **Nome flusso**.
+6.  Selezionare **+ Nuovo flusso** e selezionare **Flusso cloud automatizzato**.
 
-7.  In **Scegliere il trigger del flusso**, cercare `Dataverse`.
+7.  Immettere `Visit Notification` per **Nome flusso**.
 
-8.  Selezionare il trigger **Quando una riga viene aggiunta, modificata o eliminata**, quindi selezionare **Crea**.
+8.  In **Scegliere il trigger del flusso**, cercare `Dataverse`.
 
-9.  Popolare le condizioni di trigger per il flusso:
+9.  Selezionare il trigger **Quando una riga viene aggiunta, modificata o eliminata**, quindi selezionare **Crea**.
+
+10.  Popolare le condizioni di trigger per il flusso:
 
     1.  Selezionare **Aggiunte** per **Tipo di modifica**
 
@@ -131,9 +133,9 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso d
 
 ### Attività \#4: Convalidare e testare il flusso
 
-1.  Aprire una nuova scheda nel browser e passare a <https://make.powerapps.com>.
+1.  Aprire una nuova scheda nel browser e passare a `https://make.powerapps.com`
 
-2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+2.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
 3.  Selezionare **App** e aprire l'app **Bellows Campus Management** basata sul modello creata in precedenza.
 

@@ -56,9 +56,9 @@ Aspetti da considerare prima di iniziare
 
 ### Attività n. 1: Modificare il modulo delle visite
 
-1.  Accedere a <https://make.powerapps.com> se l'accesso non è già stato effettuato.
+1.  Se non si è già, accedere a `https://make.powerapps.com` 
 
-2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+2.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
 3.  Usando il riquadro di spostamento a sinistra, selezionare **Tabelle** e aprire la tabella **Visite**.
 
@@ -66,7 +66,7 @@ Aspetti da considerare prima di iniziare
 
 4.  Nella sezione **Esperienze con i dati**, selezionare **Moduli** e aprire il modulo **Informazioni** con il tipo di modulo **Principale**. (**Importante:**  assicurarsi di selezionare il modulo con il tipo di modulo **Principale**). 
 
-> **IMPORTANTE:**  poiché tutti i moduli hanno il nome Informazioni per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo **Principale** e non un altro. Per impostazione predefinita, il modulo include due campi: Nome e Proprietario.
+    > **IMPORTANTE:**  poiché tutti i moduli hanno il nome Informazioni per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo **Principale** e non un altro. Per impostazione predefinita, il modulo include due campi: Nome e Proprietario.
 
 5.  Sul lato destro della schermata, nel pannello **Proprietà**, selezionare il campo **Nome visualizzato** e modificarlo in `Main Information`
 
@@ -159,9 +159,9 @@ Per semplicità e per ragioni di tempo, non verranno usate alcune delle colonne 
 
 ### Attività n.1: Creare l'app
 
-1.  Se non è già stato effettuato l'accesso, accedere a <https://make.powerapps.com>.
+1.  Se non si è già, accedere a `https://make.powerapps.com` 
 
-2.  Se non è già stato selezionato, selezionare l'ambiente **[iniziali] Pratica** in alto a destra.
+2.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
 3.  Selezionare **+ Crea** nel riquadro di spostamento a sinistra.
 
@@ -181,7 +181,7 @@ Per semplicità e per ragioni di tempo, non verranno usate alcune delle colonne 
 
     1. Visitare
 
-    2. Contact: 
+    2. Contact
 
 8.  Una volta disponibili entrambe le tabelle, selezionare **Aggiungi**.
 
@@ -193,7 +193,7 @@ Per semplicità e per ragioni di tempo, non verranno usate alcune delle colonne 
 
 12. Selezionare**Salva** e attendere che le modifiche vengano salvate.
 
-13. Al termine del** salvataggio** selezionare il pulsante **Pubblica** per pubblicare le modifiche.
+13. Al termine del** salvataggio** selezionare il pulsante **Pubblica** per pubblicare le modifiche. Attendere il completamento della pubblicazione.
 
 
 ### Attività n. 2: Testare l'app
@@ -204,7 +204,7 @@ Avviare l'applicazione
 
 Creare un nuovo contatto
 
-2.  L'app verrà aperta nella visualizzazione **Contatti attivi**. In caso contrario, selezionare **Contatti** nel riquadro di spostamento a sinistra.
+2.  L'app verrà aperta nella visualizzazione **Contatti attivi**. In caso contrario, selezionare **Contatti** nel riquadro di spostamento sinistro.
 
 3.  Selezionare **+ Nuovo** dalla barra dei comandi.
 
@@ -220,7 +220,7 @@ Creare una nuova visita
 
 8.  Selezionare **Visite** nel riquadro di spostamento a sinistra (noto anche come mappa del sito).
 
-9.  Seleziona **+ Nuovo**.
+9.  Selezionare **+ Nuovo**.
 
 10. Compilare i campi come segue:
 
@@ -242,7 +242,7 @@ L'app basata su modello in esecuzione dovrebbe avere un aspetto simile al seguen
 
 ![](media/3-model-driven-app.png)
 
-Congratulazioni. È stata creata e configurata la prima app basata su modello.
+Complimenti. È stata creata e configurata la prima app basata su modello.
 
 ## Sfide
 
