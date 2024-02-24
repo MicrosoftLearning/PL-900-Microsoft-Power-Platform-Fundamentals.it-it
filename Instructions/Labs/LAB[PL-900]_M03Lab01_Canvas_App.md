@@ -42,13 +42,15 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 ### Attività \#1: Creare l'app Visits
 
-1.  Accedere a <https://make.powerapps.com>. Potrebbe essere necessario autenticarsi nuovamente: selezionare **Accedi** e seguire le istruzioni, se necessario.
+1.  Passare a `https://make.powerapps.com`
 
-2.  Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
+2.  Potrebbe essere necessario ripetere l'autenticazione: selezionare **Accedi** e seguire le istruzioni, se necessario.
 
-3.  Selezionare **+ Crea** dal riquadro di spostamento a sinistra della schermata. Nella sezione **Inizia da** selezionare **Dataverse**.
+3.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-4.  Selezionare la connessione a Dataverse.
+4.  Selezionare **+ Crea** dal riquadro di spostamento a sinistra della schermata. Nella sezione **Inizia da** selezionare **Dataverse**.
+
+5.  Selezionare la connessione a Dataverse.
 
     > **Nota:**  *se non esiste una connessione a Dataverse:*
     > - Selezionare **Nuova connessione**
@@ -56,19 +58,19 @@ Seguire la sequenza seguente per progettare l'app canvas:
     > - Selezionare **Crea**.
     > - **** Accedere e selezionare **Consenti accesso**
 
-5.  Individuare e selezionare la tabella **Visit** creata nel lab precedente.
+6.  Individuare e selezionare la tabella **Visit** creata nel lab precedente.
 
-6.  Selezionare il pulsante **Connetti** nell'angolo in basso a destra.
+7.  Selezionare il pulsante **Connetti** nell'angolo in basso a destra.
 
-7.  Dopo aver creato l'app, nella schermata Benvenuto in Power Apps Studio, selezionare la casella **Non visualizzare più questo messaggio** e quindi selezionare **Ignora**.
+8.  Dopo aver creato l'app, nella schermata Benvenuto in Power Apps Studio, selezionare la casella **Non visualizzare più questo messaggio** e quindi selezionare **Ignora**.
 
-8.  Al termine della creazione, l'app canvas dovrebbe avere un aspetto simile all'immagine seguente:
+9.  Al termine della creazione, l'app canvas dovrebbe avere un aspetto simile all'immagine seguente:
 
     ![App canvas creata dai dati Visit.](media/2-canvas-app-from-data.png)
 
-9.  Nella finestra di progettazione dell'app, selezionare il pulsante **Anteprima dell'app** (icona di riproduzione) sulla barra dei comandi. *(È anche possibile visualizzare in anteprima l'app premendo il tasto F5.)* Esplorare l'app per scoprirne l'aspetto predefinito.
+10.  Nella finestra di progettazione dell'app, selezionare il pulsante **Anteprima dell'app** (icona di riproduzione) sulla barra dei comandi. *(È anche possibile visualizzare in anteprima l'app premendo il tasto F5.)* Esplorare l'app per scoprirne l'aspetto predefinito.
 
-10. Chiudere l'anteprima dell'app selezionando la **X** in alto a destra nella schermata.
+11. Chiudere l'anteprima dell'app selezionando la **X** in alto a destra nella schermata.
 
 Congratulazioni, è stata creata correttamente un'app Power Apps da una tabella Dataverse. Il passaggio successivo del processo consiste nel personalizzare l'app per il College Bellows. La serie successiva di passaggi illustra come implementare alcune personalizzazioni aggiuntive per l'app.
 
@@ -127,5 +129,5 @@ In questa attività verrà testata la nuova app.
 
 8.  In alto a destra della schermata, selezionare l'icona **X** per tornare all'editor dell'app canvas.
 
-Congratulazioni. È stata creata e configurata la prima app canvas.
+Complimenti. È stata creata e configurata la prima app canvas.
 
