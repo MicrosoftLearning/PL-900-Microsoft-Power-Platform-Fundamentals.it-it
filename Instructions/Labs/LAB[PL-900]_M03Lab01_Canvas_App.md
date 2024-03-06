@@ -31,7 +31,7 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 ## Prerequisiti
 
-- Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del modulo 1 Lab 0 - Convalidare l'ambiente **lab**
 - Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
 
 

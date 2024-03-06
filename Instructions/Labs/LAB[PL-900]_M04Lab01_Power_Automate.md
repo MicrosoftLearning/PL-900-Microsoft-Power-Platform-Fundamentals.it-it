@@ -26,7 +26,7 @@ Di seguito sono elencati i requisiti da implementare per completare il progetto:
 
 ## Prerequisiti
 
-- Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del modulo 1 Lab 0 - Convalidare l'ambiente **lab**
 - Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
 - Completamento del **lab 3 del modulo 2 - Come creare un'app basata su modello**
 - Il contatto John Doe è stato creato con un indirizzo e-mail personale.
