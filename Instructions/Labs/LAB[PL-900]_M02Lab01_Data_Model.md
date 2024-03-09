@@ -6,15 +6,15 @@ lab:
 
 # Lab 1: Modellazione dei dati
 
-**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant utilizzato in questo corso è un tenant di valutazione e non può essere utilizzato o reso accessibile dopo il termine della lezione e non è idoneo per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
+**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non è idonea per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
 
 ## Scenario
 
-Bellows College è un'organizzazione educativa con più edifici nel campus. Attualmente, le visite al campus sono registrate in formato cartaceo. Le informazioni non vengono acquisite in modo coerente e non ci sono mezzi per raccogliere e analizzare i dati sulle visite nell'intero campus.
+Bellows College è un'organizzazione educativa con più campus e programmi. Molti insegnanti e amministratori di Bellow College devono partecipare agli eventi e acquistare articoli. Storicamente, tenere traccia di queste spese è stata una sfida. 
 
-L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
+L'amministrazione campus vuole modernizzare il sistema di gestione delle spese fornendo ai dipendenti un modo digitale per segnalare le spese. 
 
-In questo corso verranno create applicazioni ed eseguita l'automazione per consentire al personale amministrativo e di sicurezza di Bellows College di gestire e controllare l'accesso agli edifici del campus.
+In questo corso si creeranno applicazioni ed eseguiranno l'automazione per consentire ai dipendenti di Bellows College di gestire le spese.
 
 In questo lab verrà creato un modello di dati per supportare i requisiti seguenti:
 
@@ -26,16 +26,17 @@ In questo lab verrà creato un modello di dati per supportare i requisiti seguen
 
 Infine, i dati di esempio verranno importati in Microsoft Dataverse.
 
-Procedura generale per il lab
+## Procedura generale per il lab
 
 Per preparare gli ambienti di apprendimento, è possibile:
 
-- Fare riferimento al [documento del modello dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) per la descrizione dei metadati (tabelle e relazioni). Per aprire il documento del modello di dati in una nuova finestra, è possibile tenere premuto CTRL e fare clic con il pulsante destro del mouse oppure fare clic con il pulsante destro del mouse sul collegamento.
-- Creare la tabella Visit
-- Importare i dati per la tabella Visit utilizzando un foglio di calcolo di Excel
+- Fare riferimento al [documento del modello dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) per la descrizione dei metadati (tabelle e relazioni). Per aprire il documento del modello di dati in una nuova finestra, è possibile tenere premuto CTRL e fare clic con il pulsante destro del mouse oppure fare clic con il pulsante destro del mouse sul collegamento.
 
+- Creare una tabella Expense
 
-## Prerequisiti
+- Aggiungere alcuni dati di esempio. 
+
+### Prerequisiti
 
 - Completamento del modulo 1 Lab 0 - Convalidare l'ambiente **lab**
 
@@ -43,209 +44,151 @@ Aspetti da considerare prima di iniziare
 
 - Convenzioni di denominazione: immettere i nomi con attenzione.
 
+## Esercizio 1: Creare una nuova tabella
 
-# Esercizio 1: Creare una nuova tabella
+**Obiettivo:** in questo esercizio si creerà una nuova tabella personalizzata per Expenses.
 
-**Obiettivo:** in questo esercizio verrà creata la nuova tabella personalizzata per Visits.
+### Attività n. 1: Creare una tabella e colonne expenses
 
-## Attività 1: Creare la tabella Visit e le colonne
+La **tabella Spese** conterrà informazioni sulle singole spese che un dipendente può inviare, tra cui motivo, tipo, data e importo.
 
-La tabella **Visit** conterrà informazioni sulle visite al campus, inclusi visitatore, ora pianificata e ora effettiva di ogni visita.
+1. Se non è già stato effettuato l'accesso, accedere a https://make.powerapps.com
 
-Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente immesso e interpretato da un visitatore quando richiesto durante il processo di registrazione della visita.
+1. **Nel menu Ambiente** in alto a destra verificare che sia selezionato l'ambiente **Dev One**.
 
-1.  Se non è già stato effettuato l'accesso, accedere a `https://make.powerapps.com`
+1. Dalla barra di spostamento a sinistra selezionare **Tabelle**.
 
-1.  **Nel menu Ambiente** in alto a destra verificare che sia selezionato l'ambiente **Dev One**. 
+1. Selezionare **+ Nuova tabella** e scegliere **Imposta proprietà avanzate**.
 
-1.  Dalla barra di spostamento a sinistra selezionare **Tabelle**.
+1. Per **Nome** visualizzato immettere Expense
 
-1.  Selezionare **+ Nuova tabella** e scegliere **Imposta proprietà avanzate**. 
+1. Seleziona **Salva**.
 
-1.  Per **Nome visualizzato** immettere `Visit`.
+1. Nella sezione **Schema** selezionare **Colonne**.
 
-1.  Seleziona **Salva**. 
+### Crea colonna Data spese
 
-1.  Nella sezione **Schema** selezionare **Colonne**. 
+1. Selezionare **+ Nuova colonna**.
 
+1. Immettere Expense Date (Data spese) per **Nome** visualizzato.
 
-## Creare la colonna Scheduled Start
+1. Selezionare **Solo data** per **Tipo di** dati.
 
-1.  Selezionare **+ Nuova colonna**. 
+1. Modificare **Obbligatorio** in **Obbligatorio per l'azienda**.
 
-1.  Immettere `Scheduled Start` per **Nome visualizzato**. 
+1. Espandi **Opzioni avanzate**.
 
-1.  Selezionare **Data e ora** per **Tipo di dati**. 
+1. In **Regolazione** fuso orario selezionare **Solo** data.
 
-1.  Modificare **Obbligatorio** in **Obbligatorio per l'azienda**. 
+    >**Nota:** per registrare le informazioni sulla data viene usato **solo** il comportamento date, perché la data della visita non deve cambiare quando viene visualizzata da un fuso orario diverso.
 
-1.  Espandi **Opzioni avanzate**. 
+1. Seleziona **Salva**.
 
-1.  In **Regolazione fuso orario** selezionare **Fuso orario indipendente**. 
+### Crea colonna Tipo di spesa
 
-    > **Nota:** usiamo il comportamento **Indipendente dal fuso orario** per registrare le informazioni di data e ora, perché l'ora di una visita è sempre locale rispetto alla posizione dell'edificio e non deve cambiare se visualizzata da un fuso orario diverso. 
+1. Selezionare **+ Nuova colonna**.
 
-1.  Seleziona **Salva**. 
+1. Immettere Expense Type (Tipo di spesa) per **Nome** visualizzato.
 
+1. Selezionare **Scelta** per **Tipo di** dati.
 
-## Creare una colonna Fine pianificata
+1. In **Obbligatorio** selezionare **Facoltativo**.
 
-1.  Selezionare **+ Nuova colonna**. 
+1. Impostare **Sincronizza con la scelta** globale su **Sì (scelta consigliata)**
 
-1.  Immettere `Scheduled End` per **Nome visualizzato**.
+1. In **Sincronizza questa scelta con** campo selezionare **Tipo** di spesa.
 
-1.  Selezionare **Data e ora** per **Tipo di dati**.
+1. Impostare il **campo Scelta predefinita** su **Nessuno**.
 
-1.  In **Obbligatorio** selezionare **Obbligatorio per l'azienda**.
+1. Seleziona **Salva**.
 
-1.  Espandi **Opzioni avanzate**.
+### Crea colonna Scopo spese
 
-1.  In **Regolazione fuso orario** selezionare **Fuso orario indipendente**.
+1. Selezionare **+ Nuova colonna**.
 
-1.  Seleziona **Salva**. 
+1. Immettere Expense Purpose (Scopo spese) per **Nome** visualizzato.
 
+1. Selezionare **Scelta** per **Tipo di** dati.
 
-## Creare la colonna Actual Start
+1. In **Obbligatorio** selezionare **Facoltativo**.
 
-1.  Selezionare **+ Nuova colonna**. 
+1. Impostare **Sincronizza con la scelta** globale su **Sì (scelta consigliata)**
 
-1.  Immettere `Actual Start` per **Nome visualizzato**.
+1. In **Sincronizza questa scelta con** campo selezionare **Expense Purpose (Scopo** spese).
 
-1.  Selezionare **Data e ora** per **Tipo di dati**.
+1. Impostare il **campo Predefinito** su **Nessuno**.
 
-1.  In **Obbligatorio** mantenere **Facoltativo**.
+1. Seleziona **Salva**.
 
-1.  Espandi **Opzioni avanzate**.
+### Crea colonna Descrizione elemento
 
-1.  In **Regolazione fuso orario** selezionare **Fuso orario indipendente**. 
+1. Selezionare **+ Nuova colonna**.
 
-1.  Seleziona **Salva**. 
+1. Immettere Descrizione elemento per **Nome** visualizzato.
 
+1. Selezionare **Più righe di testo &gt; normale** per **Tipo di** dati.
 
-## Creare la colonna Actual End
+1. Seleziona **Salva**.
 
-1.  Selezionare **+ Nuova colonna**.
+### Crea colonna Importo spese
 
-1.  Immettere `Actual End` per **Nome visualizzato**.
+1. Selezionare **+ Nuova colonna**.
 
-1.  Selezionare **Data e ora** per **Tipo di dati**.
+1. Immettere Importo spese per **Nome** visualizzato.
 
-1.  In **Obbligatorio** mantenere **Facoltativo**.
+1. Selezionare **Valuta** per **Tipo di** dati.
 
-1.  Espandi **Opzioni avanzate**.
+1. Seleziona **Salva**.
 
-1.  In **Regolazione fuso orario** selezionare **Fuso orario indipendente**.
+ 
+## Esercizio 2: Immettere i dati
 
-1.  Seleziona **Salva**.
+**Obiettivo:** in questo esercizio immettere manualmente alcuni dati di esempio nella nuova tabella. 
 
+### Attività 1: Modificare le colonne visualizzate
 
-## Creare la colonna Codice
+1. Se non è già stato eseguito l'accesso, accedere a https://make.powerapps.com
 
-1.  Selezionare **+ Nuova colonna**.
+1. Selezionare l'ambiente **Dev One** in alto a destra se non è già selezionato.
 
-1.  Immettere `Code` per **Nome visualizzato**.
+1. Dalla barra di spostamento a sinistra selezionare **Tabelle**.
 
-1.  Selezionare **Numerazione automatica** per **Tipo di dati**.
+1. Aprire la **tabella Expense** creata nell'esercizio precedente.
 
-1.  Selezionare **Numero con prefisso data** in **Tipo di numerazione automatica**.
+1. Accanto alla **colonna Nome** selezionare **+26 altri**.
 
-1.  Seleziona **Salva**. 
+1. Dal menu visualizzato selezionare le colonne seguenti.
 
+    1. Data spese
 
-## Creare la colonna di ricerca Visitor
+    2. Scopo spesa 
 
-1.  Selezionare **+ Nuova colonna**.
+    3. Tipo di spesa
 
-1.  Immettere `Visitor` per **Nome visualizzato**.
+    4. Importo spese
 
-1.  Selezionare **Ricerca** > **Ricerca** in **Tipo di dati**. 
+    5. Descrizione elemento
 
-1.  Selezionare **Contatto** in **Tabella correlata**. 
+1. Selezionare il pulsante **Salva**.
 
-1.  Espandi **Opzioni avanzate**. 
+## Attività 2: Aggiungere un record di esempio.
 
-1.  Immettere `visitor_id` per **Nome relazione**. 
+1. Selezionare la **freccia** accanto a **Modifica**. Dal menu visualizzato selezionare **Modifica nella nuova scheda**.
 
-1.  Seleziona **Salva**.
+1. **Nella colonna Nome** immettere **John Doe**.
 
+1. **Nella colonna Expense Date (Data** spese) immettere **xxx**.
 
-# Esercizio 2: Importare dati
+1. **In Expense Purpose (Scopo** spese) selezionare **Conference (Conferenza**).
 
-**Obiettivo:** in questo esercizio verranno importati dati di esempio nel database Dataverse.
+1. **Nella colonna Expense Type (Tipo di spesa)** selezionare **Travel (Viaggi**).
 
-## Attività \#1: Caricare il file di Excel in OneDrive
+1. **Nella colonna Importo** spese immettere **750,00**.
 
-1.  Nella macchina virtuale dovrebbe essere memorizzato il file **Visits.xlsx** in **C:/LabFiles**. In caso contrario, scaricare [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
+1. Nella descrizione** dell'elemento **immettere una breve descrizione.
 
-2.  Se non è già stato eseguito l'accesso, accedere a `https://make.powerapps.com`
+1. Premere il pulsante Tab per passare alla riga successiva e **salvare** il record.
 
-3.  Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
-
-4.  Selezionare l'icona di avvio delle app (pulsante Waffle) nell'angolo in alto a sinistra per modificare le applicazioni e selezionare **OneDrive**. La configurazione di OneDrive potrebbe richiedere qualche minuto. Selezionare **OneDrive è pronto** quando viene visualizzato sullo schermo.)
-
-5.  Selezionare **+Aggiungi nuovo** dal menu, quindi selezionare **Carica file**.
-
-6.  Individuare e selezionare il file **Visits.xlsx** e selezionare **Apri**.
-
-    > **Nota:** il file deve trovarsi nella cartella **Desktop** > **Tutti i file** nella macchina virtuale.
-
-
-## Attività \#2: creare un flusso di dati
-
-1.  Se non è già stato effettuato l'accesso, accedere a `https://make.powerapps.com`
-
-2.  **Nel menu Ambiente** in alto a destra verificare che sia selezionato l'ambiente **Dev One**. 
-
-3.  Dalla barra di spostamento a sinistra selezionare **Tabelle**. 
-
-4.  Aprire la tabella **Visit** creata nell'esercizio precedente. 
-
-5.  Usando il menu in alto, selezionare **Importa** > **Importa dati**.
-
-6.  Nella finestra di dialogo **Scegli origine dati** selezionare **Cartella di lavoro di Excel**.
-
-7.  Selezionare l'opzione **Collegamento al file**. Seleziona **Sfoglia OneDrive**. Se richiesto, eseguire l'accesso con le proprie credenziali di Microsoft 365. Configurare il browser per consentire sempre i popup. 
-
-8.  Selezionare il file **Visits.xlsx** caricato in OneDrive nell'attività precedente. 
-
-9.  Selezionare **Avanti**. 
-
-10. Nella schermata **Power Query** > **Scegli dati**, controllare la cartella di lavoro Excel **Visits**. 
-
-11. Selezionare **Avanti**. Non uscire da questa pagina.
-
-12. Selezionare **Avanti**. 
-
-13. Nella sezione **Mapping tabelle**, sotto **Carica impostazioni**, selezionare **Carica in tabella esistente**. 
-
-14. Nel menu a discesa **Tabella di destinazione**, selezionare la tabella **crXXX_visit** (dove XXX è un set casuale di lettere e numeri)
-
-15. Nella sezione **Mapping delle colonne**, eseguire il mapping delle colonne alle colonne di destinazione corrispondenti:
-
-    | Colonne di destinazione  | Valori di origine   |
-    |:---------------------|:----------------|
-    | crxxx_ActualEnd      | fine effettiva      |
-    | crxxx_ActualStart    | inizio effettivo    |
-    | crxxx_Code           | codice            |
-    | crxxx_Name           | name            |
-    | crxxx_ScheduledEnd   | fine pianificata   |
-    | crxxx_ScheduledStart | inizio pianificato |
-
-16. Selezionare **Avanti**. 
-
-17. Selezionare **Aggiorna manualmente**. 
-
-18. Seleziona **Pubblica**. 
-
-    > **Notare:** per l'importazione dei dati nella tabella potrebbero essere necessari alcuni minuti. Non preoccuparsi se vengono segnalati errori. È normale e non influiranno sul resto del corso.
-
-
-## Attività \#3: Verificare l'importazione dei dati
-
-1.  Dopo aver importato i dati, utilizzare la navigazione a sinistra della schermata per selezionare **Tabelle** e aprire la tabella **Visite**.
-
-2.  Verificare che i dati importati siano visualizzati nella sezione **Visita colonne e dati**.
-
-Congratulazioni, è stata creata correttamente una nuova tabella ed è stata eseguita l'importazione di dati.
+Congratulazioni, è stata creata correttamente una nuova tabella e sono stati aggiunti dati.
 
 

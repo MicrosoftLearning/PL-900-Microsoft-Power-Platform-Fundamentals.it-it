@@ -6,7 +6,7 @@ lab:
 
 # Bonus Lab: Creare un'app canvas con Copilot
 
-**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant utilizzato in questo corso è un tenant di valutazione e non può essere utilizzato o reso accessibile dopo il termine della lezione e non è idoneo per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
+**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non è idonea per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
 
 ## Scenario
 
@@ -76,6 +76,6 @@ Inizialmente è stato aggiunto un campo come un **campo Scopo** con un tipo di d
 
 17. Se necessario, nella **schermata Benvenuto in Power Apps Studio** selezionare **Non visualizzare di nuovo** questa opzione e selezionare il **pulsante Ignora** . 
 
-![](media/bonus-lab-copilot-01.png)
+![Screenshot dell'app appena creata](media/bonus-lab-copilot-01.png)
 
 Congratulazioni, è stato usato Copilot per creare una nuova app. 
