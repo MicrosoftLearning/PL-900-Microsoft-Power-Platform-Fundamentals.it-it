@@ -37,7 +37,7 @@ Per preparare gli ambienti di apprendimento, è possibile:
 
 ## Prerequisiti
 
-- Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del modulo 1 Lab 0 - Convalidare l'ambiente **lab**
 
 Aspetti da considerare prima di iniziare
 
@@ -208,13 +208,13 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
 
 8.  Selezionare il file **Visits.xlsx** caricato in OneDrive nell'attività precedente. 
 
-9.  Seleziona **Avanti**. 
+9.  Selezionare **Avanti**. 
 
 10. Nella schermata **Power Query** > **Scegli dati**, controllare la cartella di lavoro Excel **Visits**. 
 
-11. Seleziona **Avanti**. Non uscire da questa pagina.
+11. Selezionare **Avanti**. Non uscire da questa pagina.
 
-12. Seleziona **Avanti**. 
+12. Selezionare **Avanti**. 
 
 13. Nella sezione **Mapping tabelle**, sotto **Carica impostazioni**, selezionare **Carica in tabella esistente**. 
 
@@ -231,7 +231,7 @@ Desideriamo assegnare a ogni visita un numero univoco che può essere facilmente
     | crxxx_ScheduledEnd   | fine pianificata   |
     | crxxx_ScheduledStart | inizio pianificato |
 
-16. Seleziona **Avanti**. 
+16. Selezionare **Avanti**. 
 
 17. Selezionare **Aggiorna manualmente**. 
 

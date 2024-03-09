@@ -28,7 +28,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 ## Prerequisiti
 
-- Completamento del **lab 0 del modulo 0 - Convalidare l'ambiente lab**
+- Completamento del modulo 1 Lab 0 - Convalidare l'ambiente **lab**
 - Completamento del **lab 1 del modulo 2 - Modellazione dei dati**
 
 ## Aspetti da considerare prima di iniziare
@@ -58,7 +58,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
     > **Nota:** il tipo è impostato su **Report**, non selezionare il set di dati.
 
-8.  Seleziona **Modifica**. 
+8.  Seleziona **Modifica** 
 
     Se la voce di menu **Modifica** non è visibile fare clic sui puntini di sospensione **...** e quindi selezionare **Modifica**.
 
