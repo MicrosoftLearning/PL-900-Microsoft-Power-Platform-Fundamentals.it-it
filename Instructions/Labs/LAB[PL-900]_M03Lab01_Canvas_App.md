@@ -21,9 +21,9 @@ In questo corso si creeranno applicazioni ed eseguiranno l'automazione per conse
 
 Seguire la sequenza seguente per progettare l'app canvas:
 
-- Creare un'app canvas dai dati nella tabella Visit
+- Creare un'app canvas per il report spese 
 
-- Configurare la modalità di visualizzazione delle visite nella schermata di esplorazione
+- Configurare la modalità di visualizzazione delle note spese nella schermata di esplorazione
 
 - Apportare alcune modifiche di base all'app
 
@@ -107,7 +107,7 @@ In questa attività si personalizzerà il testo dell'intestazione in ognuna dell
 
 In questa attività verrà testata la nuova app.
 
-1. Con l'applicazione aperta in Progettazione app, selezionare **Impostazioni** (potrebbe essere necessario selezionare ... per visualizzare l'icona delle impostazioni, nella **sezione Generale** aggiornare il nome dell'app all'app Visite selezionare la **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
+1. Con l'applicazione aperta in Progettazione app, selezionare **Impostazioni** (potrebbe essere necessario selezionare ... per visualizzare l'icona delle impostazioni), nella **sezione Generale** aggiornare il nome dell'app in Expense Report App selezionare la **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
 
 1. Usando la struttura di spostamento a sinistra, selezionare **BrowseScreen1**.
 

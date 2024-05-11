@@ -16,14 +16,6 @@ L'amministrazione campus vuole modernizzare il sistema di gestione delle spese f
 
 In questo corso si creeranno applicazioni ed eseguiranno l'automazione per consentire ai dipendenti di Bellows College di gestire le spese.
 
-In questo lab verrà creato un modello di dati per supportare i requisiti seguenti:
-
-- R1: tenere traccia delle informazioni per le visite al campus pianificate
-
-- R2: registrare le informazioni di base per identificare e tenere traccia dei visitatori.
-
-- R3: pianificare, registrare e gestire le visite.
-
 Infine, i dati di esempio verranno importati in Microsoft Dataverse.
 
 ## Procedura generale per il lab
@@ -80,7 +72,7 @@ La **tabella Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. In **Regolazione** fuso orario selezionare **Solo** data.
 
-    >**Nota:** per registrare le informazioni sulla data viene usato **solo** il comportamento date, perché la data della visita non deve cambiare quando viene visualizzata da un fuso orario diverso.
+    >**Nota:** per registrare le informazioni sulla data viene usato **solo** il comportamento date, perché la data delle spese non deve cambiare se visualizzata da un fuso orario diverso.
 
 1. Seleziona **Salva**.
 
