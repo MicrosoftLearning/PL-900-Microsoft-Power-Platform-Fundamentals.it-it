@@ -10,13 +10,11 @@ lab:
 
 ## Scenario
 
-Bellows College è un'organizzazione educativa con più edifici nel campus. I visitatori del campus sono attualmente registrati in giornali di registrazione cartacei. Le informazioni non vengono acquisite in modo coerente e non ci sono mezzi per raccogliere e analizzare i dati sulle visite nell'intero campus.
+Bellows College è un'organizzazione educativa con più campus e programmi. Molti insegnanti e amministratori di Bellow College devono partecipare agli eventi e acquistare articoli. Storicamente, tenere traccia di queste spese è stata una sfida.
 
-L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registrazione dei visitatori, facendo controllare l'accesso agli edifici dal personale addetto alla sicurezza e richiedendo una preregistrazione di tutte le visite da parte degli ospiti.
+L'amministrazione campus vuole modernizzare il sistema di gestione delle spese fornendo ai dipendenti un modo digitale per segnalare le spese.
 
-In questo corso verranno create applicazioni ed eseguita l'automazione per consentire al personale amministrativo e di sicurezza di Bellows College di gestire e controllare l'accesso agli edifici del campus.
-
-In questo lab, verrà creata un'app basata su modello di Power Apps per consentire al personale del back-office del campus di gestire i record delle visite per l'intero campus.
+In questo corso si creeranno applicazioni ed eseguiranno l'automazione per consentire ai dipendenti di Bellows College di gestire le spese.
 
 ## Procedura generale per il lab
 
@@ -88,11 +86,11 @@ L'intestazione si trova nell'area in alto a destra del modulo. Potrebbe essere n
 
 1. Se la visualizzazione di modifica è aperta in una nuova scheda o finestra del browser, chiuderla. In caso contrario, selezionare **🡠 Indietro** in alto a sinistra della schermata. A questo momento si tornerà ai moduli della **tabella Expense Report** .
 
-1. Utilizzo delle barre di navigazione in alto a sinistra (**Tabelle > ****Expense Report > ****Forms).** Selezionare **Expense Report (Nota** spese) per tornare alla **schermata Visita** proprietà tabella.
+1. Utilizzo delle barre di navigazione in alto a sinistra (**Tabelle > ****Expense Report > ****Forms).** Selezionare **Expense Report (Report** spese) per tornare alla **schermata delle proprietà della tabella expense report** .
 
-## Attività n.2: Modificare la vista Visite attive
+## Attività n. 2: Modifica visualizzazione Report spese attive
 
-In questa attività verrà modificata la visualizzazione predefinita Active Expense Reports e verrà creata una nuova visualizzazione per le visite odierne.
+In questa attività verrà modificata la visualizzazione predefinita Active Expense Reports e verrà creata una nuova visualizzazione per le note spese dovute oggi.
 
 1. **Nella sezione Esperienze** dati selezionare **Visualizzazioni** e aprire la **visualizzazione Report** spese attivi.
 
@@ -210,15 +208,15 @@ Per semplicità e tempo, non verranno affrontate tutte le colonne Expense Report
 
 1. Compilare i campi come segue:
 
-    - **Nome** report: Nuovo report di test
+    - **Nome** report: nuovo report di test
 
     - **Scopo** report: selezionare **Conferenza**
 
     - **Data di scadenza** del report: selezionare Data odierna
 
-1. Seleziona **Salva e chiudi**. Verrà così creata la visita che dovrebbe essere visibile nella visualizzazione **Visite attive**.
+1. Seleziona **Salva e chiudi**. Verrà creato il nuovo report di test e sarà possibile visualizzarlo nella **visualizzazione Report** spese attive.
 
-1. Modificare la visualizzazione **di Expense Reports Due Today** usando l'elenco a discesa accanto a **Visite** attive. 
+1. Modificare la visualizzazione **in Expense Reports Due Today** usando l'elenco a discesa accanto a **Report** spese attive. 
 
 1. È possibile aggiungere altri record di test.
 

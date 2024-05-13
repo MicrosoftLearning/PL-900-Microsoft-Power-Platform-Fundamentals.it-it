@@ -30,7 +30,7 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 ## Esercizio 1: Usare Copilot per creare un'applicazione di visite universitarie.
 
-**Obiettivo:** in questo esercizio si creerà un'app canvas connettendosi a una tabella Expense Reports.
+**Obiettivo:** in questo esercizio si creerà un'app canvas connettendosi a una tabella visite campus.
 
 ### Attività \#1: Creare l'applicazione iniziale
 

@@ -66,7 +66,7 @@ Si tratta di una procedura consigliata, in modo che l'utente e altri editor di f
 
 ### Attività 2: Creare un passaggio per ottenere la riga Expense Report
 
-1. Selezionare **+ Nuovo passaggio**. Questo passaggio recupera le informazioni sul Visitatore, compreso l'indirizzo e-mail.
+1. Selezionare **+ Nuovo passaggio**. Questo passaggio recupererà le informazioni di Expense Report, incluso l'indirizzo di posta elettronica.
 
 1. Cercare Dataverse
 
@@ -82,9 +82,9 @@ Si tratta di una procedura consigliata, in modo che l'utente e altri editor di f
 
 Si tratta di una procedura consigliata, in modo che l'utente e altri editor di flusso possano comprendere lo scopo del passaggio senza dover approfondire i dettagli.
 
-### Attività n. 3: Creare un passaggio per inviare un messaggio di posta elettronica al visitatore
+### Attività 3: Creare un passaggio per inviare un messaggio di posta elettronica per confermare l'invio di una nota spese
 
-1. Selezionare **+ Nuovo passaggio**. Questo è il passaggio che invierà il messaggio di posta elettronica al visitatore.
+1. Selezionare **+ Nuovo passaggio**. Questo è il passaggio che invierà un messaggio di posta elettronica all'utente che ha inviato una nota spese.
 
 1. Cercare posta elettronica, selezionare l'azione **Invia un messaggio di posta elettronica (V2)** dal **connettore Office 365 Outlook** .
 
@@ -109,9 +109,9 @@ Il contenuto dinamico deve essere inserito nei campi con nome tra parentesi graf
 
 1. Evidenziare il testo **{First Name}**. Sostituirlo con il campo First Name (Nome) **del passaggio Get the **owner (Ottieni il proprietario**).**
 
-1. Evidenziare il **testo {Report Total Amount}** . Sostituirlo con il **campo **Importo** totale report Quando viene aggiunta** una visita.
+1. Evidenziare il **testo {Report Total Amount}** . Sostituirlo con il **campo **Importo** totale report Quando viene inviato** un passaggio della nota spese.
 
-1. Evidenziare il **testo {Data scadenza report}** . Sostituirlo con il **campo Data** di scadenza report del **passaggio Quando viene aggiunta** una visita.
+1. Evidenziare il **testo {Data scadenza report}** . Sostituirlo con il **campo Data** di scadenza report del **passaggio Quando viene inviato** un report spese.
 
 1. Seleziona **Salva**.
 
