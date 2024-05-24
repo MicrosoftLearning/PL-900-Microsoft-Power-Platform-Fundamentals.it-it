@@ -141,8 +141,6 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso d
 
     - **Nome report:** Report di test
 
-    - **Importo totale report:** $ 750,00
-
     - **Data di scadenza report:** domani 
 
 1. Selezionare il pulsante **Salva e chiudi**.
