@@ -6,7 +6,7 @@ lab:
 
 ## Lab 5: Come creare un dashboard semplice
 
-**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o accessibile dopo che la classe è finita e non è idonea per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
+**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o risultare accessibile dopo che la lezione è finita e non è idonea per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
 
 ## Scenario
 
@@ -16,7 +16,7 @@ L'amministrazione del campus vorrebbe modernizzare il proprio sistema di registr
 
 In questo lab verranno creati un report e un dashboard di Power BI che visualizza i dati sulle visite al campus.
 
-**Passaggi generali del lab**
+**Procedura generale per il lab**
 
 Verranno eseguite le procedure seguenti per progettare e creare un dashboard di Power BI:
 
@@ -26,7 +26,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 ### Prerequisiti
 
-- Completamento del modulo 1 Lab 0 - Convalidare l'ambiente **lab**
+- Completamento del **Modulo 1 Lab 0 - Convalidare l'ambiente lab**
 
 **Aspetti da considerare prima di iniziare**
 
@@ -100,11 +100,11 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1. Il report dovrebbe essere ancora aperto dall'attività precedente.
 
-1. Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout potrebbe essere necessario selezionare il menu **con i puntini di sospensione ...** per visualizzare altre opzioni.
+1. Selezionare **Aggiungi a un dashboard** nel menu. A seconda del layout, per visualizzare altre opzioni potrebbe essere necessario selezionare il menu con i puntini di sospensione **...**.
 
 1. Selezionare **Nuovo dashboard** nel prompt **Aggiungi al dashboard**.
 
-1. Immettere Campus Management (Gestione campus) come **Nome** dashboard e selezionare **Aggiungi live**.
+1. Immettere Campus Management come **Nome dashboard** e selezionare **Aggiungi live**.
 
 1. Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
@@ -114,13 +114,13 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1. Nella dashboard **Campus Management**, selezionare la barra **Fai una domanda relativa ai dati** nella parte superiore.
 
-1. Immettere edifici per numero di visite nell'area Q&A. Verrà visualizzato un grafico a barre.
+1. Immettere edifici per numero di visite nell'area Domande e risposte. Verrà visualizzato un grafico a barre.
 
 1. Selezionare **Aggiungi oggetto visivo**.
 
 1. Selezionare **Dashboard esistente**, selezionare il dashboard **Campus Management**, selezionare **Aggiungi**.
 
-1. Selezionare **Esci Q&amp;A**.
+1. Selezionare **Esci da Q&amp;A**.
 
 Il dashboard **Campus Management** verrà visualizzato con tre oggetti visivi inclusi. Potrebbe essere necessario scorrere verso il basso per visualizzare i nuovi oggetti visivi delle domande e risposte.
 
