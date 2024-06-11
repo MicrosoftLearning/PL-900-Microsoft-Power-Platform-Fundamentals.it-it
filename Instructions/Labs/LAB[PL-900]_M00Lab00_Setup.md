@@ -21,21 +21,21 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 ## Esercizio 1: configurazione
 
-Attività n. 1 - Verificare il tenant della versione di valutazione di Microsoft Power Platform
+Attività #1 - Verificare il tenant di prova di Microsoft Power Platform
 
-1.  Verificare di avere **le credenziali** di Microsoft 365 disponibili nell'host lab autorizzato. 
+1.  Verificare di avere le **credenziali di Microsoft 365** disponibili nell'host lab autorizzato. 
 
-2.  In una nuova scheda del browser passare a `https://make.powerapps.com`
+2.  In una nuova scheda del browser, passare a `https://make.powerapps.com`
 
 3.  Immettere l'oggetto `email address` fornito dall'host del lab autorizzato. 
 
-4.  Selezionare **Accedi**. 
+4.  Fare clic su **Accedi**. 
 
 5.  Immettere l'oggetto `password` fornito dall'host del lab autorizzato. 
 
-6.  Facoltativamente, selezionare **Sì** per rimanere connessi.
+6.  Facoltativamente, selezionare **Sì** per mantenere l’accesso.
 
-7.  Se richiesto, immettere `0123456789` per Telefono numero** e selezionare **Invia****.
+7.  Se richiesto, immettere `0123456789` per **Numero di telefono** e selezionare **Invia**.
 
 8.  **Aggiornare** la scheda e verificare che l'ambiente **Dev One** sia selezionato in **Ambiente** in alto a destra. 
 
