@@ -6,7 +6,7 @@ lab:
 
 # Lab 0: convalidare l'ambiente lab
 
-**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o risultare accessibile dopo che la classe è finita e non è idonea per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
+**Tenant WWL: condizioni per l'utilizzo** Se, come parte della distribuzione di formazione con istruttore, viene fornito un tenant, tenere presente che il tenant viene reso disponibile allo scopo di supportare le esercitazioni pratiche nel training con docente. I tenant non devono essere condivisi o utilizzati per scopi esterni alle esercitazioni pratiche. Il tenant usato in questo corso è un tenant di valutazione e non può essere usato o risultare accessibile dopo che la lezione è finita e non è idonea per l'estensione. I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti come parte di questo corso rimangono di proprietà di Microsoft Corporation e Microsoft si riserva il diritto di ottenere l'accesso e di riprenderne il possesso in qualsiasi momento. 
 
 ## Scenario
 
@@ -33,9 +33,9 @@ In questo lab del modulo 1 si acquisirà un tenant di prova di Power Platform e 
 
 5.  Immettere l'oggetto `password` fornito dall'host del lab autorizzato. 
 
-6.  Facoltativamente, selezionare **Sì** per rimanere connessi.
+6.  Facoltativamente, selezionare **Sì** per mantenere l’accesso.
 
-7.  Se richiesto, immettere `0123456789` per **Numero di telefono** e selezionare **Invia **.
+7.  Se richiesto, immettere `0123456789` per **Numero di telefono** e selezionare **Invia**.
 
 8.  **Aggiornare** la scheda e verificare che l'ambiente **Dev One** sia selezionato in **Ambiente** in alto a destra. 
 
