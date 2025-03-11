@@ -20,11 +20,11 @@ In questo corso si creeranno delle applicazioni e si eseguirà l'automazione per
 
 Nell'ambito della creazione dell'app basata su modello, verranno completate le seguenti operazioni:
 
-- Creare una nuova app basata su modello denominata Bellows Expense Management
+- Creare una nuova app basata su modello denominata Bellows Expense Management.
 
-- Modificare la navigazione dell'app per fare riferimento alle tabelle richieste
+- Modificare lo spostamento dell'app per fare riferimento alle tabelle richieste.
 
-- Personalizzare i moduli e le viste delle tabelle necessari per l'app
+- Personalizzare i moduli e le visualizzazioni delle tabelle necessarie per l'app.
 
 Verranno utilizzati i seguenti componenti:
 
@@ -50,15 +50,15 @@ Entrambi verranno integrati nell'app basata su modello per una migliore esperien
 
 **Obiettivo:** in questo esercizio, verranno personalizzate le viste e i moduli delle tabelle create in modo personalizzato che verranno utilizzate nell'app basata su modello.
 
-### Attività 1: Modificare un modulo di nota spese
+### Attività n. 1: Modificare il modulo della nota spese
 
 1. Accedere a https://make.powerapps.com se l'accesso non è già stato effettuato
 
-1. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
+1. Selezionare l'ambiente **Dev One** in alto a destra se non è già selezionato.
 
 1. Nel riquadro di spostamento a sinistra selezionare **Tabelle** e aprire la tabella **Expense Report**.
 
-Se la tabella Expense report non viene visualizzata, assicurarsi di essere nell'ambiente corretto (passaggio 2).
+    >Se la tabella Expense report non viene visualizzata, assicurarsi di essere nell'ambiente corretto (passaggio 2).
 
 1. Nella sezione **Esperienze con i dati**, selezionare **Moduli** e aprire il modulo **Informazioni** con il tipo di modulo **Principale**. (**Importante:**  assicurarsi di selezionare il modulo con il tipo di modulo **Principale**).
 
@@ -72,15 +72,15 @@ Se la tabella Expense report non viene visualizzata, assicurarsi di essere nell'
 
     - **Scopo report**
 
-    - **Scadenza report**
+    - **Data di scadenza del report**
 
     - **Importo totale report**
 
 1. Trascinare la colonna **Motivo stato** nell'intestazione del modulo.
 
-L'intestazione si trova nell'area in alto a destra del modulo. Potrebbe essere necessario comprimere il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
+    >L'intestazione si trova nell'area in alto a destra del modulo. Potrebbe essere necessario comprimere il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
 
-1. Selezionare il campo **Proprietario**. Nel pannello Proprietà impostare la proprietà **Etichetta** su Richiedente
+1. Selezionare il campo **Proprietario**. Nel pannello Proprietà modificare Etichetta **** in Richiedente.
 
 1. Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento del salvataggio e della pubblicazione.
 
@@ -88,7 +88,7 @@ L'intestazione si trova nell'area in alto a destra del modulo. Potrebbe essere n
 
 1. Usando il percorso di navigazione in alto a sinistra (**Tabelle** > **Expense Report** > **Moduli)**, selezionare **Expense Report** per tornare alla schermata delle proprietà della tabella **Expense Report**.
 
-## Attività 2. Modificare la visualizzazione Note spese attive
+## Attività 2: Modificare la visualizzazione Report spese attive
 
 In questa attività verrà modificata la visualizzazione predefinita Note spese attive e si creerà una nuova visualizzazione per le note spese in scadenza oggi.
 
@@ -98,21 +98,21 @@ In questa attività verrà modificata la visualizzazione predefinita Note spese 
 
     - **Scopo report**
 
-    - **Scadenza report**
+    - **Data di scadenza del report**
 
-    - **Totale report**
+    - **Importo totale report**
 
 1. Selezionare il menu a discesa nella colonna **Creato il** e selezionare **Rimuovi**. Il campo **Creato il** verrà ora rimosso dalla vista.
 
 1. Ridimensionare le larghezze delle singole colonne per adattarle ai dati.
 
-1. In **Ordina per …** selezionare la X per rimuovere **Nome** e selezionare invece **Importo totale report**.
+1. In **Ordina per …** selezionare la X per rimuovere **il nome** del report e selezionare **Invece Importo** totale report.
 
-1. Selezionare **Importo totale report** per impostare l'ordinamento su **Dal più grande al più piccolo**.
+1. Selezionare **Report Total Amount (Importo** totale report) per modificare l'ordinamento impostando **Su Più grande su più piccolo**.
 
 1. Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento della pubblicazione.
 
-### Attività 3: Creare una nuova visualizzazione per i report in scadenza oggi
+### Attività n. 3: Creare una nuova visualizzazione per i report a scadenza oggi
 
 Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione per i report in scadenza oggi.
 
@@ -136,13 +136,13 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 1. Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento della pubblicazione.
 
-## Esercizio 2: Creare un'app basata su modello
+## Esercizio 2: Creare l'app basata su modello
 
 **Obiettivo:** in questo esercizio si creerà un'app basata su modello, si personalizzerà la mappa del sito e quindi si testerà l'app.
 
 Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne della tabella Expense Report in questo lab.
 
-### Attività n.1: Creare l'app
+### Attività 1: Creare l'app
 
 1. Accedere a https://make.powerapps.com se l'accesso non è già stato effettuato
 
@@ -156,11 +156,11 @@ Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne dell
 
     - In **App vuota basata su Dataverse** selezionare **Crea**.
 
-    - Immettere Employee Expense Management per **Nome** e selezionare **Crea**.
+    - Immettere `Employee Expense Management` nel campo **Nome** e selezionare **Crea**.
 
-1. Dopo il caricamento della nuova applicazione basata su modello, selezionare il pulsante **+ Aggiungi pagina**.
+1. Dopo il caricamento della nuova applicazione basata su modello, selezionare il **pulsante + Aggiungi pagina** .
 
-1. Nella schermata **Aggiungi pagina**, scegliere **Tabella di Dataverse**, quindi selezionare il pulsante **Avanti**.
+1. Nella **schermata Aggiungi pagina** scegliere **Tabella dataverse**.
 
 1. Selezionare le tabelle seguenti:
 
@@ -174,13 +174,13 @@ Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne dell
 
 1. Nel riquadro di spostamento, selezionare **Nuovo gruppo** sotto la dicitura Navigazione. Potrebbe essere necessario espandere il menu a sinistra.
 
-1. Sul lato destro della schermata, nella sezione **Opzioni di visualizzazione** impostare la proprietà **Titolo** su Report
+1. Sul lato destro della schermata, nella **sezione Opzioni** di visualizzazione modificare la **proprietà Title** in Report.
 
 1. Selezionare**Salva** e attendere che le modifiche vengano salvate.
 
 1. Al termine del** salvataggio** selezionare il pulsante **Pubblica** per pubblicare le modifiche. Attendere il completamento della pubblicazione.
 
-## Attività n. 2: Testare l'app
+## Attività 2: Testare l'app
 
 **Avviare l'applicazione**
 
@@ -192,7 +192,7 @@ Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne dell
 
 1. Selezionare **+ Nuovo** dalla barra dei comandi.
 
-1. Immettere John per **Nome** e Doe per **Cognome**
+1. Immettere **First Name (Nome** ) come `John` e **Last Name** (Cognome) come `Doe`.
 
 1. Indicare l'e-mail personale come **E-mail**. Verrà usata in un lab futuro in cui si riceverà un messaggio e-mail.
 
@@ -208,11 +208,11 @@ Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne dell
 
 1. Compilare i campi come segue:
 
-    - **Nome report**: nuovo report di test
+    - **Nome** report: `New Test Report`
 
     - **Scopo report**: selezionare **Conferenza**
 
-    - **Scadenza report**: Selezionare la data odierna
+    - **** Scadenza report: selezionare la data odierna
 
 1. Seleziona **Salva e chiudi**. Verrà così creato il nuovo report di test che sarà visibile nella visualizzazione **Note spese attive**.
 

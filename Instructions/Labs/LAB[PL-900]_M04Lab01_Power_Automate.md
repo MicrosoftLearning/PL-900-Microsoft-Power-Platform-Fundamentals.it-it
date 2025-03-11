@@ -34,7 +34,7 @@ Di seguito sono elencati i requisiti da implementare per completare il progetto:
 
 ### Attività 1: Creare un flusso
 
-1. Passare a https://make.powerapps.com
+1. Passare a `https://make.powerapps.com`
 
 1. Potrebbe essere necessario ripetere l'autenticazione. Selezionare **Accedi** e seguire le istruzioni, se richiesto.
 
@@ -46,7 +46,7 @@ Di seguito sono elencati i requisiti da implementare per completare il progetto:
 
 1. Selezionare **+ Nuovo flusso** e selezionare **Flusso cloud automatizzato**.
 
-1. Immettere Nota spese per **Nome flusso**.
+1. Immettere `Expense Notification` per **Nome flusso**.
 
 1. In **Scegliere il trigger del flusso** cercare Dataverse
 
@@ -92,7 +92,7 @@ Questa è una procedura consigliata, per consentire all'utente e agli altri edit
 
 1. Selezionare il campo **A** e immettere l'indirizzo di posta elettronica personale. (Esistono molti modi per popolare dinamicamente un indirizzo di posta elettronica, ma per questo esercizio verrà assegnato manualmente.)  
 
-1. Nel campo **Oggetto** immettere La nota spese è stata inviata
+1. Nel campo **Oggetto** immettere `Your expense report was submitted`
 
 1. Nel **Corpo dell'e-mail**, immettere il testo seguente:
 
@@ -109,9 +109,9 @@ Il contenuto dinamico deve essere inserito nei campi con nome tra parentesi graf
 
 1. Evidenziare il testo **{First Name}**. Sostituirlo con il campo **Nome** del passaggio **Recupera il visitatore**.
 
-1. Evidenziare il testo **{Report Total Amount}**. Sostituirlo con il campo **Importo totale report** del passaggio **Quando viene inviata una nota spese**.
+1. Evidenziare il testo **{Report Total Amount}**. Sostituirlo con il **campo **Importo** totale report Quando viene aggiunto** un report spese.
 
-1. Evidenziare il testo **{Report Due Date}**. Sostituirlo con il campo **Scadenza del report** del passaggio **Quando viene inviata una nota spese**.
+1. Evidenziare il testo **{Report Due Date}**. Sostituirlo con il **campo Data di scadenza** report del **passaggio Quando viene aggiunto** un rapporto spese.
 
 1. Seleziona **Salva**.
 
@@ -141,7 +141,9 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso s
 
     - **Nome report:** Report test
 
-    - **Scadenza report:** Domani 
+    - **Scopo del report:** Conferenza
+
+    - **Data di scadenza del report:** domani
 
 1. Selezionare il pulsante **Salva e chiudi**.
 

@@ -22,8 +22,6 @@ Infine, i dati di esempio verranno importati in Microsoft Dataverse.
 
 Per preparare gli ambienti di apprendimento, è possibile:
 
-- Fare riferimento al [documento del modello dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) per la descrizione dei metadati (tabelle e relazioni). Per aprire il documento del modello di dati in una nuova finestra, è possibile tenere premuto CTRL e fare clic con il pulsante destro del mouse oppure fare clic con il pulsante destro del mouse sul collegamento.
-
 - Creare una tabella Spesa
 
 - Aggiungere alcuni dati di esempio. 
@@ -50,9 +48,9 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Dalla barra di spostamento a sinistra selezionare **Tabelle**.
 
-1. Selezionare **+ Nuova tabella** e scegliere **Imposta proprietà avanzate**.
+1. Selezionare + Nuova tabella** e selezionare ****Tabella (proprietà avanzate)** dal menu a discesa.
 
-1. Per **Nome visualizzato** immettere Spesa
+1. Per **Nome visualizzato** immettere `Expense`.
 
 1. Seleziona **Salva**.
 
@@ -62,7 +60,7 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Selezionare **+ Nuova colonna**.
 
-1. Immettere Data spese per **Nome visualizzato**.
+1. Immettere `Expense Date` per **Nome visualizzato**.
 
 1. Selezionare **Solo data** per **Tipo di dati**.
 
@@ -70,7 +68,7 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Espandi **Opzioni avanzate**.
 
-1. In **Rettifica del fuso orario**selezionare **Solo data**.
+1. In **Regolazione** fuso orario selezionare **Solo** data.
 
     >**Nota:** Il comportamento **Solo data** viene usato per registrare le informazioni sulla data: la data delle spese non deve cambiare quando visualizzata da un fuso orario diverso.
 
@@ -80,13 +78,13 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Selezionare **+ Nuova colonna**.
 
-1. Immettere Tipo di spesa per **Nome visualizzato**.
+1. Immettere `Expense Type` per **Nome visualizzato**.
 
 1. Selezionare **Scelta** per **Tipo di dati**.
 
 1. In **Obbligatori**o, selezionare **Facoltativo**.
 
-1. Impostare **Sincronizza con la scelta globale** su **Sì (scelta consigliata)**
+1. Impostare **Sincronizza con la scelta** globale su **Sì (scelta consigliata)**
 
 1. Nel campo **Sincronizza questa scelta con** selezionare **Tipo di spesa**.
 
@@ -98,13 +96,13 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Selezionare **+ Nuova colonna**.
 
-1. Immettere Scopo spesa per **Nome visualizzato**.
+1. Immettere `Expense Purpose` per **Nome visualizzato**.
 
 1. Selezionare **Scelta** per **Tipo di dati**.
 
 1. In **Obbligatori**o, selezionare **Facoltativo**.
 
-1. Impostare **Sincronizza con la scelta globale** su **Sì (scelta consigliata)**
+1. Impostare **Sincronizza con la scelta** globale su **Sì (scelta consigliata)**
 
 1. Nel campo **Sincronizza questa scelta con** selezionare **Scopo spesa**.
 
@@ -116,7 +114,7 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Selezionare **+ Nuova colonna**.
 
-1. Immettere Descrizione elemento per **Nome visualizzato**.
+1. Immettere `Item Description` per **Nome visualizzato**.
 
 1. Selezionare **Più righe di testo &gt; Testo normale** per **Tipo di dati**.
 
@@ -126,7 +124,7 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Selezionare **+ Nuova colonna**.
 
-1. Immettere Importo spesa per **Nome visualizzato**.
+1. Immettere `Expense Amount` per **Nome visualizzato**.
 
 1. Selezionare **Valuta** per **Tipo di dati**.
 
@@ -167,7 +165,7 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Selezionare la **Freccia** accanto a **Modifica**. Dal menu visualizzato selezionare **Modifica nella nuova scheda**.
 
-1. Nella colonna **Nome**, immettere **John Doe**.
+1. **Nella colonna Nome** immettere `John Doe`.
 
 1. Nella colonna **Data spesa**, immettere **xxx**.
 
@@ -175,7 +173,7 @@ La tabella **Spese** conterrà informazioni sulle singole spese che un dipendent
 
 1. Nella colonna **Tipo di spesa**, selezionare **Viaggio**.
 
-1. Nella colonna **Importo spesa**, immettere **750,00**.
+1. **Nella colonna Importo** spese immettere `750.00`.
 
 1. In **Descrizione elemento**, immettere una breve descrizione.
 
