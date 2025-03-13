@@ -39,7 +39,7 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 ### Attività 1: Creare l'app per il Report delle spese
 
-1. Passare a https://make.powerapps.com
+1. Passare a `https://make.powerapps.com`
 
 1. Potrebbe essere necessario ripetere l'autenticazione. Selezionare **Accedi** e seguire le istruzioni, se richiesto.
 
@@ -59,7 +59,7 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
     >   - **** Accedere e selezionare **Consenti accesso**
 
-1. Individuare e selezionare la tabella **Report delle spese**.
+1. Individuare e selezionare la **tabella Expense Reports** .
 
 1. Selezionare il pulsante **Connetti** nell'angolo in basso a destra.
 

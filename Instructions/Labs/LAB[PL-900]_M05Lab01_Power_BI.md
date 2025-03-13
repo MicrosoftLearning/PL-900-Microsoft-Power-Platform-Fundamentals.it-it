@@ -46,7 +46,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 1. Nella macchina virtuale deve essere archiviato un file visits.pbix nella cartella AllFiles sul desktop. Scaricare [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salvarlo nel computer, se non è già presente.
 
-1. Aprire una nuova scheda e passare a https://app.powerbi.com; se necessario, effettuare l'accesso.
+1. Aprire una nuova scheda e passare a `https://app.powerbi.com`; se necessario, effettuare l'accesso.
 
 1. Nel riquadro di spostamento a sinistra, selezionare **Area di lavoro personale**.
 
@@ -56,7 +56,7 @@ Verranno eseguite le procedure seguenti per progettare e creare un dashboard di 
 
 1. Al termine del caricamento dei dati, selezionare il report **Visite**.
 
-    >**Nota:** il tipo è impostato su **Report**, non selezionare il set di dati.
+    >**Nota:** Il tipo è impostato su **Report**, non selezionare il modello semantico.
 
 1. Seleziona **Modifica**
 
@@ -68,7 +68,7 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1. Per inserire un grafico, fare clic sull'icona **Grafico a torta** nel pannello **Visualizzazioni**.
 
-1. Espandere **bc_Visit** nel riquadro **Campi**. Trascinare il campo **Creazione** nella casella **Legenda**.
+1. Espandere **bc_Visit** nel **riquadro Dati** . Trascinare il campo **Creazione** nella casella **Legenda**.
 
 1. Trascinare il campo **Visita** nella casella **Valori**.
 
@@ -76,7 +76,7 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1. Fare clic sul report all'esterno del grafico a torta per deselezionarlo e selezionare l'icona **Istogramma in pila** nel riquadro **Visualizzazioni**.
 
-1. Se non è già stato fatto, espandere **bc_Visit** nel riquadro **Campi**. Trascinare il campo **Visit** nella casella di destinazione **Asse Y**.
+1. Espandere **bc_Visit** nel **riquadro Dati** se non è già espanso. Trascinare il campo **Visit** nella casella di destinazione **Asse Y**.
 
 1. Trascinare il campo **Start** nella casella di destinazione **Asse X**.
 
@@ -104,7 +104,7 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1. Selezionare **Nuovo dashboard** nel prompt **Aggiungi al dashboard**.
 
-1. Immettere Campus Management come **Nome dashboard** e selezionare **Aggiungi live**.
+1. Immettere `Campus Management` come **Nome dashboard** e selezionare **Aggiungi oggetto dinamico**.
 
 1. Verrà visualizzato un popup per segnalare che il dashboard è stato creato. Selezionare **Vai al dashboard**.
 
@@ -114,7 +114,7 @@ Ora è stato configurato il servizio Power BI da utilizzare per i lab.
 
 1. Nella dashboard **Campus Management**, selezionare la barra **Fai una domanda relativa ai dati** nella parte superiore.
 
-1. Immettere edifici per numero di visite nell'area Domande e risposte. Verrà visualizzato un grafico a barre.
+1. Immettere `buildings by number of visits` nell'area domande e risposte. Verrà visualizzato un grafico a barre.
 
 1. Selezionare **Aggiungi oggetto visivo**.
 

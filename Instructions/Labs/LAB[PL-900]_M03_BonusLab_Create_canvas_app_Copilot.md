@@ -40,7 +40,7 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 3. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-4. Nella casella **Descrivere l'applicazione che si intende creare**, immettere il testo seguente. Creare un'applicazione che registri le visite di un campus universitario. 
+4. **In Usa parole quotidiane per descrivere cosa deve raccogliere, tenere traccia, elencare o gestire l'app.** immettere il testo seguente. `Create an application that logs visits to a college campus`. 
 
 5. Selezionare il pulsante **Vai**.
 
@@ -48,34 +48,45 @@ Copilot inizierà a creare una struttura sotto forma di tabella per supportare l
 
 > **IMPORTANTE:** Usando l’IA generativa, non si otterranno sempre gli stessi risultati esatti. È possibile che la tabella non corrisponda esattamente alla tabella creata per un altro studente. 
 
-6. Nella casella **Descrivere cosa modificare**, immettere il testo: Aggiungere due colonne, Entrata e Uscita. Questi campi devono entrambi riportare la data e l’ora.  
+6. Sul lato destro selezionare struttura di tabella nella finestra Copilot e quindi selezionare **Opzioni** tabella.
 
-7. Selezionare il pulsante **Vai** o premere **Invio**. 
+7. Selezionare **Un'opzione tabella** e quindi applica****.
+ 
+    ![Screenshot della struttura Table appena creata](media/bonus-lab-tablestr.png)
 
-8. Far scorrere il lato della tabella e verificare che le colonne **Entrata** e **Uscita** siano state create. 
+
+> Per visualizzare la struttura della tabella, selezionare la tabella e fare clic sul **pulsante Visualizza dati** 
+
+8. **Nella casella What would you like to do next? (Cosa si vuole fare successivamente?** immettere il testo: Aggiungere due colonne, Time in e Timeout nella tabella). Entrambi devono essere campi di data e ora. 
+
+9. Selezionare il pulsante **Vai** o premere **Invio**. 
+
+10. Scorrere fino al lato della tabella e verificare che le **colonne Time in** e **Timeout** siano state create. 
 
 Dal momento che registriamo l’entrata e l’uscita dei visitatori, non abbiamo bisogno di altri campi che riportino la data della visita. 
 
-9. Individuare il campo **Data visita** (o campo equivalente) e nella casella **Descrivi cosa modificare**, immettere il testo Rimuovi il campo Data visita. 
+11. Individuare il **campo Data** visita (o campo equivalente) e nella **casella Cosa si desidera eseguire?** immettere il testo: Rimuovi il campo Data visita (o campo equivalente). 
 
-10. Selezionare il pulsante **Vai**. 
+>Se necessario, aggiornare il nome del campo da rimuovere dal nome della tabella pertinente.
 
-11. Rimuovere altri eventuali campi con la data diversi da **Entrata** e **Uscita**. 
+12. Selezionare il pulsante **Vai**. 
+
+13. Rimuovere altri eventuali campi con la data diversi da **Entrata** e **Uscita**. 
 
 Inizialmente è stato aggiunto il campo **Scopo** formattato con un tipo di dati di testo. Copilot lo trasformerà in un menu a discesa (a scelta). 
 
-12. Nella casella **Descrivi cosa modificare**, immettere il testo seguente: Modificare il campo Scopo in un menu a scelta con le opzioni seguenti: Visita del campus, Fiera della carriera, Incontro con il professore, Orientamento degli studenti, Altro. 
-
-13. Selezionare il pulsante **Vai**. 
-
-14. Dato che si intende riportare anche il numero dell’edificio, nella casella **Descrivi cosa modificare**, inserire: Aggiungere una colonna di compilazione. 
+14. Nella sezione **Cosa si vuole fare successivamente?** immettere il testo seguente: Modificare il campo Scopo in un menu di scelta con le opzioni seguenti: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
 
 15. Selezionare il pulsante **Vai**. 
 
-16. Se si è soddisfatti della tabella, selezionare il pulsante **Crea app**. 
+16. Poiché si vuole acquisire anche il numero di edificio, immettere: Aggiungere una colonna di compilazione in **What would you like to do next?, in What would you like to do next?**, enter: Add a building column. 
 
-17. Se necessario, nella schermata **Benvenuto in Power Apps Studio**, selezionare **Non mostrare più**, poi selezionare il pulsante **Ignora**. 
+17. Selezionare il pulsante **Vai**. 
 
-![Screenshot dell'app appena creata](media/bonus-lab-copilot-01.png)
+18. Dopo aver soddisfatto la tabella, selezionare il **pulsante Salva e apri app** . 
+
+19. Se necessario, nella **schermata Fine?** selezionare **Non chiedere di nuovo** e selezionare il **pulsante Salva e apri app** . 
+
+![Screenshot dell'app appena creata](media/bonus-lab-copilot-02.png)
 
 Congratulazioni, è stato usato Copilot per creare una nuova app. 
