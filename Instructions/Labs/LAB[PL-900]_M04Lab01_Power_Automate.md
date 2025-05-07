@@ -78,7 +78,7 @@ Questa è una procedura consigliata, per consentire all'utente e agli altri edit
 
 1. Nel campo **ID riga** selezionare **Proprietario (Valore)** nell'elenco **Contenuto dinamico**. In questo passaggio si sta cercando il Proprietario per la riga Nota spese creata per attivare questo flusso. 
 
-1. Nell'azione **Ottenere una riga per ID**, selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**. Rinominare l'azione Recupera il visitatore
+1. Nell'azione **Ottenere una riga per ID**, selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**. Rinominare questa azione `Get the Owner`.
 
 Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
@@ -121,7 +121,7 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso s
 
 ### Attività 4 Convalidare e testare il flusso
 
-1. Aprire una nuova scheda nel browser e passare a https://make.powerapps.com
+1. Aprire una nuova scheda nel browser e passare a `https://make.powerapps.com`.
 
 1. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
@@ -139,7 +139,7 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso s
 
 1. Completare la **riga della nota spese** come indicato di seguito:
 
-    - **Nome report:** Report test
+    - **Nome report:** `Test Report`
 
     - **Scopo del report:** Conferenza
 

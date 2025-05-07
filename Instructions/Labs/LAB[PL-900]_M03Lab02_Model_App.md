@@ -20,7 +20,7 @@ In questo corso si creeranno delle applicazioni e si eseguirà l'automazione per
 
 Nell'ambito della creazione dell'app basata su modello, verranno completate le seguenti operazioni:
 
-- Creare una nuova app basata su modello denominata Bellows Expense Management.
+- Creare una nuova app basata su modello denominata Employee Expense Management.
 
 - Modificare lo spostamento dell'app per fare riferimento alle tabelle richieste.
 
@@ -64,7 +64,7 @@ Entrambi verranno integrati nell'app basata su modello per una migliore esperien
 
     >**IMPORTANTE:**  poiché tutti i moduli hanno il nome Informazioni per impostazione predefinita, verificare che il modulo selezionato abbia il tipo di modulo **Principale** e non un altro. Per impostazione predefinita, il modulo include due campi: Nome e Proprietario.
 
-1. Sul lato destro della schermata nel pannello **Proprietà** selezionare il campo **Nome visualizzato** e impostarlo su informazioni report
+1. Sul lato destro della schermata nel pannello Proprietà** selezionare il **campo Nome** visualizzato e impostarlo su `Report Information`.**
 
 1. Selezionare **Colonne tabella** nel riquadro di spostamento a sinistra e aggiungere i campi seguenti sotto il campo **Proprietario** trascinando le colonne nel modulo o semplicemente facendo clic sui nomi delle colonne:
 
@@ -80,7 +80,7 @@ Entrambi verranno integrati nell'app basata su modello per una migliore esperien
 
     >L'intestazione si trova nell'area in alto a destra del modulo. Potrebbe essere necessario comprimere il pannello Proprietà sul lato destro della schermata per visualizzare il campo nel modulo.
 
-1. Selezionare il campo **Proprietario**. Nel pannello Proprietà modificare Etichetta **** in Richiedente.
+1. Selezionare il campo **Proprietario**. Nel pannello Proprietà modificare l'etichetta **** in `Requestor`.
 
 1. Selezionare il pulsante **Salva e pubblica** in alto a destra e attendere il completamento del salvataggio e della pubblicazione.
 
@@ -120,7 +120,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 1. Seleziona **Salva con nome**.
 
-1. Impostare il **Nome** su Note spese in scadenza oggi e selezionare **Salva**.
+1. Modificare **Nome** in `Expense Reports Due Today` e selezionare **Salva**.
 
 1. Nel pannello Proprietà, selezionare **Modifica filtri**.
 
@@ -148,15 +148,13 @@ Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne dell
 
 1. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-1. Selezionare **+ Crea** nel riquadro di spostamento a sinistra.
+1. Selezionare **Soluzioni** nel riquadro di spostamento a sinistra.
 
-1. Creare l'applicazione basata su modello:
+1. Aprire **La soluzione Gestione** spese.
 
-    - Selezionare **App vuota** nella sezione **Inizia da** della schermata **Crea la tua app**.
+1. Selezionare +Nuovo **, selezionare **** APP** e quindi app **** basata su modello.
 
-    - In **App vuota basata su Dataverse** selezionare **Crea**.
-
-    - Immettere `Employee Expense Management` nel campo **Nome** e selezionare **Crea**.
+1. Immettere `Employee Expense Management` nel campo **Nome** e selezionare **Crea**.
 
 1. Dopo il caricamento della nuova applicazione basata su modello, selezionare il **pulsante + Aggiungi pagina** .
 
@@ -174,7 +172,7 @@ Per semplicità e per ragioni di tempo, non verranno usate tutte le colonne dell
 
 1. Nel riquadro di spostamento, selezionare **Nuovo gruppo** sotto la dicitura Navigazione. Potrebbe essere necessario espandere il menu a sinistra.
 
-1. Sul lato destro della schermata, nella **sezione Opzioni** di visualizzazione modificare la **proprietà Title** in Report.
+1. Sul lato destro della schermata, nella **sezione Opzioni** di visualizzazione modificare la **proprietà Title** in `Reports`.
 
 1. Selezionare**Salva** e attendere che le modifiche vengano salvate.
 

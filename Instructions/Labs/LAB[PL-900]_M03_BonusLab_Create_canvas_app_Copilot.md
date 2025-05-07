@@ -34,58 +34,60 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 ### Attività \#1: Creare l'applicazione iniziale
 
-1. Passare a https://make.powerapps.com
+1. Accedere a `https://make.powerapps.com`.
 
 2. Potrebbe essere necessario ripetere l'autenticazione. Selezionare **Accedi** e seguire le istruzioni, se richiesto.
 
 3. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-4. **In Usa parole quotidiane per descrivere cosa deve raccogliere, tenere traccia, elencare o gestire l'app.** immettere il testo seguente. `Create an application that logs visits to a college campus`. 
+4. Selezionare **+ Crea** dal riquadro di spostamento a sinistra della schermata. Nella **sezione Crea app** selezionare **Inizia con Copilot**.
 
-5. Selezionare il pulsante **Vai**.
+5. Nella **casella Introduzione a Copilot** immettere il testo seguente. `Create an application that logs visits to a college campus`. 
+
+6. Selezionare il pulsante **Genera**.
 
 Copilot inizierà a creare una struttura sotto forma di tabella per supportare l'applicazione. 
 
 > **IMPORTANTE:** Usando l’IA generativa, non si otterranno sempre gli stessi risultati esatti. È possibile che la tabella non corrisponda esattamente alla tabella creata per un altro studente. 
 
-6. Sul lato destro selezionare struttura di tabella nella finestra Copilot e quindi selezionare **Opzioni** tabella.
+7. Sul lato destro selezionare struttura di tabella nella finestra Copilot e quindi selezionare **Opzioni** tabella.
 
-7. Selezionare **Un'opzione tabella** e quindi applica****.
+8. Selezionare **Un'opzione tabella** e quindi applica****.
  
     ![Screenshot della struttura Table appena creata](media/bonus-lab-tablestr.png)
 
 
 > Per visualizzare la struttura della tabella, selezionare la tabella e fare clic sul **pulsante Visualizza dati** 
 
-8. **Nella casella What would you like to do next? (Cosa si vuole fare successivamente?** immettere il testo: Aggiungere due colonne, Time in e Timeout nella tabella). Entrambi devono essere campi di data e ora. 
+9. **Nella casella What would you like to do next? (Cosa si vuole fare successivamente?** immettere il testo: Aggiungere due colonne, Time in e Timeout nella tabella). Entrambi devono essere campi di data e ora. 
 
-9. Selezionare il pulsante **Vai** o premere **Invio**. 
+10. Selezionare il pulsante **Vai** o premere **Invio**. 
 
-10. Scorrere fino al lato della tabella e verificare che le **colonne Time in** e **Timeout** siano state create. 
+11. Scorrere fino al lato della tabella e verificare che le **colonne Time in** e **Timeout** siano state create. 
 
 Dal momento che registriamo l’entrata e l’uscita dei visitatori, non abbiamo bisogno di altri campi che riportino la data della visita. 
 
-11. Individuare il **campo Data** visita (o campo equivalente) e nella **casella Cosa si desidera eseguire?** immettere il testo: Rimuovi il campo Data visita (o campo equivalente). 
+12. Individuare il **campo Data** visita (o campo equivalente) e nella **casella Cosa si desidera eseguire?** immettere il testo: Rimuovi il campo Data visita (o campo equivalente). 
 
 >Se necessario, aggiornare il nome del campo da rimuovere dal nome della tabella pertinente.
 
-12. Selezionare il pulsante **Vai**. 
+13. Selezionare il pulsante **Vai**. 
 
-13. Rimuovere altri eventuali campi con la data diversi da **Entrata** e **Uscita**. 
+14. Rimuovere altri eventuali campi con la data diversi da **Entrata** e **Uscita**. 
 
 Inizialmente è stato aggiunto il campo **Scopo** formattato con un tipo di dati di testo. Copilot lo trasformerà in un menu a discesa (a scelta). 
 
-14. Nella sezione **Cosa si vuole fare successivamente?** immettere il testo seguente: Modificare il campo Scopo in un menu di scelta con le opzioni seguenti: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
+15. Nella sezione **Cosa si vuole fare successivamente?** immettere il testo seguente: Modificare il campo Scopo in un menu di scelta con le opzioni seguenti: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
 
-15. Selezionare il pulsante **Vai**. 
+16. Selezionare il pulsante **Vai**. 
 
-16. Poiché si vuole acquisire anche il numero di edificio, immettere: Aggiungere una colonna di compilazione in **What would you like to do next?, in What would you like to do next?**, enter: Add a building column. 
+17. Poiché si vuole acquisire anche il numero di edificio, immettere: Aggiungere una colonna di compilazione in **What would you like to do next?, in What would you like to do next?**, enter: Add a building column. 
 
-17. Selezionare il pulsante **Vai**. 
+18. Selezionare il pulsante **Vai**. 
 
-18. Dopo aver soddisfatto la tabella, selezionare il **pulsante Salva e apri app** . 
+19. Dopo aver soddisfatto la tabella, selezionare il **pulsante Salva e apri app** . 
 
-19. Se necessario, nella **schermata Fine?** selezionare **Non chiedere di nuovo** e selezionare il **pulsante Salva e apri app** . 
+20. Se necessario, nella **schermata Fine?** selezionare **Non chiedere di nuovo** e selezionare il **pulsante Salva e apri app** . 
 
 ![Screenshot dell'app appena creata](media/bonus-lab-copilot-02.png)
 
