@@ -45,25 +45,11 @@ Seguire la sequenza seguente per progettare l'app canvas:
 
 1. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-1. Selezionare **+ Crea** dal riquadro di spostamento a sinistra della schermata. Nella sezione **Inizia da** selezionare **Dataverse**.
+1. Selezionare **App** nel riquadro di spostamento a sinistra della schermata. Selezionare **+ Nuova app** e quindi **Iniziare con un modello** di app.
 
-1. Selezionare la connessione a Dataverse.
+1. In **App per dispositivi mobili** con data center selezionare **Da Dataverse**.
 
-    >**Nota**: Se non esiste una connessione a Dataverse:
-
-    >   - Selezionare **Nuova connessione**
-
-    >   - Individuare **Microsoft Dataverse**
-
-    >   - Selezionare **Crea**.
-
-    >   - **** Accedere e selezionare **Consenti accesso**
-
-1. Individuare e selezionare la **tabella Expense Reports** .
-
-1. Selezionare il pulsante **Connetti** nell'angolo in basso a destra.
-
-1. Dopo aver creato l'app, nella schermata Benvenuto in Power Apps Studio, selezionare la casella **Non visualizzare più questo messaggio** e quindi selezionare **Ignora**.
+1. Selezionare **Expense Reports Table (Tabella report** spese) nella **pagina Selezionare i dati di Dataverse per l'app** e selezionare **Crea app**.
 
 1. Nella finestra di progettazione dell'app, selezionare il pulsante **Anteprima dell'app** (icona di riproduzione) sulla barra dei comandi. (È anche possibile visualizzare in anteprima l'app premendo il tasto F5.) Esplorare l'app per scoprirne l'aspetto predefinito.
 
@@ -77,29 +63,29 @@ In questa attività si personalizzerà il testo dell'intestazione in ognuna dell
 
 1. È attiva la schermata Sfoglia. Selezionare l'etichetta **Report delle spese** nella schermata.
 
-1. Sul lato destro della schermata, nella scheda Proprietà, aggiornare la proprietà del controllo **Testo** impostandola su Il mio report delle spese
+1. Sul lato destro della schermata, nella scheda Proprietà aggiornare la **proprietà Controllo testo** a `My Expense Reports`.
 
 1. Nella scheda **Proprietà**, modificare le **Dimensioni del carattere** in **24**.
 
 1. Selezionare lo sfondo vuoto della schermata per visualizzare il testo aggiornato nella schermata di esplorazione.
 
-1. Usando la **visualizzazione struttura ad albero** nel riquadro di spostamento a sinistra, selezionare **DetailScreen1**.
+1. Usando la **visualizzazione** Albero nel riquadro di spostamento a sinistra, selezionare **DetailScreen**.
 
 1. Selezionare l'etichetta **Report delle spese** nella schermata.
 
-1. Sul lato destro della schermata, nella scheda **Proprietà**, aggiornare la proprietà del controllo **Testo** impostandola su Dettagli del report
+1. Sul lato destro della schermata, nella **scheda Proprietà** aggiornare la **proprietà Controllo testo** a `Report Details`.
 
 1. Fare clic sullo sfondo vuoto della schermata per visualizzare il testo aggiornato nella schermata Dettagli.
 
-1. Usando la **visualizzazione struttura ad albero ** nel riquadro di spostamento a sinistra, selezionare **EditScreen1** (potrebbe essere necessario scorrere verso il basso per visualizzare questo elemento nella visualizzazione struttura ad albero).
+1. Usando la **visualizzazione** Albero nel riquadro di spostamento a sinistra, selezionare **EditScreen** (Potrebbe essere necessario scorrere verso il basso per visualizzare l'oggetto nella visualizzazione Albero).
 
 1. Selezionare l'etichetta **Report delle spese** nella schermata.
 
-1. Sul lato destro della schermata, nella scheda **Proprietà**, sostituire il testo Tabella1 nella proprietà del controllo **Testo** con Modifica dettagli
+1. Sul lato destro della schermata, nella **scheda Proprietà** sostituire il testo nella **proprietà Controllo testo** con `Edit Details`.
 
 1. Fare clic sullo sfondo vuoto della schermata per visualizzare il testo aggiornato nella schermata di modifica.
 
-1. Usando la **visualizzazione struttura ad albero**, nel riquadro di spostamento a sinistra, selezionare **BrowseScreen1**.
+1. Usando la **visualizzazione** Albero, nel riquadro di spostamento sinistro selezionare **BrowseScreen**.
 
 1. Nella barra degli strumenti dei comandi, selezionare il pulsante **Tema** e, nell'elenco visualizzato selezionare il colore del tema **Rosso**.
 
@@ -107,13 +93,13 @@ In questa attività si personalizzerà il testo dell'intestazione in ognuna dell
 
 In questa attività verrà testata la nuova app.
 
-1. Con l'applicazione aperta in Progettazione app, selezionare **Impostazioni** (potrebbe essere necessario selezionare... per visualizzare l'icona delle Impostazioni), nella sezione **Generale** aggiornare il nome dell'app nell’App Report delle spese selezionare la **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
+1. Con l'applicazione aperta in Progettazione app, selezionare **Impostazioni** (potrebbe essere necessario selezionare... per visualizzare l'icona delle impostazioni, nella **sezione Generale** aggiornare il nome dell'app per `Expense Report App` selezionare la **X** per chiudere la schermata delle impostazioni e quindi selezionare **Salva**.
 
-1. Usando la struttura di spostamento a sinistra, selezionare **BrowseScreen1**.
+1. Usando lo spostamento a sinistra, selezionare **BrowseScreen**.
 
 1. Nella finestra di progettazione dell'app, selezionare il pulsante **Anteprima dell'app** (icona di riproduzione) sulla barra dei comandi. (È anche possibile visualizzare l'anteprima dell'app premendo il tasto F5).
 
-1. Una volta aperta l'app, nel campo **Cerca elementi** immettere il testo Trip (Si noti come gli elementi della galleria filtrano in base a ciò che viene digitato nel campo di ricerca).
+1. Una volta aperta l'app, nel **campo Elementi di ricerca** immettere il testo `Trip` (Si noti come gli elementi nel filtro della raccolta in base a quanto digitato nel campo di ricerca).
 
 1. Una volta visualizzato il record **Trip to Power Platform Conference**, selezionare una riga per spostarsi e aprire la schermata Dettagli per tale spesa.
  
