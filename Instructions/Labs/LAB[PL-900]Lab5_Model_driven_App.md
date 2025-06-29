@@ -132,7 +132,7 @@ Se viene richiesto di **salvare** le modifiche, selezionare **Salva e continua**
 23.  Selezionare il **pulsante Freccia Indietro** per tornare alla finestra di progettazione dell'app.
 24.  In **Navigazione** passare il puntatore del mouse sul **modulo** Eventi** **e selezionare **Modifica**.
 
-    Se viene richiesto di salvare le modifiche, selezionare **Salva e continua**.
+Se viene richiesto di salvare le modifiche, selezionare **Salva e continua**.
 
 25.  Selezionare **il campo Dettagli evento1** e premere il **tasto Canc** sulla tastiera.
 
@@ -184,13 +184,13 @@ Successivamente, verrà aggiunto un nuovo evento.
 15.  Usando lo spostamento a sinistra, selezionare **Eventi**.
 16.  Sulla barra dei comandi selezionare il **pulsante + Nuovo** .
 17.  Nella **schermata Nuovo evento** configurare come segue:
-    -   **Nome evento:** conferenza Spring.
-    -   **Data evento:** data di domani.
-    -   **Numero massimo partecipanti:** 500
-    -   **Dettagli evento:** conferenza Spring per presentare i prodotti e i servizi più recenti dei fornitori supportati.
-    -   **Tipo di evento:** Conferenza
-    -   **Località:** Seattle
-    -   **Registrazione obbligatoria:** Sì/True
+- **Nome evento:** conferenza Spring.
+- **Data evento:** data di domani.
+- **Numero massimo partecipanti:** 500
+- **Dettagli evento:** conferenza Spring per presentare i prodotti e i servizi più recenti dei fornitori supportati.
+- **Tipo di evento:** Conferenza
+- **Località:** Seattle
+- **Registrazione obbligatoria:** Sì/True
 
 ![Screenshot del modulo evento completato. ](media/802f68c4c34c635eeff620a23d42acd8.png)
 
@@ -201,12 +201,12 @@ Verrà quindi aggiunta una nuova sessione per l'evento.
 19.  Usando lo spostamento a sinistra, selezionare **Sessioni** eventi.
 20.  Selezionare il pulsante **+New**.
 21.  Configurare la **sessione** eventi come indicato di seguito:
-    -   **Nome sessione:** intelligenza artificiale responsabile
-    -   **Data sessione:** data di domani
-    -   **Durata:** 1,5 ore
-    -   **Descrizione sessione:** con tutte le nuove soluzioni di intelligenza artificiale, è importante essere responsabili. Parleremo delle sfide.
-    -   **Relatore:** Susan Diaz
-    -   **Evento:** Spring Conference
+- **Nome sessione:** intelligenza artificiale responsabile
+- **Data sessione:** data di domani
+- **Durata:** 1,5 ore
+- **Descrizione sessione:** con tutte le nuove soluzioni di intelligenza artificiale, è importante essere responsabili. Parleremo delle sfide.
+- **Relatore:** Susan Diaz
+- **Evento:** Spring Conference
 
 ![Screenshot del modulo di sessione evento completato. ](media/6e509e4a29e6f253b5db3b4c9f82e42e.png)
 
@@ -217,10 +217,10 @@ Infine, creeremo una **registrazione** di sessione.
 23.  Usando il riquadro di spostamento a sinistra, selezionare **Registrazioni di sessione.**
 24.  Sulla barra dei **comandi selezionare **+ Nuovo**.**
 25.  Completare la registrazione della sessione come indicato di seguito:
-    -   **Nome:** E, Registrazione Swenson.
-    -   **Data registrazione:** data odierna
-    -   **Partecipante:** Edgar Swenson
-    -   **Sessione:** Mark Jones
+- **Nome:** E, Registrazione Swenson.
+- **Data registrazione:** data odierna
+- **Partecipante:** Edgar Swenson
+- **Sessione:** Mark Jones
 
 ![Screenshot del modulo di registrazione sessione completato.  ](media/16cccd9ebb949ba0f364211f1ee55d4d.png)
 

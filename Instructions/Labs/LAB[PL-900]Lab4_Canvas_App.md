@@ -26,6 +26,8 @@ Prima di iniziare questo esercizio, è necessario aver completato il lab seguent
 > [!IMPORTANT]
 > Questo lab usa l'intelligenza artificiale per compilare i componenti. Poiché i risultati dell'intelligenza artificiale possono variare, è importante notare che i risultati possono essere diversi (ma simili) a quanto definito nel lab. I concetti di base descritti nel lab saranno gli stessi indipendentemente da ciò che è stato creato o da quello che è stato denominato. Se le tabelle e le colonne non corrispondono esattamente, potrebbe essere necessario adattarsi a ciò che è stato creato automaticamente.*
 
+**Le immagini per questo lab [sono disponibili qui](https://myriumtechsolutions-my.sharepoint.com/:f:/p/derik_bormann/EnSzkatV6HlPvJBFUM8G6xkBd9flg9PfhBDKFW-yDZfPuw?e=v40ti4):**
+
 Il tempo stimato per il completamento di questo esercizio è **compreso tra 45 e 60** minuti.
 
 ## Attività 1: Accedere a Power Apps ed esplorare l'interfaccia
