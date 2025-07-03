@@ -26,16 +26,16 @@ In questo esercizio si creerà un'applicazione basata su modello per gestire gli
 
 Prima di iniziare questo esercizio, è consigliabile aver completato:
 
--   **Lab 2: Creare una soluzione Power Platform**
--   **Lab 3: Creare un modello di dati**
+-   **Lab 1: Creare una soluzione**
+-   **Lab 2: Creare un modello di dati**
 
 Il tempo stimato per completare questo esercizio è **compreso tra 20 e 30** minuti.
 
-## Attività 1: Creare un modello per supportare la nuova applicazione basata su modello
+## Attività 1: Creare un modello di dati per supportare la nuova applicazione basata su modello
 
 Contoso archivia attualmente le informazioni di contatto nell'istanza di Dataverse, quindi vuole usare Dataverse per tenere traccia dei corsi e delle registrazioni dei corsi. È necessario creare le tabelle necessarie per supportare l'applicazione e creare un'applicazione basata su modello basata su tale modello di dati.
 
-1.  Se necessario, aprire un Web browser e passare al portale di [Power Apps](https://make.powerapps.com/) Maker e Accedere usando le credenziali dell'account Microsoft.
+1.  Se necessario, aprire un Web browser e passare al [portale di Power Apps](https://make.powerapps.com/) Maker e accedere usando le credenziali dell'account Microsoft.
 2.  Usando lo spostamento a sinistra, selezionare **Soluzioni.**
 3.  Aprire la **soluzione Gestione** eventi creata in precedenza.
 4.  Sulla barra dei comandi selezionare **Nuova** **\> \> **** app basata su modello di app.******
@@ -55,12 +55,11 @@ Contoso archivia attualmente le informazioni di contatto nell'istanza di Dataver
 
 10. Seleziona il pulsante **Aggiungi**.
 
-> [!NOTE]
-> A volte verrà richiesto di accedere durante l'uso della finestra di progettazione. Selezionare la X per annullare la schermata di accesso.
+> **Nota:** a volte viene richiesto di accedere durante l'uso della finestra di progettazione. Selezionare la X per annullare la schermata di accesso.
 
 ## Attività 2: Modificare l'applicazione basata su modello in base alle proprie esigenze
 
-Ora che l'app viene creata, verranno apportate alcune modifiche alla modalità di presentazione dell'applicazione. Dobbiamo avere due gruppi distinti; Persone ed eventi. Si vuole avere la tabella Contatti nel gruppo People e tutte le tabelle Event nel gruppo Eventi.
+Ora che l'app viene creata, verranno apportate alcune modifiche alla modalità di presentazione dell'applicazione. Vogliamo avere due gruppi distinti; Persone ed eventi. Si vuole avere la tabella Contatti nel gruppo People e tutte le tabelle Event nel gruppo Eventi.
 
 1.  In **Navigazione** sul lato sinistro della schermata selezionare **Nuovo gruppo**.
 2.  Sul lato destro dell'applicazione espandere il **pannello Proprietà** .
@@ -79,7 +78,7 @@ L'app dovrebbe essere simile all'immagine:
 
 ![screenshot che mostra la mappa del sito aggiornata](media/ff039cad105533933959854cec4ec95e.png)
 
-## Attività 3: Modificare i diversi moduli e visualizzazioni nell'applicazione basata su modello in base alle proprie esigenze.
+## Attività 3: Modificare i diversi moduli e visualizzazioni nell'applicazione basata su modello
 
 L'applicazione model drive usa moduli e visualizzazioni per presentare i dati agli utenti nell'interfaccia utente. Verranno apportate alcune modifiche a tali elementi.
 
@@ -109,47 +108,51 @@ L'applicazione model drive usa moduli e visualizzazioni per presentare i dati ag
 
 13. Sulla barra** dei comandi dei moduli **selezionare il **pulsante Salva e pubblica**.
 14. Selezionare il **pulsante Freccia Indietro** per tornare alla finestra di progettazione di applicazioni basate su modello
-15. In **Navigazione** a sinistra passare il puntatore del mouse sulla **visualizzazione** Contatti e selezionare l'icona **Modifica** .
+15. In **Navigazione** a sinistra passare il puntatore del mouse sulla **visualizzazione** Contatti e selezionare l'icona **Modifica** . (Se viene richiesto di salvare, selezionare **Salvare e continuare.**
 16. Selezionare **+ Visualizza colonna**.
-17. Cercare e aggiungere la **colonna Tipo contatto** al modulo.
+17. Cercare e aggiungere la **colonna Tipo contatto** alla vista.
 18. Selezionare il pulsante **Salva e pubblica**.
+19. Selezionare il **pulsante Indietro freccia** per tornare alla finestra di progettazione dell'applicazione basata su modello.
 
 Successivamente, verranno apportate le modifiche necessarie ai moduli rimanenti.
 
-19.  In **Navigazione** selezionare **Visualizzazione** eventi.
+20.  In **Navigazione** selezionare **Visualizzazione eventi**
+    
+Si noti che potrebbe essere presente una **colonna EventDetails1** . In tal caso, verrà rimosso dalla visualizzazione. *(Se non è disponibile, è possibile passare a **Attività 4: Salvare e pubblicare**)*
 
-Si noti che potrebbe essere presente una **colonna EventDetails1** . In tal caso, verrà rimosso dalla visualizzazione. *(Se non ce l'hai,* **è possibile passare al passaggio 28**)*
-
-20.  Passare il puntatore del mouse sulla **visualizzazione** Eventi e selezionare il **pulsante Modifica** .
+21.  Passare il puntatore del mouse sulla **visualizzazione** Eventi e selezionare il **pulsante Modifica** .
 
 Se viene richiesto di **salvare** le modifiche, selezionare **Salva e continua**.
 
-21.  **Nella visualizzazione** selezionare la freccia accanto a **EventDetails1** e scegliere Rimuovi** dal menu visualizzato**.
+22.  **Nella visualizzazione** selezionare la freccia accanto a **EventDetails1** e scegliere Rimuovi** dal menu visualizzato**.
 
 ![Screenshot che mostra come rimuovere una colonna aggiuntiva da una visualizzazione.](media/f0f1484a4f3a679abc18cdb1cd5c04da.png)
 
-22.  Selezionare il pulsante **Salva e pubblica**.
-23.  Selezionare il **pulsante Freccia Indietro** per tornare alla finestra di progettazione dell'app.
-24.  In **Navigazione** passare il puntatore del mouse sul **modulo** Eventi** **e selezionare **Modifica**.
+23.  Selezionare il pulsante **Salva e pubblica**.
+24.  Selezionare il **pulsante Freccia Indietro** per tornare alla finestra di progettazione dell'app.
+25.  In **Navigazione** passare il puntatore del mouse sul **modulo** Eventi** **e selezionare **Modifica**.
 
 Se viene richiesto di salvare le modifiche, selezionare **Salva e continua**.
 
-25.  Selezionare **il campo Dettagli evento1** e premere il **tasto Canc** sulla tastiera.
+26.  Selezionare **il campo Dettagli evento1** e premere il **tasto Canc** sulla tastiera.
 
 Il modulo dovrebbe essere simile all'immagine:
 
 ![Screenshot che mostra il modulo Evento aggiornato, dopo la rimozione di colonne aggiuntive. ](media/d9e8903c79b01e85e32c6ef5279a2ad5.png)
 
-26.  Selezionare il **pulsante Salva e pubblica** .
-27.  Selezionare il **pulsante Freccia Indietro** per tornare alla finestra di progettazione dell'app.
+Se non corrisponde esattamente, va bene fino a quando ci sono tutti i campi dell'immagine.  
 
-Se nel modulo non è presente il campo EventDetail1, continuare qui.
+27.  Selezionare il **pulsante Salva e pubblica** .
+28.  Selezionare il **pulsante Freccia Indietro** per tornare alla finestra di progettazione dell'app.
 
-28.  **Sulla barra** dei comandi dell'app selezionare il **pulsante Salva e pubblica**.
-29.  Selezionare il **pulsante Indietro** per tornare al portale di **Power Apps Maker** .
-30.  Selezionare **Torna alle soluzioni** per tornare alla schermata principale **di Power Apps** .
+## Attività 4: Salvare e pubblicare (se il campo EventDetail1 non è presente nel modulo, continuare qui).
 
-## Attività 4: Testare la nuova applicazione
+1.  **Sulla barra dei comandi** dell'app selezionare il **pulsante Salva e pubblica**.
+2.  Selezionare il **pulsante Indietro** per tornare alla **soluzione Gestione eventi** .
+3.  Selezionare **Torna alle soluzioni** freccia per tornare al portale principale **di Power Apps Maker** .
+4.  Selezionare la **freccia Indietro** per tornare alla schermata principale **di Power Apps** .
+
+## Attività 5: Testare la nuova applicazione
 
 Ora che l'applicazione basata su modello è stata creata, verrà testata la relativa funzionalità.
 
@@ -157,9 +160,9 @@ Prima di tutto aggiungeremo un paio di contatti.
 
 1.  Usando lo spostamento a sinistra, selezionare **App**.
 2.  Modificare le app visualizzate da **App personali** a **Tutte**.
-3.  Passare il mouse sull'applicazione **Course Event Management** appena creata e selezionare l'icona **Riproduci** .
+3.  Passare il puntatore del mouse sull'applicazione **Gestione** eventi appena creata e selezionare l'icona **Riproduci** .
 4.  Usando lo spostamento a sinistra, selezionare **Contatti**.
-5.  Sulla barra dei comandi selezionare il **pulsante + Nuovo** .
+5.  Sulla barra dei **comandi** selezionare il **pulsante + Nuovo** .
 6.  Nella **schermata Nuovo contatto** configurare come segue:
     -   **Nome:** Voice
     -   **Cognome:** Diaz.
@@ -175,6 +178,7 @@ Prima di tutto aggiungeremo un paio di contatti.
     -   **Nome:** Edgar
     -   **Cognome:** Swenson
     -   **Job Title:** Architect
+    -   **Email:** immettere l'indirizzo di posta elettronica (assicurarsi di aggiungere **l'indirizzo** di posta elettronica).
 12. Nell'intestazione del modulo selezionare la freccia giù accanto a **Tipo contatto**.
 13. Impostare Tipo **di** contatto su **Partecipante**.
 14. Selezionare il pulsante **Salva e chiudi**.
@@ -217,11 +221,13 @@ Infine, creeremo una **registrazione** di sessione.
 23.  Usando il riquadro di spostamento a sinistra, selezionare **Registrazioni di sessione.**
 24.  Sulla barra dei **comandi selezionare **+ Nuovo**.**
 25.  Completare la registrazione della sessione come indicato di seguito:
-- **Nome:** E, Registrazione Swenson.
+- **Nome registrazione:** E, Registrazione Swenson.
+- **Proprietario:** lasciare invariato
 - **Data registrazione:** data odierna
+- **Istruzioni speciali:** Nessun glutine
 - **Partecipante:** Edgar Swenson
-- **Sessione:** Mark Jones
+- **Sessione eventi:** intelligenza artificiale responsabile
 
-![Screenshot del modulo di registrazione sessione completato.  ](media/16cccd9ebb949ba0f364211f1ee55d4d.png)
+![Screenshot del modulo di registrazione sessione completato.  ](media/Session-registration-form.png)
 
 26.  Seleziona il pulsante **Salva e chiudi**.

@@ -16,7 +16,7 @@ I tenant non devono essere condivisi o usati per scopi diversi dai lab pratici. 
 
 I tenant non devono essere convertiti in un abbonamento a pagamento. I tenant ottenuti nell'ambito di questo corso rimangono di proprietà di Microsoft Corporation, che si riserva il diritto di accedervi e di recuperarli in qualsiasi momento.
 
-## Esercizio 1 - Access Microsoft Power Platform
+## Esercizio 1: Accedere a Microsoft Power Platform
 
 In questo esercizio si verificherà che sia possibile accedere a Power Apps.
 
@@ -57,3 +57,14 @@ L'applicazione degli aggiornamenti più recenti al browser impedisce problemi ne
 1. **Selezionare i comandi (...)** in alto a destra nel browser, selezionare **Guida e commenti e suggerimenti** e selezionare **Informazioni su Microsoft Edge**.
 
 1. Applicare gli aggiornamenti e riavviare il browser, se necessario.
+
+## Esercizio 2: Scaricare immagini
+
+1. Aprire una finestra del browser nel tenant e immettere https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
+2. Le immagini verranno visualizzate nello screenshot.
+
+![file di immagine.](media/images.png)
+
+3. Aprire ogni immagine separatamente e scaricare selezionando l'icona **Scarica** .
+
+![Pulsante di download dell'immagine.](media/download-image.png)

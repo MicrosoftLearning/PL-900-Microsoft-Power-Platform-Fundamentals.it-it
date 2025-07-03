@@ -22,12 +22,22 @@ Al termine di questo esercizio, si eseguiranno le operazioni seguenti:
 
 Prima di iniziare questo esercizio, è necessario aver completato il lab seguente:
 
-- **Lab 3: Creare un modello di dati**
+- **Lab 2: Creare un modello di dati**
 
-> [!IMPORTANT]
-> Questo lab usa l'intelligenza artificiale per compilare i componenti. Poiché i risultati dell'intelligenza artificiale possono variare, è importante notare che i risultati possono essere diversi (ma simili) a quanto definito nel lab. I concetti di base descritti nel lab saranno gli stessi indipendentemente da ciò che è stato creato o da quello che è stato denominato. Se le tabelle e le colonne non corrispondono esattamente, potrebbe essere necessario adattarsi a ciò che è stato creato automaticamente.
+> **Importante:** questo lab usa l'intelligenza artificiale per compilare i componenti. Poiché i risultati dell'intelligenza artificiale possono variare, è importante notare che i risultati possono essere diversi (ma simili) a quanto definito nel lab. I concetti di base descritti nel lab saranno gli stessi indipendentemente da ciò che è stato creato o da quello che è stato denominato. Se le tabelle e le colonne non corrispondono esattamente, potrebbe essere necessario adattarsi a ciò che è stato creato automaticamente.
 
 Il tempo stimato per il completamento di questo esercizio è **compreso tra 30 e 45** minuti.
+
+**Prima di iniziare:** se è la prima volta che si accede al portale di Power Pages Maker, potrebbe essere necessario eseguire alcune operazioni di installazione.  In tal caso, seguire le istruzioni riportate di seguito.  In caso contrario, è possibile continuare con **l'attività 1.**  
+
+1.  Se necessario, passare a [Microsoft Power Pages](https://make.powerpages.microsoft.com).
+2.  **Nella schermata Benvenuto in Power Pages** selezionare il **pulsante Inizia**.
+
+![Screenshot della schermata iniziale di Power Pages.](media/get-started.png)
+
+3. **Nella schermata Informazioni su se stessi** selezionare il **pulsante Ignora**.
+
+![Screenshot della schermata iniziale di Power Pages.](media/about-you.png)
 
 ## Attività 1: usare Copilot per creare un nuovo sito di Power Pages.
 
@@ -55,7 +65,7 @@ Il nuovo sito verrà creato in background, che può richiedere alcuni minuti.
 
 10.  Dopo aver creato il sito, aprirlo (se non è già stato creato).
 
-> [! NOTA:] A volte quando il sito viene caricato per la prima volta, è possibile che venga visualizzato un messaggio Liquid object non trovato. In questo caso, aggiorna (F5) la finestra del browser per ricaricare il sito. Verrà visualizzato il sito.
+> **Nota:** a volte quando il sito viene caricato per la prima volta, è possibile che venga visualizzato un messaggio Liquid object non trovato. In questo caso, aggiorna (F5) la finestra del browser per ricaricare il sito. Verrà visualizzato il sito.
 
 ## Attività 2: Modificare il contenuto del sito
 
@@ -220,19 +230,19 @@ Ora che sono stati definiti i moduli necessari che verranno usati per la gestion
     - **Selezionare le visualizzazioni dati:** Eventi attivi, Eventi inattivi
     - **Nome dell'elenco:** Eventi
 9.  Selezionare la **scheda Azioni** e configurare come segue:
-    1.  **Creare un nuovo record:** Attivato
-        1. **Tipo di destinazione:** modulo
-        2. **Modulo:** Crea evento
-        3. **Etichetta di visualizzazione:** Crea nuovo evento
-    2.  **Visualizza dettagli:** Attivato
-        1.  **Tipo di destinazione:** modulo
-        2.  **Form:** View Event
-        3.  **Etichetta di visualizzazione:** vedere Dettagli evento
-    3.  **Modifica record:** Attivato
-        1.  **Tipo di destinazione:** modulo
-        2.  **Modulo:** Modifica evento
-        3.  **Etichetta di visualizzazione:** Modifica evento
-    4.  Selezionare **Fatto**.
+    - **Creare un nuovo record:** Attivato
+        - **Tipo di destinazione:** modulo
+        - **Modulo:** Crea evento
+        - **Etichetta di visualizzazione:** Crea nuovo evento
+    - **Visualizza dettagli:** Attivato
+        - **Tipo di destinazione:** modulo
+        - **Form:** View Event
+        - **Etichetta di visualizzazione:** vedere Dettagli evento
+    - **Modifica record:** Attivato
+        - **Tipo di destinazione:** modulo
+        - **Modulo:** Modifica evento
+        - **Etichetta di visualizzazione:** Modifica evento
+9. Selezionare **Fatto**.
 
 ## Attività 6: Aggiornare le autorizzazioni
 

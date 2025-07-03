@@ -21,14 +21,11 @@ Contoso Consulting è un'organizzazione di servizi professionali specializzata i
 
 Prima di iniziare questo esercizio, è necessario aver completato il lab seguente:
 
-- **Lab 1: creare una soluzione con Progettazione piani**
+- **Lab 2: Creare un modello di dati**
 
-> [!IMPORTANT]
-> Questo lab usa l'intelligenza artificiale per compilare i componenti. Poiché i risultati dell'intelligenza artificiale possono variare, è importante notare che i risultati possono essere diversi (ma simili) a quanto definito nel lab. I concetti di base descritti nel lab saranno gli stessi indipendentemente da ciò che è stato creato o da quello che è stato denominato. Se le tabelle e le colonne non corrispondono esattamente, potrebbe essere necessario adattarsi a ciò che è stato creato automaticamente.*
+> **Importante** Questo lab usa l'intelligenza artificiale per compilare i componenti. Poiché i risultati dell'intelligenza artificiale possono variare, è importante notare che i risultati possono essere diversi (ma simili) a quanto definito nel lab. I concetti di base descritti nel lab saranno gli stessi indipendentemente da ciò che è stato creato o da quello che è stato denominato. Se le tabelle e le colonne non corrispondono esattamente, potrebbe essere necessario adattarsi a ciò che è stato creato automaticamente.*
 
-**Le immagini per questo lab [sono disponibili qui](https://myriumtechsolutions-my.sharepoint.com/:f:/p/derik_bormann/EnSzkatV6HlPvJBFUM8G6xkBd9flg9PfhBDKFW-yDZfPuw?e=v40ti4):**
-
-Il tempo stimato per il completamento di questo esercizio è **compreso tra 45 e 60** minuti.
+Il tempo stimato per completare questo esercizio è **compreso tra 60 e 75** minuti.
 
 ## Attività 1: Accedere a Power Apps ed esplorare l'interfaccia
 
@@ -63,12 +60,14 @@ Si aggiungerà quindi la tabella utente al modello di dati in modo da poter asso
 12.  Selezionare la **tabella User (Utente)** e fare clic sul **pulsante Add Selected (Aggiungi selezionato** ).
 13.  Sulla barra dei **comandi selezionare **Crea relazioni**.**
 14.  Configurare la relazione come segue:
-    -   **Uno:** Utente
-    -   **Molti:** Time Off Request
-    -   **Nome visualizzato:** Richiesta di dipendente
+
+-   **Uno:** Utente
+-   **Molti:** Time Off Request
+-   **Nome visualizzato:** Richiesta di dipendente
+  
 15.  Selezionare **Fatto**.
 
-Il modello di dati completato dovrebbe essere simile all'immagine seguente:
+Il modello di dati completato dovrebbe essere simile all'immagine:
 
 ![Screenshot del modello di dati completato ](media/daa74d51e2ceada8e1e8b004cae9942a.png)
 
@@ -93,20 +92,24 @@ Successivamente, si modificheranno le dimensioni delle immagini per renderle pi�
 7.  Sulla barra dei **comandi selezionare il **pulsante Proprietà**.** (*Situato a destra del pulsante Modifica.*
 8.  Selezionare l'immagine **Time off** aggiunta in precedenza.
 9.  **Nel pannello Proprietà** configurare l'immagine nel modo seguente:
+    
     -   **Posizione immagine:** Riempimento
     -   **Larghezza:** 300
     -   **Altezza:** 300
-10.  Ripetere il passaggio precedente per impostare altezza **** e **larghezza** dell'immagine **Dipendente** su **300** x **300**.
-11.  Selezionare il testo seguente **Time Off Requests (Richieste** di time off).
-12.  **Nel pannello Proprietà** selezionare il **campo Testo** e modificare il testo in: *"Crea, Visualizza e Gestisci le richieste di time off".*
-13.  Selezionare il **testo della schermata** iniziale nell'intestazione****.
-14.  **Nel riquadro Proprietà** a destra selezionare il **campo Logo**.
-15.  Dal menu visualizzato selezionare **Carica**.
-16. Selezionare Contoso Logo** nei file di **classe e selezionare **Apri**.
-17. **Nel pannello Proprietà** sotto il **gruppo Stile** e tema selezionare l'icona **Colore riempimento**.
-18. Selezionare la **scheda Personalizzata**
-19. Modificare il colore esadecimale **** in: **101E2B**
-20. Assicurarsi di avere **ancora selezionato Intestazione** e modificare il **titolo** in Contoso Employee Hub
+      
+11.  Ripetere il passaggio precedente per impostare altezza **** e **larghezza** dell'immagine **Dipendente** su **300** x **300**.
+12.  Selezionare il testo seguente **Time Off Requests (Richieste** di time off).
+13.  **Nel pannello Proprietà** selezionare il **campo Testo** e modificare il testo in: *"Crea, Visualizza e Gestisci le richieste di time off".*
+14.  Selezionare il **testo della schermata** iniziale nell'intestazione****.
+15.  **Nel riquadro Proprietà** a destra selezionare il **campo Logo**.
+16.  Dal menu visualizzato selezionare **Carica**.
+17. Selezionare Contoso Logo** nei file di **classe e selezionare **Apri**.
+18. **Nel pannello Proprietà** sotto il **gruppo Stile** e tema selezionare l'icona **Colore riempimento**.
+19. Selezionare la **scheda Personalizzata**
+20. Modificare il colore esadecimale **** in: **101E2B**
+21. Assicurarsi di avere **ancora selezionato Intestazione** e modificare titolo** in ****Contoso Employee Hub.**
+22. Sulla barra dei **comandi** selezionare il **pulsante Salva** per salvare l'app.
+23. **Nella schermata Salva** impostare Nome** **su **Contoso Employee Hub** e selezionare **Salva.**
 
 L'app sarà simile all'immagine.
 
@@ -116,52 +119,57 @@ L'app sarà simile all'immagine.
 
 Mentre stai creando l'app, uno dei tuoi manager ti raggiunge e ti chiede se i dipendenti potrebbero anche usare questa app per controllare le apparecchiature. Contoso sta già archiviando le informazioni di checkout delle apparecchiature in Dataverse, quindi è solo una questione di rendere disponibili le informazioni nell'app.
 
-1.  Con l'app ancora aperta, se necessario, espandere il **riquadro Copilot** . In Copilot immettere quanto segue: "*Aggiungi una nuova schermata denominata Checkout attrezzature".*  Selezionare **Send**.*
-2.  Selezionare il **pulsante Mantieni** per accettare la schermata.
-3.  Una nuova schermata denominata **Equipment Checkout** viene aggiunta all'app.
-4.  **Nella schermata Checkout** attrezzature fare clic su **Con layout** e scegliere il **layout della barra** laterale.
-5.  Espandere i diversi contenitori fino a **quando SideBarContainer** non è visibile **.**
+1.  Con l'app ancora aperta, espandere il **riquadro Copilot** (se necessario). In Copilot immettere quanto segue: "*Aggiungi una nuova schermata denominata Checkout attrezzature".*
+2.  Selezionare **Invia**.
+3.  Selezionare il **pulsante Mantieni** per accettare la schermata.
+4.  Una nuova schermata denominata **Equipment Checkout** viene aggiunta all'app.
+5.  **Nella schermata Checkout** attrezzature fare clic su **Con layout** e scegliere il **layout della barra** laterale.
+6.  Espandere i diversi contenitori fino a **quando SideBarContainer** non è visibile.
 
 ![Screenshot della visualizzazione albero ](media/cde6257402b7a8786e679ab64ee0f882.png)
 
-6.  Fare clic con il pulsante destro del mouse su **SidebarContainer** e rinominare **EquipContainer1**.
-7.  Con il **contenitore EquipContainer1** selezionato, fare clic sul **pulsante Apri menu** Inserisci.
-8.  **Nella finestra Cerca** immettere **Raccolta** e selezionare **Raccolta** verticale.
-9.  **Nel campo Cerca** immettere **Apparecchiature** e selezionare la **tabella Apparecchiature**.
-10. In **Visualizzazione** albero sul lato sinistro della schermata selezionare il **controllo Gallery1** appena aggiunto.
-11. Fare clic con il pulsante destro del mouse sul nome della raccolta, scegliere **Rinomina** e rinominare **Elenco attrezzature**.
-12. Passare il puntatore del **mouse sulla raccolta Equipment List** , sulla barra degli strumenti visualizzata sopra la raccolta selezionare **Layout**.
-13. Selezionare l'opzione **Titolo e layout** sottotitolo.
-14. Con la **raccolta Equipment List** selezionata, nel **riquadro Proprietà** configurare come segue:
+7.  Fare clic con il pulsante destro del mouse su **SidebarContainer** e rinominare **EquipContainer1**.
+8.  Con il **contenitore EquipContainer1** selezionato, fare clic sul **pulsante Apri menu** Inserisci.
+9.  **Nella finestra Cerca** immettere **Raccolta** e selezionare **Raccolta** verticale.
+10.  Quando viene chiesto a troi di fornire un'origine dati nel **campo Di ricerca** visualizzato, immettere **Apparecchiature** e selezionare la tabella **Apparecchiature** .
+11. In **Visualizzazione** albero sul lato sinistro della schermata selezionare il **controllo Gallery1** appena aggiunto.
+12. Fare clic con il pulsante destro del mouse sul nome della raccolta, scegliere **Rinomina** e rinominare **Elenco attrezzature**.
+13. Passare il puntatore del **mouse sulla raccolta Equipment List** , sulla barra degli strumenti visualizzata sopra la raccolta selezionare **Layout**.
+14. Selezionare l'opzione **Titolo e layout** sottotitolo.
+15. Con la **raccolta Equipment List** selezionata, nel **riquadro Proprietà** configurare come segue:
+
     -   **Larghezza:** 360
     -   **Altezza flessibile:** Attivato
     -   **Altezza minima:** 287
 
 Successivamente, verrà aggiunto un contenitore aggiuntivo al **contenitore EquipmentContiner1** per archiviare un controllo di ricerca che verrà usato per filtrare il contenuto della **raccolta Equipment List** .
 
-15.  In **Visualizzazione albero** selezionare **EquipContainer1**.
-16.  Passare il puntatore del mouse sul contenitore e selezionare l'icona **Copilot** .
-17.  Immettere il testo seguente: "*Inserisci un contenitore orizzontale".*
+16.  In **Visualizzazione albero** selezionare **EquipContainer1**.
+17.  Passare il puntatore del mouse sul contenitore e selezionare l'icona **Copilot** .
+18.  Immettere il testo seguente: "*Inserisci un contenitore orizzontale".*
 
 ![Screenshot dell'inserimento di una raccolta in un contenitore.](media/b9b784ea5625469c8785650b977f32d1.png)
 
-18.  Selezionare il **pulsante Mantieni** .
-19.  Verrà aggiunto un nuovo contenitore nella parte inferiore del **contenitore EquipContainer1** .
-20.  **Nella visualizzazione** albero fare clic, tenere premuto e trascinare il nuovo contenitore e posizionarlo sopra la **raccolta Elenco** attrezzature.
-21.  Rinominare il contenitore in **EquipSearchContainer.**
-22.  Con l'opzione **EquipSearchContainer** selezionata, nel **riquadro Proprietà** configurare come segue:
-    -   **Larghezza minima:** 0
-    -   **Altezza flessibile:** Disattivato
-    -   **Altezza:** 44
-23.  Con **EquipSearchContainer** selezionato, selezionare il **pulsante Apri menu** Inserisci.
-24. **Nel campo Cerca** immettere **Testo** e selezionare **Input di** testo.
-25. Rinominare il **campo Input** di testo in **EquipSearchInput**.
-26. Con **EquipSearchInput** selezionato, nel **riquadro Proprietà** configurare come segue:
+19.  Selezionare il **pulsante Mantieni** .
+20.  Verrà aggiunto un nuovo contenitore nella parte inferiore del **contenitore EquipContainer1** .
+21.  **Nella visualizzazione** albero fare clic, tenere premuto e trascinare il nuovo contenitore e posizionarlo sopra la **raccolta Elenco** attrezzature.
+22.  Rinominare il contenitore in **EquipSearchContainer.**
+23.  Con l'opzione **EquipSearchContainer** selezionata, nel **riquadro Proprietà** configurare come segue:
+    
+ -   **Larghezza minima:** 0
+ -   **Altezza flessibile:** Disattivato
+ -   **Altezza:** 44
+   
+24.  Con **EquipSearchContainer** selezionato, selezionare il **pulsante Apri menu** Inserisci.
+25. **Nel campo Cerca** immettere **Testo** e selezionare **Input di** testo.
+26. Rinominare il **campo Input** di testo in **EquipSearchInput**.
+27. Con **EquipSearchInput** selezionato, nel **riquadro Proprietà** configurare come segue:
+
     -   **Impostazione predefinita:** vuoto (niente)
     -   **Testo del suggerimento:** Ricerca
     -   **Tipo di carattere:** Apri sans
     -   **Dimensioni carattere:** 14
-    -   **Padding**
+    -   **Riempimento** (i valori riportati di seguito potrebbero essere già presenti).
         -   **Top:** 5
         -   **Inferiore:** 5
         -   **A sinistra:** 12
@@ -172,10 +180,14 @@ Successivamente, verrà aggiunto un contenitore aggiuntivo al **contenitore Equi
 
         ![Screenshot delle proprietà di input di ricerca.](media/b0e092b4795edf58dad1153209639051.png)
 
-27. In **Visualizzazione** albero selezionare **EquipSearchContainer.**
-28. Passare il puntatore del mouse sul contenitore, selezionare l'icona **copilota** e immettere *"Aggiungi un'icona di ricerca".*
-29. Selezionare **Mantieni**.
-30. Con l'icona **Cerca** selezionata, nel **riquadro Proprietà** configurare il controllo come indicato di seguito:
+28. In **Visualizzazione** albero selezionare **EquipSearchContainer.**
+29. Passare il puntatore del mouse sul contenitore, selezionare l'icona **Copilot** e immettere *"Aggiungi un'icona di ricerca".*
+30. Selezionare **Mantieni**.
+
+> **Nota:** se Coplot si verifica per aggiungere l'icona errata, rimuoverla e inserire manualmente la lente di ingrandimento.
+
+31. Con l'icona **Cerca** selezionata, nel **riquadro Proprietà** configurare il controllo come indicato di seguito:
+
     -   **Padding**
         -   **Top:** 10
         -   **Botton:** 10
@@ -186,51 +198,59 @@ Successivamente, verrà aggiunto un contenitore aggiuntivo al **contenitore Equi
 
 ![Screenshot delle proprietà dell'icona di ricerca](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-31. Usando la **visualizzazione** Albero a sinistra, selezionare **EquipSearchContainer.**
-32. **Nel riquadro Proprietà** configurare il contenitore nel modo seguente:
+32. Usando la **visualizzazione** Albero a sinistra, selezionare **EquipSearchContainer.**
+33. **Nel riquadro Proprietà** configurare il contenitore nel modo seguente:
+
     -   **Larghezza minima:** 0
     -   **Altezza:** 44
 
 Infine, verrà configurata la **raccolta Equipment List** per popolare i dati in base al testo immesso nel campo del controllo di ricerca.
 
-33.  Selezionare la **raccolta Equipment List** creata in precedenza.
-34.  **Nella proprietà Items** immettere la formula seguente: Search([@'Equipment'], *EquipSearchInput*. Text, 'Equipment Name',Category)
+34.  Selezionare la **raccolta Equipment List** creata in precedenza.
+35.  **Nella proprietà Items** immettere la formula seguente: Search([@'Equipments'], *EquipSearchInput*. Text, 'Equipment Name',Category)
 
-![Screenshot della formula di PowerFx items.](media/4fbff5852c0e1db6cece816734418e07.png)
+![Screenshot della formula di PowerFx items.](media/powerfx-formula.png)
+
+36. Sulla barra dei **comandi** selezionare il pulsante Salva** per salvare l'app**.
+
+> **Importante:** se è stata copiata e copiata la formula nella barra della formula, è possibile che il valore '' non sia corretto per Equipment and Equipment Name. Se viene visualizzato un errore di formula, provare a rimuoverli e digitarli di nuovo.
 
 ## Attività 4: Compilare un contenitore per visualizzare le operazioni dei record.
 
 Quando un utente seleziona un record nell'elenco Apparecchiature, si vuole aprire il record in un altro contenitore per consentire loro di modificare il record selezionato.
 
-1.  **Selezionare MainContainer**.
-2.  In MainContainer** selezionare il **pulsante Apri menu Inserisci**.**
+1.  **Selezionare MainContainer** e rinominarlo **In DetailsContainer.**
+2.  In DetailsContainer** selezionare il **pulsante Inserisci**.**
 3.  **In Cerca** file immettere **Contenitore** e scegliere **Contenitore** verticale.
 4.  Fare clic con il pulsante destro del mouse e **rinominare** il contenitore in **RecordDetails**.
-5.  **Nel contenitore RecordDetails** selezionare il **pulsante di menu** Apri inserimento.
+5.  **Nel contenitore RecordDetails** selezionare il **pulsante Inserisci**.
 6.  Scegliere Modifica modulo** dal **menu **Inserisci**.
 7.  Nella schermata Seleziona origine dati selezionare **Apparecchiature**. *Il popolamento dei dati può richiedere fino a 30 secondi.*
 8.  Fare clic con il pulsante destro del mouse sul modulo appena aggiunto e **rinominarlo** in **EquipmentForm**.
 9.  **Nel riquadro Proprietà** selezionare la **scheda Avanzate** e impostare la **proprietà Item** su: *'Equipment List'*. Selezionato. *Verrà popolato il form con il record attualmente selezionato.*
 10. Selezionare la **scheda Visualizza** e configurare il modulo nel modo seguente:
+
     -   **Colonne:** 2
     -   **Modalità predefinita:** Modifica
 
 Ora si aggiungerà un altro contenitore che verrà usato per controllare le operazioni nel form.
 
-11.  Assicurarsi di avere **selezionato MainContainer** .
+11.  Assicurarsi di avere **selezionato DetailsContainer** .
 12.  Selezionare l'icona **Copilot** visualizzata. Immettere quanto segue: *"Inserisci un contenitore orizzontale".*
 13.  Selezionare **Mantieni**.
 14.  Fare clic con il pulsante destro del mouse sul contenitore e **rinominarlo** **in SelectedRecord1**
 15.  Usando **la visualizzazione Albero** , spostare il **contenitore SelectedRecord1** sopra il **contenitore RecordDetails** .
 16.  Configurare il **contenitore SelectedRecord1** come indicato di seguito:
-    -   **Larghezza minima:** 250
-    -   **Altezza flessibile:** Disattivato
-    -   **Height**: 50
-17.  Con il **contenitore SelectedRecord1**selezionato, selezionare il **pulsante Apri inserisci menu** .
-18.  Selezionare **Etichetta testo.**
-19.  **Rinominare l'etichetta in** SelectedRecordTitle
-20. Selezionare **Mantieni**.
+    
+-   **Larghezza minima:** 250
+-   **Altezza flessibile:** Disattivato
+-   **Height**: 50
+    
+18.  Con il **contenitore SelectedRecord1**selezionato, selezionare il **pulsante Inserisci** .
+19.  Selezionare **Etichetta testo.**
+20.  Rinominare l'etichetta in **SelectedRecordTitle**.
 21. **Configurare SelectedRecordTitle** come indicato di seguito:
+
     1.  **Padding**
         1.  **Top:** 5
         2.  **Inferiore:** 5
@@ -238,12 +258,15 @@ Ora si aggiungerà un altro contenitore che verrà usato per controllare le oper
         4.  **Altezza:** 40
     2.  **Larghezza flessibile:** Attiva
     3.  **Larghezza minima:** 150
-22. Selezionare il **contenitore SecondRecord1** , selezionare il **pulsante Inserisci** .
-23. **Nel campo Cerca** immettere **Salva** e selezionare l'icona **Salva**.
-24. Configurare il **pulsante Salva** come indicato di seguito:
+       
+23. Selezionare il **contenitore SecondRecord1** , selezionare il **pulsante Inserisci** .
+24. **Nel campo Cerca** immettere **Salva** e selezionare l'icona **Salva**.
+25. Configurare il **pulsante Salva** come indicato di seguito:
+
     -   **Altezza:** 40
     -   **Width**: 40
-25. Selezionare la **proprietà OnSelect** e immettere la formula seguente. SubmitForm(EquipmentForm).
+      
+27. Selezionare la **proprietà OnSelect** e immettere la formula seguente: SubmitForm(EquipmentForm).
 
 ![Screenshot della formula OnSelect PowerFx.](media/e5b22c91a437e6918269d65e2616afc8.png)
 
@@ -252,9 +275,10 @@ Ora si aggiungerà un altro contenitore che verrà usato per controllare le oper
 L'ultimo passaggio della creazione di questa schermata consiste nel popolare il contenitore reader con i dati.
 
 1.  **Selezionare HeaderContainer** nella parte superiore dell'app.
-2.  Selezionare il **pulsante Apri menu** Inserisci.
+2.  Selezionare il **pulsante Inserisci** .
 3.  Selezionare **Etichetta di testo**.
 4.  Configurare il **controllo Etichetta di testo** come indicato di seguito:
+   
     -   **Testo:** Checkout attrezzature
     -   **Tipo di carattere:** Apri sans
     -   **Dimensioni carattere:** 16
@@ -268,8 +292,8 @@ L'ultimo passaggio della creazione di questa schermata consiste nel popolare il 
 
         ![Screenshot delle proprietà dell'etichetta di testo.](media/088cafeec651b099fa49ac1f151cd228.png)
 
-5.  **Selezionare HeaderContainer**, scegliere **Inserisci** e selezionare l'icona**** Home.
-6.  Impostare la **proprietà OnSelect** del pulsante Home su: Back()
+6.  **Selezionare HeaderContainer**, scegliere **Inserisci** e selezionare l'icona**** Home.
+7.  Impostare la **proprietà OnSelect** del pulsante Home su: Back()
 
 ![Screenshot del comando Di spostamento Indietro.](media/38d0e5367ee41da58ac9902f8056b1af.png)
 
@@ -286,6 +310,8 @@ Dopo la revisione, abbiamo deciso che non è necessario avere la possibilità di
 13.  Selezionare il testo sotto Apparecchiature e modificare la proprietà Testo in: Controllare le attrezzature e modificare le prenotazioni.Select the **Text** below **Equipment** and change the **Text** property to: Check out equipment and edit reservations.
 
 ![Uno screenshot di un contenuto generato dall'intelligenza artificiale del computer potrebbe non essere corretto.](media/561d1e8cd023541761b6523138c2fde8.png)
+
+14. Selezionare il **pulsante Salva** per salvare l'app.
 
 ## Attività 7: Testare l'applicazione
 
@@ -304,5 +330,5 @@ Dopo la revisione, abbiamo deciso che non è necessario avere la possibilità di
 **Obiettivo:** salvare e pubblicare l'app per renderla accessibile tra Web browser, dispositivi mobili o piattaforme incorporate come SharePoint o Teams.
 
 1.  In Power Apps Studio selezionare il **pulsante Salva** .
-2.  **Nella schermata Salva** con nome impostare Nome** **su **Contoso Employee Hub**, selezionare **Salva**.
-3.  Selezionare il pulsante **Pubblica**.
+2.  Selezionare il pulsante **Pubblica**.
+3.  Scegliere **Pubblica questa versione.**
