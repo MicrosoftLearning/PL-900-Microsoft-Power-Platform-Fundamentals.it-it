@@ -1,4 +1,4 @@
-# PL-900: concetti fondamentali su Power Platform
+# PL-900: Introduzione a Microsoft Power Platform
 
 - **[Download dell'ultimo manuale per lo studente e del contenuto AllFiles](https://learningdownloadcenter.microsoft.com/)**
 - **Si è un Microsoft Certified Trainer?** - Esaminare la [guida per utenti di GitHub per Microsoft Certified Trainer](https://microsoftlearning.github.io/MCT-User-Guide/)
