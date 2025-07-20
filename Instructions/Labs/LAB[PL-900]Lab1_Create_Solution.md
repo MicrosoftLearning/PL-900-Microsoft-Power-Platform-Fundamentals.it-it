@@ -28,47 +28,47 @@ Al termine di questo esercizio, si eseguiranno le operazioni seguenti:
 ## Attività 1: Creare una soluzione di gestione degli eventi
 
 1.  Apri [Power Apps Maker Portal](https://make.powerapps.com).
-2.  Passare a **Soluzioni**.
-3.  Sulla barra dei comandi selezionare **Nuova soluzione.**
-4.  Nella schermata della nuova soluzione configurare come segue:
+1.  Passare a **Soluzioni**.
+1.  Sulla barra dei comandi selezionare **+Nuova soluzione.**
+1.  Nella schermata della nuova soluzione configurare come segue:
     - **Nome visualizzato:** Gestione eventi
-    - **Nome:** Gestione eventi
-5.  In **Server di pubblicazione** selezionare **+ Nuovo server di pubblicazione**
-6.  Configurare il nuovo server di pubblicazione come indicato di seguito
+    - **Nome:** EventManagement
+1.  In **Server di pubblicazione** selezionare **+ Nuovo server di pubblicazione**
+1.  Configurare il nuovo server di pubblicazione come indicato di seguito
     - **Nome visualizzato:** EventMSLearn
-    - **Nome:** EverntMSLearn
+    - **Nome:** EventMSLearn
     - **Prefisso:** mslearn
     - **Prefisso del valore di scelta:** lasciare il valore predefinito
 
-![Screenshot della schermata Crea nuovo server di pubblicazione.](media/61fa62c324d424f7c73c8291a0724130.png)
+    ![Screenshot della schermata Crea nuovo server di pubblicazione.](media/61fa62c324d424f7c73c8291a0724130.png)
 
-7.  Selezionare il **pulsante Salva** per salvare l'autore.
-8.  **Nel campo Server di pubblicazione** selezionare l'editore **EventMSlearn** appena creato.
-9.  Selezionare **Imposta come soluzione** preferita.
+1.  Selezionare il **pulsante Salva** per salvare l'autore.
+1.  **Nel campo Server di pubblicazione** selezionare l'editore **EventMSlearn** appena creato.
+1.  Selezionare **Imposta come soluzione** preferita.
 
-![Screenshot della soluzione completata](media/f968526926661bfa401f10742e6f376f.png)
+    ![Screenshot della soluzione completata](media/f968526926661bfa401f10742e6f376f.png)
 
-10.  Selezionare **Crea** per creare la soluzione.
+1.  Selezionare **Crea** per creare la soluzione.
 
 ## Attività 2: Aggiungere componenti esistenti a una soluzione.
 
 Ora che è stata creata una soluzione per l'archiviazione dei componenti, verranno aggiunte alcune tabelle esistenti. Verranno aggiunte le tabelle Account e Contatto, in modo che possano essere usate facilmente nelle diverse app, flussi e siti di Gestione eventi. Prima di tutto, aggiungeremo la tabella Account alla soluzione.
 
 1.  Se necessario, passare alla **soluzione Gestione** eventi creata nell'attività precedente.
-2.  Sulla barra** dei **comandi selezionare **Aggiungi esistente.**
-3.  Dal menu visualizzato selezionare **Tabella.**
-4.  Selezionare la **tabella Account** , quindi selezionare **Avanti.**
-5.  Nella **schermata Seleziona tabelle** selezionare **Includi tutti gli oggetti.**
-6.  Selezionare **Aggiungi**.
+1.  Sulla barra** dei **comandi selezionare **Aggiungi esistente.**
+1.  Dal menu visualizzato selezionare **Tabella.**
+1.  Selezionare la **tabella Account** , quindi selezionare **Avanti.**
+1.  Nella **schermata Tabelle** selezionate selezionare **Includi tutti gli oggetti.**
+1.  Selezionare **Aggiungi**.
 
-Ora che è disponibile la tabella Account, aggiungeremo la tabella Contact.
+    Ora che è disponibile la tabella Account, aggiungeremo la tabella Contact.
 
-7.  Sulla barra dei **comandi selezionare di nuovo il **pulsante Aggiungi esistente**.**
-8.  Dal menu visualizzato selezionare **Tabella.**
-9.  Selezionare la **tabella Contatto** , quindi selezionare **Avanti.**
-10.  Nella **schermata Seleziona tabelle** selezionare **Includi tutti gli oggetti**
-11.  Seleziona **Aggiungi**
+1.  Sulla barra dei **comandi selezionare di nuovo il **pulsante Aggiungi esistente**.**
+1.  Dal menu visualizzato selezionare **Tabella.**
+1.  Selezionare la **tabella Contatto** , quindi selezionare **Avanti.**
+1.  Nella **schermata Tabelle** selezionate selezionare **Includi tutti gli oggetti**
+1.  Seleziona **Aggiungi**
 
-![Screenshot che mostra le tabelle Account e Contact nella soluzione.](media/a53817e242fca7371765583d9e565c36.png)
+    ![Screenshot che mostra le tabelle Account e Contact nella soluzione.](media/a53817e242fca7371765583d9e565c36.png)
 
 Congratulazioni. È stata creata una nuova soluzione usando Power Platform. Si continuerà a usare la soluzione per aggiungere altri componenti.
