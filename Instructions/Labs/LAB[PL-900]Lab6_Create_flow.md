@@ -28,6 +28,8 @@ Prima di iniziare questo esercizio, è necessario aver completato i lab seguenti
 - **Lab 2: Creare un modello di dati**
 - **Lab 5: creare un'app basata su modello**
 
+Il tempo stimato per completare questo esercizio è compreso tra 20 e 30 minuti.
+
 ## Esercizio 1: Creare un flusso di notifica di registrazione sessione
 
 In questo primo esercizio si creerà un flusso che verrà eseguito automaticamente quando viene creata una nuova registrazione della sessione. Otterrà i dettagli della sessione, dell'evento e del contatto che ha registrato e inviato un messaggio di posta elettronica a questo con i relativi dettagli di registrazione.
@@ -38,35 +40,35 @@ Si vuole inviare una conferma di registrazione a tutti gli utenti appena registr
 
 1. Accedere a [https://make.powerautomate.com](https://make.powerautomate.com/).
 
-2. Potrebbe essere necessario ripetere l'autenticazione. Selezionare **Accedi** e seguire le istruzioni, se richiesto.
+1. Potrebbe essere necessario ripetere l'autenticazione. Selezionare **Accedi** e seguire le istruzioni, se richiesto.
 
-3. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato. (Importante, dimenticare di eseguire questo passaggio).
+1. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato. (Importante, dimenticare di eseguire questo passaggio).
 
-4. Nel riquadro di spostamento a sinistra selezionare **Crea**. (Se richiesto, selezionare **** Introduzione.
+1. Nel riquadro di spostamento a sinistra selezionare **+ Crea**. (Se richiesto, selezionare **** Introduzione.
 
-5. Selezionare **+ Nuovo flusso** e selezionare **Flusso cloud automatizzato**.
+1. Selezionare  **Flusso** cloud automatizzato.
 
-6. Immettere **La notifica di** registrazione per **il nome del flusso**.
+1. Immettere `Registration Notification` per **Nome flusso**.
 
-7. In **Scegliere il trigger del flusso** cercare **Dataverse**.
+1. In **Scegliere il trigger** del flusso cercare `Dataverse`.
 
-8. Selezionare il trigger **When a row is added, modified or deleted** (Quando una riga viene aggiunta, modificata o eliminata) e quindi selezionare **Crea**.
+1. Selezionare il trigger **When a row is added, modified or deleted** (Quando una riga viene aggiunta, modificata o eliminata) e quindi selezionare **Crea**.
 
     Se viene visualizzato un **errore Parametri** non validi, questo perché non è stato autenticato. Per creare una connessione, seguire questa procedura. 
     - Selezionare **Cambia connessione**.
-    - Selezionare **Aggiungi nuovo.*
-    - **Nel campo Nome** connessione immettere AMMINISTRATORE MOD****. Lasciare OAuth il **tipo di** **autenticazione e **selezionare Accedi**.**
+    - Seleziona **Aggiungi nuovo**.
+    - **Nel campo Nome** connessione immettere **AMMINISTRATORE MOD**. Lasciare OAuth il **tipo di** **autenticazione e selezionare Accedi****.**
     - Dopo l'accesso, passare al **passaggio 9.** 
 
-9. Popolare le condizioni di trigger per il flusso:
+1. Popolare le condizioni di trigger per il flusso:
 
     - Selezionare **Aggiunte** per **Tipo di modifica**
     - Selezionare **Registrazioni sessione** per **Nome tabella.**
-    - Selezionare Organizzazione per Ambito nel passaggio del trigger, selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**.** **** ** 
+    - Selezionare **Organizzazione** per **Ambito** Nel passaggio del trigger. 
 
-10. Rinominare il passaggio **trigger Quando viene aggiunta una registrazione di sessione.**
+1. Rinominare il passaggio `When a Session Registration is added`del trigger .
 
-![Screenshot della configurazione del trigger quando viene aggiunta una sessione](media/power-automate-01.png)
+    ![Screenshot della configurazione del trigger quando viene aggiunta una sessione](media/power-automate-01.png)
 
 Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
@@ -75,111 +77,111 @@ Questa è una procedura consigliata, per consentire all'utente e agli altri edit
 
 1. Selezionare **+ Nuovo passaggio**. 
 
-2. **Cercare Ottenere una riga per ID**. 
+1. **Cercare Ottenere una riga per ID**. 
 
-3. Seleziona l'azione **Recupera una riga tramite ID**.
+1. Seleziona l'azione **Recupera una riga tramite ID**.
 
-4. Selezionare **Sessioni** eventi come **nome tabella**
+1. Selezionare **Sessioni** eventi come **nome tabella**
 
-5. Selezionare il campo **ID riga**. Si noti che le icone vengono visualizzate per selezionare **Contenuto** dinamico o **Espressioni**.
+1. Selezionare il campo **ID riga**. Si noti che le icone vengono visualizzate per selezionare **Contenuto** dinamico o **Espressioni**.
 
-6. **Nel campo ID** riga selezionare **Sessione eventi (valore)** dall'elenco **Contenuto** dinamico. In questo passaggio si sta cercando la **sessione** eventi per la registrazione** della **sessione creata per attivare questo flusso.
+1. **Nel campo ID** riga selezionare **Sessione eventi (valore)** dall'elenco **Contenuto** dinamico. In questo passaggio si sta cercando la **sessione** eventi per la registrazione** della **sessione creata per attivare questo flusso.
 
-7. Nell'azione **Ottenere una riga per ID**, selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**. Rinominare questa azione **Recupera sessione eventi**
+1. Nell'azione **Recupera una riga per ID** . Rinominare questa azione `Get the Event Session`
 
-![Screenshot della configurazione dell'azione Get the Event Session](media/power-automate-02.png)
+    ![Screenshot della configurazione dell'azione Get the Event Session](media/power-automate-02.png)
 
-Si otterranno quindi i dettagli dell'evento in cui si trova la sessione.
+    Si otterranno quindi i dettagli dell'evento in cui si trova la sessione.
 
-8. **Nel passaggio Ottieni sessione** eventi selezionare **+ Inserisci azione.**
+1. **Nel passaggio Ottieni sessione** eventi selezionare **+ Inserisci azione.**
 
-9. **Cercare Ottenere una riga per ID**. 
+1. **Cercare Ottenere una riga per ID**. 
 
-10. Seleziona l'azione **Recupera una riga tramite ID**.
+1. Seleziona l'azione **Recupera una riga tramite ID**.
 
-11. Selezionare **Eventi** come **nome tabella**
+1. Selezionare **Eventi** come **nome tabella**
 
-12. Selezionare il campo **ID riga**. Si noti che le icone vengono visualizzate per selezionare **Contenuto** dinamico o **Espressioni**.
+1. Selezionare il campo **ID riga**. Si noti che le icone vengono visualizzate per selezionare **Contenuto** dinamico o **Espressioni**.
 
-13. **Nel campo ID** riga selezionare **Evento (valore)** dall'elenco **Contenuto** dinamico. In questo passaggio si sta cercando l'evento **** per la **sessione** eventi acquisita nel passaggio precedente.
+1. **Nel campo ID** riga selezionare **Evento (valore)** dall'elenco **Contenuto** dinamico. In questo passaggio si sta cercando l'evento **** per la **sessione** eventi acquisita nel passaggio precedente.
 
-14. Nell'azione **Ottenere una riga per ID**, selezionare i puntini di sospensione (**...**) e selezionare **Rinomina**. Rinominare questa azione **Recupera evento.**
+1. Nell'azione **Recupera una riga per ID** . Rinominare questa azione `Get the Event`.
 
-![Screenshot della configurazione dell'azione Get the Event](media/power-automate-03a.png)
+    ![Screenshot della configurazione dell'azione Get the Event](media/power-automate-03a.png)
 
-Infine, otterremo i dettagli della persona registrata per la sessione.
+    Infine, otterremo i dettagli della persona registrata per la sessione.
 
-15. In Recupera dettagli evento impostare Inserisci **nuova azione**.
+1. In Recupera dettagli evento impostare Inserisci **nuova azione**.
 
-16. Nel campo di ricerca immettere **Ottenere una riga per ID**.
+1. Nel campo di ricerca immettere **Ottenere una riga per ID**.
 
-17. Selezionare **Recupera una riga per ID**.
+1. Selezionare **Recupera una riga per ID**.
 
-18. Selezionare **Contatti** come **Nome tabella**
+1. Selezionare **Contatti** come **Nome tabella**
 
-19. Selezionare il campo **ID riga**. Notare che viene visualizzata una finestra per selezionare **Contenuto dinamico** o **Espressioni**.
+1. Selezionare il campo **ID riga**. Notare che viene visualizzata una finestra per selezionare **Contenuto dinamico** o **Espressioni**.
 
-20. **Nel campo ID** riga selezionare il **campo Partecipante (valore)** dal **trigger Quando viene aggiunta** una registrazione di sessione dall'elenco **Contenuto** dinamico.
+1. **Nel campo ID** riga selezionare il **campo Partecipante (valore)** dal **trigger Quando viene aggiunta** una registrazione di sessione dall'elenco **Contenuto** dinamico.
 
-21. Selezionare il **testo Get a row by ID (Ottieni una riga per ID** ) e rinominare questa azione **Get Participant Details (Ottieni** **dettagli** partecipante).
+1. Selezionare il **testo Recupera una riga per ID** e rinominare questa azione `Get Participant Details`.
 
-![Screenshot della configurazione dell'azione Ottieni dettagli partecipante](media/power-automate-04a.png)
+    ![Screenshot della configurazione dell'azione Ottieni dettagli partecipante](media/power-automate-04a.png)
 
 ### Attività 3: Creare un passaggio per inviare un messaggio di posta elettronica per confermare la registrazione della sessione
 
 1. **Nel passaggio Ottieni dettagli** partecipante selezionare **Inserisci nuova azione**.
 
-2. Nel campo di ricerca immettere **Invia un messaggio di posta elettronica**.
+1. Nel campo di ricerca immettere **Invia un messaggio di posta elettronica**.
 
-3. Selezionare **Invia un messaggio di posta elettronica (V2).**
+1. Selezionare **Invia un messaggio di posta elettronica (V2).**
 
-Potrebbe essere richiesto di creare una connessione a Outlook, in tal caso selezionare il **pulsante Accedi** e accedere con l'account **Amministratore** mod. 
+    Potrebbe essere richiesto di creare una connessione a Outlook, in tal caso selezionare il **pulsante Accedi** e accedere con l'account **Amministratore** mod. 
 
-![Screenshot della schermata Crea una connessione](media/power-automate-05.png)
+    ![Screenshot della schermata Crea una connessione](media/power-automate-05.png)
 
-4. Appena sopra il **campo A** selezionare l'icona **a forma di ingranaggio** . Dal menu visualizzato selezionare **Usa contenuto** dinamico.
+1. Appena sopra il **campo A** selezionare l'icona **a forma di ingranaggio** . Dal menu visualizzato selezionare **Usa contenuto** dinamico.
 
-![Screenshot dell'uso del contenuto dinamico](media/power-automate-06.png) 
+    ![Screenshot dell'uso del contenuto dinamico](media/power-automate-06.png) 
 
-5. Usando i valori dinamici, nel **campo A** selezionare **Email (Invia messaggio di posta elettronica** ) **in Get Participant Details (Ottieni dettagli** partecipante).
+1. Usando i valori dinamici, nel **campo A** selezionare **Email (Invia messaggio di posta elettronica** ) **in Get Participant Details (Ottieni dettagli** partecipante).
 
-![Screenshot dell'impostazione del campo su sul messaggio di posta elettronica del partecipante.](media/power-automate-07.png)
+    ![Screenshot dell'impostazione del campo su sul messaggio di posta elettronica del partecipante.](media/power-automate-07.png)
 
-6. **Nel campo Oggetto** verificare che sia la conferma della registrazione.
+1. **Nel campo Oggetto** verificare che sia .`Registration Confirmation`
 
-7. Nel **Corpo dell'e-mail**, immettere il testo seguente:
+1. Nel **Corpo dell'e-mail**, immettere il testo seguente:
 
-> **Nota:** il contenuto dinamico deve essere posizionato in cui i campi sono denominati tra parentesi quadre. È consigliabile copiare e incollare prima tutto il testo e poi aggiungere il contenuto dinamico nelle posizioni corrette.
+    > **Nota:** il contenuto dinamico deve essere posizionato in cui i campi sono denominati tra parentesi quadre. È consigliabile copiare e incollare prima tutto il testo e poi aggiungere il contenuto dinamico nelle posizioni corrette.
 
-  *Caro {Nome}, grazie per la registrazione per la prossima sessione {Nome sessione} in {Data evento}. {Speaker} sarà il relatore in questa sessione. La sessione è pianificata per l'ultima {Durata (ore)}. Consultare l'altra sessione all'indirizzo {Nome evento}.*
+    *`Dear {First Name}, Thank you for registering for our upcoming session {Session Name} on {Event Date}. {Speaker} will be your speaker in this session. Your session is scheduled to last {Duration (Hours)}. Check out our other session at our {Event Name}.`*
 
-  *Migliori saluti*
+    *`Best regards,`*
 
-  *Amministrazione eventi*
-  
-  *Contoso Consulting*
+    *`Events Administration`*
+    
+    *`Contoso Consulting`*
 
-Successivamente, sostituiremo il testo tra parentesi quadre con gli elementi descritti di seguito.
+    Successivamente, sostituiremo il testo tra parentesi quadre con gli elementi descritti di seguito.
 
-8. Evidenziare il testo **{First Name}**. Sostituirlo con il **campo Nome** del **passaggio Recupera dettagli** partecipante.
+1. Evidenziare il testo **{First Name}**. Sostituirlo con il **campo Nome** del **passaggio Recupera dettagli** partecipante.
 
-9. Evidenziare il **testo {Nome sessione}** . Sostituirlo con il **campo Nome** sessione del **passaggio Recupera sessione** eventi.
+1. Evidenziare il **testo {Nome sessione}** . Sostituirlo con il **campo Nome** sessione del **passaggio Recupera sessione** eventi.
 
-10. Evidenziare il **testo {Data evento}** . Sostituirlo con il **campo Data** evento del **passaggio Recupera dettagli** evento.
+1. Evidenziare il **testo {Data evento}** . Sostituirlo con il **campo Data** evento del **passaggio Recupera dettagli** evento.
 
-11. Evidenziare il **testo {Speaker}** . Sostituirlo con il **campo Speaker (Valore)** del **passaggio Ottieni sessione** eventi.
+1. Evidenziare il **testo {Speaker}** . Sostituirlo con il **campo Speaker (Valore)** del **passaggio Ottieni sessione** eventi.
 
-12. Evidenziare il **testo {Durata (ore)}** . Sostituirlo con il **campo Durata (ore)** del **passaggio Ottieni sessione** eventi.
+1. Evidenziare il **testo {Durata (ore)}** . Sostituirlo con il **campo Durata (ore)** del **passaggio Ottieni sessione** eventi.
 
-13. Evidenziare il **testo {Nome evento}** . Sostituirlo con il **campo Nome** evento del **passaggio Recupera dettagli** evento.
+1. Evidenziare il **testo {Nome evento}** . Sostituirlo con il **campo Nome** evento del **passaggio Recupera dettagli** evento.
 
-Il passaggio completato dovrebbe essere simile all'immagine:
+    Il passaggio completato dovrebbe essere simile all'immagine:
 
-![Screenshot del messaggio di posta elettronica completato](media/power-automate-08.png)
+    ![Screenshot del messaggio di posta elettronica completato](media/power-automate-08.png)
 
-14. Seleziona **Salva**.
+1. Seleziona **Salva**.
 
-Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso sarà simile al seguente:
+    Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso sarà simile al seguente:
 
 ### Attività 4: Immettere alcuni dati di esempio
 
@@ -187,15 +189,15 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso s
 
 1. Usando lo spostamento a sinistra, selezionare **App**.
 
-2. Modificare le app visualizzate da **App personali** a **Tutte**.
+1. Modificare le app visualizzate da **App personali** a **Tutte**.
 
-3. Passare il mouse sull'applicazione **Gestione** eventi e selezionare l'icona **Riproduci** .
+1. Passare il mouse sull'applicazione **Gestione** eventi e selezionare l'icona **Riproduci** .
 
-4. Usando lo spostamento a sinistra, selezionare **Contatti**.
+1. Usando lo spostamento a sinistra, selezionare **Contatti**.
 
-5. Sulla barra dei comandi selezionare il **pulsante + Nuovo** .
+1. Sulla barra dei comandi selezionare il **pulsante + Nuovo** .
 
-6. Nella **schermata Nuovo contatto** configurare come segue:
+1. Nella **schermata Nuovo contatto** configurare come segue:
 
     - **Nome:** Voice
 
@@ -203,17 +205,16 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso s
 
     - **Titolo del lavoro:** Ingegnere
 
-7. Nell'intestazione del modulo selezionare la freccia giù accanto a **Tipo contatto**.
+1. Nell'intestazione del modulo selezionare la freccia giù accanto a **Tipo contatto**.
 
-8. **Impostare Tipo di** contatto su **Altoparlante**.
+1. **Impostare Tipo di** contatto su **Altoparlante**.
+    ![Screenshot che mostra come impostare il campo Tipo contatto in un modulo.](media/power-automate-09.png)
 
-![Screenshot che mostra come impostare il campo Tipo contatto in un modulo.](media/power-automate-09.png)
+1. Selezionare il **pulsante Salva** per salvare il contatto e lasciarlo aperto.
 
-9. Selezionare il **pulsante Salva** per salvare il contatto e lasciarlo aperto.
+1. Selezionare il pulsante **+New**.
 
-10. Selezionare il pulsante **+New**.
-
-11. Nella **schermata Nuovo contatto** configurare come segue:
+1. Nella **schermata Nuovo contatto** configurare come segue:
 
     - **Nome:** Edgar
 
@@ -223,19 +224,19 @@ Lasciare aperta questa scheda del flusso per l'attività successiva. Il flusso s
 
     - **Posta elettronica:** immettere l'indirizzo di posta elettronica (IMPORTANTE o il flusso non verrà eseguito)
 
-12. Nell'intestazione del modulo selezionare la freccia giù accanto a **Tipo contatto**.
+1. Nell'intestazione del modulo selezionare la freccia giù accanto a **Tipo contatto**.
 
-13. Impostare Tipo **di** contatto su **Partecipante**.
+1. Impostare Tipo **di** contatto su **Partecipante**.
 
-14. Selezionare il pulsante **Salva e chiudi**.
+1. Selezionare il pulsante **Salva e chiudi**.
 
-Successivamente, verrà aggiunto un nuovo evento.
+    Successivamente, verrà aggiunto un nuovo evento.
 
-15. Usando lo spostamento a sinistra, selezionare **Eventi**.
+1. Usando lo spostamento a sinistra, selezionare **Eventi**.
 
-16. Sulla barra dei comandi selezionare il **pulsante + Nuovo** .
+1. Sulla barra dei comandi selezionare il **pulsante + Nuovo** .
 
-17. Nella **schermata Nuovo evento** configurare come segue:
+1. Nella **schermata Nuovo evento** configurare come segue:
 
     - **Nome evento:** conferenza Spring.
 
@@ -251,17 +252,17 @@ Successivamente, verrà aggiunto un nuovo evento.
 
     - **Registrazione obbligatoria:** Sì/True
 
-![Screenshot del modulo evento completato. ](media/power-automate-10.png)
+    ![Screenshot del modulo evento completato. ](media/power-automate-10.png)
 
-18. Selezionare il pulsante **Salva e chiudi**.
+1. Selezionare il pulsante **Salva e chiudi**.
 
-Verrà quindi aggiunta una nuova sessione per l'evento.
+    Verrà quindi aggiunta una nuova sessione per l'evento.
 
-19. Usando lo spostamento a sinistra, selezionare **Sessioni** eventi.
+1. Usando lo spostamento a sinistra, selezionare **Sessioni** eventi.
 
-20. Selezionare il pulsante **+New**.
+1. Selezionare il pulsante **+New**.
 
-21. Configurare la **sessione** eventi come indicato di seguito:
+1. Configurare la **sessione** eventi come indicato di seguito:
 
     - **Nome sessione:** intelligenza artificiale responsabile
 
@@ -275,48 +276,46 @@ Verrà quindi aggiunta una nuova sessione per l'evento.
 
     - **Evento:** Spring Conference
 
-![Screenshot del modulo di sessione evento completato. ](media/power-automate-11.png)
+    ![Screenshot del modulo di sessione evento completato. ](media/power-automate-11.png)
 
-22. Selezionare il pulsante **Salva e chiudi**.
+1. Selezionare il pulsante **Salva e chiudi**.
 
  
 ### Attività 5: Convalidare e testare il flusso
 
 1. Se necessario, aprire una nuova scheda nel browser e passare a [https://make.powerapps.com](https://make.powerapps.com/). 
 
-2. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
+1. Selezionare l'ambiente **Dev One** in alto a destra, se non è già selezionato.
 
-3. Selezionare **App** e aprire l'app **** Contoso Event Management.
+1. Selezionare **App** e aprire l'app **** Contoso Event Management.
 
-4. Lasciare aperta questa scheda del browser e tornare alla scheda precedente con il flusso.
+1. Lasciare aperta questa scheda del browser e tornare alla scheda precedente con il flusso.
 
-5. Nella barra dei comandi, selezionare **Test**. Selezionare **Manualmente**, quindi selezionare **Test**.
+1. Nella barra dei comandi, selezionare **Test**. Selezionare **Manualmente**, quindi selezionare **Test**.
 
-6. Passare alla scheda del browser con l'app basata su modello aperta.
+1. Passare alla scheda del browser con l'app basata su modello aperta.
 
-Infine, creeremo una **registrazione** di sessione.
+    Infine, creeremo una **registrazione** di sessione.
 
-7. Usando il riquadro di spostamento a sinistra, selezionare **Registrazioni di sessione.**
+1. Usando il riquadro di spostamento a sinistra, selezionare **Registrazioni di sessione.**
 
-8. Sulla barra dei **comandi selezionare **+ Nuovo**.**
+1. Sulla barra dei **comandi selezionare **+ Nuovo**.**
 
-9. Completare la registrazione della sessione come indicato di seguito:
+1. Completare la registrazione della sessione come indicato di seguito:
 
-    - **Nome:** E, Registrazione Swenson.
+    - **Nome:** `E, Swenson Registration`.
 
     - **Data registrazione:** data odierna
 
-    - **Partecipante:** Edgar Swenson
+    - **Partecipante:** `Edgar Swenson`
 
-    - **Sessione:** intelligenza artificiale responsabile
+    - **Sessione:** `Responsible AI`
 
-![Screenshot del modulo di registrazione sessione completato. ](media/power-automate-12.png)
+    ![Screenshot del modulo di registrazione sessione completato. ](media/power-automate-12.png)
 
-10. Seleziona il pulsante **Salva e chiudi**.
+1. Seleziona il pulsante **Salva e chiudi**.
 
-11. Selezionare il pulsante **Salva e chiudi**.
-
-12. Passare alla scheda del browser in cui è in esecuzione il test del flusso. Dopo un breve ritardo, dovrebbe essere visualizzato il flusso in esecuzione. Durante questa fase è possibile rilevare eventuali problemi nel flusso o verificare che venga eseguito correttamente.
+1. Passare alla scheda del browser in cui è in esecuzione il test del flusso. Dopo un breve ritardo, dovrebbe essere visualizzato il flusso in esecuzione. Durante questa fase è possibile rilevare eventuali problemi nel flusso o verificare che venga eseguito correttamente.
 
 Dopo un breve ritardo, si dovrebbe ricevere un’e-mail nella casella di posta elettronica.
 

@@ -61,10 +61,10 @@ L'applicazione degli aggiornamenti più recenti al browser impedisce problemi ne
 ## Esercizio 2: Scaricare immagini
 
 1. Aprire una finestra del browser nel tenant e immettere https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
-2. Le immagini verranno visualizzate nello screenshot.
+1. Le immagini verranno visualizzate nello screenshot.
 
-![file di immagine.](media/images.png)
+    ![file di immagine.](media/images.png)
 
-3. Aprire ogni immagine separatamente e scaricare selezionando l'icona **Scarica** .
+1. Aprire ogni immagine separatamente e scaricare selezionando l'icona **Scarica** .
 
-![Pulsante di download dell'immagine.](media/download-image.png)
+    ![Pulsante di download dell'immagine.](media/download-image.png)
