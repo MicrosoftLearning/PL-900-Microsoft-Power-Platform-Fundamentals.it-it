@@ -195,7 +195,7 @@ Copilot è un modo meraviglioso per creare tabelle e colonne molto rapidamente. 
 
     ![Screenshot delle scelte aggiornate relative al tipo di evento. ](media/3fb723bad1c0fced1e3705124a2d4594.png)
 
-1.  Selezionare il pulsante **Salva**. Se* la colonna non riesce a salvare, la prima volta riprovare.*
+1.  Fare clic sul pulsante **Salva**. Se* la colonna non riesce a salvare, la prima volta riprovare.*
 
     Verrà quindi aggiunta una nuova colonna alla **tabella Sessione** eventi per tenere traccia del numero totale di registrazioni di sessione.
 
@@ -279,7 +279,7 @@ Ora che è stata creata la tabella, verranno aggiunte alcune colonne aggiuntive.
 
     ![Screenshot delle opzioni di scelta.](media/category-choice-options.png)
 
-1.  Selezionare il pulsante Salva. Se la colonna non riesce a salvare, la prima volta riprovare.
+1.  Fare clic sul pulsante Salva. Se la colonna non riesce a salvare, la prima volta riprovare.
 
 Congratulazioni, è stato creato correttamente un modello di dati in Microsoft Dataverse.
 

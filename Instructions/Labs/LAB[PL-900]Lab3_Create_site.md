@@ -51,7 +51,7 @@ Il tempo stimato per il completamento di questo esercizio è **compreso tra 30 e
 
     ![Screenshot che mostra i dettagli del sito di base](media/9a5bc928349720c1da2f112bf1baf562.png)
 
-1.  Seleziona il pulsante **Avanti**.
+1.  Selezionare il pulsante **Avanti**.
 1.  **Nella schermata Scegli un layout** esaminare il layout suggerito fornito. Per altri suggerimenti di layout, selezionare **Riprova** per fare **in modo che Copilot** suggerisca un altro layout.
 1.  Dopo aver identificato il modello da usare, selezionare **Avanti.**
 1.  **Nella sezione Aggiungi pagine** comuni selezionare le pagine seguenti:
@@ -256,7 +256,7 @@ Per assicurarsi che gli utenti visualizzino solo i dati rilevanti per le organiz
     -   **Tipo di accesso:** accesso globale
 1.  **Impostare Autorizzazione** su **Lettura**.
 1.  Selezionare **Aggiungi ruoli** e scegliere i **ruoli Amministratori**, **Utenti** anonimi e **Utenti** autenticati.
-1.  Selezionare il pulsante **Salva**.
+1.  Fare clic sul pulsante **Salva**.
 1.  Viene visualizzata una schermata che indica **Che i dati possono essere visualizzati da chiunque** , selezionare **Salva**.
 
     Ripetere questo processo per le pagine del modulo eventi. Si inizierà con la **pagina Nuovo evento**

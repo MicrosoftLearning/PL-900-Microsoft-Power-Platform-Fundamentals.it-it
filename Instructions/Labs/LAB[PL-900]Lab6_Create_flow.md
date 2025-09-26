@@ -56,7 +56,7 @@ Si vuole inviare una conferma di registrazione a tutti gli utenti appena registr
 
     Se viene visualizzato un **errore Parametri** non validi, questo perché non è stato autenticato. Per creare una connessione, seguire questa procedura. 
     - Selezionare **Cambia connessione**.
-    - Seleziona **Aggiungi nuovo**.
+    - Selezionare **Aggiungi nuova**.
     - **Nel campo Nome** connessione immettere **AMMINISTRATORE MOD**. Lasciare OAuth il **tipo di** **autenticazione e selezionare Accedi****.**
     - Dopo l'accesso, passare al **passaggio 9.** 
 

@@ -98,7 +98,7 @@ L'applicazione model drive usa moduli e visualizzazioni per presentare i dati ag
 
     ![Screenshot della colonna Tipo contatto.](media/b1982b779d91cf134b41b6f445b8f07c.png)
 
-1.  Selezionare il pulsante **Salva**.
+1.  Fare clic sul pulsante **Salva**.
 1.  Usando il mouse, selezionare il **testo Nuovo contatto** per selezionare l'intestazione del modulo. *(Dovrebbe essere visualizzato un rettangolo viola intorno all'intestazione)*
 1. In **Colonne** tabella immettere Contatto** nel **campo **Cerca**.
 1. Selezionare la **colonna della tabella Contact Type** appena creata.

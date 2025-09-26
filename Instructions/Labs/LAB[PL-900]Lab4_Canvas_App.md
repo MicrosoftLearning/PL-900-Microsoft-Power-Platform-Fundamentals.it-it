@@ -320,7 +320,7 @@ Dopo la revisione, abbiamo deciso che non è necessario avere la possibilità di
 1.  **Nel campo Cerca** immettere **Electronics**. (*Si noti come l'elenco filtra*)
 1.  Selezionare il **record Laptop** .
 1.  Modificare categoria in **** **Mobili.**
-1.  Selezionare il pulsante **Salva**.
+1.  Fare clic sul pulsante **Salva**.
 1.  Si noti che la categoria del **portatile** cambia in **Mobili**.
 1.  Selezionare il **pulsante Home** .
 1.  Selezionare Viola X** per lasciare **la **modalità di anteprima**.
