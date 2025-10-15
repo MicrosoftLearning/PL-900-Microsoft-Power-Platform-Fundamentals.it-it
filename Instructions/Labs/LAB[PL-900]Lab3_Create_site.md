@@ -98,7 +98,7 @@ Ora che il sito iniziale è stato creato, è possibile usare lo studio di proget
 1.  Modificare il colore **esadecimale **** : 101E2B**
 1.  Seleziona **OK**.
 1.  Selezionare il **cerchio Bianco** e modificare il colore in **Codice **e8e8e8 ex****
-1.  Selezionare **OK**
+1.  Selezionare **OK**.
 1.  Selezionare il **cerchio Nero** e modificare il colore in **Bianco**. (ffffff)
 1.  Seleziona **OK**.
 1. Apportare eventuali modifiche aggiuntive di tema desiderate. Al termine della modifica del tema, selezionare il **pulsante Salva** .
@@ -319,3 +319,6 @@ Dopo aver creato il sito, è necessario esaminarlo per assicurarsi che soddisfi 
     - Layout e navigazione.
     - Elementi di personalizzazione, ad esempio colori, tipi di carattere e logo.
 1. Al termine del test, chiudere la scheda del browser per tornare al sito.
+
+
+

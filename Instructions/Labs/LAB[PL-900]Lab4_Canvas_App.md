@@ -26,6 +26,9 @@ Prima di iniziare questo esercizio, è necessario aver completato il lab seguent
 > **Importante** Questo lab usa l'intelligenza artificiale per compilare i componenti. Poiché i risultati dell'intelligenza artificiale possono variare, è importante notare che i risultati possono essere diversi (ma simili) a quanto definito nel lab. I concetti di base descritti nel lab saranno gli stessi indipendentemente da ciò che è stato creato o da quello che è stato denominato. Se le tabelle e le colonne non corrispondono esattamente, potrebbe essere necessario adattarsi a ciò che è stato creato automaticamente.
 
 Il tempo stimato per completare questo esercizio è **compreso tra 60 e 75** minuti.
+> **Nota:** se viene visualizzato un **messaggio di errore Richiede attenzione** nella tabella durante la creazione di una colonna di scelta con Copilot, è possibile creare manualmente la colonna seguendo questa procedura:
+1. Selezionare **Visualizza opzioni**, quindi scegliere **Visualizza dati**. La struttura della tabella diventerà visibile.
+1. Fare clic su **+ Nuova colonna** per aggiungere una nuova colonna.
 
 ## Attività 1: Accedere a Power Apps ed esplorare l'interfaccia
 
@@ -133,7 +136,7 @@ Mentre stai creando l'app, uno dei tuoi manager ti raggiunge e ti chiede se i di
 1.  Fare clic con il pulsante destro del mouse su **SidebarContainer** e rinominare **EquipContainer1**.
 1.  Con il **contenitore EquipContainer1** selezionato, fare clic sul **pulsante Apri inserisci menu** .
 1.  **Nella finestra Cerca** immettere **Raccolta** e selezionare **Raccolta** verticale.
-1.  Quando viene chiesto a troi di fornire un'origine dati nel **campo Di ricerca** visualizzato, immettere **Apparecchiature** e selezionare la **tabella Apparecchiature** .
+1.  Quando viene chiesto di specificare un'origine dati nel **campo Cerca** visualizzato, immettere **Apparecchiature** e selezionare la **tabella Apparecchiature** .
 1. In **Visualizzazione** albero sul lato sinistro della schermata selezionare il **controllo Gallery1** appena aggiunto.
 1. Fare clic con il pulsante destro del mouse sul nome della raccolta, scegliere **Rinomina** e rinominare `Equipment List`.
 1. Passare il puntatore del **mouse sulla raccolta Equipment List** , sulla barra degli strumenti visualizzata sopra la raccolta selezionare **Layout**.
@@ -200,7 +203,7 @@ Mentre stai creando l'app, uno dei tuoi manager ti raggiunge e ti chiede se i di
 
     ![Screenshot delle proprietà dell'icona di ricerca](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-1. Usando la **visualizzazione** Albero a sinistra, selezionare **EquipSearchContainer.**
+
 
     Infine, verrà configurata la **raccolta Equipment List** per popolare i dati in base al testo immesso nel campo del controllo di ricerca.
 
@@ -332,3 +335,7 @@ Dopo la revisione, abbiamo deciso che non è necessario avere la possibilità di
 1.  In Power Apps Studio selezionare il **pulsante Salva** .
 1.  Selezionare il pulsante **Pubblica**.
 1.  Scegliere **Pubblica questa versione.**
+
+
+
+

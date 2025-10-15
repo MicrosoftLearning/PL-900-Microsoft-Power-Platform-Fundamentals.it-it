@@ -320,3 +320,5 @@ Questa è una procedura consigliata, per consentire all'utente e agli altri edit
 Dopo un breve ritardo, si dovrebbe ricevere un’e-mail nella casella di posta elettronica.
 
 > **Nota:** Potrebbe essere inserita nella cartella Posta indesiderata.
+
+

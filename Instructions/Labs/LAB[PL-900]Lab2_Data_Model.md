@@ -38,12 +38,17 @@ Il tempo stimato per il completamento di questo esercizio è **compreso tra 30 e
 
 > **Nota:** nel lab precedente è stata creata una soluzione di gestione degli eventi e la si è impostata come soluzione preferita in questo ambiente. Per questo motivo, non è necessario passare direttamente alla soluzione per creare il modello di dati. Gli elementi creati verranno aggiunti automaticamente alla soluzione.
 
+> **Nota:** se viene visualizzato un **messaggio di errore Richiede attenzione** nella tabella durante la creazione di una colonna di scelta con Copilot, è possibile creare manualmente la colonna seguendo questa procedura:
+1. Selezionare **Visualizza opzioni**, quindi scegliere **Visualizza dati**. La struttura della tabella diventerà visibile.
+1. Fare clic su **+ Nuova colonna** per aggiungere una nuova colonna.
+
+
 ## Attività 1: Creare un modello di dati
 
 Contoso attualmente archivia le informazioni di contatto del donatore nell'istanza di Dataverse. Vogliono usare Dataverse per tenere traccia delle concessioni che stanno chiedendo e donazioni ricevute. È necessario creare le tabelle necessarie per supportare le esigenze future dell'applicazione di Contoso.
 
 1.  Se necessario, aprire un Web browser e passare al portale di [Power Apps](https://make.powerapps.com/) Maker e Accedere usando le credenziali dell'account Microsoft.
-1.  Nella schermata iniziale di Power Pages, usando lo spostamento a sinistra, selezionare **Tabelle**.
+1.  Nella schermata iniziale di Power Apps, usando lo spostamento a sinistra, selezionare **Tabelle**.
 1.  In **Tabelle** selezionare **Introduzione a Copilot**.
 1.  **Nella schermata Descrivere le tabelle da compilare** con copilot immettere: "*Creare una tabella per la gestione degli eventi. La tabella deve identificare il nome dell'evento, i dati dell'evento, la posizione, il numero massimo di partecipanti e i dettagli dell'evento".*
 1.  Accanto al **pulsante Genera** selezionare **Impostazioni** tabella e configurare come segue:
