@@ -232,3 +232,6 @@ Prima di tutto aggiungeremo un paio di contatti.
     ![Screenshot del modulo di registrazione sessione completato.  ](media/Session-registration-form.png)
 
 1.  Seleziona il pulsante **Salva e chiudi**.
+
+
+
