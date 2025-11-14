@@ -208,7 +208,7 @@ Mentre stai creando l'app, uno dei tuoi manager ti raggiunge e ti chiede se i di
     Infine, verrà configurata la **raccolta Equipment List** per popolare i dati in base al testo immesso nel campo del controllo di ricerca.
 
 1.  Selezionare la **raccolta Equipment List** creata in precedenza.
-1.  **Nella proprietà Items** immettere la formula seguente:`Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`
+1.  **Nella proprietà Items** immettere la formula seguente:`Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`
 
     ![Screenshot della formula di PowerFx items.](media/powerfx-formula.png)
 
@@ -261,7 +261,7 @@ Quando un utente seleziona un record nell'elenco Apparecchiature, si vuole aprir
     3.  **Larghezza minima:** 150
     4.  **Altezza:** 40
        
-1. Selezionare il **contenitore SecondRecord1** , selezionare il **pulsante Inserisci** .
+1. Selezionare il **contenitore SelectedRecord1** , selezionare il **pulsante Inserisci** .
 1. **Nel campo Cerca** immettere **Salva** e selezionare l'icona **Salva**.
 1. Configurare il **pulsante Salva** come indicato di seguito:
 
@@ -335,6 +335,8 @@ Dopo la revisione, abbiamo deciso che non è necessario avere la possibilità di
 1.  In Power Apps Studio selezionare il **pulsante Salva** .
 1.  Selezionare il pulsante **Pubblica**.
 1.  Scegliere **Pubblica questa versione.**
+
+
 
 
 
