@@ -1,3 +1,5 @@
+**⚠️ This GitHub repo will retire on 28th November 2025.** 
+
 # PL-900: Introduzione a Microsoft Power Platform
 
 - **[Download dell'ultimo manuale per lo studente e del contenuto AllFiles](https://learningdownloadcenter.microsoft.com/)**
